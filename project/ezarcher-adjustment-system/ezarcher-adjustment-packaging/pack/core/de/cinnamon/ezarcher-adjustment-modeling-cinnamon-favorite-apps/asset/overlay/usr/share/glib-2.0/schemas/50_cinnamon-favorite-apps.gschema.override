@@ -1,0 +1,9 @@
+
+
+[org.cinnamon]
+favorite-apps=['pcmanfm-qt.desktop', 'org.xfce.mousepad.desktop', 'firefox.desktop', 'sakura.desktop', 'cinnamon-settings.desktop']
+
+
+[org.cinnamon.desktop.default-applications.terminal]
+exec='sakura'
+

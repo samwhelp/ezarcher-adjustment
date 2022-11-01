@@ -4,7 +4,13 @@
 ### Head: Ezarcher Adjustment / Desktop Environment / Cinnamon
 ##
 
-#ezarcher-adjustment-modeling-cinnamon
+ezarcher-adjustment-modeling-cinnamon-config-main
+ezarcher-adjustment-modeling-cinnamon-favorite-apps
+ezarcher-adjustment-modeling-cinnamon-keybind-main
+ezarcher-adjustment-modeling-cinnamon-keybind-custom-by-dconf-db
+ezarcher-adjustment-modeling-cinnamon-theme-main
+ezarcher-adjustment-modeling-cinnamon-wallpaper-main
+ezarcher-adjustment-modeling-cinnamon-workspace-main
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Cinnamon
@@ -16,7 +22,7 @@
 ##
 
 plank
-#ezarcher-adjustment-autostart-plank-on-cinnamon
+ezarcher-adjustment-autostart-plank-on-cinnamon
 ezarcher-adjustment-modeling-plank
 
 
