@@ -1,0 +1,356 @@
+
+
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Note
+##
+
+##
+## * https://samwhelp.github.io/ezarcher-adjustment/
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository
+##
+
+##
+### Tail: Ezarcher Adjustment / Note
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Base
+##
+
+ezarcher-adjustment-mirrorlist
+ezarcher-adjustment-hello
+
+##
+### Tail: Ezarcher Adjustment / Base
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / AUR
+##
+
+sakura
+#qt5-styleplugins
+#xcursor-breeze
+sublime-text-4
+
+##
+### Tail: Ezarcher Adjustment / AUR
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Appearance
+##
+
+#ezarcher-adjustment-appearance-gtk-theme-dracula
+#ezarcher-adjustment-appearance-gtk-theme-gruvbox
+#ezarcher-adjustment-appearance-gtk-theme-gruvbox-dark
+#ezarcher-adjustment-appearance-gtk-theme-numix-blue
+#ezarcher-adjustment-appearance-icon-theme-dracula
+#ezarcher-adjustment-appearance-icon-theme-gruvbox-dark
+#ezarcher-adjustment-appearance-icon-theme-numix
+#ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
+
+
+#ezarcher-adjustment-modeling-gtkrc
+#ezarcher-adjustment-modeling-gtkrc-gruvbox-dark
+
+#ezarcher-adjustment-modeling-qt-style-follow-gtk
+
+#ezarcher-adjustment-modeling-qt5ctrc
+#ezarcher-adjustment-modeling-qt5ctrc-gruvbox-dark
+
+
+##
+### Tail: Ezarcher Adjustment / Appearance
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Wallpaper
+##
+
+xfce4-artwork
+
+#ezarcher-adjustment-modeling-wallpaper-default
+
+##
+### Tail: Ezarcher Adjustment / Wallpaper
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Font
+##
+
+noto-fonts-cjk
+
+#ezarcher-adjustment-modeling-font-match-order
+
+##
+### Tail: Ezarcher Adjustment / Font
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Modeling
+##
+
+
+#ezarcher-adjustment-modeling-xdg-mime-applications
+#ezarcher-adjustment-modeling-xdg-user-dir-templates
+
+
+
+##
+### Tail: Ezarcher Adjustment / Modeling
+################################################################################
+
+
+
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Input Method / fcitx-chewing
+##
+
+#fcitx
+#fcitx-chewing
+#fcitx-configtool
+#fcitx-qt5
+#fcitx-qt6
+
+
+#ezarcher-adjustment-modeling-fcitx-chewing
+
+##
+### Tail: Ezarcher Adjustment / Input Method / fcitx-chewing
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / App Launcher
+##
+
+rofi
+
+#ezarcher-adjustment-modeling-rofi
+
+##
+### Tail: Ezarcher Adjustment / App Launcher
+################################################################################
+
+
+
+
+################################################################################
+### Head: Ezarcher Adjustment / File Archiver
+##
+
+lxqt-archiver
+engrampa
+
+
+p7zip
+unace
+unrar
+brotli
+
+##
+### Tail: Ezarcher Adjustment / File Archiver
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / File Manager
+##
+
+pcmanfm-qt
+ezarcher-adjustment-modeling-pcmanfm-qt
+
+
+thunar
+#ezarcher-adjustment-modeling-thunar
+
+##
+### Tail: Ezarcher Adjustment / File Manager
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Text Editor
+##
+
+ezarcher-adjustment-modeling-vi
+
+vim
+neovim
+micro
+nano
+
+#atom
+#ezarcher-adjustment-modeling-atom
+
+#sublime-text-4
+ezarcher-adjustment-modeling-sublime-text
+
+mousepad
+#ezarcher-adjustment-modeling-mousepad
+
+xed
+#ezarcher-adjustment-modeling-xed
+
+##
+### Tail: Ezarcher Adjustment / Text Editor
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Web Browser
+##
+
+firefox
+#falkon
+
+##
+### Tail: Ezarcher Adjustment / Web Browser
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Terminal
+##
+
+#sakura
+ezarcher-adjustment-modeling-sakura
+
+
+xfce4-terminal
+#ezarcher-adjustment-modeling-xfce4-terminal
+
+##
+### Tail: Ezarcher Adjustment / Terminal
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Image
+##
+
+
+viewnior
+ezarcher-adjustment-modeling-viewnior
+
+feh
+gpicview
+sxiv
+
+
+ueberzug
+
+##
+### Tail: Ezarcher Adjustment / Image
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Audio
+##
+
+audacious
+
+##
+### Tail: Ezarcher Adjustment / Audio
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Video
+##
+
+mpv
+ezarcher-adjustment-modeling-mpv
+
+vlc
+smplayer
+
+##
+### Tail: Ezarcher Adjustment / Video
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Media
+##
+
+##
+## install `mate-media` for use `mate-volume-control-status-icon`
+##
+
+mate-media
+mediainfo
+mediainfo-gui
+
+##
+### Tail: Ezarcher Adjustment / Media
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Donload
+##
+
+youtube-dl
+filezilla
+
+##
+### Tail: Ezarcher Adjustment / Donload
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Network
+##
+
+network-manager-applet
+
+##
+### Tail: Ezarcher Adjustment / Network
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Develop
+##
+
+##
+## * https://wiki.archlinux.org/title/archiso
+## * https://archlinux.org/packages/extra/any/archiso/
+## * https://archlinux.org/packages/extra/x86_64/qemu-desktop/
+##
+
+base-devel
+archiso
+qemu-desktop
+
+
+tree
+fzf
+python-pygithub
+
+xorg-server-xephyr
+
+bat
+php
+
+
+##
+### Tail: Ezarcher Adjustment / Develop
+################################################################################
