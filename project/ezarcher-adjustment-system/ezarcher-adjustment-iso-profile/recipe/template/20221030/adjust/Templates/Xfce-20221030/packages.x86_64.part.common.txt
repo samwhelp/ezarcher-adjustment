@@ -50,13 +50,13 @@ sublime-text-4
 ##
 
 #ezarcher-adjustment-appearance-gtk-theme-dracula
-#ezarcher-adjustment-appearance-gtk-theme-gruvbox
-#ezarcher-adjustment-appearance-gtk-theme-gruvbox-dark
+ezarcher-adjustment-appearance-gtk-theme-gruvbox
+ezarcher-adjustment-appearance-gtk-theme-gruvbox-dark
 #ezarcher-adjustment-appearance-gtk-theme-numix-blue
 #ezarcher-adjustment-appearance-icon-theme-dracula
-#ezarcher-adjustment-appearance-icon-theme-gruvbox-dark
+ezarcher-adjustment-appearance-icon-theme-gruvbox-dark
 #ezarcher-adjustment-appearance-icon-theme-numix
-#ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
+ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
 
 
 #ezarcher-adjustment-modeling-gtkrc
