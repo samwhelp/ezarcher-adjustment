@@ -92,7 +92,7 @@ ezarcher-adjustment-modeling-wallpaper-default
 
 noto-fonts-cjk
 
-#ezarcher-adjustment-modeling-font-match-order
+ezarcher-adjustment-modeling-font-match-order
 
 ##
 ### Tail: Ezarcher Adjustment / Font
