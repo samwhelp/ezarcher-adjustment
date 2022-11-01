@@ -120,10 +120,26 @@ ln -sf /usr/lib/systemd/system/sddm.service ./ezreleng/airootfs/etc/systemd/syst
 }
 
 # Copy files to customize the ISO
+cpmyfiles_orginal () {
+cp pacman.conf ./ezreleng/
+cp profiledef.sh ./ezreleng/
+cp packages.x86_64 ./ezreleng/
+cp -r grub ./ezreleng/
+cp -r efiboot ./ezreleng/
+cp -r syslinux ./ezreleng/
+cp -r etc ./ezreleng/airootfs/
+cp -r opt ./ezreleng/airootfs/
+cp -r usr ./ezreleng/airootfs/
+ln -sf /usr/share/ezarcher ./ezreleng/airootfs/etc/skel/ezarcher
+}
+
 cpmyfiles () {
 cp pacman.conf ./ezreleng/
 cp profiledef.sh ./ezreleng/
 cp packages.x86_64 ./ezreleng/
+cat packages.x86_64.part.common.txt >> ./ezreleng/packages.x86_64
+cat packages.x86_64.part.sddm.txt >> ./ezreleng/packages.x86_64
+cat packages.x86_64.part.mate.txt >> ./ezreleng/packages.x86_64
 cp -r grub ./ezreleng/
 cp -r efiboot ./ezreleng/
 cp -r syslinux ./ezreleng/
