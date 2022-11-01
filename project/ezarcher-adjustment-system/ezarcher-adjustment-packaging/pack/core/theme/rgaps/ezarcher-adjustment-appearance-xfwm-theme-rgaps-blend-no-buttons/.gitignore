@@ -1,0 +1,5 @@
+*.zst
+pkg/*
+src/*
+package/*
+theme-collections-xfwm4

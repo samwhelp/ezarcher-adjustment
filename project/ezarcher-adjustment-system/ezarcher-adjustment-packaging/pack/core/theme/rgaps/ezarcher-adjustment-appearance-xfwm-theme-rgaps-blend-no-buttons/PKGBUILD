@@ -1,0 +1,84 @@
+
+##
+## * https://wiki.archlinux.org/title/Creating_packages
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/makepkg
+## * https://wiki.archlinux.org/title/PKGBUILD
+## * https://wiki.archlinux.org/title/Arch_package_guidelines
+##
+
+pkgname=ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Appearance / Gtk Theme / RGapsBlendNoButtons"
+url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/theme/rgaps/ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+##
+## ## Source
+##
+## * https://github.com/samwhelp/theme-collections-xfwm4/tree/master/themes/RGapsBlendNoButtons/xfwm4
+##
+## ## Note
+##
+## * https://samwhelp.github.io/note-about-ubuntu/read/subject/theme/source/rgaps.html
+##
+
+source=("git+https://github.com/samwhelp/theme-collections-xfwm4.git")
+
+sha256sums=('SKIP')
+
+
+prepare () {
+
+	return 0
+
+	cp -af ../asset/. "${srcdir}"
+}
+
+
+package () {
+
+	##
+	## Path
+	##
+
+	#echo "${pkgdir}"
+	#echo "${srcdir}"
+
+	#local sys_etc_dir_path="${pkgdir}/etc"
+	#local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
+	#local sys_skel_dir_path="${sys_etc_dir_path}/skel"
+
+
+	##
+	## Prepare Dir
+	##
+
+	#mkdir -p "$sys_etc_dir_path"
+	#mkdir -p "$sys_share_dir_path"
+
+	install -dm755 "${pkgdir}/usr/share/themes/RGapsBlendNoButtons"
+
+
+	##
+	## Main Content
+	##
+
+	## /usr/share/themes/RGapsBlendNoButtons
+	cp -af "${srcdir}/theme-collections-xfwm4/themes/RGapsBlendNoButtons/." "${pkgdir}/usr/share/themes/RGapsBlendNoButtons"
+
+	## /usr/share/themes/RGapsBlendNoButtons/.git
+	#rm -rf "${pkgdir}/usr/share/themes/RGapsBlendNoButtons/.git"
+
+
+	return 0
+}
