@@ -59,13 +59,13 @@ ezarcher-adjustment-appearance-icon-theme-gruvbox-dark
 ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
 
 
-#ezarcher-adjustment-modeling-gtkrc
-#ezarcher-adjustment-modeling-gtkrc-gruvbox-dark
+ezarcher-adjustment-modeling-gtkrc
+ezarcher-adjustment-modeling-gtkrc-gruvbox-dark
 
-#ezarcher-adjustment-modeling-qt-style-follow-gtk
+ezarcher-adjustment-modeling-qt-style-follow-gtk
 
-#ezarcher-adjustment-modeling-qt5ctrc
-#ezarcher-adjustment-modeling-qt5ctrc-gruvbox-dark
+ezarcher-adjustment-modeling-qt5ctrc
+ezarcher-adjustment-modeling-qt5ctrc-gruvbox-dark
 
 
 ##
