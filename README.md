@@ -10,7 +10,7 @@
 
 | Link | GitHub |
 | --- | --- |
-| [ezarcher-adjustment](https://samwhelp.github.io/ezarcher-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-adjustment) |
+| [Ezarcher Adjustment](https://samwhelp.github.io/ezarcher-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-adjustment) |
 
 
 ## ISO Build System
