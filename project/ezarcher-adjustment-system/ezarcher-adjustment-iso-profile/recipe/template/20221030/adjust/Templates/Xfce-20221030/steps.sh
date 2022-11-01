@@ -282,13 +282,22 @@ EndSection" > ./ezreleng/airootfs/etc/X11/xorg.conf.d/00-keyboard.conf
 }
 
 # Set and fix locale.conf, locale.gen, and keyboard
-crtlocalec () {
+crtlocalec_orginal () {
 sed -i "s/pc105/"${KEYMOD}"/g" ./ezreleng/airootfs/etc/default/keyboard
 sed -i "s/us/"${KEYMP}"/g" ./ezreleng/airootfs/etc/default/keyboard
 sed -i "s/en_US/"${LCLST}"/g" ./ezreleng/airootfs/etc/default/locale
 sed -i "s/en_US/"${LCLST}"/g" ./ezreleng/airootfs/etc/locale.conf
 echo ""${LCLST}".UTF-8 UTF-8" > ./ezreleng/airootfs/etc/locale.gen
 echo "C.UTF-8 UTF-8" >> ./ezreleng/airootfs/etc/locale.gen
+}
+
+crtlocalec () {
+sed -i "s/pc105/"${KEYMOD}"/g" ./ezreleng/airootfs/etc/default/keyboard
+sed -i "s/us/"${KEYMP}"/g" ./ezreleng/airootfs/etc/default/keyboard
+sed -i "s/en_US/"${LCLST}"/g" ./ezreleng/airootfs/etc/default/locale
+sed -i "s/en_US/"${LCLST}"/g" ./ezreleng/airootfs/etc/locale.conf
+#echo ""${LCLST}".UTF-8 UTF-8" > ./ezreleng/airootfs/etc/locale.gen
+#echo "C.UTF-8 UTF-8" >> ./ezreleng/airootfs/etc/locale.gen
 }
 
 # Start mkarchiso
