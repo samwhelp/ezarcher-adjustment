@@ -1,0 +1,29 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / KDE Plasma
+##
+
+#ezarcher-adjustment-modeling-kde-plasma
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / KDE Plasma
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+#ezarcher-adjustment-autostart-plank-on-kde-plasma
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+#ezarcher-adjustment-autostart-cairo-dock-on-kde-plasma
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################

@@ -1,0 +1,29 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / GNOME Shell
+##
+
+#ezarcher-adjustment-modeling-gnome-shell
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / GNOME Shell
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+#ezarcher-adjustment-autostart-plank-on-gnome-shell
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+#ezarcher-adjustment-autostart-cairo-dock-on-gnome-shell
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################

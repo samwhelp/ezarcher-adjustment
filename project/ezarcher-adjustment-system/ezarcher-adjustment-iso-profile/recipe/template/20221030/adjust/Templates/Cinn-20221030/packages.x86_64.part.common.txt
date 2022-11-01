@@ -36,8 +36,8 @@ ezarcher-adjustment-hello
 ##
 
 sakura
-#qt5-styleplugins
-#xcursor-breeze
+qt5-styleplugins
+xcursor-breeze
 sublime-text-4
 
 ##
@@ -50,22 +50,22 @@ sublime-text-4
 ##
 
 #ezarcher-adjustment-appearance-gtk-theme-dracula
-#ezarcher-adjustment-appearance-gtk-theme-gruvbox
-#ezarcher-adjustment-appearance-gtk-theme-gruvbox-dark
+ezarcher-adjustment-appearance-gtk-theme-gruvbox
+ezarcher-adjustment-appearance-gtk-theme-gruvbox-dark
 #ezarcher-adjustment-appearance-gtk-theme-numix-blue
 #ezarcher-adjustment-appearance-icon-theme-dracula
-#ezarcher-adjustment-appearance-icon-theme-gruvbox-dark
+ezarcher-adjustment-appearance-icon-theme-gruvbox-dark
 #ezarcher-adjustment-appearance-icon-theme-numix
-#ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
+ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
 
 
-#ezarcher-adjustment-modeling-gtkrc
-#ezarcher-adjustment-modeling-gtkrc-gruvbox-dark
+ezarcher-adjustment-modeling-gtkrc
+ezarcher-adjustment-modeling-gtkrc-gruvbox-dark
 
-#ezarcher-adjustment-modeling-qt-style-follow-gtk
+ezarcher-adjustment-modeling-qt-style-follow-gtk
 
-#ezarcher-adjustment-modeling-qt5ctrc
-#ezarcher-adjustment-modeling-qt5ctrc-gruvbox-dark
+ezarcher-adjustment-modeling-qt5ctrc
+ezarcher-adjustment-modeling-qt5ctrc-gruvbox-dark
 
 
 ##
@@ -79,7 +79,7 @@ sublime-text-4
 
 xfce4-artwork
 
-#ezarcher-adjustment-modeling-wallpaper-default
+ezarcher-adjustment-modeling-wallpaper-default
 
 ##
 ### Tail: Ezarcher Adjustment / Wallpaper
@@ -92,7 +92,7 @@ xfce4-artwork
 
 noto-fonts-cjk
 
-#ezarcher-adjustment-modeling-font-match-order
+ezarcher-adjustment-modeling-font-match-order
 
 ##
 ### Tail: Ezarcher Adjustment / Font
@@ -100,17 +100,20 @@ noto-fonts-cjk
 
 
 ################################################################################
-### Head: Ezarcher Adjustment / Modeling
+### Head: Ezarcher Adjustment / Modeling / XDG
 ##
 
 
-#ezarcher-adjustment-modeling-xdg-mime-applications
-#ezarcher-adjustment-modeling-xdg-user-dir-templates
+ezarcher-adjustment-modeling-xdg-mime-applications
 
+
+
+ezarcher-adjustment-modeling-xdg-user-dir-templates
+python-pygithub
 
 
 ##
-### Tail: Ezarcher Adjustment / Modeling
+### Tail: Ezarcher Adjustment / Modeling / XDG
 ################################################################################
 
 
@@ -118,7 +121,7 @@ noto-fonts-cjk
 
 
 ################################################################################
-### Head: Ezarcher Adjustment / Input Method / fcitx-chewing
+### Head: Ezarcher Adjustment / Input Method / fcitx5-chewing
 ##
 
 ##
@@ -139,7 +142,7 @@ fcitx5-configtool
 #fcitx5-anthy
 
 ##
-### Tail: Ezarcher Adjustment / Input Method / fcitx-chewing
+### Tail: Ezarcher Adjustment / Input Method / fcitx5-chewing
 ################################################################################
 
 
@@ -185,7 +188,7 @@ ezarcher-adjustment-modeling-pcmanfm-qt
 
 
 thunar
-#ezarcher-adjustment-modeling-thunar
+ezarcher-adjustment-modeling-thunar
 
 ##
 ### Tail: Ezarcher Adjustment / File Manager
@@ -204,16 +207,16 @@ micro
 nano
 
 #atom
-#ezarcher-adjustment-modeling-atom
+ezarcher-adjustment-modeling-atom
 
 #sublime-text-4
 ezarcher-adjustment-modeling-sublime-text
 
 mousepad
-#ezarcher-adjustment-modeling-mousepad
+ezarcher-adjustment-modeling-mousepad
 
 xed
-#ezarcher-adjustment-modeling-xed
+ezarcher-adjustment-modeling-xed
 
 ##
 ### Tail: Ezarcher Adjustment / Text Editor
@@ -241,7 +244,7 @@ ezarcher-adjustment-modeling-sakura
 
 
 xfce4-terminal
-#ezarcher-adjustment-modeling-xfce4-terminal
+ezarcher-adjustment-modeling-xfce4-terminal
 
 ##
 ### Tail: Ezarcher Adjustment / Terminal
@@ -351,7 +354,7 @@ qemu-desktop
 
 tree
 fzf
-python-pygithub
+
 
 xorg-server-xephyr
 

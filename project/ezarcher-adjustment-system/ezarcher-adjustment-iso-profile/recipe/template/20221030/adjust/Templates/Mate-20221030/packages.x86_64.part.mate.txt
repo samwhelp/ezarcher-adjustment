@@ -1,0 +1,29 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / Mate
+##
+
+#ezarcher-adjustment-modeling-mate
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / Mate
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+#ezarcher-adjustment-autostart-plank-on-mate
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+#ezarcher-adjustment-autostart-cairo-dock-on-mate
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################

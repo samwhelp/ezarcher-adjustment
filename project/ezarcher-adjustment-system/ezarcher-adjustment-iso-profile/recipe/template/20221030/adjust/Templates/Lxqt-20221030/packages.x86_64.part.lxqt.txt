@@ -1,0 +1,29 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / LxQt
+##
+
+#ezarcher-adjustment-modeling-lxqt
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / LxQt
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+#ezarcher-adjustment-autostart-plank-on-lxqt
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+#ezarcher-adjustment-autostart-cairo-dock-on-lxqt
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################

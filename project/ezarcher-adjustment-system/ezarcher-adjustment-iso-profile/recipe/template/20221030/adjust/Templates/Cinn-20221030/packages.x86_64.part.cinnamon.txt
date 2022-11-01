@@ -1,0 +1,29 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / Cinnamon
+##
+
+#ezarcher-adjustment-modeling-cinnamon
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / Cinnamon
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+#ezarcher-adjustment-autostart-plank-on-cinnamon
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+#ezarcher-adjustment-autostart-cairo-dock-on-cinnamon
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################
