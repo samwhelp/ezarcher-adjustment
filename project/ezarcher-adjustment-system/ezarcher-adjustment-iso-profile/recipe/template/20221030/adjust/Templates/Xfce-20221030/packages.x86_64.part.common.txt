@@ -36,8 +36,8 @@ ezarcher-adjustment-hello
 ##
 
 sakura
-#qt5-styleplugins
-#xcursor-breeze
+qt5-styleplugins
+xcursor-breeze
 sublime-text-4
 
 ##
@@ -79,7 +79,7 @@ sublime-text-4
 
 xfce4-artwork
 
-#ezarcher-adjustment-modeling-wallpaper-default
+ezarcher-adjustment-modeling-wallpaper-default
 
 ##
 ### Tail: Ezarcher Adjustment / Wallpaper
@@ -100,17 +100,20 @@ noto-fonts-cjk
 
 
 ################################################################################
-### Head: Ezarcher Adjustment / Modeling
+### Head: Ezarcher Adjustment / Modeling / XDG
 ##
 
 
 #ezarcher-adjustment-modeling-xdg-mime-applications
-#ezarcher-adjustment-modeling-xdg-user-dir-templates
 
+
+
+ezarcher-adjustment-modeling-xdg-user-dir-templates
+python-pygithub
 
 
 ##
-### Tail: Ezarcher Adjustment / Modeling
+### Tail: Ezarcher Adjustment / Modeling / XDG
 ################################################################################
 
 
@@ -351,7 +354,7 @@ qemu-desktop
 
 tree
 fzf
-python-pygithub
+
 
 xorg-server-xephyr
 
