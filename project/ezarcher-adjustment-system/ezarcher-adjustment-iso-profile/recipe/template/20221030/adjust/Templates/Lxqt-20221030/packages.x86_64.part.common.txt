@@ -318,6 +318,7 @@ mediainfo-gui
 ### Head: Ezarcher Adjustment / Donload
 ##
 
+yt-dlp
 youtube-dl
 filezilla
 
