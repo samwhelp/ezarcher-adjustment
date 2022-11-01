@@ -120,10 +120,24 @@ ln -sf /usr/lib/systemd/system/sddm.service ./ezreleng/airootfs/etc/systemd/syst
 }
 
 # Copy files to customize the ISO
+cpmyfiles_orginal () {
+cp pacman.conf ./ezreleng/
+cp profiledef.sh ./ezreleng/
+cp packages.x86_64 ./ezreleng/
+cp -r grub ./ezreleng/
+cp -r efiboot ./ezreleng/
+cp -r syslinux ./ezreleng/
+cp -r etc ./ezreleng/airootfs/
+cp -r opt ./ezreleng/airootfs/
+cp -r usr ./ezreleng/airootfs/
+ln -sf /usr/share/ezarcher ./ezreleng/airootfs/etc/skel/ezarcher
+}
+
 cpmyfiles () {
 cp pacman.conf ./ezreleng/
 cp profiledef.sh ./ezreleng/
 cp packages.x86_64 ./ezreleng/
+cat packages.x86_64.part >> ./ezreleng/packages.x86_64
 cp -r grub ./ezreleng/
 cp -r efiboot ./ezreleng/
 cp -r syslinux ./ezreleng/
@@ -139,13 +153,20 @@ echo "${MYHOSTNM}" > ./ezreleng/airootfs/etc/hostname
 }
 
 # Create passwd file
-crtpasswd () {
+crtpasswd_orginal () {
 echo "root:x:0:0:root:/root:/usr/bin/bash
 "${MYUSERNM}":x:1010:1010::/home/"${MYUSERNM}":/bin/bash" > ./ezreleng/airootfs/etc/passwd
 }
 
+crtpasswd () {
+cat > ./ezreleng/airootfs/etc/passwd << EOF
+root:x:0:0:root:/root:/usr/bin/bash
+${MYUSERNM}:x:1000:1000::/home/${MYUSERNM}:/bin/bash
+EOF
+}
+
 # Create group file
-crtgroup () {
+crtgroup_orginal () {
 echo "root:x:0:root
 sys:x:3:"${MYUSERNM}"
 adm:x:4:"${MYUSERNM}"
@@ -167,6 +188,29 @@ users:x:985:"${MYUSERNM}"
 "${MYUSERNM}":x:1010:" > ./ezreleng/airootfs/etc/group
 }
 
+crtgroup () {
+cat > ./ezreleng/airootfs/etc/group << EOF
+root:x:0:root
+sys:x:3:bin,${MYUSERNM}
+network:x:90:${MYUSERNM}
+power:x:98:${MYUSERNM}
+adm:x:999:${MYUSERNM}
+wheel:x:998:${MYUSERNM}
+uucp:x:987:${MYUSERNM}
+optical:x:990:${MYUSERNM}
+scanner:x:991:${MYUSERNM}
+rfkill:x:983:${MYUSERNM}
+video:x:986:${MYUSERNM}
+storage:x:988:${MYUSERNM}
+audio:x:995:${MYUSERNM}
+users:x:985:${MYUSERNM}
+nopasswdlogin:x:966:${MYUSERNM}
+autologin:x:967:${MYUSERNM}
+sambashare:x:959:${MYUSERNM}
+${MYUSERNM}:x:1000:
+EOF
+}
+
 # Create shadow file
 crtshadow () {
 usr_hash=$(openssl passwd -6 "${MYUSRPASSWD}")
@@ -176,7 +220,7 @@ echo "root:"${root_hash}":14871::::::
 }
 
 # create gshadow file
-crtgshadow () {
+crtgshadow_orginal () {
 echo "root:!*::root
 sys:!*::"${MYUSERNM}"
 adm:!*::"${MYUSERNM}"
@@ -195,6 +239,29 @@ storage:!*::"${MYUSERNM}"
 optical:!*::"${MYUSERNM}"
 sambashare:!*::"${MYUSERNM}"
 "${MYUSERNM}":!*::" > ./ezreleng/airootfs/etc/gshadow
+}
+
+crtgshadow () {
+cat > ./ezreleng/airootfs/etc/gshadow << EOF
+root:::root
+sys:!!::${MYUSERNM}
+network:!!::${MYUSERNM}
+power:!!::${MYUSERNM}
+adm:!!::${MYUSERNM}
+wheel:!!::${MYUSERNM}
+uucp:!!::${MYUSERNM}
+optical:!!::${MYUSERNM}
+scanner:!!::${MYUSERNM}
+rfkill:!!::${MYUSERNM}
+video:!!::${MYUSERNM}
+storage:!!::${MYUSERNM}
+audio:!!::${MYUSERNM}
+users:!!::${MYUSERNM}
+nopasswdlogin:!::${MYUSERNM}
+autologin:!::${MYUSERNM}
+sambashare:!::${MYUSERNM}
+${MYUSERNM}:!::
+EOF
 }
 
 # Set the keyboard layout
