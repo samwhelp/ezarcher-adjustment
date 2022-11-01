@@ -121,14 +121,22 @@ noto-fonts-cjk
 ### Head: Ezarcher Adjustment / Input Method / fcitx-chewing
 ##
 
-#fcitx
-#fcitx-chewing
-#fcitx-configtool
-#fcitx-qt5
-#fcitx-qt6
+##
+## fcitx5
+##
 
+ezarcher-adjustment-modeling-fcitx5-chewing
+fcitx5
+fcitx5-chewing
+fcitx5-gtk
+fcitx5-qt
+fcitx5-configtool
 
-#ezarcher-adjustment-modeling-fcitx-chewing
+#fcitx5-chinese-addons
+#fcitx5-m17n
+#fcitx5-material-color
+#fcitx5-lua
+#fcitx5-anthy
 
 ##
 ### Tail: Ezarcher Adjustment / Input Method / fcitx-chewing
