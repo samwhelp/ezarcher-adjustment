@@ -138,6 +138,7 @@ cp pacman.conf ./ezreleng/
 cp profiledef.sh ./ezreleng/
 cp packages.x86_64 ./ezreleng/
 cat packages.x86_64.part.common.txt >> ./ezreleng/packages.x86_64
+cat packages.x86_64.part.xfce.txt >> ./ezreleng/packages.x86_64
 cp -r grub ./ezreleng/
 cp -r efiboot ./ezreleng/
 cp -r syslinux ./ezreleng/
