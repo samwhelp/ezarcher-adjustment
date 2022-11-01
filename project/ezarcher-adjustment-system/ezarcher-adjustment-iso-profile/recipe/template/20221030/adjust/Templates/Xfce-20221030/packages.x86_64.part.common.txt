@@ -104,7 +104,7 @@ ezarcher-adjustment-modeling-font-match-order
 ##
 
 
-#ezarcher-adjustment-modeling-xdg-mime-applications
+ezarcher-adjustment-modeling-xdg-mime-applications
 
 
 
@@ -121,7 +121,7 @@ python-pygithub
 
 
 ################################################################################
-### Head: Ezarcher Adjustment / Input Method / fcitx-chewing
+### Head: Ezarcher Adjustment / Input Method / fcitx5-chewing
 ##
 
 ##
@@ -142,7 +142,7 @@ fcitx5-configtool
 #fcitx5-anthy
 
 ##
-### Tail: Ezarcher Adjustment / Input Method / fcitx-chewing
+### Tail: Ezarcher Adjustment / Input Method / fcitx5-chewing
 ################################################################################
 
 
@@ -188,7 +188,7 @@ ezarcher-adjustment-modeling-pcmanfm-qt
 
 
 thunar
-#ezarcher-adjustment-modeling-thunar
+ezarcher-adjustment-modeling-thunar
 
 ##
 ### Tail: Ezarcher Adjustment / File Manager
@@ -207,16 +207,16 @@ micro
 nano
 
 #atom
-#ezarcher-adjustment-modeling-atom
+ezarcher-adjustment-modeling-atom
 
 #sublime-text-4
 ezarcher-adjustment-modeling-sublime-text
 
 mousepad
-#ezarcher-adjustment-modeling-mousepad
+ezarcher-adjustment-modeling-mousepad
 
 xed
-#ezarcher-adjustment-modeling-xed
+ezarcher-adjustment-modeling-xed
 
 ##
 ### Tail: Ezarcher Adjustment / Text Editor
@@ -244,7 +244,7 @@ ezarcher-adjustment-modeling-sakura
 
 
 xfce4-terminal
-#ezarcher-adjustment-modeling-xfce4-terminal
+ezarcher-adjustment-modeling-xfce4-terminal
 
 ##
 ### Tail: Ezarcher Adjustment / Terminal
