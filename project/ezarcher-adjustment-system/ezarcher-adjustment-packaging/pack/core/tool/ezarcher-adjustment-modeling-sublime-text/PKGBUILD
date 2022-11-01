@@ -12,7 +12,7 @@
 pkgname=ezarcher-adjustment-modeling-sublime-text
 pkgver=0.1
 pkgrel=1
-pkgdesc="Xerolinux Adjustment / Modeling / Sublime Text 4"
+pkgdesc="Ezarcher Adjustment / Modeling / Sublime Text 4"
 url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-sublime-text"
 arch=('any')
 license=('MIT')

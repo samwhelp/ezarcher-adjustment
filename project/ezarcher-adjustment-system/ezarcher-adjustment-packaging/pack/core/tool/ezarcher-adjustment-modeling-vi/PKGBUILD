@@ -12,7 +12,7 @@
 pkgname=ezarcher-adjustment-modeling-vi
 pkgver=0.1
 pkgrel=1
-pkgdesc="Xerolinux Adjustment / Modeling / Vi"
+pkgdesc="Ezarcher Adjustment / Modeling / Vi"
 url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-vi"
 arch=('any')
 license=('MIT')

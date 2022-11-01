@@ -12,7 +12,7 @@
 pkgname=ezarcher-adjustment-modeling-pcmanfm-qt
 pkgver=0.1
 pkgrel=1
-pkgdesc="Xerolinux Adjustment / Modeling / Pcmanfm-qt"
+pkgdesc="Ezarcher Adjustment / Modeling / Pcmanfm-qt"
 url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-pcmanfm-qt"
 arch=('any')
 license=('MIT')

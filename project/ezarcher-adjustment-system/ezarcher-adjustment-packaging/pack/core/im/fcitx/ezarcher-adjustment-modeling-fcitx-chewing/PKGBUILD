@@ -9,7 +9,7 @@
 pkgname=ezarcher-adjustment-modeling-fcitx-chewing
 pkgver=0.1
 pkgrel=1
-pkgdesc="XeroLinux Adjustment / Modeling / Fcitx / Chewing"
+pkgdesc="Ezarcher Adjustment / Modeling / Fcitx / Chewing"
 url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/im/ezarcher-adjustment-modeling-fcitx-chewing"
 arch=('any')
 license=('MIT')

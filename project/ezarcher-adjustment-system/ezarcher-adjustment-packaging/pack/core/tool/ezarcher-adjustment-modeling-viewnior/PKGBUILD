@@ -12,7 +12,7 @@
 pkgname=ezarcher-adjustment-modeling-viewnior
 pkgver=0.1
 pkgrel=1
-pkgdesc="Xerolinux Adjustment / Modeling / Viewnior"
+pkgdesc="Ezarcher Adjustment / Modeling / Viewnior"
 url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-viewnior"
 arch=('any')
 license=('MIT')

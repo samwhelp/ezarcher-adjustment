@@ -9,7 +9,7 @@
 pkgname=ezarcher-adjustment-hello
 pkgver=0.1
 pkgrel=1
-pkgdesc="XeroLinux Adjustment Hello Script"
+pkgdesc="Ezarcher Adjustment Hello Script"
 url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/demo/ezarcher-adjustment-hello"
 arch=('any')
 license=('MIT')

@@ -3,7 +3,7 @@
 pkgname=ezarcher-adjustment-mirrorlist
 pkgver=0.1
 pkgrel=1
-pkgdesc="XeroLinux Adjustment Mirrorlist"
+pkgdesc="Ezarcher Adjustment Mirrorlist"
 url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/base/ezarcher-adjustment-mirrorlist"
 arch=('any')
 license=('MIT')
