@@ -37,8 +37,11 @@ ezarcher-adjustment-hello
 
 sakura
 qt5-styleplugins
-#xcursor-breeze
+
 sublime-text-4
+
+## [Package: xcursor-breeze] conflict [Package: breeze]
+#xcursor-breeze
 
 ##
 ### Tail: Ezarcher Adjustment / AUR
@@ -49,13 +52,13 @@ sublime-text-4
 ### Head: Ezarcher Adjustment / Appearance
 ##
 
-#ezarcher-adjustment-appearance-gtk-theme-dracula
+ezarcher-adjustment-appearance-gtk-theme-dracula
 ezarcher-adjustment-appearance-gtk-theme-gruvbox
 ezarcher-adjustment-appearance-gtk-theme-gruvbox-dark
-#ezarcher-adjustment-appearance-gtk-theme-numix-blue
-#ezarcher-adjustment-appearance-icon-theme-dracula
+ezarcher-adjustment-appearance-gtk-theme-numix-blue
+ezarcher-adjustment-appearance-icon-theme-dracula
 ezarcher-adjustment-appearance-icon-theme-gruvbox-dark
-#ezarcher-adjustment-appearance-icon-theme-numix
+ezarcher-adjustment-appearance-icon-theme-numix
 ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
 
 
