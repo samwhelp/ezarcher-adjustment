@@ -1,0 +1,124 @@
+
+##
+## * https://wiki.archlinux.org/title/Creating_packages
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/makepkg
+## * https://wiki.archlinux.org/title/PKGBUILD
+## * https://wiki.archlinux.org/title/Arch_package_guidelines
+##
+
+pkgname=ezarcher-adjustment-appearance-icon-theme-dracula
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Appearance / Icon Theme / Dracula"
+url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/theme/dracula/ezarcher-adjustment-appearance-icon-theme-dracula"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+##
+## ## Source
+##
+## * http://tw.archive.ubuntu.com/ubuntu/pool/universe/u/ubuntustudio-look/
+## * http://tw.archive.ubuntu.com/ubuntu/pool/universe/u/ubuntustudio-look/numix-blue-gtk-theme_20.04.1_all.deb
+## * http://tw.archive.ubuntu.com/ubuntu/pool/universe/u/ubuntustudio-look/numix-blue-gtk-theme_20.10.5_all.deb
+##
+## ## Note
+##
+## * https://samwhelp.github.io/note-about-manjaro/read/theme/source/numix.html
+## * https://github.com/samwhelp/note-about-manjaro/tree/gh-pages/_demo/project/style-xfce/style-theme/theme-numix
+##
+
+
+
+
+prepare () {
+
+	theme_asset_download_icon_theme_dracula
+
+	return 0
+
+	cp -af ../asset/. "${srcdir}"
+}
+
+
+package () {
+
+
+	##
+	## Path
+	##
+
+	#echo "${pkgdir}"
+	#echo "${srcdir}"
+
+	#local sys_etc_dir_path="${pkgdir}/etc"
+	#local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
+	#local sys_skel_dir_path="${sys_etc_dir_path}/skel"
+
+
+	##
+	## Prepare Dir
+	##
+
+	#mkdir -p "$sys_etc_dir_path"
+	#mkdir -p "$sys_share_dir_path"
+
+	install -dm755 "${pkgdir}/usr/share/icons/Dracula"
+
+
+	##
+	## Main Content
+	##
+
+	## /usr/share/icons/Dracula
+	cp -af "${srcdir}/asset/dracula-icon-theme/Dracula/." "${pkgdir}/usr/share/icons/Dracula"
+
+
+	return 0
+}
+
+
+################################################################################
+### Head: theme
+##
+
+theme_asset_download_icon_theme_dracula () {
+
+	##
+	## https://draculatheme.com/gtk
+	##
+
+	## pwd: "${srcdir}"
+
+
+	## create dir
+	mkdir -p 'asset/dracula-icon-theme'
+
+	## cd work dir
+	cd 'asset/dracula-icon-theme'
+
+	## download
+	wget -c 'https://github.com/dracula/gtk/files/5214870/Dracula.zip'
+
+
+	## extract
+	unzip 'Dracula.zip'
+
+
+	## back: "${srcdir}"
+	##cd ../..
+	cd "${OLDPWD}"
+
+}
+
+
+##
+### Tail: theme
+################################################################################
