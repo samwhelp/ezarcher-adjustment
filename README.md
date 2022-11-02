@@ -26,5 +26,5 @@
 
 | ISO Build Template |
 | --- |
-| [adjust](project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/adjust/Templates) |
-| [orginal](project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/orginal/Templates) |
+| [adjust](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/adjust/Templates) |
+| [orginal](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/orginal/Templates) |
