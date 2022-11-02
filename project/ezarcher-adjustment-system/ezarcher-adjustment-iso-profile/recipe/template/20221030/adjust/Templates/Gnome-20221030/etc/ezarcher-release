@@ -1,0 +1,4 @@
+LSB_VERSION=1.4
+DISTRIB_ID=Ezarcher-Adjustment-Gnome-Shell
+DISTRIB_RELEASE=rolling
+DISTRIB_DESCRIPTION="Ezarcher Adjustment / GNOME Shell"
