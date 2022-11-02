@@ -15,8 +15,16 @@
 
 ## ISO Build System
 
-| iso-build-system |
+| ISO Build System |
 | --- |
 | [ezarcher-adjustment-iso-profile](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile) |
 | [ezarcher-adjustment-packaging](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging) |
 | [ezarcher-adjustment-repository](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository) |
+
+
+## ISO Build Template
+
+| ISO Build Template |
+| --- |
+| [adjust](project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/adjust/Templates) |
+| [orginal](project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/orginal/Templates) |
