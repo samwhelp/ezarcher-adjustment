@@ -1,0 +1,4 @@
+graphite-kde-theme-git
+graphite-gtk-theme-git
+graphite-cursor-theme-git
+
