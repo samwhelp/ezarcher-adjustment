@@ -1,0 +1,3 @@
+qogir-kde-theme-git
+qogir-gtk-theme-git
+qogir-icon-theme-git
