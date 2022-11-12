@@ -1,0 +1,4 @@
+whitesur-kde-theme-git
+whitesur-icon-theme-git
+whitesur-cursor-theme-git
+whitesur-gtk-theme-git

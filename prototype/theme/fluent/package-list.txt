@@ -1,0 +1,4 @@
+fluent-kde-theme-git
+fluent-icon-theme-git
+fluent-gtk-theme-git
+fluent-cursor-theme-git

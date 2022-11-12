@@ -1,0 +1,5 @@
+colloid-kde-theme-git
+colloid-gtk-theme-git
+colloid-icon-theme-git
+colloid-cursors-git
+
