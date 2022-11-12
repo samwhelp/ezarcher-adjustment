@@ -1,5 +1,5 @@
 vimix-theme-kde-git
-vimix-gtk-themes-git
+#vimix-gtk-themes-git
 vimix-icon-theme-git
 vimix-cursors-git
 vimix-gtk-themes-translucent-git
