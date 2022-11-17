@@ -1,0 +1,22 @@
+
+##
+## File Manager
+##
+
+pcmanfm
+
+
+##
+## Terminal
+##
+
+#sakura
+lxterminal
+
+
+
+##
+## Archiver
+##
+
+engrampa
