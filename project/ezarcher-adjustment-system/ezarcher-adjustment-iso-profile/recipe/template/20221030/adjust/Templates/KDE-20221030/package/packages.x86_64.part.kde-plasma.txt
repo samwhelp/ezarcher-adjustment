@@ -17,6 +17,10 @@ ezarcher-adjustment-modeling-kde-plasma-keybind-main
 ezarcher-adjustment-modeling-kde-plasma-desktop-layout-panel-floating-center
 
 
+## Theme
+ezarcher-adjustment-modeling-kde-plasma-theme-breeze-dark
+
+
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / KDE Plasma
 ################################################################################
