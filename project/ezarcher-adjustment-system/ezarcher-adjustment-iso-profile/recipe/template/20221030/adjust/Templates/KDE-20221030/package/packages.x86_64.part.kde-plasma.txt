@@ -4,7 +4,18 @@
 ### Head: Ezarcher Adjustment / Desktop Environment / KDE Plasma
 ##
 
-#ezarcher-adjustment-modeling-kde-plasma
+
+##
+## Keybind
+##
+ezarcher-adjustment-modeling-kde-plasma-keybind-main
+
+
+##
+## Layout
+##
+ezarcher-adjustment-modeling-kde-plasma-desktop-layout-panel-floating-center
+
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / KDE Plasma
@@ -15,11 +26,18 @@
 ### Head: Ezarcher Adjustment / Dock
 ##
 
+
+##
+## Plank
+##
 plank
 #ezarcher-adjustment-autostart-plank-on-kde-plasma
 ezarcher-adjustment-modeling-plank
 
 
+##
+## Cairo Dock
+##
 cairo-dock
 #ezarcher-adjustment-autostart-cairo-dock-on-kde-plasma
 
