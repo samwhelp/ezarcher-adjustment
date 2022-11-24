@@ -1,4 +1,2 @@
 [Greeter][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/FallenLeaf/
-PreviewImage=/usr/share/wallpapers/FallenLeaf/
-SlidePaths=/usr/share/wallpapers/
+Image=file:///usr/share/wallpapers/FallenLeaf/contents/images/2560x1600.jpg
