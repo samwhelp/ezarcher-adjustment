@@ -3,6 +3,6 @@
 ## tool
 ##
 
-sakura
+#sakura
 pcmanfm-qt
 yakuake
