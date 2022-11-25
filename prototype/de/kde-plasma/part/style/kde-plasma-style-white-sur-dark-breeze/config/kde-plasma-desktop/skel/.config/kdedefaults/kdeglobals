@@ -5,4 +5,5 @@ ColorScheme=WhiteSurDark
 Theme=WhiteSur-dark
 
 [KDE]
-widgetStyle=Breeze
+LookAndFeelPackage=com.github.vinceliuice.WhiteSur-dark
+widgetStyle=kvantum-dark
