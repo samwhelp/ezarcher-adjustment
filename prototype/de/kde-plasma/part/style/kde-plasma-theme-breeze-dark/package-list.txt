@@ -1,8 +1,11 @@
 
 ##
-## tool
+## Tool
 ##
 
-#sakura
-pcmanfm-qt
-yakuake
+kvantum
+
+
+##
+## Theme
+##
