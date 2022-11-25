@@ -2,7 +2,8 @@
 ColorScheme=Layan
 
 [Icons]
-Theme=Tela
+Theme=Fluent-orange-dark
 
 [KDE]
-widgetStyle=Breeze
+LookAndFeelPackage=com.github.vinceliuice.Layan
+widgetStyle=kvantum-dark
