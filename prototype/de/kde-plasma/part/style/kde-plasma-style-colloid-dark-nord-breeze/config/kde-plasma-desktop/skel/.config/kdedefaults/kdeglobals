@@ -2,7 +2,8 @@
 ColorScheme=ColloidDarkNord
 
 [Icons]
-Theme=Colloid-nord-dark
+Theme=Colloid-dark
 
 [KDE]
-widgetStyle=Breeze
+LookAndFeelPackage=com.github.vinceliuice.Colloid-dark-nord
+widgetStyle=kvantum-dark
