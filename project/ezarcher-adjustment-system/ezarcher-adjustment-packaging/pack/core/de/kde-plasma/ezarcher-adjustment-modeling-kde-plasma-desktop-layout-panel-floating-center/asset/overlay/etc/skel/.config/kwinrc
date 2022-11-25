@@ -20,5 +20,10 @@ LayoutMode=1
 [MouseBindings]
 CommandTitlebarWheel=Shade/Unshade
 
+[Windows]
+RollOverDesktops=true
+
 [org.kde.kdecoration2]
+library=org.kde.breeze
 theme=Breeze
+
