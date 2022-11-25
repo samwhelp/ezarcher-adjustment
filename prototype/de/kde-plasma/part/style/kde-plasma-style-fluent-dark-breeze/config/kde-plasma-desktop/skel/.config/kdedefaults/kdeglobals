@@ -5,4 +5,5 @@ ColorScheme=FluentDark
 Theme=Fluent-dark
 
 [KDE]
-widgetStyle=Breeze
+LookAndFeelPackage=com.github.vinceliuice.Fluent-dark
+widgetStyle=kvantum-dark
