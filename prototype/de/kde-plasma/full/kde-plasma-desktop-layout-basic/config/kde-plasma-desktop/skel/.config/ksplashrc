@@ -1,2 +1,3 @@
 [KSplash]
-Theme=com.github.vinceliuice.Fluent
+Engine=KSplashQML
+Theme=org.kde.breeze.desktop
