@@ -2,12 +2,6 @@
 # kde-plasma / Adjustment
 
 
-## Spec
-
-* [keybind](spec-keybind.md)
-* [mousebind](spec-mousebind.md)
-
-
 ## Note
 
 run
