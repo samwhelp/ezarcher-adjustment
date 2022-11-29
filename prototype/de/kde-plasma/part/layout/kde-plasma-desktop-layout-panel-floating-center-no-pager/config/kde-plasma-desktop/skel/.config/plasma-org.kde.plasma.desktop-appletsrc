@@ -52,9 +52,6 @@ plugin=org.kde.plasma.kickoff
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=100
 
-[Containments][2][Applets][3][Configuration][Configuration/General]
-showAppsByName=true
-
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
 
