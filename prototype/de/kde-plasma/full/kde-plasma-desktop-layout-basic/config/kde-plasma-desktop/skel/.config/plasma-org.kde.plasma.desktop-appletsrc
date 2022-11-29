@@ -52,11 +52,9 @@ plugin=org.kde.plasma.kickoff
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=100
 
-[Containments][2][Applets][3][Configuration][Configuration/General]
-showAppsByName=true
-
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
+favorites=applications:pcmanfm-qt.desktop,applications:sublime_text.desktop,preferred://browser,applications:sakura.desktop,applications:systemsettings.desktop,applications:org.kde.discover.desktop
 
 [Containments][2][Applets][3][Configuration][Shortcuts]
 global=Alt+F1
