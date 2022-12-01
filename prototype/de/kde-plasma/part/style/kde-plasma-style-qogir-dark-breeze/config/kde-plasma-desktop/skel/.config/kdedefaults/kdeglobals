@@ -1,0 +1,9 @@
+[General]
+ColorScheme=QogirDark
+
+[Icons]
+Theme=Qogir-dark
+
+[KDE]
+LookAndFeelPackage=com.github.vinceliuice.Qogir-dark
+widgetStyle=kvantum-dark
