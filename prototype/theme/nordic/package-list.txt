@@ -1,0 +1,9 @@
+nordic-kde-git
+nordic-kde-transparency-git
+nordic-theme
+kvantum-theme-nordic-git
+nordic-darker-theme
+nordic-polar-theme
+nordic-polar-standard-buttons-theme
+nordic-standard-buttons-theme
+nordic-wallpapers
