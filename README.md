@@ -52,8 +52,10 @@
 | Style |
 | --- |
 | [kde-plasma-theme-breeze-dark](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-theme-breeze-dark) |
+| [kde-plasma-style-nordic-darker-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-nordic-darker-breeze) |
 | [kde-plasma-style-colloid-dark-nord-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-colloid-dark-nord-breeze) |
 | [kde-plasma-style-fluent-dark-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-fluent-dark-breeze) |
 | [kde-plasma-style-layan-solid-dark-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-layan-solid-dark-breeze) |
 | [kde-plasma-style-white-sur-dark-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-white-sur-dark-breeze) |
+| [kde-plasma-style-qogir-dark-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-qogir-dark-breeze) |
 
