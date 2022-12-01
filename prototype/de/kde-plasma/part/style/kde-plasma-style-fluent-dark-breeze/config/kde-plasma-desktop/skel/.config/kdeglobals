@@ -139,7 +139,10 @@ ForegroundVisited=0,188,212
 DirSelectDialog Size=837,584
 
 [General]
-ColorSchemeHash=d2f9f23c62b2c7529878a3b4c96c2902e98086db
+ColorScheme=FluentDark
+
+[Icons]
+Theme=Fluent-dark
 
 [KDE]
 LookAndFeelPackage=com.github.vinceliuice.Fluent-dark
