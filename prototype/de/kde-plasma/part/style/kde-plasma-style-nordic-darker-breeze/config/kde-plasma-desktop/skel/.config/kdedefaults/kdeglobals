@@ -1,0 +1,9 @@
+[General]
+ColorScheme=NordicDarker-Transparent
+
+[Icons]
+Theme=Tela-nord-dark
+
+[KDE]
+LookAndFeelPackage=Nordic
+widgetStyle=kvantum-dark
