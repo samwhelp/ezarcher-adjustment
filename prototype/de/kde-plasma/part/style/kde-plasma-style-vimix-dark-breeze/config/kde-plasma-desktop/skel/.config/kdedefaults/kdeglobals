@@ -1,0 +1,9 @@
+[General]
+ColorScheme=VimixDark
+
+[Icons]
+Theme=Tela-nord-dark
+
+[KDE]
+LookAndFeelPackage=com.github.vinceliuice.Vimix-Dark
+widgetStyle=kvantum-dark
