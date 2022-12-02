@@ -1,0 +1,2 @@
+gruvbox-dark-gtk
+gruvbox-dark-icons-gtk

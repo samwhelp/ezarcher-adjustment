@@ -1,0 +1,5 @@
+#kde-gruvbox-git
+konsole-gruvbox
+
+xcursor-simp1e-gruvbox-light
+xcursor-simp1e-gruvbox-dark
