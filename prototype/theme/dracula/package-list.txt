@@ -1,0 +1,9 @@
+ant-dracula-kde-theme-git 
+ant-dracula-kvantum-theme-git
+
+dracula-gtk-theme-git
+dracula-xresources-git
+dracula-dircolors-git
+dracula-icons-git
+
+konsole-dracula-git
