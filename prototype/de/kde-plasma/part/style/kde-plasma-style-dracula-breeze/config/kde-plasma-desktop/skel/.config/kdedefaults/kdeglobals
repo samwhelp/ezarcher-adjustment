@@ -1,0 +1,9 @@
+[General]
+ColorScheme=Dracula
+
+[Icons]
+Theme=Dracula
+
+[KDE]
+LookAndFeelPackage=Dracula
+widgetStyle=kvantum-dark
