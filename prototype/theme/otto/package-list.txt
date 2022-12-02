@@ -1,0 +1,2 @@
+otto-kde-git
+kvantum-theme-otto-git
