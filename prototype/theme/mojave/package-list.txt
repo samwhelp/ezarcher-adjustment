@@ -1,0 +1,7 @@
+mcmojave-kde-theme-git
+#mojave-gtk-theme
+mojave-gtk-theme-git
+#mcmojave-cursors
+mcmojave-cursors-git
+#mcmojave-circle-icon-theme
+#mcmojave-circle-icon-theme-git
