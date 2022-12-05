@@ -46,7 +46,7 @@ plugin=org.kde.plasma.kicker
 
 ```
 [Containments][2][Applets][3]
-plugin=org.kde.plasma.kickdash
+plugin=org.kde.plasma.kickerdash
 ```
 
 ```

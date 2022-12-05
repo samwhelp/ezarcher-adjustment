@@ -38,7 +38,7 @@ AppletOrder=3;5;4;6;7;20;21
 
 ```
 [Containments][2][Applets][3]
-plugin=org.kde.plasma.kickdash
+plugin=org.kde.plasma.kickerdash
 ```
 
 
