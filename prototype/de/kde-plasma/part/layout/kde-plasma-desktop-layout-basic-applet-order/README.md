@@ -30,6 +30,16 @@ AppletOrder=3;4;5;6;7;20;21
 AppletOrder=3;5;4;6;7;20;21
 ```
 
+### Panel Opacity
+
+* [~/plasmashellrc](config/kde-plasma-desktop/skel/.config/plasmashellrc#L2)
+
+
+```
+[PlasmaViews][Panel 2]
+panelOpacity=2
+```
+
 
 ## Howto
 

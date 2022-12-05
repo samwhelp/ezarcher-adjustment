@@ -41,6 +41,17 @@ plugin=org.kde.plasma.kickoff
 ```
 
 
+### Panel Opacity
+
+* [~/plasmashellrc](config/kde-plasma-desktop/skel/.config/plasmashellrc#L7)
+
+
+```
+[PlasmaViews][Panel 2]
+panelOpacity=2
+```
+
+
 ### Panel Floating
 
 * [~/plasmashellrc](config/kde-plasma-desktop/skel/.config/plasmashellrc#L6)

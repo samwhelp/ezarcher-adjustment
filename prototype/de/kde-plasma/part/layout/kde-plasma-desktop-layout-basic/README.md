@@ -55,6 +55,16 @@ plugin=org.kde.plasma.navdexie
 ```
 
 
+### Panel Opacity
+
+* [~/plasmashellrc](config/kde-plasma-desktop/skel/.config/plasmashellrc#L2)
+
+
+```
+[PlasmaViews][Panel 2]
+panelOpacity=2
+```
+
 
 ## Howto
 
