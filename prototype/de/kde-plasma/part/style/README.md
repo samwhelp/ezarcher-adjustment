@@ -5,6 +5,11 @@
 * [Project](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style)
 
 
+## KDE Theme
+
+* [theme-install](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/theme)
+
+
 ## Application Appearance
 
 
