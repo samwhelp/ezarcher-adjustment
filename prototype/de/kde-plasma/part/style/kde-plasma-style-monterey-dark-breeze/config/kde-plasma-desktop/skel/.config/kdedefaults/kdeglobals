@@ -1,0 +1,9 @@
+[General]
+ColorScheme=MontereyDark
+
+[Icons]
+Theme=WhiteSur-dark
+
+[KDE]
+LookAndFeelPackage=com.github.vinceliuice.Monterey-dark
+widgetStyle=kvantum-dark
