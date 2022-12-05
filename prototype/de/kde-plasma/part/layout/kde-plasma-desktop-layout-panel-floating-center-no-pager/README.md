@@ -41,6 +41,16 @@ plugin=org.kde.plasma.kickoff
 ```
 
 
+### Panel Floating
+
+* [~/plasmashellrc](config/kde-plasma-desktop/skel/.config/plasmashellrc#L6)
+
+
+```
+[PlasmaViews][Panel 2]
+floating=1
+```
+
 
 ## Howto
 
