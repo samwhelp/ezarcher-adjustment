@@ -31,4 +31,4 @@
 | Style |
 | --- |
 | [kde-plasma-style-white-sur-dark-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-white-sur-dark-breeze) |
- [kde-plasma-style-monterey-dark-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-monterey-dark-breeze) |
+| [kde-plasma-style-monterey-dark-breeze](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/style/kde-plasma-style-monterey-dark-breeze) |
