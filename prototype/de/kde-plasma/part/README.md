@@ -17,6 +17,7 @@
 | [kde-plasma-desktop-layout-panel-floating-center](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/layout/kde-plasma-desktop-layout-panel-floating-center) |
 | [kde-plasma-desktop-layout-panel-floating-center-applet-order](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/layout/kde-plasma-desktop-layout-panel-floating-center-applet-order) |
 | [kde-plasma-desktop-layout-panel-floating-center-no-pager](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/layout/kde-plasma-desktop-layout-panel-floating-center-no-pager) |
+| [kde-plasma-desktop-layout-kickerdash-panel-floating-center](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/de/kde-plasma/part/layout/kde-plasma-desktop-layout-kickerdash-panel-floating-center) |
 
 
 | Style |
