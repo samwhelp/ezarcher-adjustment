@@ -30,6 +30,31 @@ AppletOrder=3;4;5;6;7;20;21
 AppletOrder=3;5;4;6;7;20;21
 ```
 
+### Application Menu Launcher
+
+* [~/.config/plasma-org.kde.plasma.desktop-appletsrc](config/kde-plasma-desktop/skel/.config/plasma-org.kde.plasma.desktop-appletsrc#L50)
+
+```
+[Containments][2][Applets][3]
+plugin=org.kde.plasma.kickoff
+```
+
+```
+[Containments][2][Applets][3]
+plugin=org.kde.plasma.kicker
+```
+
+```
+[Containments][2][Applets][3]
+plugin=org.kde.plasma.kickdash
+```
+
+```
+[Containments][2][Applets][3]
+plugin=org.kde.plasma.navdexie
+```
+
+
 
 ## Howto
 
