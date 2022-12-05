@@ -1,0 +1,9 @@
+[General]
+ColorScheme=OrchisDark
+
+[Icons]
+Theme=Tela-dark
+
+[KDE]
+LookAndFeelPackage=com.github.vinceliuice.Orchis-dark
+widgetStyle=kvantum-dark
