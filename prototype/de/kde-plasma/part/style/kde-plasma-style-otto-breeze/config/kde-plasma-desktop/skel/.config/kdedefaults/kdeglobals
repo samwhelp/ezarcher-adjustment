@@ -1,0 +1,9 @@
+[General]
+ColorScheme=Otto
+
+[Icons]
+Theme=Dracula
+
+[KDE]
+LookAndFeelPackage=Otto
+widgetStyle=kvantum-dark
