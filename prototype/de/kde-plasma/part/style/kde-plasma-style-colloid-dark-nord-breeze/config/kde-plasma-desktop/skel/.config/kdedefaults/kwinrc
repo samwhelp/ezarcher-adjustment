@@ -1,13 +1,13 @@
 [Compositing]
 Enabled=true
 
+[MouseBindings]
+CommandTitlebarWheel=Shade/Unshade
+
 [TabBox]
 DesktopLayout=org.kde.breeze.desktop
 DesktopListLayout=org.kde.breeze.desktop
 LayoutName=org.kde.breeze.desktop
-
-[MouseBindings]
-CommandTitlebarWheel=Shade/Unshade
 
 [Windows]
 Placement=Centered
