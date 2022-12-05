@@ -18,7 +18,7 @@ plasmashell 5.25.5
 
 ### AppletOrder
 
-* [~/.config/plasma-org.kde.plasma.desktop-appletsrc](https://github.com/samwhelp/ezarcher-adjustment/blob/main/prototype/de/kde-plasma/part/layout/kde-plasma-desktop-layout-basic-applet-order/config/kde-plasma-desktop/skel/.config/plasma-org.kde.plasma.desktop-appletsrc#L113)
+* [~/.config/plasma-org.kde.plasma.desktop-appletsrc](config/kde-plasma-desktop/skel/.config/plasma-org.kde.plasma.desktop-appletsrc#L113)
 
 
 ```

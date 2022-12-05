@@ -18,11 +18,13 @@ plasmashell 5.25.5
 
 ### AppletOrder
 
-* plasma-org.kde.plasma.desktop-appletsrc
+* [~/.config/plasma-org.kde.plasma.desktop-appletsrc](config/kde-plasma-desktop/skel/.config/plasma-org.kde.plasma.desktop-appletsrc#L113)
+
 
 ```
 AppletOrder=3;4;5;6;7;20;21
 ```
+
 
 ```
 AppletOrder=3;5;4;6;7;20;21
