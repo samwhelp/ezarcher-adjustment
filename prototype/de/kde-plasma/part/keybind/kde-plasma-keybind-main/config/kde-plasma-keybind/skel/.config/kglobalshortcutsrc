@@ -208,7 +208,7 @@ _launch=Alt+Shift+E,none,Kate
 NewTab=none,none,Open a New Tab
 NewWindow=none,none,Open a New Window
 _k_friendly_name=Konsole
-_launch=Ctrl+Alt+T,Ctrl+Alt+T,Konsole
+_launch=Ctrl+Alt+T\tAlt+Shift+T,Ctrl+Alt+T,Konsole
 
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
