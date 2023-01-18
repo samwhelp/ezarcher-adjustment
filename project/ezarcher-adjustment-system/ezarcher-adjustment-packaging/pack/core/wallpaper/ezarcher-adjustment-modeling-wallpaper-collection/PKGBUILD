@@ -25,11 +25,9 @@ options=(!strip !emptydirs)
 
 prepare () {
 
-	#cp -af ../asset/. "${srcdir}"
+	return 0
 
-	echo "prepare"
-
-	return;
+	cp -af ../asset/. "${srcdir}"
 
 }
 

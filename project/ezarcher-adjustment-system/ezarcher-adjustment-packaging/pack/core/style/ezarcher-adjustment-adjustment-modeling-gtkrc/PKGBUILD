@@ -24,9 +24,10 @@ options=(!strip !emptydirs)
 
 prepare () {
 
+	cp -af ../asset/. "${srcdir}"
+
 	return 0
 
-	cp -af ../asset/. "${srcdir}"
 }
 
 
@@ -57,6 +58,14 @@ package () {
 	## Main Config
 	##
 
+
+	##
+	## vte-terminal.css
+	##
+	install -Dm644 "${srcdir}/overlay/etc/skel/.config/gtk-3.0/vte-terminal.css" "${pkgdir}/etc/skel/.config/gtk-3.0/vte-terminal.css"
+	install -Dm644 "${srcdir}/overlay/etc/skel/.config/gtk-3.0/gtk.css" "${pkgdir}/etc/skel/.config/gtk-3.0/gtk.css"
+
+
 	##
 	## gruvbox-dark
 	##
@@ -64,6 +73,7 @@ package () {
 	cd "${pkgdir}/etc/skel"
 	## /etc/skel/.gtkrc-2.0 -> ../.local/share/gtkrc-profile/gruvbox-dark/skel/.gtkrc-2.0
 	ln -sf ./.local/share/gtkrc-profile/gruvbox-dark/skel/.gtkrc-2.0 .gtkrc-2.0
+
 
 	cd "${pkgdir}/etc/skel/.config/gtk-3.0"
 	## /etc/skel/.config/gtk-3.0/settings.ini -> ../.local/share/gtkrc-profile/gruvbox-dark/skel/.config/gtk-3.0/settings.ini
