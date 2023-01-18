@@ -364,6 +364,7 @@ xfconf
 xfce4-settings
 xfce4-notifyd
 xfce4-terminal
+xfce-polkit
 thunar
 pcmanfm
 lxterminal
