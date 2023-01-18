@@ -8,6 +8,7 @@ ezarcher-adjustment-modeling-openbox
 ezarcher-adjustment-modeling-openbox-with-tint2-panel
 ezarcher-adjustment-modeling-openbox-use-xfce-xsettings-gruvbox
 ezarcher-adjustment-util-openboxrc-ctrl
+ezarcher-adjustment-util-wallpaper-select-feh
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Openbox
