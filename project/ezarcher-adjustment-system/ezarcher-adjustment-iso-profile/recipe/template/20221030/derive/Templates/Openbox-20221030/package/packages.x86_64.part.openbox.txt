@@ -4,7 +4,10 @@
 ### Head: Ezarcher Adjustment / Desktop Environment / Openbox
 ##
 
-#ezarcher-adjustment-modeling-openbox
+ezarcher-adjustment-modeling-openbox
+ezarcher-adjustment-modeling-openbox-with-tint2-panel
+ezarcher-adjustment-modeling-openbox-use-xfce-xsettings-gruvbox
+ezarcher-adjustment-util-openboxrc-ctrl
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Openbox

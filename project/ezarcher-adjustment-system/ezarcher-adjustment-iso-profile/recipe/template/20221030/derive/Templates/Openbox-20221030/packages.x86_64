@@ -365,6 +365,8 @@ xfce4-notifyd
 xfce4-terminal
 thunar
 pcmanfm
+python-pyxdg
+
 
 # Display Manager
 sddm
