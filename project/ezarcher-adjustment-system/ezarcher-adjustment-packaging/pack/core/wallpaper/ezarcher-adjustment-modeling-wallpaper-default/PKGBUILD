@@ -36,6 +36,38 @@ package () {
 	## Main Config
 	##
 
-	cp -af "${srcdir}/overlay/." "${pkgdir}"
+	#cp -af "${srcdir}/overlay/." "${pkgdir}"
 
+
+	mod_wallpaper_link_default_ezarcher_adjustment
+
+	#mod_wallpaper_link_default_xfce
+
+}
+
+mod_wallpaper_link_default_ezarcher_adjustment () {
+
+	install -dm755 "${pkgdir}/usr/share/backgrounds"
+
+	cd "${pkgdir}/usr/share/backgrounds"
+
+	ln -sf ezarcher-adjustment/default.jpg default.jpg
+
+	ln -sf ezarcher-adjustment/default-login.jpg default-login.jpg
+
+	cd "${OLDPWD}"
+}
+
+
+mod_wallpaper_link_default_xfce () {
+
+	install -dm755 "${pkgdir}/usr/share/backgrounds"
+
+	cd "${pkgdir}/usr/share/backgrounds"
+
+	ln -sf xfce/Butterfly.jpg default.jpg
+
+	ln -sf xfce/Butterfly.jpg default-login.jpg
+
+	cd "${OLDPWD}"
 }
