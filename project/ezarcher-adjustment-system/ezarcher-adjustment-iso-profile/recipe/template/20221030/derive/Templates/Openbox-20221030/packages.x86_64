@@ -353,11 +353,13 @@ xarchiver
 # Openbox
 openbox
 obconf
+obmenu-generator
+python-pyxdg
 lxappearance
 lxappearance-obconf
-tint2
 feh
 picom
+tint2
 gsimplecal
 xfconf
 xfce4-settings
@@ -365,7 +367,7 @@ xfce4-notifyd
 xfce4-terminal
 thunar
 pcmanfm
-python-pyxdg
+lxterminal
 
 
 # Display Manager
