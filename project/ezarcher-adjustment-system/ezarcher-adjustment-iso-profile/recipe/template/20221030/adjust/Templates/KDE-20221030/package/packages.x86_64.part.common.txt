@@ -84,6 +84,8 @@ xfce4-artwork
 
 ezarcher-adjustment-modeling-wallpaper-default
 
+ezarcher-adjustment-modeling-wallpaper-collection
+
 ##
 ### Tail: Ezarcher Adjustment / Wallpaper
 ################################################################################
