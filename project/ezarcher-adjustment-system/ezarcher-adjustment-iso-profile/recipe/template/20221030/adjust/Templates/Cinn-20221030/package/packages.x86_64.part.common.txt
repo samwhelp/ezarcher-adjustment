@@ -184,6 +184,9 @@ brotli
 ### Head: Ezarcher Adjustment / File Manager
 ##
 
+pcmanfm
+ezarcher-adjustment-modeling-pcmanfm
+
 pcmanfm-qt
 ezarcher-adjustment-modeling-pcmanfm-qt
 
