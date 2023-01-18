@@ -246,6 +246,9 @@ firefox
 ### Head: Ezarcher Adjustment / Terminal
 ##
 
+lxterminal
+ezarcher-adjustment-modeling-lxterminal
+
 #sakura
 ezarcher-adjustment-modeling-sakura
 
