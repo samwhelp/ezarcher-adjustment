@@ -153,8 +153,7 @@ fcitx5-configtool
 ##
 
 rofi
-
-#ezarcher-adjustment-modeling-rofi
+ezarcher-adjustment-modeling-rofi
 
 ##
 ### Tail: Ezarcher Adjustment / App Launcher
