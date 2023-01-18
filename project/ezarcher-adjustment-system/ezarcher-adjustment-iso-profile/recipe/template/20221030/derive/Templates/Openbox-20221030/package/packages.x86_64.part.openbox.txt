@@ -31,5 +31,10 @@ cairo-dock
 
 
 ##
+## mate-volume-control-status-icon
+##
+ezarcher-adjustment-autostart-mate-volume-control-status-icon-on-openbox
+
+##
 ### Tail: Ezarcher Adjustment / Dock
 ################################################################################
