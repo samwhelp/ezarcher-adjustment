@@ -367,7 +367,7 @@ xfce4-terminal
 thunar
 pcmanfm
 lxterminal
-## [obmenu-generator] and [] from aur
+## [obmenu-generator] and [perl-linux-desktopfiles] from aur
 obmenu-generator
 perl-linux-desktopfiles
 
