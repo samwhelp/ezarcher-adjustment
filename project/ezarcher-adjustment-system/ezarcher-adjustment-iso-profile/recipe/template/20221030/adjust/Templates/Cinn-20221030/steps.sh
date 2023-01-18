@@ -301,6 +301,12 @@ sed -i "s/us/"${KEYMP}"/g" ./ezreleng/airootfs/etc/default/keyboard
 #echo "C.UTF-8 UTF-8" >> ./ezreleng/airootfs/etc/locale.gen
 }
 
+crtlocaltime () {
+
+ln -sf /usr/share/zoneinfo/Asia/Taipei ./ezreleng/airootfs/etc/localtime
+
+}
+
 # Start mkarchiso
 runmkarchiso () {
 mkarchiso -v -w ./work -o ./out ./ezreleng
@@ -327,6 +333,7 @@ crtgshadow
 setkeylayout
 crtkeyboard
 crtlocalec
+crtlocaltime
 runmkarchiso
 rmezrepo
 
