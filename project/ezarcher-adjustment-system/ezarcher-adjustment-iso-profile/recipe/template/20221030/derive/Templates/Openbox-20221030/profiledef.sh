@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="ezarcher-xfce"
-iso_label="EZARCHER-XFCE_$(date +%y%m%d)"
+iso_name="ezarcher-openbox"
+iso_label="EZARCHER-OPENBOX_$(date +%y%m%d)"
 iso_publisher="Ezarcher Linux <https://sourceforge.net/projects/ezarch/>"
 iso_application="Ezarcher DVD"
 iso_version="$(date +%y%m%d)"
