@@ -353,7 +353,7 @@ xarchiver
 # Openbox
 openbox
 obconf
-obmenu-generator
+#obmenu-generator
 python-pyxdg
 lxappearance
 lxappearance-obconf
