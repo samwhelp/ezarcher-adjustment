@@ -1,0 +1,20 @@
+##
+## ## Manjaro
+## /usr/local/share/bash-completion/completions/openbox-wallpaper-ctrl
+## $ sudo install -Dm644 ./openbox-wallpaper-ctrl /usr/local/share/bash-completion/completions/openbox-wallpaper-ctrl
+##
+
+_openbox_wallpaper_ctrl () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(DEBUG_OPENBOX=false openbox-wallpaper-ctrl self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _openbox_wallpaper_ctrl openbox-wallpaper-ctrl
