@@ -39,7 +39,7 @@ sha256sums=('SKIP')
 
 prepare () {
 
-	return 0
+	#return 0
 
 	cp -af ../asset/. "${srcdir}"
 }
@@ -78,6 +78,13 @@ package () {
 
 	## /usr/share/sddm/themes/sddm-theme-chili/.git
 	rm -rf "${pkgdir}/usr/share/sddm/themes/sddm-theme-chili/.git"
+
+
+	##
+	## /usr/share/sddm/themes/sddm-theme-chili/theme.conf.user
+	##
+	install -Dm644 "${srcdir}/overlay/usr/share/sddm/themes/sddm-theme-chili/theme.conf.user" "${pkgdir}/usr/share/sddm/themes/sddm-theme-chili/theme.conf.user"
+
 
 
 	return 0
