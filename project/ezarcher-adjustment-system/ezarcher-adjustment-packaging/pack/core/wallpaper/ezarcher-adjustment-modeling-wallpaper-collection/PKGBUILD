@@ -45,15 +45,10 @@ package () {
 	## /etc/skel/Pictures/Wallpaper
 	##
 
-	install -dm755 "${pkgdir}/etc/skel/Pictures/Wallpaper"
-	
-	cd "${pkgdir}/etc/skel/Pictures/Wallpaper"
-	
-	mod_wallpaper_asset_install_wallpaper_download_each
-	
-	mod_wallpaper_asset_install_wallpaper_default
+	mod_wallpaper_asset_install_wallpaper_download_asset
 
-	cd "${OLDPWD}"
+	mod_wallpaper_asset_install_wallpaper_copy_from_asset
+
 
 }
 
@@ -67,8 +62,48 @@ mod_wallpaper_asset_install_wallpaper_default () {
 		fi
 	fi
 
+
+	if ! [ -a "default-login.jpg" ]; then
+		if [ -f "alfred-kenneally-k_MglpZKg3s-unsplash.medium.jpg" ]; then
+			echo "cp -f alfred-kenneally-k_MglpZKg3s-unsplash.medium.jpg default-login.jpg"
+			cp -f "alfred-kenneally-k_MglpZKg3s-unsplash.medium.jpg" "default-login.jpg"
+		fi
+	fi
+
 }
 
+
+mod_wallpaper_asset_install_wallpaper_copy_from_asset () {
+
+	##
+	## /usr/share/backgrounds/ezarcher-adjustment
+	##
+
+	install -dm755 "${pkgdir}/usr/share/backgrounds/ezarcher-adjustment"
+
+
+	cp -rf "${pkgdir}/etc/skel/Pictures/Wallpaper/." "${pkgdir}/usr/share/backgrounds/ezarcher-adjustment/"
+
+}
+
+
+mod_wallpaper_asset_install_wallpaper_download_asset () {
+
+	##
+	## /etc/skel/Pictures/Wallpaper
+	##
+
+	install -dm755 "${pkgdir}/etc/skel/Pictures/Wallpaper"
+
+	cd "${pkgdir}/etc/skel/Pictures/Wallpaper"
+
+	mod_wallpaper_asset_install_wallpaper_download_each
+
+	mod_wallpaper_asset_install_wallpaper_default
+
+	cd "${OLDPWD}"
+
+}
 
 mod_wallpaper_asset_install_wallpaper_download_each () {
 
