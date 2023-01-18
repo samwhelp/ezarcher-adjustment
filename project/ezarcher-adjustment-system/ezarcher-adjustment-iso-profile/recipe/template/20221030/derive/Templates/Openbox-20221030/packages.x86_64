@@ -353,7 +353,6 @@ xarchiver
 # Openbox
 openbox
 obconf
-#obmenu-generator
 python-pyxdg
 lxappearance
 lxappearance-obconf
@@ -368,6 +367,9 @@ xfce4-terminal
 thunar
 pcmanfm
 lxterminal
+## [obmenu-generator] and [] from aur
+obmenu-generator
+perl-linux-desktopfiles
 
 
 # Display Manager
