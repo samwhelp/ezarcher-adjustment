@@ -9,11 +9,11 @@
 ## * https://wiki.archlinux.org/title/Arch_package_guidelines
 ##
 
-pkgname=ezarcher-adjustment-helper-openboxrc-ctrl
+pkgname=ezarcher-adjustment-util-openboxrc-ctrl
 pkgver=0.1
 pkgrel=1
 pkgdesc="Ezarcher Adjustment / Helper / Openbox / openboxrc-ctrl"
-url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/wm/openbox/ezarcher-adjustment-helper-openboxrc-ctrl"
+url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/wm/openbox/ezarcher-adjustment-util-openboxrc-ctrl"
 arch=('any')
 license=('MIT')
 makedepends=()

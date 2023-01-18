@@ -53,7 +53,7 @@ reinstall:
 
 
 uninstall:
-	sudo pacman -R ezarcher-adjustment-helper-openboxrc-ctrl
+	sudo pacman -R ezarcher-adjustment-util-openboxrc-ctrl
 .PHONY: uninstall
 
 clean:
@@ -65,9 +65,9 @@ clean:
 
 
 list:
-	pacman -Ql ezarcher-adjustment-helper-openboxrc-ctrl -q
+	pacman -Ql ezarcher-adjustment-util-openboxrc-ctrl -q
 .PHONY: list
 
 info:
-	pacman -Qi ezarcher-adjustment-helper-openboxrc-ctrl
+	pacman -Qi ezarcher-adjustment-util-openboxrc-ctrl
 .PHONY: info

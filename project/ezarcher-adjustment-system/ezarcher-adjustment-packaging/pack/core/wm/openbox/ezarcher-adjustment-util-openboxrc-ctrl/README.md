@@ -1,5 +1,5 @@
 
-# ezarcher-adjustment-helper-openboxrc-ctrl
+# ezarcher-adjustment-util-openboxrc-ctrl
 
 
 ## Reference
@@ -18,7 +18,7 @@
 run
 
 ``` sh
-pacman -Ql ezarcher-adjustment-helper-openboxrc-ctrl -q
+pacman -Ql ezarcher-adjustment-util-openboxrc-ctrl -q
 ```
 
 show
