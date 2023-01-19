@@ -37,7 +37,7 @@ ezarcher-adjustment-hello
 
 sakura
 qt5-styleplugins
-xcursor-breeze
+#xcursor-breeze
 sublime-text-4
 
 ##
