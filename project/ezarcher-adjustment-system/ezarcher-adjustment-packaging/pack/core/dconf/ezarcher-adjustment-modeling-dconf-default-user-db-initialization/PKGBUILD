@@ -1,0 +1,70 @@
+
+##
+## * https://wiki.archlinux.org/title/Creating_packages
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/makepkg
+## * https://wiki.archlinux.org/title/PKGBUILD
+## * https://wiki.archlinux.org/title/Arch_package_guidelines
+##
+
+pkgname=ezarcher-adjustment-modeling-dconf-default-user-db-initialization
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Modeling / dconf-default-user-db-initialization"
+url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/style/ezarcher-adjustment-modeling-dconf-default-user-db-initialization"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+#options=(!strip !emptydirs)
+options=(!strip)
+
+prepare () {
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+
+	##
+	## Prepare Dir
+	##
+
+	install -dm755 "${pkgdir}/etc/dconf/profile"
+
+	install -dm755 "${pkgdir}/etc/dconf/db/local.d"
+	install -dm755 "${pkgdir}/etc/dconf/db/site.d"
+	install -dm755 "${pkgdir}/etc/dconf/db/distro.d"
+
+
+	##
+	## Prepare Profile
+	##
+
+
+	## /etc/dconf/profile/user
+	install -Dm644 "${srcdir}/overlay/etc/dconf/profile/user" "${pkgdir}/etc/dconf/profile/user"
+
+
+	##
+	## Initialize DB
+	##
+
+	cd "${pkgdir}/etc/dconf/db"
+
+
+	dconf compile "local" "local.d"
+	dconf compile "site" "site.d"
+	dconf compile "distro" "distro.d"
+	
+
+	cd "${OLDPWD}"
+
+}
