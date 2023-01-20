@@ -71,6 +71,9 @@ ezarcher-adjustment-modeling-qt5ctrc
 ezarcher-adjustment-modeling-qt5ctrc-gruvbox-dark
 
 
+ezarcher-adjustment-modeling-cursor-default-breeze
+
+
 ##
 ### Tail: Ezarcher Adjustment / Appearance
 ################################################################################
