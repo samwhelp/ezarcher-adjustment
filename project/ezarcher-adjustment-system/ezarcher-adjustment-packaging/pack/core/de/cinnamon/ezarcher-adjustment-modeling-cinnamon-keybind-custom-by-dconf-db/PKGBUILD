@@ -29,4 +29,13 @@ package () {
 
 	cp -af "${srcdir}/overlay/." "${pkgdir}"
 
+
+	cd "${pkgdir}/etc/skel/.config/dconf"
+
+
+	dconf compile "user" "user.d"
+
+
+	cd "${OLDPWD}"
+
 }

@@ -24,9 +24,15 @@ pacman -Ql ezarcher-adjustment-modeling-cinnamon-keybind-custom-by-dconf-db -q
 show
 
 ```
-/usr/
-/usr/share/
-/usr/share/glib-2.0/
-/usr/share/glib-2.0/schemas/
-/usr/share/glib-2.0/schemas/50_cinnamon-keybind-main.gschema.override
+/etc/
+/etc/skel/
+/etc/skel/.config/
+/etc/skel/.config/dconf/
+/etc/skel/.config/dconf/user
+/etc/skel/.config/dconf/user.d/
+/etc/skel/.config/dconf/user.d/50_cinnamon-keybind-custom
+/etc/skel/.config/dconf/user.txt
 ```
+
+
+* [/etc/skel/.config/dconf/user.d/50_cinnamon-keybind-custom](asset/overlay/etc/skel/.config/dconf/user.d/50_cinnamon-keybind-custom)
