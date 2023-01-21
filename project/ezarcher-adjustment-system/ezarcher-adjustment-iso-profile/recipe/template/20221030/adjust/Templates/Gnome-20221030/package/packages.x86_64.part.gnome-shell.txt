@@ -22,6 +22,8 @@ ezarcher-adjustment-modeling-gnome-shell-wallpaper-main
 ezarcher-adjustment-modeling-gnome-shell-favorite-apps
 
 ezarcher-adjustment-modeling-nautilus
+ezarcher-adjustment-modeling-gedit
+ezarcher-adjustment-modeling-gnome-console
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / GNOME Shell
