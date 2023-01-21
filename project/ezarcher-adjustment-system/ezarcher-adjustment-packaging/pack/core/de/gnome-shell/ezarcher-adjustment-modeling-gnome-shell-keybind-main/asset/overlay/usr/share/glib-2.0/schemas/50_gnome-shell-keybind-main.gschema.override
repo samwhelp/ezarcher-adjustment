@@ -64,9 +64,11 @@ unmaximize=['<Super>Down']
 [org.gnome.mutter]
 overlay-key=''
 
+
 [org.gnome.mutter.keybindings]
 toggle-tiled-left=['<Super>Left']
 toggle-tiled-right=['<Super>Right']
+
 
 [org.gnome.mutter.wayland.keybindings]
 restore-shortcuts=['']
