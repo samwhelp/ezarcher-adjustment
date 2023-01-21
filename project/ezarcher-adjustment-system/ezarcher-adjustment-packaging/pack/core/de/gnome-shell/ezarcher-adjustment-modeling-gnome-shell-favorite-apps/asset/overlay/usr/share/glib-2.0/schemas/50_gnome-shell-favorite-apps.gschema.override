@@ -1,0 +1,4 @@
+
+
+[org.gnome.shell]
+favorite-apps=['pcmanfm-qt.desktop', 'sublime_text.desktop', 'firefox.desktop', 'sakura.desktop', 'gnome-control-center.desktop', 'toggle-show-desktop.xdotool.desktop']
