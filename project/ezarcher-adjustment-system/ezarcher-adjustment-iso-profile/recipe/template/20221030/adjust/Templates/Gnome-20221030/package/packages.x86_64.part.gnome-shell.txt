@@ -16,6 +16,7 @@ ezarcher-adjustment-modeling-gnome-terminal
 ## gschema override
 ##
 ezarcher-adjustment-modeling-gnome-shell-keybind-main
+ezarcher-adjustment-modeling-gnome-shell-workspace-main
 
 
 ##
