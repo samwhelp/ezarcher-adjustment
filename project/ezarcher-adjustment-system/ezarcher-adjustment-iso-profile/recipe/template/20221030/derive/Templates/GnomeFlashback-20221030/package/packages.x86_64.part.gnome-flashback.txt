@@ -1,0 +1,29 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / GnomeFlashback
+##
+
+#ezarcher-adjustment-modeling-gnome-flashback
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / GnomeFlashback
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+#ezarcher-adjustment-autostart-plank-on-openbox
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+#ezarcher-adjustment-autostart-cairo-dock-on-openbox
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################

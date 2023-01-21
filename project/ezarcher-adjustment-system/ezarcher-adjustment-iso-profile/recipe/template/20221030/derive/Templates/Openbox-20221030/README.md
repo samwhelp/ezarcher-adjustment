@@ -1,5 +1,5 @@
 
-# Ezarcher / Xfce
+# Ezarcher / Openbox
 
 
 ## Build
