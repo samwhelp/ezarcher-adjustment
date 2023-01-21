@@ -12,7 +12,6 @@ show-tabs-mode='auto'
 [org.gnome.gedit.preferences.editor]
 display-line-numbers=true
 display-right-margin=true
-display-overview-map=false
 highlight-current-line=true
 insert-spaces=false
 tabs-size=uint32 4
