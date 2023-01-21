@@ -37,8 +37,8 @@ ezarcher-adjustment-hello
 
 sakura
 qt5-styleplugins
-
 sublime-text-4
+yay-bin
 
 ## [Package: xcursor-breeze] conflict [Package: breeze]
 #xcursor-breeze

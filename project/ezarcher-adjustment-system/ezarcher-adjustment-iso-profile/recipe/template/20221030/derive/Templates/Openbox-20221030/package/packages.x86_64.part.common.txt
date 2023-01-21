@@ -39,6 +39,7 @@ sakura
 qt5-styleplugins
 xcursor-breeze
 sublime-text-4
+yay-bin
 
 ##
 ### Tail: Ezarcher Adjustment / AUR
