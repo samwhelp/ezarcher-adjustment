@@ -3,7 +3,7 @@
 pkgname=ezarcher-adjustment-modeling-gnome-shell-theme-main
 pkgver=0.1
 pkgrel=1
-pkgdesc="Ezarcher Adjustment / Modeling / GNOME Shell / Keybind"
+pkgdesc="Ezarcher Adjustment / Modeling / GNOME Shell / Theme"
 url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/de/cinnamon/ezarcher-adjustment-modeling-gnome-shell-theme-main"
 arch=('any')
 license=('MIT')
