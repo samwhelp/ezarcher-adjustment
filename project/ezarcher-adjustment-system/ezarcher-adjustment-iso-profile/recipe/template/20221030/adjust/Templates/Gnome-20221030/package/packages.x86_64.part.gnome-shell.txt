@@ -21,6 +21,7 @@ ezarcher-adjustment-modeling-gnome-shell-workspace-main
 ezarcher-adjustment-modeling-gnome-shell-theme-main
 ezarcher-adjustment-modeling-gnome-shell-wallpaper-main
 ezarcher-adjustment-modeling-gnome-shell-favorite-apps
+ezarcher-adjustment-modeling-gnome-shell-config-main
 
 ezarcher-adjustment-modeling-nautilus
 ezarcher-adjustment-modeling-gedit
