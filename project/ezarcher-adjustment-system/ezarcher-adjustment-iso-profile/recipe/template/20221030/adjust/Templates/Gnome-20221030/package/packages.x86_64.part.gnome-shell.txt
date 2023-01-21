@@ -19,6 +19,8 @@ ezarcher-adjustment-modeling-gnome-shell-keybind-main
 ezarcher-adjustment-modeling-gnome-shell-workspace-main
 ezarcher-adjustment-modeling-gnome-shell-theme-main
 ezarcher-adjustment-modeling-gnome-shell-wallpaper-main
+ezarcher-adjustment-modeling-gnome-shell-favorite-apps
+
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / GNOME Shell
