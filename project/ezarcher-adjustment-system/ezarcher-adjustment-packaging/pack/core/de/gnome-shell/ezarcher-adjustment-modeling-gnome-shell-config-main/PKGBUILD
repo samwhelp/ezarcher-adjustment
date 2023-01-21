@@ -1,0 +1,32 @@
+
+
+pkgname=ezarcher-adjustment-modeling-gnome-shell-config-main
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Modeling / GNOME Shell / Config"
+url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/de/cinnamon/ezarcher-adjustment-modeling-gnome-shell-config-main"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	##
+	## Main Config
+	##
+
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+
+}
