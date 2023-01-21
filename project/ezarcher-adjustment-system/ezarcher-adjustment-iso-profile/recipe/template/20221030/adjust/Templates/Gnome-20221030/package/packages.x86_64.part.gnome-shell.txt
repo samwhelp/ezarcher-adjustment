@@ -17,6 +17,7 @@ ezarcher-adjustment-modeling-gnome-terminal
 ##
 ezarcher-adjustment-modeling-gnome-shell-keybind-main
 ezarcher-adjustment-modeling-gnome-shell-workspace-main
+ezarcher-adjustment-modeling-gnome-shell-theme-main
 
 
 ##
