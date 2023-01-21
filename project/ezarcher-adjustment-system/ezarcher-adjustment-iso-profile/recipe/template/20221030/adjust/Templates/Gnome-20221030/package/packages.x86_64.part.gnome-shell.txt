@@ -4,13 +4,19 @@
 ### Head: Ezarcher Adjustment / Desktop Environment / GNOME Shell
 ##
 
-
+##
+## dconf db default
+##
 ezarcher-adjustment-modeling-dconf-default-user-db-initialization
 ezarcher-adjustment-modeling-gnome-shell-keybind-custom-by-dconf-db-default
 ezarcher-adjustment-modeling-gnome-terminal
 
 
-#ezarcher-adjustment-modeling-gnome-shell
+##
+## gschema override
+##
+ezarcher-adjustment-modeling-gnome-shell-keybind-main
+
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / GNOME Shell
