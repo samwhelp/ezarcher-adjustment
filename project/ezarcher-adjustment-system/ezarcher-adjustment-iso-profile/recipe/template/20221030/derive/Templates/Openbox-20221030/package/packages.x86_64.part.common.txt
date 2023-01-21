@@ -213,6 +213,11 @@ neovim
 micro
 nano
 
+
+# for copying/pasting text using X
+xclip
+
+
 #atom
 ezarcher-adjustment-modeling-atom
 
