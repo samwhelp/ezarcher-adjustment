@@ -4,7 +4,32 @@
 ### Head: Ezarcher Adjustment / Desktop Environment / Mate
 ##
 
-#ezarcher-adjustment-modeling-mate
+##
+## dconf db default
+##
+ezarcher-adjustment-modeling-dconf-default-user-db-initialization
+ezarcher-adjustment-modeling-mate-keybind-custom-by-dconf-db-default
+#mate-terminal
+#ezarcher-adjustment-modeling-mate-terminal
+
+
+
+##
+## gschema override
+##
+ezarcher-adjustment-modeling-mate-keybind-main
+ezarcher-adjustment-modeling-mate-workspace-main
+ezarcher-adjustment-modeling-mate-theme-main
+ezarcher-adjustment-modeling-mate-wallpaper-main
+ezarcher-adjustment-modeling-mate-config-main
+
+#ezarcher-adjustment-modeling-gnome-panel-layouts
+#ezarcher-adjustment-modeling-mate-layout-main
+
+#ezarcher-adjustment-modeling-caja
+#ezarcher-adjustment-modeling-pluma
+
+
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Mate
