@@ -1,0 +1,13 @@
+
+
+[org.mate.Marco.general]
+num-workspaces=5
+
+
+[org.mate.Marco.workspace-names]
+name-1='File'
+name-2='Edit'
+name-3='Web'
+name-4='Term'
+name-5='Misc'
+
