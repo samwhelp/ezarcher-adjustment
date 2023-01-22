@@ -1,6 +1,6 @@
 
 
-[org.gnome.interface]
+[org.mate.interface]
 gtk-color-scheme='menu_bg: #383c4a'
 gtk-theme='Gruvbox'
 icon-theme='Gruvbox-Dark'
