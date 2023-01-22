@@ -13,6 +13,25 @@
 | [Ezarcher Adjustment](https://samwhelp.github.io/ezarcher-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-adjustment) |
 
 
+## Desktop Environment
+
+| Desktop Environment |
+| --- |
+| [Xfce](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/xfce/) |
+| [Gnome Shell](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/gnome-shell/) |
+| [Gnome Flashback](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/gnome-flashback/) |
+| [Cinnamon](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/cinnamon/) |
+| [Mate](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/mate/) |
+| [Kde Plasma](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/kde-plasma/) |
+
+
+## Window Manager
+
+| Window Manager |
+| --- |
+| [Openbox](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/openbox/) |
+
+
 ## ISO Build System
 
 | ISO Build System |

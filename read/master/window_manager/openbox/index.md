@@ -12,6 +12,7 @@ parent: Window Manager
 ## Subject
 
 * [Note](#note)
+* [Demo](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/openbox/demo.html)
 
 
 
