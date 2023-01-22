@@ -1,0 +1,10 @@
+
+
+[org.mate.background]
+picture-options='zoom'
+picture-filename='/usr/share/backgrounds/default.jpg'
+
+
+[org.mate.screensaver]
+picture-filename='file:///usr/share/backgrounds/default.jpg'
+
