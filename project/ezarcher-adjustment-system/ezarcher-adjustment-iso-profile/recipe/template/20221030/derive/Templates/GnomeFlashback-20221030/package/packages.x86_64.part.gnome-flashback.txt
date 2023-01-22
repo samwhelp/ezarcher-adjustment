@@ -37,12 +37,12 @@ ezarcher-adjustment-modeling-gnome-console
 ##
 
 plank
-#ezarcher-adjustment-autostart-plank-on-openbox
+ezarcher-adjustment-autostart-plank-on-gnome-flashback
 ezarcher-adjustment-modeling-plank
 
 
 cairo-dock
-#ezarcher-adjustment-autostart-cairo-dock-on-openbox
+#ezarcher-adjustment-autostart-cairo-dock-on-gnome-flashback
 
 
 ##
