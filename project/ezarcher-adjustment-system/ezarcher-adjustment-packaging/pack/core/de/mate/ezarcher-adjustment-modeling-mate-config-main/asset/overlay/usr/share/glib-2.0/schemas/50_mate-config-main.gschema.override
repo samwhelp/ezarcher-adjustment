@@ -4,6 +4,9 @@
 event-sounds=false
 
 
+[org.mate.peripherals-keyboard]
+remember-numlock-state=true
+numlock-state='off'
 
 
 [org.mate.Marco.general]
