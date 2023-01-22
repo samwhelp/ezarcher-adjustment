@@ -4,7 +4,28 @@
 ### Head: Ezarcher Adjustment / Desktop Environment / GnomeFlashback
 ##
 
-#ezarcher-adjustment-modeling-gnome-flashback
+##
+## dconf db default
+##
+ezarcher-adjustment-modeling-dconf-default-user-db-initialization
+ezarcher-adjustment-modeling-gnome-flashback-keybind-custom-by-dconf-db-default
+ezarcher-adjustment-modeling-gnome-terminal
+gnome-terminal
+
+
+##
+## gschema override
+##
+#ezarcher-adjustment-modeling-gnome-flashback-keybind-main
+#ezarcher-adjustment-modeling-gnome-flashback-workspace-main
+#ezarcher-adjustment-modeling-gnome-flashback-theme-main
+#ezarcher-adjustment-modeling-gnome-flashback-wallpaper-main
+#ezarcher-adjustment-modeling-gnome-flashback-favorite-apps
+#ezarcher-adjustment-modeling-gnome-flashback-config-main
+
+ezarcher-adjustment-modeling-nautilus
+ezarcher-adjustment-modeling-gedit
+ezarcher-adjustment-modeling-gnome-console
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / GnomeFlashback
