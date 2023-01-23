@@ -1,0 +1,32 @@
+
+
+pkgname=ezarcher-adjustment-modeling-mate-favorite-apps
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Modeling / Mate / Favorite Apps"
+url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/de/mate/ezarcher-adjustment-modeling-mate-favorite-apps"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	##
+	## Main Config
+	##
+
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+
+}

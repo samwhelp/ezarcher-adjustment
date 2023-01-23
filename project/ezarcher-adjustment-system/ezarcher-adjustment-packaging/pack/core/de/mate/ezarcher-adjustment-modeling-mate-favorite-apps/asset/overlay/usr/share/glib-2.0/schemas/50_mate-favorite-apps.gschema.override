@@ -1,0 +1,10 @@
+
+
+[org.mate.applications-terminal]
+exec='sakura'
+exec-arg='-x'
+
+
+[org.mate.applications-browser]
+exec='firefox'
+

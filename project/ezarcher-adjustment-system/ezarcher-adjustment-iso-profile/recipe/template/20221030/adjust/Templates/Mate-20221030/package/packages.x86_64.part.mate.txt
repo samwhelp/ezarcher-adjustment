@@ -21,6 +21,7 @@ ezarcher-adjustment-modeling-mate-keybind-main
 ezarcher-adjustment-modeling-mate-workspace-main
 ezarcher-adjustment-modeling-mate-theme-main
 ezarcher-adjustment-modeling-mate-wallpaper-main
+ezarcher-adjustment-modeling-mate-favorite-apps
 ezarcher-adjustment-modeling-mate-config-main
 
 #ezarcher-adjustment-modeling-gnome-panel-layouts
