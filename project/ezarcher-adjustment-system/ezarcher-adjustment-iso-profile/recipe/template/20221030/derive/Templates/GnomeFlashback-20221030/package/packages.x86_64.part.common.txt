@@ -370,7 +370,6 @@ qemu-desktop
 
 
 tree
-fzf
 
 
 xorg-server-xephyr
@@ -389,6 +388,10 @@ php
 ##
 
 xclip
+
+
+fzf
+ezarcher-adjustment-modeling-fzf
 
 ##
 ### Tail: Ezarcher Adjustment / Helper
