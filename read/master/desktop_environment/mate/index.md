@@ -12,7 +12,7 @@ parent: Desktop Environment
 ## Subject
 
 * [Note](#note)
-* [Demo](https://samwhelp.github.io/note-about-ezarcher/read/master/desktop_environment/mate/demo.html)
+* [Demo](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/mate/demo.html)
 
 
 ## Note
