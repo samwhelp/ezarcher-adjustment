@@ -1,0 +1,17 @@
+
+
+[org.gnome.desktop.sound]
+event-sounds=false
+
+
+[org.gnome.desktop.interface]
+clock-show-seconds=true
+clock-show-weekday=true
+
+
+[org.gnome.desktop.wm.preferences]
+action-middle-click-titlebar='toggle-shade'
+button-layout='appmenu:minimize,maximize,close'
+mouse-button-modifier='<Super>'
+resize-with-right-button=true
+
