@@ -1,5 +1,5 @@
 
 
-[org.gnome.gnome.panel.general]
+[org.gnome.gnome-panel.general]
 default-layout='stand-alone-top'
 
