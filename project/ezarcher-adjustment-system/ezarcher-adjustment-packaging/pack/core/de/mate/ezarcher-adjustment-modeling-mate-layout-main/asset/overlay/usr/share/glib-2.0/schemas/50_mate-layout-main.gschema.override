@@ -1,9 +1,9 @@
 
 
 [org.mate.panel]
-default-layout='default'
+default-layout='stand-alone-top'
 
 
-#[org.mate.session.required-components]
-#dock='plank'
+[org.mate.session.required-components]
+dock='plank'
 

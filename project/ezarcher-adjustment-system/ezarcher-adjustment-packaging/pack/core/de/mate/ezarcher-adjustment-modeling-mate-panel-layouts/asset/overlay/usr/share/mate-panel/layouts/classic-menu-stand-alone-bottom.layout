@@ -1,11 +1,11 @@
 [Toplevel main-panel]
 expand=true
-orientation=top
+orientation=bottom
 size=24
 
 
 [Object main-menu]
-object-type=menu
+object-type=menu-bar
 toplevel-id=main-panel
 position=0
 locked=true
