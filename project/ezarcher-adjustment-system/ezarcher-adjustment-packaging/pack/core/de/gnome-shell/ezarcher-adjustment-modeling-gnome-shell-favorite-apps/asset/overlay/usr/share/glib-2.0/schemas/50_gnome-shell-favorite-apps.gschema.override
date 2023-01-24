@@ -3,3 +3,8 @@
 [org.gnome.shell]
 favorite-apps=['pcmanfm-qt.desktop', 'org.xfce.mousepad.desktop', 'firefox.desktop', 'sakura.desktop', 'org.gnome.Settings.desktop', 'org.gnome.tweaks.desktop', 'toggle-show-desktop.xdotool.desktop']
 
+
+[org.gnome.desktop.default-applications.terminal]
+exec='sakura'
+exec-arg='-x'
+
