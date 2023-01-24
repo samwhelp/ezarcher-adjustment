@@ -1,10 +1,10 @@
 
 
-[org.gnome.desktop.background]
+[org.gnome.desktop.background:GNOME-Flashback]
 picture-options='zoom'
 picture-uri='file:///usr/share/backgrounds/default.jpg'
 picture-uri-dark='file:///usr/share/backgrounds/default.jpg'
 
 
-[org.gnome.desktop.screensaver]
+[org.gnome.desktop.screensaver:GNOME-Flashback]
 picture-uri='file:///usr/share/backgrounds/default.jpg'

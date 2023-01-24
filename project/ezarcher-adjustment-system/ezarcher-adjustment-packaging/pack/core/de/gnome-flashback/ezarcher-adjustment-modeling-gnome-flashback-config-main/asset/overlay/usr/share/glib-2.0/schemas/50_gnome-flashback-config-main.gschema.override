@@ -1,15 +1,15 @@
 
 
-[org.gnome.desktop.sound]
+[org.gnome.desktop.sound:GNOME-Flashback]
 event-sounds=false
 
 
-[org.gnome.desktop.interface]
+[org.gnome.desktop.interface:GNOME-Flashback]
 clock-show-seconds=true
 clock-show-weekday=true
 
 
-[org.gnome.desktop.wm.preferences]
+[org.gnome.desktop.wm.preferences:GNOME-Flashback]
 action-middle-click-titlebar='toggle-shade'
 button-layout='appmenu:minimize,maximize,close'
 mouse-button-modifier='<Super>'

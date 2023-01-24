@@ -1,6 +1,6 @@
 
 
-[org.gnome.desktop.wm.keybindings]
+[org.gnome.desktop.wm.keybindings:GNOME-Flashback]
 begin-move=['<Super>e']
 begin-resize=['<Super>r']
 close=['<Super>q']
@@ -52,11 +52,11 @@ toggle-maximized=['<Super>w']
 toggle-on-all-workspaces=['<Super>g']
 toggle-shaded=['<Super>y']
 unmaximize=['<Super>Down']
+panel-main-menu=['<Alt>F1']
 
 
 
-
-[org.gnome.metacity.keybindings]
+[org.gnome.metacity.keybindings:GNOME-Flashback]
 toggle-tiled-left=['<Super>Left']
 toggle-tiled-right=['<Super>Right']
 
