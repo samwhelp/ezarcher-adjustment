@@ -1,4 +1,4 @@
-[Toplevel bottom-panel]
+[Toplevel main-panel]
 expand=true
 orientation=bottom
 size=36
@@ -8,14 +8,14 @@ size=36
 
 [Object main-menu]
 object-iid=org.gnome.gnome-panel.menu::main-menu
-toplevel-id=bottom-panel
+toplevel-id=main-panel
 pack-type=start
 pack-index=0
 
 
 [Object show-desktop]
 object-iid=org.gnome.gnome-panel.wncklet::show-desktop
-toplevel-id=bottom-panel
+toplevel-id=main-panel
 pack-type=start
 pack-index=1
 
@@ -24,38 +24,38 @@ pack-index=1
 
 [Object launcher-file-manager]
 object-iid=org.gnome.gnome-panel.launcher::launcher
-toplevel-id=bottom-panel
+toplevel-id=main-panel
 pack-type=start
 pack-index=2
-@instance-config/location='/usr/share/applications/org.gnome.Nautilus.desktop'
+@instance-config/location='/usr/share/applications/pcmanfm-qt.desktop'
 
 [Object launcher-text-editor]
 object-iid=org.gnome.gnome-panel.launcher::launcher
-toplevel-id=bottom-panel
+toplevel-id=main-panel
 pack-type=start
 pack-index=3
-@instance-config/location='/usr/share/applications/org.gnome.gedit.desktop'
+@instance-config/location='/usr/share/applications/org.xfce.mousepad.desktop'
 
 [Object launcher-web-browser]
 object-iid=org.gnome.gnome-panel.launcher::launcher
-toplevel-id=bottom-panel
+toplevel-id=main-panel
 pack-type=start
 pack-index=4
-@instance-config/location='/var/lib/snapd/desktop/applications/firefox_firefox.desktop'
+@instance-config/location='/usr/share/applications/firefox.desktop'
 
 [Object launcher-terminal]
 object-iid=org.gnome.gnome-panel.launcher::launcher
-toplevel-id=bottom-panel
+toplevel-id=main-panel
 pack-type=start
 pack-index=5
-@instance-config/location='/usr/share/applications/org.gnome.Terminal.desktop'
+@instance-config/location='/usr/share/applications/sakura.desktop'
 
 
 
 
 [Object window-list]
 object-iid=org.gnome.gnome-panel.wncklet::window-list
-toplevel-id=bottom-panel
+toplevel-id=main-panel
 pack-type=start
 pack-index=6
 
@@ -65,7 +65,7 @@ pack-index=6
 
 [Object workspace-switcher]
 object-iid=org.gnome.gnome-panel.wncklet::workspace-switcher
-toplevel-id=bottom-panel
+toplevel-id=main-panel
 pack-type=end
 pack-index=3
 
