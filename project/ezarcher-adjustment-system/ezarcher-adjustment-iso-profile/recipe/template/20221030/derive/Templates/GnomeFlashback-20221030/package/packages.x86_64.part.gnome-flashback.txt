@@ -20,6 +20,7 @@ ezarcher-adjustment-modeling-gnome-flashback-keybind-main
 ezarcher-adjustment-modeling-gnome-flashback-workspace-main
 ezarcher-adjustment-modeling-gnome-flashback-theme-main
 ezarcher-adjustment-modeling-gnome-flashback-wallpaper-main
+ezarcher-adjustment-modeling-gnome-flashback-favorite-apps
 ezarcher-adjustment-modeling-gnome-flashback-config-main
 
 ezarcher-adjustment-modeling-gnome-panel-layouts
