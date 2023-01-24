@@ -24,8 +24,9 @@ ezarcher-adjustment-modeling-mate-wallpaper-main
 ezarcher-adjustment-modeling-mate-favorite-apps
 ezarcher-adjustment-modeling-mate-config-main
 
-#ezarcher-adjustment-modeling-gnome-panel-layouts
+#ezarcher-adjustment-modeling-mate-panel-layouts
 #ezarcher-adjustment-modeling-mate-layout-main
+
 
 #ezarcher-adjustment-modeling-caja
 #ezarcher-adjustment-modeling-pluma

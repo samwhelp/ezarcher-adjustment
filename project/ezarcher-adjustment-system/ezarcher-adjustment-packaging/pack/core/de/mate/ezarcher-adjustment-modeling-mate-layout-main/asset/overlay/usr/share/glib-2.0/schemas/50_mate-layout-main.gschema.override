@@ -1,0 +1,9 @@
+
+
+[org.mate.panel]
+default-layout='default'
+
+
+#[org.mate.session.required-components]
+#dock='plank'
+
