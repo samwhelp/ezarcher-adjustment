@@ -1,0 +1,6 @@
+
+
+[org.gnome.desktop.default-applications.terminal:GNOME-Flashback]
+exec='sakura'
+exec-arg='-x'
+
