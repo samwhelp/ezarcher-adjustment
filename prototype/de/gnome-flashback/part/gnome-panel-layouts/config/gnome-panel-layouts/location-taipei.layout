@@ -1,0 +1,110 @@
+[Toplevel main-panel]
+expand=true
+orientation=top
+size=36
+
+
+
+
+[Object main-menu]
+object-iid=org.gnome.gnome-panel.menu::main-menu
+toplevel-id=main-panel
+pack-type=start
+pack-index=0
+
+
+
+
+[Object launcher-file-manager]
+object-iid=org.gnome.gnome-panel.launcher::launcher
+toplevel-id=main-panel
+pack-type=start
+pack-index=11
+@instance-config/location='/usr/share/applications/pcmanfm-qt.desktop'
+
+
+[Object launcher-text-editor]
+object-iid=org.gnome.gnome-panel.launcher::launcher
+toplevel-id=main-panel
+pack-type=start
+pack-index=12
+@instance-config/location='/usr/share/applications/org.xfce.mousepad.desktop'
+
+
+[Object launcher-web-browser]
+object-iid=org.gnome.gnome-panel.launcher::launcher
+toplevel-id=main-panel
+pack-type=start
+pack-index=13
+@instance-config/location='/usr/share/applications/firefox.desktop'
+
+
+[Object launcher-terminal]
+object-iid=org.gnome.gnome-panel.launcher::launcher
+toplevel-id=main-panel
+pack-type=start
+pack-index=14
+@instance-config/location='/usr/share/applications/sakura.desktop'
+
+
+[Object control-center]
+object-iid=org.gnome.gnome-panel.launcher::launcher
+toplevel-id=main-panel
+pack-type=start
+pack-index=15
+@instance-config/location='/usr/share/applications/org.gnome.Settings.desktop'
+
+
+[Object show-desktop]
+object-iid=org.gnome.gnome-panel.wncklet::show-desktop
+toplevel-id=main-panel
+pack-type=start
+pack-index=16
+
+
+
+
+[Object window-list]
+object-iid=org.gnome.gnome-panel.wncklet::window-list
+toplevel-id=main-panel
+pack-type=start
+pack-index=20
+@instance-config/display-all-workspaces=false
+@instance-config/group-windows='never-group'
+
+
+
+
+[Object workspace-switcher]
+object-iid=org.gnome.gnome-panel.wncklet::workspace-switcher
+toplevel-id=main-panel
+pack-type=end
+pack-index=30
+@instance-config/display-all-workspaces=true
+@instance-config/display-workspace-names=true
+
+
+[Object notification-area]
+object-iid=org.gnome.gnome-panel.notification-area::notification-area
+toplevel-id=main-panel
+pack-type=end
+pack-index=20
+
+
+[Object system-indicators]
+object-iid=org.gnome.gnome-flashback.system-indicators::system-indicators
+toplevel-id=main-panel
+pack-type=end
+pack-index=10
+
+
+[Object clock]
+object-iid=org.gnome.gnome-panel.clock::clock
+toplevel-id=main-panel
+pack-type=end
+pack-index=0
+@instance-config/show-temperature=true
+@instance-config/show-weather=true
+@instance-config/expand-locations=true
+@instance-config/cities=[('Taipei / Songshan Domestic Airport', 'RCSS', @m(dd) (25.047763824462891, 121.53184509277344))]
+

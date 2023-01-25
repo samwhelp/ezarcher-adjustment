@@ -47,12 +47,12 @@ $ make config-install
 
 | Layout |
 | --- |
-| [stand-alone-bottom.layout](config/helper/) |
-| [stand-alone-top.layout](config/helper/) |
-| [classic-menu-stand-alone-bottom.layout](config/helper/) |
-| [classic-menu-stand-alone-top.layout](config/helper/) |
-| [brisk-menu-stand-alone-bottom.layout](config/helper/) |
-| [brisk-menu-stand-alone-top.layout](config/helper/) |
+| [stand-alone-bottom.layout](config/mate-panel-layouts/stand-alone-bottom.layout) |
+| [stand-alone-top.layout](config/mate-panel-layouts/stand-alone-top.layout) |
+| [classic-menu-stand-alone-bottom.layout](config/mate-panel-layouts/classic-menu-stand-alone-bottom.layout) |
+| [classic-menu-stand-alone-top.layout](config/mate-panel-layouts/classic-menu-stand-alone-top.layout) |
+| [brisk-menu-stand-alone-bottom.layout](config/mate-panel-layouts/brisk-menu-stand-alone-bottom.layout) |
+| [brisk-menu-stand-alone-top.layout](config/mate-panel-layouts/brisk-menu-stand-alone-top.layout) |
 
 
 ## Note

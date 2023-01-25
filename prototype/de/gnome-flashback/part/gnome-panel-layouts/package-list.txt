@@ -1,0 +1,8 @@
+
+##
+## gnome
+##
+
+#gnome-panel
+
+
