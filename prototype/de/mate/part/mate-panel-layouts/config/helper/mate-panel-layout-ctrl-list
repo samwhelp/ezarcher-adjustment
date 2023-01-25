@@ -3,7 +3,7 @@
 
 ################################################################################
 ##
-## /usr/local/bin/mate-panel-layout-ctrl-set
+## /usr/local/bin/mate-panel-layout-ctrl-list
 ##
 ################################################################################
 
@@ -48,57 +48,19 @@ util_error_echo () {
 
 
 ################################################################################
-### Head: Util / util_chcek_layout_name
+### Head: Model / mod_mate_panel_layout_ctrl_list
 ##
 
-util_chcek_layout_name () {
-	local layout_selected="$1"
+mod_mate_panel_layout_ctrl_list () {
 
-	if [ -z "${layout_selected}" ]; then
-		layout_selected="default"
-	fi
+	local layouts_dir_path="/usr/share/mate-panel/layouts"
 
-	echo "${layout_selected}"
+	ls "${layouts_dir_path}"/*.layout | awk -F '/' '{print $6}' | awk -F '.layout' '{print $1}'
+
 }
 
 ##
-### Head: Util / util_chcek_layout_name
-################################################################################
-
-
-
-################################################################################
-### Head: Model / mod_mate_panel_layout_ctrl_set
-##
-
-mod_mate_panel_layout_ctrl_set () {
-
-	local layout_selected="$(util_chcek_layout_name $1)"
-
-	util_error_echo
-	util_error_echo "gsettings set org.mate.panel default-layout '${layout_selected}'"
-	gsettings set org.mate.panel default-layout "'${layout_selected}'"
-
-
-	util_error_echo
-	util_error_echo "dconf reset -f /org/mate/panel/general/object-id-list"
-	dconf reset -f /org/mate/panel/general/object-id-list
-
-	util_error_echo
-	util_error_echo "dconf reset -f /org/mate/panel/general/object-id-list"
-	dconf reset -f /org/mate/panel/general/toplevel-id-list
-
-
-	util_error_echo
-	util_error_echo 'exec mate-panel --replace &'
-	exec mate-panel --replace &
-
-
-	util_error_echo
-}
-
-##
-### Tail: Model / mod_mate_panel_layout_ctrl_set
+### Tail: Model / mod_mate_panel_layout_ctrl_list
 ################################################################################
 
 
@@ -108,10 +70,9 @@ mod_mate_panel_layout_ctrl_set () {
 
 __main__ () {
 
-	mod_mate_panel_layout_ctrl_set "$1"
+	mod_mate_panel_layout_ctrl_list
 
 	return 0
-
 }
 
 __main__ "$@"
