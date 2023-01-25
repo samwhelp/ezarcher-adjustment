@@ -13,42 +13,53 @@ pack-type=start
 pack-index=0
 
 
-[Object show-desktop]
-object-iid=org.gnome.gnome-panel.wncklet::show-desktop
-toplevel-id=main-panel
-pack-type=start
-pack-index=1
-
-
 
 
 [Object launcher-file-manager]
 object-iid=org.gnome.gnome-panel.launcher::launcher
 toplevel-id=main-panel
 pack-type=start
-pack-index=2
+pack-index=11
 @instance-config/location='/usr/share/applications/pcmanfm-qt.desktop'
+
 
 [Object launcher-text-editor]
 object-iid=org.gnome.gnome-panel.launcher::launcher
 toplevel-id=main-panel
 pack-type=start
-pack-index=3
+pack-index=12
 @instance-config/location='/usr/share/applications/org.xfce.mousepad.desktop'
+
 
 [Object launcher-web-browser]
 object-iid=org.gnome.gnome-panel.launcher::launcher
 toplevel-id=main-panel
 pack-type=start
-pack-index=4
+pack-index=13
 @instance-config/location='/usr/share/applications/firefox.desktop'
+
 
 [Object launcher-terminal]
 object-iid=org.gnome.gnome-panel.launcher::launcher
 toplevel-id=main-panel
 pack-type=start
-pack-index=5
+pack-index=14
 @instance-config/location='/usr/share/applications/sakura.desktop'
+
+
+[Object control-center]
+object-iid=org.gnome.gnome-panel.launcher::launcher
+toplevel-id=main-panel
+pack-type=start
+pack-index=15
+@instance-config/location='/usr/share/applications/org.gnome.Settings.desktop'
+
+
+[Object show-desktop]
+object-iid=org.gnome.gnome-panel.wncklet::show-desktop
+toplevel-id=main-panel
+pack-type=start
+pack-index=16
 
 
 
@@ -57,10 +68,9 @@ pack-index=5
 object-iid=org.gnome.gnome-panel.wncklet::window-list
 toplevel-id=main-panel
 pack-type=start
-pack-index=6
+pack-index=20
 @instance-config/display-all-workspaces=false
 @instance-config/group-windows='never-group'
-
 
 
 
@@ -69,7 +79,7 @@ pack-index=6
 object-iid=org.gnome.gnome-panel.wncklet::workspace-switcher
 toplevel-id=main-panel
 pack-type=end
-pack-index=3
+pack-index=30
 @instance-config/display-all-workspaces=true
 @instance-config/display-workspace-names=true
 
@@ -78,14 +88,14 @@ pack-index=3
 object-iid=org.gnome.gnome-panel.notification-area::notification-area
 toplevel-id=main-panel
 pack-type=end
-pack-index=2
+pack-index=20
 
 
 [Object system-indicators]
 object-iid=org.gnome.gnome-flashback.system-indicators::system-indicators
 toplevel-id=main-panel
 pack-type=end
-pack-index=1
+pack-index=10
 
 
 [Object clock]
@@ -93,5 +103,4 @@ object-iid=org.gnome.gnome-panel.clock::clock
 toplevel-id=main-panel
 pack-type=end
 pack-index=0
-
 
