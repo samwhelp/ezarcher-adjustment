@@ -23,10 +23,10 @@ yay -Sy --needed fzf
 
 | Helper | Usage |
 | --- | --- |
-| [gnome-panel-layout-ctrl-list](config/helper/gnome-panel-layout-ctrl-list) | [usage][#gnome-panel-layout-ctrl-list] |
-| [gnome-panel-layout-ctrl-set](config/helper/gnome-panel-layout-ctrl-set) | [usage][#gnome-panel-layout-ctrl-set] |
-| [gnome-panel-layout-ctrl-get](config/helper/gnome-panel-layout-ctrl-get) | [usage][#gnome-panel-layout-ctrl-get] |
-| [gnome-panel-layout-ctrl-fzf](config/helper/gnome-panel-layout-ctrl-fzf) | [usage][#gnome-panel-layout-ctrl-fzf] |
+| [gnome-panel-layout-ctrl-list](config/gnome-panel-layouts/gnome-panel-layout-ctrl-list) | [usage](#gnome-panel-layout-ctrl-list) |
+| [gnome-panel-layout-ctrl-set](config/gnome-panel-layouts/gnome-panel-layout-ctrl-set) | [usage](#gnome-panel-layout-ctrl-set) |
+| [gnome-panel-layout-ctrl-get](config/gnome-panel-layouts/gnome-panel-layout-ctrl-get) | [usage](#gnome-panel-layout-ctrl-get) |
+| [gnome-panel-layout-ctrl-fzf](config/gnome-panel-layouts/gnome-panel-layout-ctrl-fzf) | [usage](#gnome-panel-layout-ctrl-fzf) |
 
 
 ## gnome-panel-layout-ctrl-list

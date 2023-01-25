@@ -23,10 +23,10 @@ yay -Sy --needed fzf
 
 | Helper | Usage |
 | --- | --- |
-| [mate-panel-layout-ctrl-list](config/helper/mate-panel-layout-ctrl-list) | [usage][#mate-panel-layout-ctrl-list] |
-| [mate-panel-layout-ctrl-set](config/helper/mate-panel-layout-ctrl-set) | [usage][#mate-panel-layout-ctrl-set] |
-| [mate-panel-layout-ctrl-get](config/helper/mate-panel-layout-ctrl-get) | [usage][#mate-panel-layout-ctrl-get] |
-| [mate-panel-layout-ctrl-fzf](config/helper/mate-panel-layout-ctrl-fzf) | [usage][#mate-panel-layout-ctrl-fzf] |
+| [mate-panel-layout-ctrl-list](config/mate-panel-layouts/mate-panel-layout-ctrl-list) | [usage](#mate-panel-layout-ctrl-list) |
+| [mate-panel-layout-ctrl-set](config/mate-panel-layouts/mate-panel-layout-ctrl-set) | [usage](#mate-panel-layout-ctrl-set) |
+| [mate-panel-layout-ctrl-get](config/mate-panel-layouts/mate-panel-layout-ctrl-get) | [usage](#mate-panel-layout-ctrl-get) |
+| [mate-panel-layout-ctrl-fzf](config/mate-panel-layouts/mate-panel-layout-ctrl-fzf) | [usage](#mate-panel-layout-ctrl-fzf) |
 
 
 ## mate-panel-layout-ctrl-list
