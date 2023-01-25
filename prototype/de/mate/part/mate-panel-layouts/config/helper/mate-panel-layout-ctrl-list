@@ -55,7 +55,7 @@ mod_mate_panel_layout_ctrl_list () {
 
 	local layouts_dir_path="/usr/share/mate-panel/layouts"
 
-	ls "${layouts_dir_path}"/*.layout | awk -F '/' '{print $6}' | awk -F '.layout' '{print $1}'
+	ls "${layouts_dir_path}"/*.layout | awk -F '/' '{print $6}' | awk -F '.layout' '{print $1}' | sort -u
 
 }
 
