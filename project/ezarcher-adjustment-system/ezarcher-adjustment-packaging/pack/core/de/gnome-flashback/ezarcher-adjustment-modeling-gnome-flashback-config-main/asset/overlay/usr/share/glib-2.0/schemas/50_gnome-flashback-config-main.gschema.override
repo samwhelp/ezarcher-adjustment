@@ -1,17 +1,25 @@
 
 
-[org.gnome.desktop.sound:GNOME-Flashback]
-event-sounds=false
-
-
-[org.gnome.desktop.interface:GNOME-Flashback]
-clock-show-seconds=true
-clock-show-weekday=true
-
-
 [org.gnome.desktop.wm.preferences:GNOME-Flashback]
 action-middle-click-titlebar='toggle-shade'
 button-layout='appmenu:minimize,maximize,close'
 mouse-button-modifier='<Super>'
 resize-with-right-button=true
+
+
+[org.gnome.desktop.sound:GNOME-Flashback]
+event-sounds=false
+
+
+[org.gnome.desktop.interface:GNOME-Flashback]
+clock-format='24h'
+clock-show-seconds=true
+clock-show-weekday=true
+
+
+[org.gnome.GWeather4:GNOME-Flashback]
+speed-unit='kph'
+temperature-unit='centigrade'
+
+
 

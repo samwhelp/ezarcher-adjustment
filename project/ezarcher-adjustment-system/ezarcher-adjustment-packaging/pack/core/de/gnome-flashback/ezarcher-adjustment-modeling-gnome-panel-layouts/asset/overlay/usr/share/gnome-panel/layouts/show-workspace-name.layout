@@ -1,6 +1,6 @@
 [Toplevel main-panel]
 expand=true
-orientation=bottom
+orientation=top
 size=36
 
 
@@ -58,6 +58,8 @@ object-iid=org.gnome.gnome-panel.wncklet::window-list
 toplevel-id=main-panel
 pack-type=start
 pack-index=6
+@instance-config/display-all-workspaces=false
+@instance-config/group-windows='never-group'
 
 
 
@@ -68,6 +70,8 @@ object-iid=org.gnome.gnome-panel.wncklet::workspace-switcher
 toplevel-id=main-panel
 pack-type=end
 pack-index=3
+@instance-config/display-all-workspaces=true
+@instance-config/display-workspace-names=true
 
 
 [Object notification-area]
@@ -89,3 +93,5 @@ object-iid=org.gnome.gnome-panel.clock::clock
 toplevel-id=main-panel
 pack-type=end
 pack-index=0
+
+
