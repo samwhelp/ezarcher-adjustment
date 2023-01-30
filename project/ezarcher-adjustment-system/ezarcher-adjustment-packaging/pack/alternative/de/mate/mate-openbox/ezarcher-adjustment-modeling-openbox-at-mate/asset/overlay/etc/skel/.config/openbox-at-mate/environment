@@ -1,0 +1,2 @@
+
+PATH="${HOME}/.config/openbox-at-mate/helper/bin:${PATH}"
