@@ -29,7 +29,7 @@ ezarcher-adjustment-modeling-mate-layout-main
 
 
 ezarcher-adjustment-modeling-caja
-#ezarcher-adjustment-modeling-pluma
+ezarcher-adjustment-modeling-pluma
 
 
 
