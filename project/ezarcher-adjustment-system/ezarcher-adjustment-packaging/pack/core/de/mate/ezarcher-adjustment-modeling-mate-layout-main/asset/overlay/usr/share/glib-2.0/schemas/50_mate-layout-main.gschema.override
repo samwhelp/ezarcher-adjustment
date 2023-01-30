@@ -4,6 +4,14 @@
 default-layout='stand-alone-top'
 
 
+[org.mate.session]
+auto-save-session=false
+required-components-list['windowmanager', 'panel', 'filemanager', 'dock']
+
+
 [org.mate.session.required-components]
+windowmanager='marco'
+panel='mate-panel'
+filemanager='caja'
 dock='plank'
 
