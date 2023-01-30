@@ -57,4 +57,21 @@ show
 * [/usr/share/mate-panel/layouts/mate-stand-alone-bottom.layout](asset/overlay/usr/share/mate-panel/layouts/mate-stand-alone-bottom.layout)
 
 
+## Note
 
+> brisk-menu-stand-alone-bottom.layout and brisk-menu-stand-alone-top.layout depends on [brisk-menu](https://aur.archlinux.org/packages/brisk-menu) ([source](https://github.com/getsolus/brisk-menu))
+
+run to install [brisk-menu](https://aur.archlinux.org/packages/brisk-menu)
+
+``` sh
+yay -S brisk-menu
+```
+
+
+> mate-menu-stand-alone-bottom.layout and mate-menu-stand-alone-top.layout depends on [mate-menu](https://aur.archlinux.org/packages/mate-menu) ([source](https://github.com/ubuntu-mate/mate-menu))
+
+run to install [mate-menu](https://aur.archlinux.org/packages/mate-menu)
+
+``` sh
+yay -S mate-menu
+```
