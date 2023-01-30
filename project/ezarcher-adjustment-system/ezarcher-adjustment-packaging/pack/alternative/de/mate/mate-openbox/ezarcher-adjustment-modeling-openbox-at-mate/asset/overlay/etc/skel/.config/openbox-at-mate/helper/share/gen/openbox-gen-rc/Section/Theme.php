@@ -1,6 +1,6 @@
 
 <theme>
-	<name>NumixBlue</name>
+	<name>Gruvbox-Dark</name>
 	<titleLayout>NLIMC</titleLayout>
 	<!--
 		available characters are NDSLIMC, each can occur at most once.
