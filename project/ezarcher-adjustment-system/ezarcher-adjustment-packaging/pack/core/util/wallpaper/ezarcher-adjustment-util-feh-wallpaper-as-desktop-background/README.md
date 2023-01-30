@@ -29,6 +29,11 @@ show
 /usr/bin/feh-wallpaper-as-desktop-background
 /usr/bin/feh-wallpaper-select-default
 /usr/bin/feh-wallpaper-select-shuf
+/usr/share/
+/usr/share/applications/
+/usr/share/applications/feh-wallpaper-as-desktop-background.desktop
+/usr/share/applications/feh-wallpaper-select-default.desktop
+/usr/share/applications/feh-wallpaper-select-shuf.desktop
 ```
 
 

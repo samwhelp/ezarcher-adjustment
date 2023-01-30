@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=FehWallpaperShuf
+Exec=feh-wallpaper-select-shuf
+Icon=system-file-manager
+NoDisplay=false
+# gnome-session autostart
+X-GNOME-Autostart-Phase=Desktop
+X-GNOME-Provides=filemanager
+# back compat
+X-GNOME-Autostart-Notify=true

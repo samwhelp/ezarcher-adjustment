@@ -27,6 +27,9 @@ show
 /usr/
 /usr/bin/
 /usr/bin/openbox-at-mate
+/usr/share/
+/usr/share/applications/
+/usr/share/applications/openbox-at-mate.desktop
 ```
 
 * [/usr/bin/openbox-at-mate](asset/overlay/usr/bin/openbox-at-mate)

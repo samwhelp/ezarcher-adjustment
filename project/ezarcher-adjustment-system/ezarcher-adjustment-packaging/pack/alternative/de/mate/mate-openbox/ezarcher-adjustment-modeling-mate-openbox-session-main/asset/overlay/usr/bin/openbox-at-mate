@@ -20,5 +20,5 @@ test -r $A && . $A
 
 # Run Openbox, and have it run the autostart stuff
 #exec openbox --startup "/usr/lib/openbox/openbox-autostart OPENBOX" "$@"
-exec openbox --config-file "${XDG_CONFIG_HOME}/openbox-at-mate/rc.xml" "$@"
+exec openbox --config-file "${HOME}/.config/openbox-at-mate/rc.xml" "$@"
 
