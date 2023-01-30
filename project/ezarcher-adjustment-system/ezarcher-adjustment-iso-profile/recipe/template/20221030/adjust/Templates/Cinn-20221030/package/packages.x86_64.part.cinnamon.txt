@@ -16,6 +16,11 @@ ezarcher-adjustment-modeling-cinnamon-theme-main
 ezarcher-adjustment-modeling-cinnamon-wallpaper-main
 ezarcher-adjustment-modeling-cinnamon-workspace-main
 
+
+
+## for file-manager nemo 
+filemanager-actions
+
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Cinnamon
 ################################################################################

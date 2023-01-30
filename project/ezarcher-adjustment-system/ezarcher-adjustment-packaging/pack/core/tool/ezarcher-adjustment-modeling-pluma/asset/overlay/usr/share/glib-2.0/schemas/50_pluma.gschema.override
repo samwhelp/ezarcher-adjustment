@@ -1,6 +1,6 @@
 
 
-[org/mate/pluma]
+[org.mate.pluma]
 auto-indent=true
 insert-spaces=false
 tabs-size=uint32 4

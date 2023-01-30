@@ -33,6 +33,9 @@ ezarcher-adjustment-modeling-pluma
 
 
 
+## for file-manager caja 
+filemanager-actions
+
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Mate
 ################################################################################
