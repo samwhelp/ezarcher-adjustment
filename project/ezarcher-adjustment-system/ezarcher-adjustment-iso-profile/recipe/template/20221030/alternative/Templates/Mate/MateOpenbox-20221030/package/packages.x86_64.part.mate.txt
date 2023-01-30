@@ -1,0 +1,69 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / Mate
+##
+
+##
+## dconf db default
+##
+ezarcher-adjustment-modeling-dconf-default-user-db-initialization
+ezarcher-adjustment-modeling-mate-keybind-custom-by-dconf-db-default
+mate-terminal
+ezarcher-adjustment-modeling-mate-terminal
+
+
+
+##
+## gschema override
+##
+ezarcher-adjustment-modeling-mate-keybind-main
+ezarcher-adjustment-modeling-mate-workspace-main
+ezarcher-adjustment-modeling-mate-theme-main
+ezarcher-adjustment-modeling-mate-wallpaper-main
+ezarcher-adjustment-modeling-mate-favorite-apps
+ezarcher-adjustment-modeling-mate-config-main
+
+ezarcher-adjustment-modeling-mate-panel-layouts
+#ezarcher-adjustment-modeling-mate-layout-main
+ezarcher-adjustment-modeling-mate-openbox-layout-main
+
+
+ezarcher-adjustment-modeling-caja
+ezarcher-adjustment-modeling-pluma
+
+
+
+## for file-manager caja 
+filemanager-actions
+
+
+##
+## for mate-openbox
+##
+ezarcher-adjustment-util-feh-wallpaper-as-desktop-background
+ezarcher-adjustment-modeling-mate-openbox-session-main
+ezarcher-adjustment-modeling-openbox-at-mate
+
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / Mate
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+#ezarcher-adjustment-autostart-plank-on-mate
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+#ezarcher-adjustment-autostart-cairo-dock-on-mate
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################

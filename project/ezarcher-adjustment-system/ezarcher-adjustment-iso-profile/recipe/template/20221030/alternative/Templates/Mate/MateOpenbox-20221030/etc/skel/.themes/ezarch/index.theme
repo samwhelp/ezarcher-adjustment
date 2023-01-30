@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ezarch
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=Arc-Dark
+MetacityTheme=Arc-Dark
+IconTheme=Papirus-Dark
+GtkColorScheme=menu_bg: #383c4a
+CursorTheme=DMZ-Black
+CursorSize=24
