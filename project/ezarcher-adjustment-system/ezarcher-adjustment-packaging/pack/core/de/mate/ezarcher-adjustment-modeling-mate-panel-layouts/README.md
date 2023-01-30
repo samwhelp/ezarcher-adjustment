@@ -28,11 +28,33 @@ show
 /usr/share/
 /usr/share/mate-panel/
 /usr/share/mate-panel/layouts/
+/usr/share/mate-panel/layouts/brisk-menu-stand-alone-bottom.dock
+/usr/share/mate-panel/layouts/brisk-menu-stand-alone-bottom.layout
+/usr/share/mate-panel/layouts/brisk-menu-stand-alone-top.dock
+/usr/share/mate-panel/layouts/brisk-menu-stand-alone-top.layout
+/usr/share/mate-panel/layouts/classic-menu-stand-alone-bottom.dock
+/usr/share/mate-panel/layouts/classic-menu-stand-alone-bottom.layout
+/usr/share/mate-panel/layouts/classic-menu-stand-alone-top.dock
+/usr/share/mate-panel/layouts/classic-menu-stand-alone-top.layout
+/usr/share/mate-panel/layouts/mate-menu-stand-alone-bottom.dock
+/usr/share/mate-panel/layouts/mate-menu-stand-alone-bottom.layout
+/usr/share/mate-panel/layouts/mate-menu-stand-alone-top.dock
+/usr/share/mate-panel/layouts/mate-menu-stand-alone-top.layout
+/usr/share/mate-panel/layouts/stand-alone-bottom.dock
 /usr/share/mate-panel/layouts/stand-alone-bottom.layout
+/usr/share/mate-panel/layouts/stand-alone-top.dock
 /usr/share/mate-panel/layouts/stand-alone-top.layout
 ```
 
 
-* [/usr/share/mate-panel/layouts/stand-alone-bottom.layout](asset/overlay/usr/share/mate-panel/layouts/stand-alone-bottom.layout)
 * [/usr/share/mate-panel/layouts/stand-alone-top.layout](asset/overlay/usr/share/mate-panel/layouts/stand-alone-top.layout)
+* [/usr/share/mate-panel/layouts/stand-alone-bottom.layout](asset/overlay/usr/share/mate-panel/layouts/stand-alone-bottom.layout)
+* [/usr/share/mate-panel/layouts/classic-stand-alone-top.layout](asset/overlay/usr/share/mate-panel/layouts/classic-stand-alone-top.layout)
+* [/usr/share/mate-panel/layouts/classic-stand-alone-bottom.layout](asset/overlay/usr/share/mate-panel/layouts/classic-stand-alone-bottom.layout)
+* [/usr/share/mate-panel/layouts/brisk-stand-alone-top.layout](asset/overlay/usr/share/mate-panel/layouts/brisk-stand-alone-top.layout)
+* [/usr/share/mate-panel/layouts/brisk-stand-alone-bottom.layout](asset/overlay/usr/share/mate-panel/layouts/brisk-stand-alone-bottom.layout)
+* [/usr/share/mate-panel/layouts/mate-stand-alone-top.layout](asset/overlay/usr/share/mate-panel/layouts/mate-stand-alone-top.layout)
+* [/usr/share/mate-panel/layouts/mate-stand-alone-bottom.layout](asset/overlay/usr/share/mate-panel/layouts/mate-stand-alone-bottom.layout)
+
+
 
