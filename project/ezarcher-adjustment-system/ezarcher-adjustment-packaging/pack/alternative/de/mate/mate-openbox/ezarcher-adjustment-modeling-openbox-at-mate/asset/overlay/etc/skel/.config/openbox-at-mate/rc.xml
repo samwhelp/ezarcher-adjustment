@@ -1984,7 +1984,7 @@ h l
 				<enabled>true</enabled>
 				<name>Terminal</name>
 			</startupnotify>
-			<command>xterm</command>
+			<command>mate-terminal</command>
 		</action>
 	</keybind>
 
@@ -1994,7 +1994,7 @@ h l
 				<enabled>true</enabled>
 				<name>Terminal</name>
 			</startupnotify>
-			<command>urxvt</command>
+			<command>lxterminal</command>
 		</action>
 	</keybind>
 
