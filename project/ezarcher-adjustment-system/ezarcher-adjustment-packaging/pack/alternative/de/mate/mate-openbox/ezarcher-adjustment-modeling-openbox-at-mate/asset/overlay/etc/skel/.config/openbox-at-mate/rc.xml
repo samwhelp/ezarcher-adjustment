@@ -1859,15 +1859,48 @@ h l
 
 
 
+	<!--
 	<keybind key="Alt-F2">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>RofiShowDrun</name>
+				<name>RunDialog</name>
 			</startupnotify>
 			<command>rofi -show drun -show-icons</command>
 		</action>
 	</keybind>
+	//-->
+
+
+	<!--
+		https://wiki.archlinux.org/title/Compiz
+	//-->
+
+
+	<keybind key="Alt-F2">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>RunDialog</name>
+			</startupnotify>
+			<command>mate-panel --run-dialog</command>
+		</action>
+	</keybind>
+
+
+	<!--
+	<keybind key="Alt-F2">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>RunDialog</name>
+			</startupnotify>
+			<command>lxpanelctl run</command>
+		</action>
+	</keybind>
+	//-->
+
+
 
 
 	<keybind key="A-S-d">
