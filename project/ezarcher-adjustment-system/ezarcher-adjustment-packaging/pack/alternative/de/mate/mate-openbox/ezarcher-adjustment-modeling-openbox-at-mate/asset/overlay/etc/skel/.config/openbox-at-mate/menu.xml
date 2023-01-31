@@ -216,9 +216,19 @@
 
 	<menu id="settings-menu" label="Settings" icon="/usr/share/icons/Numix/24/categories/applications-system.svg">
 
+		<item label="Control Center" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
+			<action name="Execute"><execute>mate-control-center</execute></action>
+		</item>
+
+		<item label="Appearance" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
+			<action name="Execute"><execute>mate-appearance-properties</execute></action>
+		</item>
+
+		<!--
 		<item label="Appearance" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
 			<action name="Execute"><execute>xfce4-appearance-settings</execute></action>
 		</item>
+		//-->
 
 		<item label="LxAppearance" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
 			<action name="Execute"><execute>lxappearance</execute></action>
@@ -228,6 +238,25 @@
 			<action name="Execute"><execute>obconf</execute></action>
 		</item>
 
+
+		<item label="Display Settings" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
+			<action name="Execute"><execute> mate-display-properties</execute></action>
+		</item>
+
+		<item label="Notifications Settings" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
+			<action name="Execute"><execute>mate-notification-properties</execute></action>
+		</item>
+
+		<item label="Mouse Settings" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
+			<action name="Execute"><execute>mate-mouse-properties</execute></action>
+		</item>
+
+		<item label="Default Applications Settings" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
+			<action name="Execute"><execute>mate-default-applications-properties</execute></action>
+		</item>
+
+
+		<!--
 		<item label="Notifications Settings" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
 			<action name="Execute"><execute>xfce4-notifyd-config</execute></action>
 		</item>
@@ -236,6 +265,7 @@
 			<action name="Execute"><execute>xfce4-power-manager-settings</execute></action>
 		</item>
 
+
 		<item label="Display Settings" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
 			<action name="Execute"><execute>xfce4-display-settings</execute></action>
 		</item>
@@ -243,6 +273,7 @@
 		<item label="Mouse Settings" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
 			<action name="Execute"><execute>xfce4-mouse-settings</execute></action>
 		</item>
+		//-->
 
 		<item label="MIME Settings" icon="/usr/share/icons/Numix/24/categories/preferences-system.svg">
 			<action name="Execute"><execute>xfce4-mime-settings</execute></action>
@@ -311,7 +342,11 @@
 	</item>
 //-->
 
-	<item label="Exit" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
+	<item label="Shutdown" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
+		<action name="Execute"><execute>mate-session-save --shutdown-dialog</execute></action>
+	</item>
+
+	<item label="Logout" icon="/usr/share/icons/Numix/24/actions/system-logout.svg">
 		<action name="Execute"><execute>mate-session-save --logout-dialog</execute></action>
 	</item>
 
