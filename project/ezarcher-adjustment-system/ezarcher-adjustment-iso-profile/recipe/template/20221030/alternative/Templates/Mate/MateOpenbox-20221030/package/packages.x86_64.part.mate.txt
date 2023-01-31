@@ -46,6 +46,13 @@ filemanager-actions
 
 
 ##
+## AUR
+##
+brisk-menu
+mate-menu
+
+
+##
 ## for mate-openbox
 ##
 ezarcher-adjustment-util-feh-wallpaper-as-desktop-background
