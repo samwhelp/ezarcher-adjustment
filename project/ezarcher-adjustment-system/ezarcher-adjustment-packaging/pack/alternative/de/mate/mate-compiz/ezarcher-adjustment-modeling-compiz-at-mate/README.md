@@ -36,3 +36,7 @@ show
 * [~/.config/compiz-1/compizconfig/config](asset/overlay/etc/skel/.config/compiz-1/compizconfig/config)
 * [~/.config/compiz-1/compizconfig/Default.ini](asset/overlay/etc/skel/.config/compiz-1/compizconfig/Default.ini)
 
+
+## Link
+
+* Arch Wiki / [Compiz](https://wiki.archlinux.org/title/Compiz) / [Configuration](https://wiki.archlinux.org/title/Compiz/Configuration)
