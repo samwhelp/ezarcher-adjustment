@@ -1,6 +1,18 @@
 
 
-	<!-- ## Restart //-->
+	<!-- ## Shutdown //-->
+	<keybind key="A-S-z">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Shutdown</name>
+			</startupnotify>
+			<command>mate-session-save --shutdown-dialog</command>
+		</action>
+	</keybind>
+
+<?php
+/*
 	<keybind key="A-S-z">
 		<action name="Execute">
 			<startupnotify>
@@ -11,8 +23,7 @@
 		</action>
 	</keybind>
 
-<?php
-/*
+
 	<keybind key="A-S-z">
 		<action name="Restart" />
 	</keybind>
@@ -22,6 +33,16 @@
 
 	<!-- ## Logout //-->
 	<keybind key="A-S-x">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Logout</name>
+			</startupnotify>
+			<command>mate-session-save --logout-dialog</command>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-x">
 		<action name="Exit" />
 	</keybind>
 
