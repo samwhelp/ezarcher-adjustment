@@ -367,6 +367,7 @@ xfce4-terminal
 thunar
 pcmanfm
 lxterminal
+mate-terminal
 ## [obmenu-generator] and [perl-linux-desktopfiles] and [xfce-polkit] from aur
 obmenu-generator
 perl-linux-desktopfiles

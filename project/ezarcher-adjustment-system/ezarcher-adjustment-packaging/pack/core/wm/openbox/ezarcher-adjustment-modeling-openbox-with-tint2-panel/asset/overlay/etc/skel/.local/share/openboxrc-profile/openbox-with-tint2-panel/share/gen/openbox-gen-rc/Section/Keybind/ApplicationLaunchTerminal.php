@@ -65,11 +65,7 @@
 			<command>tilix --quake</command>
 		</action>
 	</keybind>
-*/
-?>
 
-
-	<!-- ## Terminal //-->
 	<keybind key="A-S-t">
 		<action name="Execute">
 			<startupnotify>
@@ -87,5 +83,30 @@
 				<name>Terminal</name>
 			</startupnotify>
 			<command>urxvt</command>
+		</action>
+	</keybind>
+
+*/
+?>
+
+
+	<!-- ## Terminal //-->
+	<keybind key="A-S-t">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Terminal</name>
+			</startupnotify>
+			<command>mate-terminal</command>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-t">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Terminal</name>
+			</startupnotify>
+			<command>lxterminal</command>
 		</action>
 	</keybind>
