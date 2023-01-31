@@ -40,7 +40,7 @@ reinstall:
 
 
 uninstall:
-	sudo pacman -R eezarcher-adjustment-util-mate-panel-layout-ctrl
+	sudo pacman -R ezarcher-adjustment-util-mate-panel-layout-ctrl
 .PHONY: uninstall
 
 clean:
@@ -52,9 +52,9 @@ clean:
 
 
 list:
-	pacman -Ql eezarcher-adjustment-util-mate-panel-layout-ctrl -q
+	pacman -Ql ezarcher-adjustment-util-mate-panel-layout-ctrl -q
 .PHONY: list
 
 info:
-	pacman -Qi eezarcher-adjustment-util-mate-panel-layout-ctrl
+	pacman -Qi ezarcher-adjustment-util-mate-panel-layout-ctrl
 .PHONY: info

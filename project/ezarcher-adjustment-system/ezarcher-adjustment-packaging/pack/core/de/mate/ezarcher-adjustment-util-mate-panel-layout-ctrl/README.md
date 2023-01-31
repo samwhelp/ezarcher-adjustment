@@ -1,5 +1,5 @@
 
-# eezarcher-adjustment-util-mate-panel-layout-ctrl
+# ezarcher-adjustment-util-mate-panel-layout-ctrl
 
 
 ## Reference
@@ -18,7 +18,7 @@
 run
 
 ``` sh
-pacman -Ql eezarcher-adjustment-util-mate-panel-layout-ctrl -q
+pacman -Ql ezarcher-adjustment-util-mate-panel-layout-ctrl -q
 ```
 
 show
