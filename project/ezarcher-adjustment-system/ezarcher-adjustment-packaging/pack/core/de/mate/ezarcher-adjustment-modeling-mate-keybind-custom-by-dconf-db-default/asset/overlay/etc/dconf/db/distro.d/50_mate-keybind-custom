@@ -93,7 +93,7 @@ name='Volume_Increase_Slowly'
 [org/mate/desktop/keybindings/volume-increase]
 action='amixer -q -D pulse sset Master 5%+ unmute'
 binding='<Shift><Alt>period'
-name='Volume_Decrease'
+name='Volume_Increase'
 
 [org/mate/desktop/keybindings/volume-toggle-mute]
 action='amixer -q -D pulse sset Master toggle'

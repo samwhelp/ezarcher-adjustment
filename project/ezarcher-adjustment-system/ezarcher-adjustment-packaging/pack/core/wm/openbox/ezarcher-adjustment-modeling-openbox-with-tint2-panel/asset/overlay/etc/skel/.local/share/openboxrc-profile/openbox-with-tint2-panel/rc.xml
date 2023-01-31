@@ -1824,11 +1824,13 @@ h l
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>RofiShowDrun</name>
+				<name>RunDialog</name>
 			</startupnotify>
 			<command>rofi -show drun -show-icons</command>
 		</action>
 	</keybind>
+
+
 
 
 	<keybind key="A-S-d">
