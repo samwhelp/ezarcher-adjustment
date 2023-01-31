@@ -50,6 +50,7 @@ ezarcher-adjustment-modeling-plank
 ## Cairo Dock
 ##
 cairo-dock
+cairo-dock-plug-ins
 #ezarcher-adjustment-autostart-cairo-dock-on-kde-plasma
 
 

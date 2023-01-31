@@ -66,6 +66,7 @@ ezarcher-adjustment-modeling-plank
 
 
 cairo-dock
+cairo-dock-plug-ins
 #ezarcher-adjustment-autostart-cairo-dock-on-mate
 
 
