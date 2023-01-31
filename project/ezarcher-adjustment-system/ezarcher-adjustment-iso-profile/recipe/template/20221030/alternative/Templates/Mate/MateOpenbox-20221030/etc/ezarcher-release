@@ -1,4 +1,4 @@
 LSB_VERSION=1.4
-DISTRIB_ID=Ezarcher-Adjustment-Mate
+DISTRIB_ID=Ezarcher-Adjustment-Mate-Openbox
 DISTRIB_RELEASE=rolling
-DISTRIB_DESCRIPTION="Ezarcher Adjustment / Mate"
+DISTRIB_DESCRIPTION="Ezarcher Adjustment / Mate-Openbox"

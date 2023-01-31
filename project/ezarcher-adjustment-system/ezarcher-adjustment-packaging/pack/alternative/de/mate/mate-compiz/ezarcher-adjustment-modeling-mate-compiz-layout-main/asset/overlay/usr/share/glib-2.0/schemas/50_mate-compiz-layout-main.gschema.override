@@ -1,0 +1,17 @@
+
+
+[org.mate.panel]
+default-layout='stand-alone-top'
+
+
+[org.mate.session]
+auto-save-session=false
+required-components-list=['windowmanager', 'panel', 'filemanager', 'dock']
+
+
+[org.mate.session.required-components]
+windowmanager='compiz'
+panel='mate-panel'
+filemanager='feh-wallpaper-as-desktop-background'
+dock='plank'
+
