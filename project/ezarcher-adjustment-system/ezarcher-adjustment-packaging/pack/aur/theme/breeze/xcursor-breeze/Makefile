@@ -48,7 +48,7 @@ reinstall:
 
 
 uninstall:
-	sudo pacman -R sakura
+	sudo pacman -R xcursor-breeze
 .PHONY: uninstall
 
 clean:
@@ -58,9 +58,9 @@ clean:
 
 
 list:
-	pacman -Ql sakura -q
+	pacman -Ql xcursor-breeze -q
 .PHONY: list
 
 info:
-	pacman -Qi sakura
+	pacman -Qi xcursor-breeze
 .PHONY: info
