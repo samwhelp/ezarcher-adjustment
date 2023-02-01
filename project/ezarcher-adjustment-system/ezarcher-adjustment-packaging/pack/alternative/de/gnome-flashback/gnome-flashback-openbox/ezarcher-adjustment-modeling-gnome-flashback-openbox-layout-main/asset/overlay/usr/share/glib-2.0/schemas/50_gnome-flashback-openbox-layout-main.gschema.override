@@ -1,5 +1,10 @@
 
 
-[org.gnome.gnome-flashback]
+[org.gnome.gnome-panel.general:GNOME-Flashback]
+default-layout='stand-alone-top'
+
+
+[org.gnome.gnome-flashback:GNOME-Flashback]
 desktop=false
 root-background=true
+
