@@ -39,4 +39,11 @@ Ex:
 
 ```
 
+## profiles
 
+| profile |
+| --- |
+| [start](config/start.ini) |
+| [basic](config/basic.ini) |
+| [wall](config/wall.ini) |
+| [cube](config/cube.ini) |
