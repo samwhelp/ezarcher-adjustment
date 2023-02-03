@@ -42,8 +42,10 @@ show
 ```
 
 * [/usr/bin/gnome-flashback-openbox-session](asset/overlay/usr/bin/gnome-flashback-openbox-session)
+* [/usr/bin/openbox-at-gnome-flashback](asset/overlay/usr/bin/openbox-at-gnome-flashback)
 * [/usr/libexec/gnome-flashback-openbox](asset/overlay/usr/libexec/gnome-flashback-openbox)
-* [/usr/share/applications/gnome-flashback-openbox-session.desktop](asset/overlay//usr/share/applications/gnome-flashback-openbox-session.desktop)
+* [/usr/share/applications/gnome-flashback-openbox-session.desktop](asset/overlay/usr/share/applications/gnome-flashback-openbox-session.desktop)
+* [/usr/share/applications/openbox-at-gnome-flashback.desktop](asset/overlay/usr/share/applications/openbox-at-gnome-flashback.desktop)
 * [/usr/share/gnome-session/sessions/gnome-flashback-openbox.session](asset/overlay/usr/share/gnome-session/sessions/gnome-flashback-openbox.session)
 * [/usr/share/xsessions/gnome-flashback-openbox.desktop](asset/overlay/usr/share/xsessions/gnome-flashback-openbox.desktop)
 

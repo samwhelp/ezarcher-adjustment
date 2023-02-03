@@ -41,7 +41,7 @@ show
 
 * [/usr/bin/gnome-flashback-compiz-session](asset/overlay/usr/bin/gnome-flashback-compiz-session)
 * [/usr/libexec/gnome-flashback-compiz](asset/overlay/usr/libexec/gnome-flashback-compiz)
-* [/usr/share/applications/gnome-flashback-compiz-session.desktop](asset/overlay//usr/share/applications/gnome-flashback-compiz-session.desktop)
+* [/usr/share/applications/gnome-flashback-compiz-session.desktop](asset/overlay/usr/share/applications/gnome-flashback-compiz-session.desktop)
 * [/usr/share/gnome-session/sessions/gnome-flashback-compiz.session](asset/overlay/usr/share/gnome-session/sessions/gnome-flashback-compiz.session)
 * [/usr/share/xsessions/gnome-flashback-compiz.desktop](asset/overlay/usr/share/xsessions/gnome-flashback-compiz.desktop)
 
