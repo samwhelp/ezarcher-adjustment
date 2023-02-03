@@ -1,0 +1,70 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / GnomeFlashback
+##
+
+##
+## dconf db default
+##
+ezarcher-adjustment-modeling-dconf-default-user-db-initialization
+ezarcher-adjustment-modeling-gnome-flashback-keybind-custom-by-dconf-db-default
+ezarcher-adjustment-modeling-gnome-terminal
+gnome-terminal
+
+
+##
+## gschema override
+##
+ezarcher-adjustment-modeling-gnome-flashback-keybind-main
+ezarcher-adjustment-modeling-gnome-flashback-workspace-main
+ezarcher-adjustment-modeling-gnome-flashback-theme-main
+ezarcher-adjustment-modeling-gnome-flashback-wallpaper-main
+ezarcher-adjustment-modeling-gnome-flashback-favorite-apps
+ezarcher-adjustment-modeling-gnome-flashback-config-main
+
+ezarcher-adjustment-modeling-gnome-panel-layouts
+#ezarcher-adjustment-modeling-gnome-flashback-layout-main
+ezarcher-adjustment-modeling-gnome-flashback-compiz-layout-main
+
+ezarcher-adjustment-modeling-nautilus
+ezarcher-adjustment-modeling-gedit
+ezarcher-adjustment-modeling-gnome-console
+
+
+##
+## sddm
+##
+ezarcher-adjustment-modeling-gnome-flashback-sddm-main
+
+
+
+##
+## for gnome-flashback-compiz
+##
+ezarcher-adjustment-util-feh-wallpaper-as-desktop-background
+ezarcher-adjustment-modeling-gnome-flashback-compiz-session-main
+ezarcher-adjustment-modeling-compiz-at-gnome-flashback
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / GnomeFlashback
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+ezarcher-adjustment-autostart-plank-on-gnome-flashback
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+cairo-dock-plug-ins
+#ezarcher-adjustment-autostart-cairo-dock-on-gnome-flashback
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################
