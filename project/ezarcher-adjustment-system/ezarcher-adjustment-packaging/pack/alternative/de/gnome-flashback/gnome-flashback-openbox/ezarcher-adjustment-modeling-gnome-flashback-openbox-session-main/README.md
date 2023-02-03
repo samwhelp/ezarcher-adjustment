@@ -26,12 +26,29 @@ show
 ```
 /usr/
 /usr/bin/
-/usr/bin/openbox-at-gnome-falshback
+/usr/bin/gnome-flashback-openbox-session
+/usr/bin/openbox-at-gnome-flashback
+/usr/libexec/
+/usr/libexec/gnome-flashback-openbox
 /usr/share/
 /usr/share/applications/
+/usr/share/applications/gnome-flashback-openbox-session.desktop
 /usr/share/applications/openbox-at-gnome-flashback.desktop
+/usr/share/gnome-session/
+/usr/share/gnome-session/sessions/
+/usr/share/gnome-session/sessions/gnome-flashback-openbox.session
+/usr/share/xsessions/
+/usr/share/xsessions/gnome-flashback-openbox.desktop
 ```
 
-* [/usr/bin/openbox-at-gnome-flashback](asset/overlay/usr/bin/openbox-at-gnome-flashback)
+* [/usr/bin/gnome-flashback-openbox-session](asset/overlay/usr/bin/gnome-flashback-openbox-session)
+* [/usr/libexec/gnome-flashback-openbox](asset/overlay/usr/libexec/gnome-flashback-openbox)
+* [/usr/share/applications/gnome-flashback-openbox-session.desktop](asset/overlay//usr/share/applications/gnome-flashback-openbox-session.desktop)
+* [/usr/share/gnome-session/sessions/gnome-flashback-openbox.session](asset/overlay/usr/share/gnome-session/sessions/gnome-flashback-openbox.session)
+* [/usr/share/xsessions/gnome-flashback-openbox.desktop](asset/overlay/usr/share/xsessions/gnome-flashback-openbox.desktop)
 
+
+## Project
+
+* [gnome-session-flashback-openbox](https://github.com/samwhelp/note-about-gnome-flashback/tree/gh-pages/_demo/project/gnome-session/gnome-session-flashback/gnome-session-flashback-openbox)
 
