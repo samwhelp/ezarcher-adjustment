@@ -11,7 +11,10 @@
 
 ## pack
 
-* [base](pack/base)
-* [demo](pack/demo)
-* [core](pack/core)
-* [aur](pack/aur)
+| packaging |
+| --- |
+| [base](pack/base) |
+| [demo](pack/demo) |
+| [core](pack/core) |
+| [alternative](pack/alternative) |
+| [aur](pack/aur) |
