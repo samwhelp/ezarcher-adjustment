@@ -4,7 +4,7 @@
 ### Head: Ezarcher Adjustment / Desktop Environment / Compiz
 ##
 
-
+#ezarcher-adjustment-modeling-compiz
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Compiz
@@ -23,11 +23,6 @@ ezarcher-adjustment-modeling-plank
 cairo-dock
 #ezarcher-adjustment-autostart-cairo-dock-on-openbox
 
-
-##
-## mate-volume-control-status-icon
-##
-ezarcher-adjustment-autostart-mate-volume-control-status-icon-on-openbox
 
 ##
 ### Tail: Ezarcher Adjustment / Dock

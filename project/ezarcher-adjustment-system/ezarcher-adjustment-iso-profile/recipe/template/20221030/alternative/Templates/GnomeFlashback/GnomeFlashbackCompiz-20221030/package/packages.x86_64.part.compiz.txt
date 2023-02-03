@@ -1,13 +1,13 @@
 
 
 ################################################################################
-### Head: Ezarcher Adjustment / Desktop Environment / Openbox
+### Head: Ezarcher Adjustment / Desktop Environment / Compiz
 ##
 
 #ezarcher-adjustment-modeling-compiz
 
 ##
-### Tail: Ezarcher Adjustment / Desktop Environment / Openbox
+### Tail: Ezarcher Adjustment / Desktop Environment / Compiz
 ################################################################################
 
 
