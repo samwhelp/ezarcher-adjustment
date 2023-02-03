@@ -7,7 +7,7 @@
 	<!-- default menu file (or custom one in $HOME/.config/openbox/) //-->
 	<!-- system menu files on Debian systems //-->
 	<!-- <file>/var/lib/openbox/debian-menu.xml</file> //-->
-	<file>~/.config/openbox-at-mate/menu.xml</file>
+	<file>~/.config/openbox-at-gnome-flashback/menu.xml</file>
 	<!-- <file>menu.xml</file> //-->
 	<hideDelay>200</hideDelay>
 	<!--

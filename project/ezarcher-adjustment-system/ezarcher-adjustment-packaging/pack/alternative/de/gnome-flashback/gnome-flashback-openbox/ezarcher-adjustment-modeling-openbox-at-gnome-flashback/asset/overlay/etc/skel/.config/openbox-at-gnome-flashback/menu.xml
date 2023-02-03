@@ -343,11 +343,11 @@
 //-->
 
 	<item label="Shutdown" icon="/usr/share/icons/Numix/24/actions/system-shutdown.svg">
-		<action name="Execute"><execute>mate-session-save --shutdown-dialog</execute></action>
+		<action name="Execute"><execute>gnome-session-quit --power-off</execute></action>
 	</item>
 
 	<item label="Logout" icon="/usr/share/icons/Numix/24/actions/system-logout.svg">
-		<action name="Execute"><execute>mate-session-save --logout-dialog</execute></action>
+		<action name="Execute"><execute>gnome-session-quit --logout</execute></action>
 	</item>
 
 </menu>

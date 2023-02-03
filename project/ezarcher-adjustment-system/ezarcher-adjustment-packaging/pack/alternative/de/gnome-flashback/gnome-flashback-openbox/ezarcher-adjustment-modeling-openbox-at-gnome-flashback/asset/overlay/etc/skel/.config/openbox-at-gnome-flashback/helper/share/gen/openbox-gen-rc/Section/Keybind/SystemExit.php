@@ -7,7 +7,7 @@
 				<enabled>true</enabled>
 				<name>Shutdown</name>
 			</startupnotify>
-			<command>mate-session-save --shutdown-dialog</command>
+			<command>gnome-session-quit --power-off</command>
 		</action>
 	</keybind>
 
@@ -38,7 +38,7 @@
 				<enabled>true</enabled>
 				<name>Logout</name>
 			</startupnotify>
-			<command>mate-session-save --logout-dialog</command>
+			<command>gnome-session-quit --logout</command>
 		</action>
 	</keybind>
 
