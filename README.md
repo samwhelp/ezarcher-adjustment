@@ -32,6 +32,7 @@
 | Window Manager |
 | --- |
 | [Openbox](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/openbox/) |
+| [Compiz](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/compiz/) |
 
 
 ## ISO Build System
