@@ -12,7 +12,7 @@ parent: Window Manager
 ## Subject
 
 * [Note](#Note)
-* [Demo](https://samwhelp.github.io/note-about-ezarcher/read/master/window_manager/compiz/demo.html)
+* [Demo](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/compiz/demo.html)
 
 
 ## Note
