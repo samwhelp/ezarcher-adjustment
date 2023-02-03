@@ -14,4 +14,4 @@ grand_parent: Window Manager
 
 | ISO Build Templates | Packaging |
 | --- | --- |
-| [MateCompiz](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/alternative/Templates/Mate/MateCompiz-20221030) | [gnome-flashback-openbox](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/alternative/de/gnome-flashback/gnome-flashback-openbox) |
+| [MateCompiz](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/alternative/Templates/Mate/MateCompiz-20221030) | [gnome-flashback-compiz](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/alternative/de/gnome-flashback/gnome-flashback-compiz) |
