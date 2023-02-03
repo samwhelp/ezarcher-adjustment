@@ -361,28 +361,8 @@ thunar
 pcmanfm
 lxterminal
 
-# Openbox
-openbox
-obconf
-python-pyxdg
-lxappearance
-lxappearance-obconf
-feh
-picom
-tint2
-gsimplecal
-xfconf
-xfce4-settings
-xfce4-notifyd
-xfce4-terminal
-thunar
-pcmanfm
-lxterminal
-mate-terminal
-## [obmenu-generator] and [perl-linux-desktopfiles] and [xfce-polkit] from aur
-obmenu-generator
-perl-linux-desktopfiles
-xfce-polkit
+# Compiz
+compiz
 
 
 # Display Manager
