@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="ezarcher-gnome-flashback-openbox"
-iso_label="EZARCHER-GNOME-FLASHBACK-OPENBOX_$(date +%y%m%d)"
+iso_label="GNOME-FLASHBACK-OPENBOX_$(date +%y%m%d)"
 iso_publisher="Ezarcher Linux <https://sourceforge.net/projects/ezarch/>"
 iso_application="Ezarcher DVD"
 iso_version="$(date +%y%m%d)"
