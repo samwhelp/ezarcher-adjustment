@@ -12,9 +12,33 @@ help:
 	@echo
 	@echo '	$$ make profile-basic'
 	@echo
-	@echo '	$$ make profile-wall'
+	@echo '	$$ make profile-wall		## (profile-wall-ring-shift-switcher)'
 	@echo
-	@echo '	$$ make profile-cube'
+	@echo '	$$ make profile-wall-ring-shift-switcher'
+	@echo
+	@echo '	$$ make profile-wall-ring-switcher-shift'
+	@echo
+	@echo '	$$ make profile-wall-ring-switcher-staticswitcher'
+	@echo
+	@echo '	$$ make profile-wall-shift-ring-switcher'
+	@echo
+	@echo '	$$ make profile-wall-shift-switcher-ring'
+	@echo
+	@echo '	$$ make profile-wall-shift-switcher-staticswitcher'
+	@echo
+	@echo '	$$ make profile-cube		## (profile-cube-ring-shift-switcher)'
+	@echo
+	@echo '	$$ make profile-cube-ring-shift-switcher'
+	@echo
+	@echo '	$$ make profile-cube-ring-switcher-shift'
+	@echo
+	@echo '	$$ make profile-cube-ring-switcher-staticswitcher'
+	@echo
+	@echo '	$$ make profile-cube-shift-ring-switcher'
+	@echo
+	@echo '	$$ make profile-cube-shift-switcher-ring'
+	@echo
+	@echo '	$$ make profile-cube-shift-switcher-staticswitcher'
 	@echo
 	@echo '	$$ make retart'
 	@echo
