@@ -1,0 +1,33 @@
+
+
+[org/mate/desktop/keybindings/rescue-terminal]
+action='sakura -m'
+binding='<Alt><Mod4>F4'
+name='Rescue_Terminal'
+
+[org/mate/desktop/keybindings/rescue-compiz]
+action='compiz --replace'
+binding='<Alt><Mod4>F5'
+name='Rescue_Compiz'
+
+[org/mate/desktop/keybindings/rescue-marco]
+action='marco --replace'
+binding='<Alt><Mod4>F6'
+name='Rescue_Marco'
+
+
+#[org/mate/desktop/keybindings/rescue-logout-2]
+#action='mate-session-save --logout-dialog'
+#binding='<Alt><Control>Delete'
+#name='Rescue_Logout_2'
+
+[org/mate/desktop/keybindings/rescue-logout]
+action='mate-session-save --logout-dialog'
+binding='<Alt><Mod4>F12'
+name='Rescue_Logout'
+
+[org/mate/desktop/keybindings/rescue-shutdown]
+action='mate-session-save --shutdown-dialog'
+binding='<Alt><Mod4>F11'
+name='Rescue_Shutdown'
+
