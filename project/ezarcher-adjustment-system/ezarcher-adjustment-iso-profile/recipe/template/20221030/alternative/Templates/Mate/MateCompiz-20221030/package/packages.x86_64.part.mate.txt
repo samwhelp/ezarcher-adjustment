@@ -9,6 +9,7 @@
 ##
 ezarcher-adjustment-modeling-dconf-default-user-db-initialization
 #ezarcher-adjustment-modeling-mate-keybind-custom-by-dconf-db-default
+ezarcher-adjustment-modeling-mate-compiz-keybind-custom-by-dconf-db-default
 mate-terminal
 ezarcher-adjustment-modeling-mate-terminal
 
