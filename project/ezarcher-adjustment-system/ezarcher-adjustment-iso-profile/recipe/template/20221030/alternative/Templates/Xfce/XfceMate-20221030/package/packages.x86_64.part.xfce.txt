@@ -5,7 +5,14 @@
 ##
 
 #ezarcher-adjustment-modeling-xfce
+
+
+##
+## for mate-compiz
+##
 ezarcher-adjustment-modeling-xfce-compiz-config-main
+ezarcher-adjustment-util-feh-wallpaper-as-desktop-background
+
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Xfce
