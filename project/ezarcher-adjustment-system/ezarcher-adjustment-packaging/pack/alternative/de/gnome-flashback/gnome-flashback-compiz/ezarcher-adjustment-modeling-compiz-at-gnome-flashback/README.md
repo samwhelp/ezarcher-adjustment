@@ -50,7 +50,7 @@ show
 ```
 
 * [~/.config/compiz-1/compizconfig/config](asset/overlay/etc/skel/.config/compiz-1/compizconfig/config)
-* [~/.config/compiz-1/compizconfig/Default.ini)](asset/overlay/etc/skel/.config/compiz-1/compizconfig/Default.ini)
+* [~/.config/compiz-1/compizconfig/Default.ini](asset/overlay/etc/skel/.config/compiz-1/compizconfig/Default.ini)
 
 
 ## Project
