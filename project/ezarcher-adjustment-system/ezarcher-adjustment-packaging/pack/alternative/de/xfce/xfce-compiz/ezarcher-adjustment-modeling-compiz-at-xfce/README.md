@@ -46,12 +46,16 @@ show
 /etc/skel/.config/compiz-1/compizconfig/profile-switch/mak/profile-start.mk
 /etc/skel/.config/compiz-1/compizconfig/profile-switch/mak/profile-wall.mk
 /etc/skel/.config/compiz-1/compizconfig/profile-switch/mak/restart.mk
-
+/usr/
+/usr/share/
+/usr/share/glib-2.0/
+/usr/share/glib-2.0/schemas/
+/usr/share/glib-2.0/schemas/50_xfce-compiz-config-main.gschema.override
 ```
 
 * [~/.config/compiz-1/compizconfig/config](asset/overlay/etc/skel/.config/compiz-1/compizconfig/config)
-* [~/.config/compiz-1/compizconfig/Default.ini)](asset/overlay/etc/skel/.config/compiz-1/compizconfig/Default.ini)
-
+* [~/.config/compiz-1/compizconfig/Default.ini](asset/overlay/etc/skel/.config/compiz-1/compizconfig/Default.ini)
+* [/usr/share/glib-2.0/schemas/50_xfce-compiz-config-main.gschema.override](asset/overlay/usr/share/glib-2.0/schemas/50_xfce-compiz-config-main.gschema.override)
 
 ## Project
 
