@@ -1,0 +1,31 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / Xfce
+##
+
+#ezarcher-adjustment-modeling-xfce
+ezarcher-adjustment-modeling-xfce-compiz-config-main
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / Xfce
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+ezarcher-adjustment-autostart-plank-on-xfce
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+cairo-dock-plug-ins
+#ezarcher-adjustment-autostart-cairo-dock-on-xfce
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################

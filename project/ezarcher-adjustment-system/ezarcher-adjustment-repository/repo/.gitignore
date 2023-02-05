@@ -3,3 +3,4 @@ main/*.tar.zst
 main/*.tar.gz
 main/*.db
 main/*.files
+main/*.lck
