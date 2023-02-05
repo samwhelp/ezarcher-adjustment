@@ -1,0 +1,23 @@
+
+
+[org.gnome.desktop.wm.preferences]
+theme='Gruvbox'
+button-layout='appmenu:minimize,maximize,close'
+mouse-button-modifier='<Super>'
+resize-with-right-button=true
+action-double-click-titlebar='toggle-maximize'
+action-middle-click-titlebar='toggle-shade'
+action-right-click-titlebar='menu'
+num-workspaces=5
+workspace-names=['File', 'Edit', 'Web', 'Term', 'Misc']
+
+
+[org.gnome.desktop.interface]
+gtk-theme='Gruvbox'
+icon-theme="Gruvbox-Dark"
+cursor-theme='Breeze'
+cursor-size=24
+clock-format='24h'
+clock-show-seconds=true
+clock-show-weekday=true
+
