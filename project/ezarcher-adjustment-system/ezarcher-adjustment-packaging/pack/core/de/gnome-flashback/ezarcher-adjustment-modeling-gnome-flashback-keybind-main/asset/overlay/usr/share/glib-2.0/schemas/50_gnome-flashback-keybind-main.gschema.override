@@ -60,3 +60,8 @@ panel-main-menu=['<Alt>F1']
 toggle-tiled-left=['<Super>Left']
 toggle-tiled-right=['<Super>Right']
 
+
+
+
+[org.gnome.settings-daemon.plugins.media-keys:GNOME-Flashback]
+screensaver=['<Control><Alt>x']

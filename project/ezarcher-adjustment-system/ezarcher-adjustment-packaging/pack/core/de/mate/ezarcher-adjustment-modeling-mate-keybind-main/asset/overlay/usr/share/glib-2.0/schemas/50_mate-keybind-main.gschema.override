@@ -45,7 +45,7 @@ unmaximize='<Super>Down'
 cycle-windows='<Super>Escape'
 cycle-windows-backward='<Alt>Escape'
 rename-workspace='<Alt>r'
-run-command-1='<Super><Alt>l'
+run-command-1='<Control><Alt>x'
 run-command-10='disabled'
 run-command-11='disabled'
 run-command-12='disabled'
@@ -101,3 +101,10 @@ command-8='mate-system-monitor -s'
 command-9=' '
 command-screenshot='mate-screenshot'
 command-window-screenshot='mate-screenshot --window'
+
+
+
+
+[org.mate.SettingsDaemon.plugins.media-keys]
+screensaver='<Control><Alt>x'
+#screensaver='disabled'

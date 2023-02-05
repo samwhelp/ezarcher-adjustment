@@ -72,3 +72,9 @@ toggle-tiled-right=['<Super>Right']
 
 [org.gnome.mutter.wayland.keybindings]
 restore-shortcuts=['']
+
+
+
+
+[org.gnome.settings-daemon.plugins.media-keys]
+screensaver=['<Control><Alt>x']
