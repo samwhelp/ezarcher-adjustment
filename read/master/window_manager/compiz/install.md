@@ -14,7 +14,7 @@ grand_parent: Window Manager
 run to install 「AUR: [compiz](https://aur.archlinux.org/packages/compiz)」。
 
 ``` sh
-sudo yay -Sy --needed compiz
+yay -Sy --needed compiz
 ```
 
 
