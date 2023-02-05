@@ -109,8 +109,30 @@ Ex:
 
 > Ex: `cube-ring-shift-switcher`
 
-| Column 1  | Column 2      | Column 3 | Column 4           |
-| --------- | ------------- | -------- | ------------------ |
-| workspace | window        | window   | window             |
-|           | grave_Tab_a_s | k_j_h_l  | Up_Down_Left_Right |
-| cube      | ring          | shift    | switcher           |
+| Item     | Column 1              | Column 2              | Column 3         | Column 4                   |
+| -------  | --------------------- | --------------------- | ---------------- | -------------------------- |
+| Subject  | workspace             | window                | window           | window                     |
+| Switcher | cube                  | ring                  | shift            | switcher                   |
+| Keybind  | `Alt + grave_Tab_a_s` | `Win + grave_Tab_a_s` | `Win + k_j_h_l`  | `Win + Up_Down_Left_Right` |
+
+
+## Direction Key
+
+| Key   | Key | Key   |
+| ----- | --- | ----- |
+| Up    | k   | grave |
+| Down  | j   | Tab   |
+| Left  | h   | a     |
+| Right | l   | s     |
+
+> grave means ` (~)
+
+
+## Modifier key
+
+| Key   | Alias | Alias | Alias |
+| ----- | ----- | ----- | ----- |
+| Alt   | Mod1  |       |       |
+| Win   | Mod4  | Super | Meta  |
+| Ctrl  |       |       |       |
+| Shift |       |       |       |
