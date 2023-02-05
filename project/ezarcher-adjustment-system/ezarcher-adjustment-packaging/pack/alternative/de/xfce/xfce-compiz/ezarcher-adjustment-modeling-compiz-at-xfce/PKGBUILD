@@ -1,0 +1,32 @@
+
+
+pkgname=ezarcher-adjustment-modeling-compiz-at-xfce
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Modeling / Compiz at Gnome Xfce"
+url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/alternative/de/xfce/xfce-compiz/ezarcher-adjustment-modeling-compiz-at-xfce"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	##
+	## Main Config
+	##
+
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+
+}
