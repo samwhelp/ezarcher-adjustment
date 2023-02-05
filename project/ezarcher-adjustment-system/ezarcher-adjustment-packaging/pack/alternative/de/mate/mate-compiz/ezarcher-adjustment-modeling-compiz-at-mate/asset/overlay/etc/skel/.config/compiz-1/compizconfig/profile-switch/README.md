@@ -63,7 +63,7 @@ Ex:
 
 ```
 
-## profiles
+## Profiles
 
 | basic profile |
 | --- |
@@ -73,7 +73,6 @@ Ex:
 
 | wall profile |
 | --- |
-| [wall](config/wall.ini) |
 | [wall-ring-shift-switcher](config/wall-ring-shift-switcher.ini) |
 | [wall-ring-switcher-shift](config/wall-ring-switcher-shift.ini) |
 | [wall-ring-switcher-staticswitcher](config/wall-ring-switcher-staticswitcher.ini) |
@@ -84,7 +83,6 @@ Ex:
 
 | cube profile |
 | --- |
-| [cube](config/cube.ini) |
 | [cube-ring-shift-switcher](config/cube-ring-shift-switcher.ini) |
 | [cube-ring-switcher-shift](config/cube-ring-switcher-shift.ini) |
 | [cube-ring-switcher-staticswitcher](config/cube-ring-switcher-staticswitcher.ini) |
@@ -93,16 +91,15 @@ Ex:
 | [cube-shift-switcher-staticswitcher](config/cube-shift-switcher-staticswitcher.ini) |
 
 
-## means
+## Mean
+
+| Workspace Switcher |
+| ------------------ |
+| wall               |
+| cube               |
 
 
-| workspace switcher |
-| --- |
-| wall |
-| cube |
-
-
-| window switcher |
+| Window Switcher |
 | --------------- |
 | ring            |
 | shift           |
@@ -110,10 +107,10 @@ Ex:
 | staticswitcher  |
 
 
-| column 1  | column 2      | column 3 | column 4           |
+> Ex: `cube-ring-shift-switcher`
+
+| Column 1  | Column 2      | Column 3 | Column 4           |
 | --------- | ------------- | -------- | ------------------ |
 | workspace | window        | window   | window             |
 |           | grave_Tab_a_s | k_j_h_l  | Up_Down_Left_Right |
 | cube      | ring          | shift    | switcher           |
-
-> cube-ring-shift-switcher
