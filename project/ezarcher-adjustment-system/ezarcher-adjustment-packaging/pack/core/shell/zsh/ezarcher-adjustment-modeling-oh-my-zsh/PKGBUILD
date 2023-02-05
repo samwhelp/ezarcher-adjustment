@@ -1,0 +1,62 @@
+
+##
+## * https://wiki.archlinux.org/title/Creating_packages
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/makepkg
+## * https://wiki.archlinux.org/title/PKGBUILD
+## * https://wiki.archlinux.org/title/Arch_package_guidelines
+##
+
+pkgname=ezarcher-adjustment-modeling-oh-my-zsh
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Modeling / oh-my-zsh"
+url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-oh-my-zsh"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	local pkg_skel_dir_path="${pkgdir}/etc/skel"
+	local pkg_oh_my_zsh_dir_path="${pkgdir}/etc/skel/.oh-my-zsh"
+
+	##
+	## clone
+	##
+	echo "git clone https://github.com/ohmyzsh/ohmyzsh.git ${pkg_oh_my_zsh_dir_path}"
+	git clone "https://github.com/ohmyzsh/ohmyzsh.git" "${pkg_oh_my_zsh_dir_path}"
+
+	echo "rm -rf ${pkg_oh_my_zsh_dir_path}/.git"
+	rm -rf "${pkg_oh_my_zsh_dir_path}/.git"
+
+	##
+	## Main Config
+	##
+
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+
+
+	##
+	## ~/.zshrc
+	##
+	echo "cp ${pkg_oh_my_zsh_dir_path}/templates/zshrc.zsh-template ${pkg_skel_dir_path}/.zshrc"
+	cp "${pkg_oh_my_zsh_dir_path}/templates/zshrc.zsh-template" "${pkg_skel_dir_path}/.zshrc"
+
+	sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="candy-fix"/g' "${pkg_skel_dir_path}/.zshrc"
+
+}
