@@ -1,0 +1,28 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Shell / Bash
+##
+
+ezarcher-adjustment-modeling-bash-it
+
+##
+### Tail: Ezarcher Adjustment / Shell / Bash
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Shell / Zsh
+##
+
+
+##
+## conflict: [grml-zsh-config]
+##
+ezarcher-adjustment-modeling-oh-my-zsh
+
+
+
+##
+### Tail: Ezarcher Adjustment / Shell / Zsh
+################################################################################
