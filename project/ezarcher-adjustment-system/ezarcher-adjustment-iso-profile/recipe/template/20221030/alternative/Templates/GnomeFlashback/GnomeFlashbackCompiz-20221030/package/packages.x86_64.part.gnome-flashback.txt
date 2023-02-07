@@ -45,6 +45,7 @@ ezarcher-adjustment-modeling-gnome-flashback-sddm-main
 ezarcher-adjustment-util-feh-wallpaper-as-desktop-background
 ezarcher-adjustment-modeling-gnome-flashback-compiz-session-main
 ezarcher-adjustment-modeling-compiz-at-gnome-flashback
+ezarcher-adjustment-modeling-gnome-flashback-compiz-dmrc-main
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / GnomeFlashback
