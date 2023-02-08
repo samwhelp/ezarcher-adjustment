@@ -1,5 +1,5 @@
 
-# Ezarcher / Xfce
+# Ezarcher / Gnome Flashback Compiz
 
 
 ## Build
