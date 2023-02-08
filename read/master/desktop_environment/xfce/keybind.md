@@ -3,7 +3,7 @@ title: Keybind
 nav_order: 3200
 has_children: false
 parent: Xfce
-grand_parent: Window Manager
+grand_parent: Desktop Environment
 ---
 
 
