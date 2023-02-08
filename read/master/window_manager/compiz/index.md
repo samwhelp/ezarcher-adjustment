@@ -12,6 +12,7 @@ parent: Window Manager
 ## Subject
 
 * [Install](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/compiz/install.html)
+* [Install](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/compiz/keybind.html)
 * [Demo](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/compiz/demo.html)
 * [Note](#Note)
 
