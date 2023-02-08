@@ -14,4 +14,4 @@ grand_parent: Window Manager
 
 | Illustrate | Table |
 | --- | --- |
-| [Quick Start](https://samwhelp.github.io/system-modeling/read/zh_tw/quick-start) | [Cheat Sheet](https://samwhelp.github.io/system-modeling/read/zh_tw/quick-start/cheat-sheet) |
+| [Quick Start](https://samwhelp.github.io/system-modeling/read/en_us/quick-start) | [Cheat Sheet](https://samwhelp.github.io/system-modeling/read/en_us/quick-start/cheat-sheet) |
