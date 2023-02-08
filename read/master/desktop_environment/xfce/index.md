@@ -11,9 +11,9 @@ parent: Desktop Environment
 
 ## Subject
 
-* [Note](#note)
+* [Keybind](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/xfce/keybind.html)
 * [Demo](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/xfce/demo.html)
-
+* [Note](#note)
 
 
 ## Note

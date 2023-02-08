@@ -11,8 +11,9 @@ parent: Desktop Environment
 
 ## Subject
 
-* [Note](#note)
+* [Keybind](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/cinnamon/keybind.html)
 * [Demo](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/cinnamon/demo.html)
+* [Note](#note)
 
 
 ## Note
