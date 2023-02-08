@@ -11,9 +11,9 @@ parent: Window Manager
 
 ## Subject
 
-* [Note](#note)
+* [Keybind](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/openbox/keybind.html)
 * [Demo](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/openbox/demo.html)
-
+* [Note](#note)
 
 
 ## Note
