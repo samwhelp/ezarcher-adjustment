@@ -12,6 +12,6 @@ grand_parent: Desktop Environment
 
 ## ISO Build Templates
 
-| ISO Build Templates |
-| --- |
-| [Gnome Shell](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/adjust/Templates/Gnome-20221030) |
+| ISO Build Templates | Packaging |
+| --- | --- |
+| [Gnome Shell](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/adjust/Templates/Gnome-20221030) | [gnome-shell](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/de/gnome-shell) |
