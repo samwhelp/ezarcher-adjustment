@@ -18,4 +18,4 @@ parent: Window Manager
 
 ## Note
 
-* [note-about-openbox](https://github.com/samwhelp/note-about-openbox/)
+* [note-about-openbox](https://github.com/samwhelp/note-about-openbox/tree/gh-pages/_demo)

@@ -18,4 +18,4 @@ parent: Desktop Environment
 
 ## Note
 
-* [note-about-gnome-flashback](https://github.com/samwhelp/note-about-gnome-flashback/)
+* [note-about-gnome-flashback](https://github.com/samwhelp/note-about-gnome-flashback/tree/gh-pages/_demo)

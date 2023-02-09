@@ -18,4 +18,4 @@ parent: Desktop Environment
 
 ## Note
 
-* [note-about-cinnamon](https://github.com/samwhelp/note-about-cinnamon/)
+* [note-about-cinnamon](https://github.com/samwhelp/note-about-cinnamon/tree/gh-pages/_demo)

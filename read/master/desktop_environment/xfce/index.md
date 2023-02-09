@@ -18,4 +18,4 @@ parent: Desktop Environment
 
 ## Note
 
-* [note-about-xfce](https://github.com/samwhelp/note-about-xfce/)
+* [note-about-xfce](https://github.com/samwhelp/note-about-xfce/tree/gh-pages/_demo)

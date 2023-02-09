@@ -18,4 +18,4 @@ parent: Desktop Environment
 
 ## Note
 
-* [note-about-mate](https://github.com/samwhelp/note-about-mate/)
+* [note-about-mate](https://github.com/samwhelp/note-about-mate/tree/gh-pages/_demo)

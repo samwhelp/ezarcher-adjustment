@@ -18,4 +18,4 @@ parent: Desktop Environment
 
 ## Note
 
-* [note-about-gnome-shell](https://github.com/samwhelp/note-about-gnome-shell/)
+* [note-about-gnome-shell](https://github.com/samwhelp/note-about-gnome-shell/tree/gh-pages/_demo)

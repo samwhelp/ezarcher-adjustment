@@ -18,4 +18,4 @@ parent: Desktop Environment
 
 ## Note
 
-* [note-about-kde](https://github.com/samwhelp/note-about-kde/)
+* [note-about-kde](https://github.com/samwhelp/note-about-kde/tree/gh-pages/_demo)

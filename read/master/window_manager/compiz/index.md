@@ -19,4 +19,4 @@ parent: Window Manager
 
 ## Note
 
-* [note-about-compiz](https://samwhelp.github.io/note-about-compiz/)
+* [note-about-compiz](https://github.com/samwhelp/note-about-compiz/tree/gh-pages/_demo)
