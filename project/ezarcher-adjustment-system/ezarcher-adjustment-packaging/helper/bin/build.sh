@@ -33,8 +33,8 @@ mod_build_list () {
 
 	cd "${THE_PLAN_DIR_PATH}"
 
-	local package_list_file_path="${THE_PLAN_DIR_PATH}/helper/var/build/package-list-build.txt"
-	local package_list=$(cat "${package_list_file_path}")
+
+	local package_list=$(sys_build_script_find)
 
 	for package_item in ${package_list}; do
 		#echo "${package_item}"
