@@ -1,0 +1,857 @@
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+alsa-utils
+amd-ucode
+arch-install-scripts
+archinstall
+b43-fwcutter
+base
+bind
+brltty
+broadcom-wl-dkms
+btrfs-progs
+clonezilla
+cryptsetup
+darkhttpd
+ddrescue
+dhclient
+dhcpcd
+diffutils
+dmidecode
+dmraid
+dnsmasq
+dosfstools
+e2fsprogs
+edk2-shell
+efibootmgr
+espeakup
+ethtool
+exfatprogs
+f2fs-tools
+fatresize
+fsarchiver
+gnu-netcat
+gpart
+gpm
+gptfdisk
+##grml-zsh-config
+grub
+hdparm
+hyperv
+intel-ucode
+irssi
+iw
+iwd
+jfsutils
+kitty-terminfo
+less
+libfido2
+libusb-compat
+linux
+linux-atm
+linux-firmware
+linux-firmware-bnx2x
+linux-firmware-marvell
+linux-firmware-qcom
+linux-firmware-qlogic
+linux-firmware-whence
+livecd-sounds
+lsscsi
+lvm2
+lynx
+man-db
+man-pages
+mc
+mdadm
+memtest86+
+mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-nfs-utils
+modemmanager
+mtools
+nano
+nbd
+ndisc6
+nfs-utils
+nilfs-utils
+nmap
+ntfs-3g
+nvme-cli
+open-iscsi
+open-vm-tools
+openconnect
+openssh
+openvpn
+partclone
+parted
+partimage
+pcsclite
+ppp
+pptpclient
+pv
+qemu-guest-agent
+refind
+reflector
+reiserfsprogs
+rp-pppoe
+rsync
+rxvt-unicode-terminfo
+screen
+sdparm
+sg3_utils
+smartmontools
+sof-firmware
+squashfs-tools
+sudo
+syslinux
+systemd-resolvconf
+tcpdump
+terminus-font
+testdisk
+tmux
+tpm2-tss
+udftools
+usb_modeswitch
+usbmuxd
+usbutils
+vim
+virtualbox-guest-utils
+vpnc
+wireless-regdb
+wireless_tools
+wpa_supplicant
+wvdial
+xfsprogs
+xl2tpd
+zsh
+
+# System
+archiso
+archlinux-appstream-data
+aspell
+aspell-en
+base-devel
+bash-completion
+bluez
+bluez-utils
+cdrtools
+cmake
+cryfs
+devtools
+dkms
+dvd+rw-tools
+efitools
+encfs
+f2fs-tools
+fuse3
+fwupd
+git
+gnome-disk-utility
+gnome-keyring
+gocryptfs
+gparted
+grsync
+haveged
+hspell
+htop
+hunspell
+hunspell-en_us
+hwdata
+hwdetect
+hwinfo
+libburn
+libisofs
+libisoburn
+linux-headers
+logrotate
+lsb-release
+os-prober
+p7zip
+packagekit
+pacman-contrib
+pacutils
+pahole
+perl
+perl-data-dump
+perl-json
+perl-lwp-protocol-https
+perl-term-readline-gnu
+perl-term-ui
+pkgfile
+plocate
+python-setuptools
+python-sphinx
+sdl12-compat
+sdl2
+tlp
+udftools
+udisks2
+unace
+unrar
+unzip
+upower
+xdg-user-dirs
+xz
+zstd
+
+# Filesystem
+gvfs
+gvfs-afc
+gvfs-goa
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+
+# Multimedia
+alsa-lib
+alsa-plugins
+alsa-firmware
+alsa-utils
+audacious
+audacious-plugins
+cdrdao
+dvdauthor
+faac
+faad2
+ffmpeg
+ffmpegthumbnailer
+flac
+frei0r-plugins
+gstreamer
+gst-libav
+gst-plugins-base
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly
+gstreamer-vaapi
+imagemagick
+lame
+libdvdcss
+libopenraw
+mencoder
+mjpegtools
+mpv
+poppler-glib
+# Pipewire - comment out pulseaudio packages if using pipewire
+pipewire
+pipewire-alsa
+pipewire-docs
+pipewire-jack
+pipewire-pulse
+alsa-card-profiles
+gst-plugin-pipewire
+wireplumber
+# Pulseaudio - comment out pipewire packages if using pulseaudio
+# pulseaudio
+# pulseaudio-alsa
+# pulseaudio-bluetooth
+# pulseaudio-equalizer
+# pulseaudio-jack
+simplescreenrecorder
+sox
+transcode
+smplayer
+x265
+x264
+xvidcore
+yt-dlp
+
+# XORG
+mesa
+xorg
+xorg-server
+xorg-apps
+xorg-drivers
+xorg-xkill
+xorg-xinit
+xterm
+
+# Networking
+avahi
+curl
+dnsutils
+ethtool
+filezilla
+firefox
+firewalld
+gnome-nettool
+iptables-nft
+modemmanager
+net-tools
+netctl
+networkmanager
+networkmanager-openvpn
+network-manager-applet
+nftables
+nm-connection-editor
+nss-mdns
+openresolv
+r8168
+wget
+whois
+
+# Fonts
+ttf-dejavu
+ttf-liberation
+ttf-bitstream-vera
+ttf-ubuntu-font-family
+cantarell-fonts
+ttf-croscore
+ttf-carlito
+ttf-caladea
+noto-fonts
+opendesktop-fonts
+ttf-opensans
+freetype2
+
+# Printing Support
+cups
+cups-pdf
+cups-filters
+cups-pk-helper
+foomatic-db
+foomatic-db-engine
+ghostscript
+gsfonts
+gutenprint
+python-pillow
+python-pip
+python-pyqt5
+python-reportlab
+simple-scan
+system-config-printer
+
+# Xfce
+accountsservice
+adapta-gtk-theme
+aisleriot
+arc-gtk-theme
+arc-icon-theme
+asunder
+blueman
+catfish
+dconf-editor
+epdfview
+galculator
+geany
+gnome-firmware
+gnome-packagekit
+gtk-engine-murrine
+guvcview
+meld
+neofetch
+papirus-icon-theme
+pavucontrol
+polkit-gnome
+transmission-gtk
+xarchiver
+xfburn
+xfce4
+xfce4-goodies
+
+# Display Manager
+sddm
+
+# Calamares dependencies (not listed elsewhere)
+boost
+boost-libs
+extra-cmake-modules
+gtk-update-icon-cache
+icu
+kconfig
+kcoreaddons
+kdbusaddons
+kiconthemes
+ki18n
+kio
+kparts
+kpmcore
+kservice
+kwidgetsaddons
+libpwquality
+plasma-framework
+polkit-qt5
+qt5-location
+qt5-svg
+qt5-tools
+qt5-translations
+qt5-webengine
+qt5-xmlpatterns
+qt5ct
+solid
+yaml-cpp
+
+# Calamares
+calamares
+ckbcomp
+mkinitcpio-openswap
+
+# AUR
+trizen
+
+
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Note
+##
+
+##
+## * https://samwhelp.github.io/ezarcher-adjustment/
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository
+##
+
+##
+### Tail: Ezarcher Adjustment / Note
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Base
+##
+
+ezarcher-adjustment-mirrorlist
+ezarcher-adjustment-hello
+
+##
+### Tail: Ezarcher Adjustment / Base
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / AUR
+##
+
+sakura
+qt5-styleplugins
+xcursor-breeze
+sublime-text-4
+yay-bin
+
+##
+### Tail: Ezarcher Adjustment / AUR
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Appearance
+##
+
+ezarcher-adjustment-appearance-gtk-theme-dracula
+ezarcher-adjustment-appearance-gtk-theme-gruvbox
+ezarcher-adjustment-appearance-gtk-theme-gruvbox-dark
+ezarcher-adjustment-appearance-gtk-theme-numix-blue
+ezarcher-adjustment-appearance-icon-theme-dracula
+ezarcher-adjustment-appearance-icon-theme-gruvbox-dark
+ezarcher-adjustment-appearance-icon-theme-numix
+ezarcher-adjustment-appearance-xfwm-theme-rgaps-blend-no-buttons
+
+
+ezarcher-adjustment-modeling-gtkrc
+ezarcher-adjustment-modeling-gtkrc-gruvbox-dark
+
+ezarcher-adjustment-modeling-qt-style-follow-gtk
+
+ezarcher-adjustment-modeling-qt5ctrc
+ezarcher-adjustment-modeling-qt5ctrc-gruvbox-dark
+
+
+ezarcher-adjustment-modeling-cursor-default-breeze
+
+
+##
+### Tail: Ezarcher Adjustment / Appearance
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Wallpaper
+##
+
+xfce4-artwork
+
+ezarcher-adjustment-modeling-wallpaper-default
+
+ezarcher-adjustment-modeling-wallpaper-collection
+
+##
+### Tail: Ezarcher Adjustment / Wallpaper
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Font
+##
+
+noto-fonts-cjk
+
+ezarcher-adjustment-modeling-font-match-order
+
+##
+### Tail: Ezarcher Adjustment / Font
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Modeling / XDG
+##
+
+
+ezarcher-adjustment-modeling-xdg-mime-applications
+
+
+
+ezarcher-adjustment-modeling-xdg-user-dir-templates
+python-pygithub
+
+
+##
+### Tail: Ezarcher Adjustment / Modeling / XDG
+################################################################################
+
+
+
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Input Method / fcitx5-chewing
+##
+
+##
+## fcitx5
+##
+
+ezarcher-adjustment-modeling-fcitx5-chewing
+fcitx5
+fcitx5-chewing
+fcitx5-gtk
+fcitx5-qt
+fcitx5-configtool
+
+#fcitx5-chinese-addons
+#fcitx5-m17n
+#fcitx5-material-color
+#fcitx5-lua
+#fcitx5-anthy
+
+##
+### Tail: Ezarcher Adjustment / Input Method / fcitx5-chewing
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / App Launcher
+##
+
+rofi
+ezarcher-adjustment-modeling-rofi
+
+##
+### Tail: Ezarcher Adjustment / App Launcher
+################################################################################
+
+
+
+
+################################################################################
+### Head: Ezarcher Adjustment / File Archiver
+##
+
+lxqt-archiver
+engrampa
+
+
+p7zip
+unace
+unrar
+brotli
+
+##
+### Tail: Ezarcher Adjustment / File Archiver
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / File Manager
+##
+
+pcmanfm
+ezarcher-adjustment-modeling-pcmanfm
+
+pcmanfm-qt
+ezarcher-adjustment-modeling-pcmanfm-qt
+
+
+thunar
+ezarcher-adjustment-modeling-thunar
+
+##
+### Tail: Ezarcher Adjustment / File Manager
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Text Editor
+##
+
+ezarcher-adjustment-modeling-vi
+
+vim
+neovim
+micro
+nano
+
+#atom
+ezarcher-adjustment-modeling-atom
+
+#sublime-text-4
+ezarcher-adjustment-modeling-sublime-text
+
+mousepad
+ezarcher-adjustment-modeling-mousepad
+
+xed
+ezarcher-adjustment-modeling-xed
+
+##
+### Tail: Ezarcher Adjustment / Text Editor
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Web Browser
+##
+
+firefox
+#falkon
+
+##
+### Tail: Ezarcher Adjustment / Web Browser
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Terminal
+##
+
+lxterminal
+ezarcher-adjustment-modeling-lxterminal
+
+#sakura
+ezarcher-adjustment-modeling-sakura
+
+
+xfce4-terminal
+ezarcher-adjustment-modeling-xfce4-terminal
+
+##
+### Tail: Ezarcher Adjustment / Terminal
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Image
+##
+
+
+viewnior
+ezarcher-adjustment-modeling-viewnior
+
+feh
+gpicview
+sxiv
+
+
+ueberzug
+
+##
+### Tail: Ezarcher Adjustment / Image
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Audio
+##
+
+audacious
+
+##
+### Tail: Ezarcher Adjustment / Audio
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Video
+##
+
+mpv
+ezarcher-adjustment-modeling-mpv
+
+vlc
+smplayer
+
+##
+### Tail: Ezarcher Adjustment / Video
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Media
+##
+
+##
+## install `mate-media` for use `mate-volume-control-status-icon`
+##
+
+mate-media
+mediainfo
+mediainfo-gui
+
+##
+### Tail: Ezarcher Adjustment / Media
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Donload
+##
+
+yt-dlp
+youtube-dl
+filezilla
+
+##
+### Tail: Ezarcher Adjustment / Donload
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Network
+##
+
+network-manager-applet
+
+##
+### Tail: Ezarcher Adjustment / Network
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Develop
+##
+
+##
+## * https://wiki.archlinux.org/title/archiso
+## * https://archlinux.org/packages/extra/any/archiso/
+## * https://archlinux.org/packages/extra/x86_64/qemu-desktop/
+##
+
+base-devel
+archiso
+qemu-desktop
+
+
+tree
+
+
+xorg-server-xephyr
+
+bat
+php
+
+
+##
+### Tail: Ezarcher Adjustment / Develop
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Helper
+##
+
+xclip
+
+
+fzf
+ezarcher-adjustment-modeling-fzf
+
+##
+### Tail: Ezarcher Adjustment / Helper
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Shell / Bash
+##
+
+ezarcher-adjustment-modeling-bash-it
+
+##
+### Tail: Ezarcher Adjustment / Shell / Bash
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Shell / Zsh
+##
+
+
+##
+## conflict: [grml-zsh-config]
+##
+ezarcher-adjustment-modeling-oh-my-zsh
+
+
+
+##
+### Tail: Ezarcher Adjustment / Shell / Zsh
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / SDDM
+##
+
+ezarcher-adjustment-modeling-sddm-theme-current
+ezarcher-adjustment-appearance-sddm-theme-sugar-candy
+ezarcher-adjustment-appearance-sddm-theme-sugar-dark
+ezarcher-adjustment-appearance-sddm-theme-sugar-light
+ezarcher-adjustment-appearance-sddm-theme-chili
+
+##
+### Tail: Ezarcher Adjustment / SDDM
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Desktop Environment / Xfce
+##
+
+ezarcher-adjustment-modeling-xfce
+
+##
+### Tail: Ezarcher Adjustment / Desktop Environment / Xfce
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Dock
+##
+
+plank
+ezarcher-adjustment-autostart-plank-on-xfce
+ezarcher-adjustment-modeling-plank
+
+
+cairo-dock
+cairo-dock-plug-ins
+#ezarcher-adjustment-autostart-cairo-dock-on-xfce
+
+
+##
+### Tail: Ezarcher Adjustment / Dock
+################################################################################
