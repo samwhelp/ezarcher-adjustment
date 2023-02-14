@@ -30,3 +30,5 @@ show
 /etc/skel/.config/sakura/
 /etc/skel/.config/sakura/sakura.conf
 ```
+
+* [~/.config/sakura/sakura.conf](asset/overlay//etc/skel/.config/sakura/sakura.conf)
