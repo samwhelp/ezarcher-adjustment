@@ -45,7 +45,6 @@ grand_parent: Tool
 | [ezarcher-adjustment-modeling-sakura](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-sakura) |
 
 
-
 ## Config File
 
 | Config Packaging |
