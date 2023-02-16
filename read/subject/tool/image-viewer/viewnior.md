@@ -1,8 +1,8 @@
 ---
 title: Viewnior
-nav_order: 3061
+nav_order: 3051
 has_children: false
-parent: Media Player
+parent: Image Viewer
 grand_parent: Tool
 ---
 
