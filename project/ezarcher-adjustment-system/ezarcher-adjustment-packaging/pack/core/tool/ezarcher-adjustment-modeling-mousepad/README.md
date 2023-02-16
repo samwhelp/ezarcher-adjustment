@@ -1,6 +1,30 @@
 
 # ezarcher-adjustment-modeling-mousepad
 
+
+
+## File List
+
+run
+
+``` sh
+pacman -Ql ezarcher-adjustment-modeling-mousepad -q
+```
+
+show
+
+```
+/usr/
+/usr/share/
+/usr/share/glib-2.0/
+/usr/share/glib-2.0/schemas/
+/usr/share/glib-2.0/schemas/50_mousepad.gschema.override
+```
+
+* [/usr/share/glib-2.0/schemas/50_mousepad.gschema.override](asset/overlay/usr/share/glib-2.0/schemas/50_mousepad.gschema.override)
+
+
+
 ## Todo
 
 install hook
