@@ -19,3 +19,24 @@ behavior-modify=0
 * https://wiki.archlinux.org/title/makepkg
 * https://wiki.archlinux.org/title/PKGBUILD
 * https://wiki.archlinux.org/title/Arch_package_guidelines
+
+
+## File List
+
+run
+
+``` sh
+pacman -Ql ezarcher-adjustment-modeling-viewnior -q
+```
+
+show
+
+```
+/etc/
+/etc/skel/
+/etc/skel/.config/
+/etc/skel/.config/viewnior/
+/etc/skel/.config/viewnior/viewnior.conf
+```
+
+* [~/.config/viewnior/viewnior.conf](asset/overlay/etc/skel/.config/viewnior/viewnior.conf)
