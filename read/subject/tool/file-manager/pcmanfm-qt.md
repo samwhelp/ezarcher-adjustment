@@ -40,6 +40,6 @@ grand_parent: Tool
 
 ## Config File
 
-| Config Packaging |
+| Config File |
 | --- |
 | [~/.config/pcmanfm-qt/default/settings.conf](https://github.com/samwhelp/ezarcher-adjustment/blob/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-pcmanfm-qt/asset/overlay/etc/skel/.config/pcmanfm-qt/default/settings.conf) |

@@ -47,6 +47,6 @@ grand_parent: Tool
 
 ## Config File
 
-| Config Packaging |
+| Config File |
 | --- |
 | [~/.config/sakura/sakura.conf](https://github.com/samwhelp/ezarcher-adjustment/blob/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-sakura/asset/overlay/etc/skel/.config/sakura/sakura.conf) |
