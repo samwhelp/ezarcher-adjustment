@@ -3,7 +3,7 @@ title: Mousepad
 nav_order: 3021
 has_children: false
 parent: Text Editor
-grand_parent: 工具
+grand_parent: Tool
 ---
 
 
