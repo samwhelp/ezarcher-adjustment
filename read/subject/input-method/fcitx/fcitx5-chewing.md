@@ -28,7 +28,7 @@ grand_parent: Input Method
 
 | Arch Package |
 | --- |
-| [fcitx5-chewing/](https://archlinux.org/packages/community/x86_64/fcitx5-chewing/) |
+| [fcitx5-chewing](https://archlinux.org/packages/community/x86_64/fcitx5-chewing/) |
 
 
 ## Config Packaging
