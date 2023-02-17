@@ -2,14 +2,16 @@
 
 # ezarcher-adjustment-packaging
 
-| ISO Build System |
-| --- |
-| [ezarcher-adjustment-packaging](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging) |
-| [ezarcher-adjustment-repository](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository) |
-| [ezarcher-adjustment-iso-profile](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile) |
 
+## Usage
 
-## pack
+### build
+
+``` sh
+make build
+```
+
+## Pack
 
 | packaging |
 | --- |
@@ -18,3 +20,12 @@
 | [core](pack/core) |
 | [alternative](pack/alternative) |
 | [aur](pack/aur) |
+
+
+## ISO Build System
+
+| ISO Build System |
+| --- |
+| [ezarcher-adjustment-packaging](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging) |
+| [ezarcher-adjustment-repository](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository) |
+| [ezarcher-adjustment-iso-profile](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile) |

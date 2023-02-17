@@ -6,8 +6,8 @@
 
 | ISO Build Templates |
 | --- |
-| [Openbox-20221030](Openbox-20221030) |
-| [GnomeFlashback-20221030](GnomeFlashback-20221030) |
+| [Openbox](Openbox-20221030) |
+| [GnomeFlashback](GnomeFlashback-20221030) |
 
 
 ## Source

@@ -2,6 +2,18 @@
 
 # ezarcher-adjustment-repository
 
+
+## Usage
+
+### db-update
+
+``` sh
+make db-update
+```
+
+
+## ISO Build System
+
 | ISO Build System |
 | --- |
 | [ezarcher-adjustment-packaging](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging) |
