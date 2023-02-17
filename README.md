@@ -45,11 +45,11 @@
 
 ## ISO Build System
 
-| ISO Build System |
-| --- |
-| [ezarcher-adjustment-iso-profile](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile) |
-| [ezarcher-adjustment-packaging](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging) |
-| [ezarcher-adjustment-repository](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository) |
+| ISO Build System | Usage |
+| --- | --- |
+| [ezarcher-adjustment-packaging](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging) | [Usage](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/build-package.html) |
+| [ezarcher-adjustment-repository](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository) | [Usage](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/update-package-repository-db.html) |
+| [ezarcher-adjustment-iso-profile](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile) | [Usage](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/build-iso.html) |
 
 
 ## ISO Build Template
