@@ -18,6 +18,6 @@ Install 「Arch Linux」 first.
 * OSDN / EZARCH / [ISO](https://osdn.net/projects/ezarch/releases/)
 
 
-## Next
+## Next Step
 
 > [Prepare ISO Build System](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/prepare-iso-build-system.html)
