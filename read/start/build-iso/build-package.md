@@ -38,6 +38,8 @@ or run
 make prepare
 ```
 
+* Arch Wiki / [Meta package and package group](https://wiki.archlinux.org/title/Meta_package_and_package_group)
+
 
 ## Build
 

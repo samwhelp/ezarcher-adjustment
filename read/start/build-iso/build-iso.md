@@ -61,6 +61,8 @@ install [archiso](https://archlinux.org/packages/extra/any/archiso/)
 sudo pacman -Sy --needed archiso
 ```
 
+* Arch Wiki / [Archiso](https://wiki.archlinux.org/title/archiso)
+
 
 ## Build
 
