@@ -12,7 +12,7 @@ grand_parent: Start
 
 ## Previous Step
 
-> [Prepare ArchLinux](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/prepare-archlinux.html)。
+> [Prepare ArchLinux](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/prepare-archlinux.html)
 
 
 ## Clone
