@@ -38,7 +38,13 @@
 </menu>
 
 <menu id="root-menu">
-	<item label="Web browser">
+	<item label="File Manager">
+		<action name="Execute" command="pcmanfm" />
+	</item>
+	<item label="Text Editor">
+		<action name="Execute" command="mousepad" />
+	</item>
+	<item label="Web Browser">
 		<action name="Execute" command="firefox" />
 	</item>
 	<item label="Terminal">
