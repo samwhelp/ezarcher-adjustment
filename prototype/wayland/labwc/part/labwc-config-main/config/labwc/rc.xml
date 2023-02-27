@@ -123,9 +123,15 @@
 			<action name="Reconfigure" />
 		</keybind>
 		<keybind key="A-S-x">
+			<action name="Execute" command="wlogout" />
+		</keybind>
+		<keybind key="A-C-x">
 			<action name="Exit" />
 		</keybind>
 		<keybind key="A-S-z">
+			<action name="Execute" command="wlogout" />
+		</keybind>
+		<keybind key="A-C-z">
 			<action name="Execute" command="systemctl -i poweroff" />
 		</keybind>
 		<keybind key="A-S-d">
