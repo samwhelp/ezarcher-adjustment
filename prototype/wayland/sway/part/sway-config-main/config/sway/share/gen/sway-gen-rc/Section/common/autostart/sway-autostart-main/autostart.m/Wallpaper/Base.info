@@ -1,0 +1,41 @@
+
+
+################################################################################
+### Head: Autostart / Wallpaper / Base Info
+##
+
+
+##
+## Select / Default Wallpaper File
+##
+
+#set $the_wallpaper_default_file_path /usr/share/backgrounds/default.jpg
+set $the_wallpaper_default_file_path ~/Pictures/Wallpaper/default.jpg
+#set $the_wallpaper_default_file_path $HOME/Pictures/Wallpaper/default.jpg
+
+
+
+
+##
+##  Select / Shuf Wallpaper Dir
+##
+
+set $the_wallpaper_shuf_dir_path ~/Pictures/Wallpaper/
+#set $the_wallpaper_shuf_dir_path $HOME/Pictures/Wallpaper/
+
+
+
+
+##
+##  Select / Shuf Wallpaper File
+##
+
+#set $the_wallpaper_shuf_file_path `ls -1 $the_wallpaper_shuf_dir_path/* | sort -R | head -1`
+#set $the_wallpaper_shuf_file_path $(ls -1 $the_wallpaper_shuf_dir_path/* | sort -R | head -1)
+#set $the_wallpaper_shuf_file_path `find $the_wallpaper_shuf_dir_path -type f | shuf -n 1`
+set $the_wallpaper_shuf_file_path $(find $the_wallpaper_shuf_dir_path -type f | shuf -n 1)
+
+
+##
+### Tail: Autostart / Wallpaper / Base Info
+################################################################################

@@ -1,0 +1,49 @@
+
+
+################################################################################
+### Head: Attribute / Workspace / Define / ByNumber
+##
+
+
+##
+## * https://i3wm.org/docs/userguide.html#workspace_auto_back_and_forth
+##
+
+#workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth no
+
+
+
+
+##
+## Define names for default workspaces for which we configure key bindings later on.
+## We use variables to avoid repeating the names in multiple places.
+##
+
+set $the_workspace_1 1
+set $the_workspace_2 2
+set $the_workspace_3 3
+set $the_workspace_4 4
+set $the_workspace_5 5
+set $the_workspace_6 6
+set $the_workspace_7 7
+set $the_workspace_8 8
+set $the_workspace_9 9
+set $the_workspace_10 10
+
+
+workspace $the_workspace_1
+workspace $the_workspace_2
+workspace $the_workspace_3
+workspace $the_workspace_4
+workspace $the_workspace_5
+workspace $the_workspace_6
+#workspace $the_workspace_7
+#workspace $the_workspace_8
+#workspace $the_workspace_9
+#workspace $the_workspace_10
+
+
+##
+### Tail: Attribute / Workspace / Define / ByNumber
+################################################################################

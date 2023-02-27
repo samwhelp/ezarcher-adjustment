@@ -7,4 +7,6 @@
 ##
 ## From AUR
 ##
+
 labwc
+azote

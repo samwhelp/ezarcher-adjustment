@@ -1,0 +1,1384 @@
+
+
+################################################################################
+### Head: Note
+##
+
+##
+## Default config for sway
+##
+## /etc/sway/config
+##
+## Copy this to ~/.config/sway/config and edit it to your liking.
+##
+## Read `man 5 sway` for a complete reference.
+##
+
+
+##
+## ## Docs
+##
+## * i3 User’s Guide / [4.1. Include directive](https://i3wm.org/docs/userguide.html#include)
+##
+
+##
+### Tail: Note
+################################################################################
+
+
+
+
+################################################################################
+### Head: UbuntuSway
+##
+
+# Additional configs
+#include /etc/sway/config.d/*.conf
+
+##
+## $ ls /etc/sway/config.d/*.conf -1
+##
+
+include /etc/sway/config.d/50-systemd-user.conf
+#include /etc/sway/config.d/96-waybar.conf
+include /etc/sway/config.d/98-applications-defaults.conf
+include /etc/sway/config.d/99-autostart-applications.conf
+
+
+##
+### Tail: UbuntuSway
+################################################################################
+
+
+
+
+
+
+
+
+################################################################################
+### Head: Attribute / Application / Terminal
+##
+
+# Your preferred terminal emulator
+set $term foot
+set $term_float footclient -a floating_shell
+set $term_float_portrait footclient -a floating_shell_portrait
+
+##
+### Tail: Attribute / Application / Terminal
+################################################################################
+
+
+################################################################################
+### Head: Attribute / Window / Border
+##
+
+
+##
+## ## sway-theme-yaru-prussiangreen-dark
+##
+
+
+## https://github.com/archcraft-os/archcraft-i3wm/blob/main/src/archcraft-i3wm/i3/config#L29
+
+
+default_border pixel 4
+
+
+# Activate smart borders (always)
+smart_borders on
+
+
+# Title bar text alignment
+title_align center
+
+# Uncomment this to enable title bars
+#for_window [class=".*"] border normal 4
+
+# Uncomment this to disable title bars
+for_window [class=".*"] border pixel 4
+
+##
+### Tail: Attribute / Window / Border
+################################################################################
+
+
+################################################################################
+### Head: Attribute / Window / Color
+##
+
+
+##
+## ## sway-theme-yaru-prussiangreen-dark
+##
+
+
+##
+## [/usr/share/themes/yaru-sway/variables](https://github.com/Ubuntu-Sway/ubuntusway-artwork/blob/jammy/usr/share/themes/yaru-sway/variables)
+##
+
+
+set $color0  #2f2f2f
+set $color1  #1b1b1b
+set $color2  #3B758C
+set $color3  #41535B
+set $color4  #43a5d5
+set $color5  #bdc3c7
+set $color6  #eeeeee
+set $color7  #eff0f1
+set $color8  #da4453
+set $color9  #db7b55
+set $color10 #e6cd69
+set $color11 #9fca56
+set $color12 #317b79
+set $color13 #2980b9
+set $color14 #a074c4
+set $color15 #8a553f
+
+# Colors with alpha
+set $background-color $color0
+set $accent-color $color12
+
+# Basic color configuration using the Base16 variables for windows and borders.
+# Property Name         Border  BG      Text    Indicator Child Border
+client.focused          $color5 $color12 $color0 $color12 $color12
+client.focused_inactive $color1 $color1 $color5 $color3 $color1
+client.unfocused        $color1 $color0 $color5 $color1 $color1
+client.urgent           $color8 $color8 $color0 $color8 $color8
+client.placeholder      $color0 $color0 $color5 $color0 $color0
+client.background       $color7
+
+##
+### Tail: Attribute / Window / Color
+################################################################################
+
+
+################################################################################
+### Head: Attribute / Window / Floating
+##
+
+
+##
+## ## sway-theme-yaru-prussiangreen-dark
+##
+
+
+## floating_modifier
+## Use Mouse+Mod1 to drag floating windothe_workspace_ to their wanted position
+## Alt
+##floating_modifier Mod1
+
+## Win
+floating_modifier Mod4
+
+
+##
+### Tail: Attribute / Window / Floating
+################################################################################
+
+
+################################################################################
+### Head: Attribute / Window
+##
+
+
+##
+## ## sway-theme-yaru-prussiangreen-dark
+##
+
+
+## https://i3wm.org/docs/userguide.html#_focus_follows_mouse
+
+focus_follows_mouse no
+
+
+##
+### Tail: Attribute / Window
+################################################################################
+
+
+################################################################################
+### Head: Attribute / Window / Gaps
+##
+
+
+##
+## ## sway-theme-yaru-prussiangreen-dark
+##
+
+
+## https://github.com/archcraft-os/archcraft-i3wm/blob/main/src/archcraft-i3wm/i3/config#L22
+
+# Gaps (Outer gaps are added to the inner gaps)
+gaps inner 15
+gaps outer 0
+
+# Only enable gaps on a workspace when there is at least one container
+#smart_gaps on
+
+
+##
+### Tail: Attribute / Window / Gaps
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Application / Favorite
+##
+
+## Launch File Manager (pcmanfm-qt)
+## Alt + Shift + f
+bindsym Mod1+Shift+f exec pcmanfm-qt
+
+
+## Launch File Manager (thunar)
+## Alt + Shift + g
+bindsym Mod1+Shift+g exec thunar
+
+
+## Launch Text Editor (mousepad)
+## Alt + Shift + e
+bindsym Mod1+Shift+e exec mousepad
+
+
+## Launch Web Browser (firefox)
+## Alt + Shift + b
+bindsym Mod1+Shift+b exec firefox
+
+##
+### Tail: Keybind / Application / Favorite
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Application / Terminal
+##
+
+
+## Launch sakura
+## Alt + Enter
+bindsym Mod1+Return exec sakura
+
+
+## Launch sakura
+## Alt + Shift + a
+bindsym Mod1+Shift+a exec sakura
+
+
+## Launch xfce4-terminal
+## Alt + Ctrl + a
+bindsym Mod1+Ctrl+a exec xfce4-terminal
+
+
+## Launch foot
+## Alt + Shift + t
+bindsym Mod1+Shift+t exec foot
+
+
+## Launch kitty
+## Alt + Ctrl + t
+bindsym Mod1+Ctrl+t exec kitty
+
+##
+### Tail: Keybind / Application / Terminal
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Application / Wofi
+##
+
+##
+## $ man 7 wofi
+##
+
+# wofi theme
+set $the_wofi_theme "* {lightbg: $background-color; background: $background-color; lightfg: $accent-color;}"
+
+# Your preferred application launcher
+set $the_wofi_show_drun wofi --show drun --allow-images --allow-markup --hide-scroll --no-actions -theme-str $the_wofi_theme -lines 10 -width 35
+
+set $the_wofi_show_run wofi --show run --allow-images --allow-markup --hide-scroll --no-actions -theme-str $the_wofi_theme -lines 10 -width 35
+
+set $the_wofi_show_window wofi --show window --allow-images --allow-markup --hide-scroll --no-actions -theme-str $the_wofi_theme -lines 10 -width 35
+
+
+##
+### Tail: Keybind / Application / Wofi
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Application / Wofi
+##
+
+
+
+## Launch Wofi (wofi --show run)
+## Alt + Shift + r
+bindsym Mod1+Shift+r exec $$the_wofi_show_run
+
+
+## Launch Wofi (wofi --show window -show-icons)
+## Alt + Shift + w
+#bindsym Mod1+Shift+w exec $the_wofi_show_window
+
+
+## Launch Wofi (wofi --show drun -show-icons)
+## Alt + Shift + d
+bindsym Mod1+Shift+d exec $the_wofi_show_drun
+
+##
+### Tail: Keybind / Application / Wofi
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Layout / SwitchTo / Cycle
+##
+
+## https://i3wm.org/docs/userguide.html#manipulating_layout
+
+
+## Layout Toggle All
+## Alt + k
+bindsym Mod1+k layout toggle all
+
+
+## SLayout Toggle All
+## Alt + j
+bindsym Mod1+j layout toggle all
+
+
+## Layout Toggle All
+## Alt + Up
+bindsym Mod1+Up layout toggle all
+
+
+## Layout Toggle All
+## Alt + Down
+bindsym Mod1+Down layout toggle all
+
+
+
+##
+### Tail: Keybind / Layout / SwitchTo / Cycle
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Layout / Split
+##
+
+
+## https://i3wm.org/docs/userguide.html#_splitting_containers
+
+## Set Layout Split Orientation To Down Side (Vertical)
+## Alt + u
+bindsym Mod1+u split vertical
+
+
+## Set Layout Split Orientation To Right Side (Horizontal)
+## Alt + o
+bindsym Mod1+o split horizontal
+
+
+## Set Layout Split Orientation Toggle
+## Alt + i
+bindsym Mod1+i split toggle
+
+
+## Set Layout Split None
+## Alt + y
+bindsym Mod1+y split none
+
+
+### Head: Keybind / Layout / Split
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Layout / SwitchTo / Specific
+##
+
+## https://i3wm.org/docs/userguide.html#manipulating_layout
+
+## Switch to Stacking
+## Win + `
+#bindsym Mod4+grave layout stacking
+
+
+## Switch to Tabbed
+## Win + Tab
+#bindsym Mod4+Tab layout tabbed
+
+
+## Layout toggle tabbed stacking
+## Alt + `
+bindsym Mod1+grave layout toggle tabbed stacking
+
+## Layout toggle split
+## Alt + Tab
+bindsym Mod1+Tab layout toggle split
+
+
+## Layout Cycle
+## Win + Tab
+bindsym Mod4+Tab layout toggle all
+
+
+## Layout toggle max
+## Win + w
+bindsym Mod4+w layout toggle tabbed split
+
+
+##
+### Tail: Keybind / Layout / SwitchTo / Specific
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Screenshot
+##
+
+## Screenshot
+## Print
+#bindsym Print exec --no-startup-id scrot
+
+
+## Screenshot Selected Area
+## Alt + Print
+#bindsym Mod1+Print exec --no-startup-id scrot -s
+
+##
+### Tail: Keybind / Screenshot
+################################################################################
+
+
+################################################################################
+### Head: Keybind / System
+##
+
+
+## Reload
+## Alt + Shift + c
+# Reload Sway Configuration
+bindsym Mod1+Shift+c reload
+
+
+## Exit Sway
+## Alt + Shift + x
+# exit i3 (logs you out of your X session)
+bindsym Mod1+Shift+x exec wlogout -p layer-shell
+
+
+## Shutdown
+## Alt + Shift + z
+#bindsym Mod1+Shift+z exec systemctl poweroff
+bindsym Mod1+Shift+z exec wlogout -p layer-shell
+
+
+##
+### Tail: Keybind / System
+################################################################################
+
+
+################################################################################
+### Head: Keybind / System / Menu
+##
+
+
+##
+## * https://github.com/Ubuntu-Sway/ubuntusway-default-settings/blob/jammy/etc/xdg/xdg-ubuntusway/waybar/config.jsonrc#L51
+## * https://github.com/nwg-piotr/nwg-drawer
+##
+
+
+## App Menu
+## Alt + F1
+bindsym Mod1+F1 exec nwg-drawer
+
+
+##
+### Tail: Keybind / Menu
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Volume
+##
+
+
+##
+## https://wiki.archlinux.org/index.php/Xbindkeys
+## https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Keyboard_volume_control
+## https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control
+## https://zh.wikipedia.org/zh-tw/ALSA
+## https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture
+## https://zh.wikipedia.org/zh-tw/PulseAudio
+## https://en.wikipedia.org/wiki/PulseAudio
+##
+
+##
+## alsamixer (Package: alsa-utils)
+## amixer (Package: alsa-utils)
+## pactl (Package: pulseaudio-utils)
+## pavucontrol (Package: pavucontrol)
+## pavucontrol-qt (Package: pavucontrol-qt)
+## mate-volume-control (Package: mate-media)
+##
+
+
+## VolumeControl
+## Alt + Shift + v
+bindsym Mod1+Shift+v exec mate-volume-control
+#bindsym Mod1+Shift+v exec pavucontrol
+#bindsym Mod1+Shift+v exec pavucontrol-qt
+
+for_window [app_id="mate-volume-control"] floating enable
+
+##
+# https://askubuntu.com/questions/65764/how-do-i-toggle-sound-with-amixer
+# https://wiki.archlinux.org/index.php/PulseAudio#volume_control
+# amixer set Master toggle
+# amixer -D pulse set Master 1+ toggle
+# https://askubuntu.com/questions/872014/mute-button-doesnt-unmute
+##
+
+## VolumeToggleMute
+## Alt + m
+bindsym Mod1+m exec --no-startup-id amixer -q -D pulse sset Master toggle
+
+
+## VolumeDecrease
+## Alt + Shift + ,  (<)
+bindsym Mod1+Shift+comma exec --no-startup-id amixer -q -D pulse sset Master 5%- unmute
+
+
+## VolumeIncrease
+## Alt + Shift + .  (>)
+bindsym Mod1+Shift+period exec --no-startup-id amixer -q -D pulse sset Master 5%+ unmute
+
+
+## VolumeDecreaseSlowly
+## Alt + Ctrl + .  (>)
+bindsym Mod1+Ctrl+comma exec --no-startup-id amixer -q -D pulse sset Master 1%- unmute
+
+
+## VolumeIncreaseSlowly
+## Alt + Ctrl + .  (>)
+bindsym Mod1+Ctrl+period exec --no-startup-id amixer -q -D pulse sset Master 1%+ unmute
+
+
+##
+# collision occurs on bash emacs mode
+# * `Alt + ,`
+# * `Alt + .`
+# * http://manpages.ubuntu.com/manpages/bionic/en/man3/readline.3readline.html#default%20key%20bindings
+# * http://manpages.ubuntu.com/manpages/bionic/en/man1/bash.1.html#readline
+##
+
+
+## VolumeToggleMute
+## XF86AudioMute
+bindsym XF86AudioMute exec --no-startup-id amixer -q -D pulse sset Master toggle
+
+
+## VolumeDecrease
+## XF86AudioLowerVolume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q -D pulse sset Master 5%- unmute
+
+
+## VolumeIncrease
+## XF86AudioRaiseVolume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q -D pulse sset Master 5%+ unmute
+
+
+##
+### Tail: Keybind / Volume
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Wallpaper / Select
+##
+
+
+##
+## * https://github.com/samwhelp/note-about-fzf/tree/gh-pages/_demo/project/wallpaper-select/wallpaper-select-swaybg
+##
+
+
+## Wallpaper Select Shuf
+## Alt + w
+bindsym Mod1+w exec --no-startup-id wallpaper-select-swaybg shuf_favorite
+
+
+## Wallpaper Select Default
+## Alt + Ctrl + w
+bindsym Mod1+Ctrl+w exec --no-startup-id wallpaper-select-swaybg default
+
+
+##
+### Tail: Keybind / Wallpaper / Select
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / Close
+##
+
+## Window Close
+## Win + q
+bindsym Mod4+q kill
+
+## Window Kill
+## Win + Shift + q
+bindsym Mod4+Shift+q kill
+
+##
+### Tail: Keybind / Window / Close
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / FloatingToggle
+##
+
+## https://i3wm.org/docs/userguide.html#manipulating_layout
+
+## Window toggle floating or tited
+## Win + n
+bindsym Mod4+n floating toggle
+
+
+## Window toggle floating or tited
+## Win + `
+bindsym Mod4+grave floating toggle
+
+##
+### Tail: Keybind / Window / FloatingToggle
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / Focus
+##
+
+## https://i3wm.org/docs/userguide.html#_focusing_moving_containers
+
+
+## focus mode_toggle
+## Win + v
+## change focus between tiling / floating windows
+bindsym Mod4+v focus mode_toggle
+
+## focus mode_toggle
+## Win + m
+## change focus between tiling / floating windows
+bindsym Mod4+m focus mode_toggle
+
+
+## Focus to parent Container
+## Win + p
+bindsym Mod4+p focus parent
+
+
+## Focus to child Container/Window
+## Win + c
+bindsym Mod4+c focus child
+
+
+## Focus to Previous Window
+## Win + a
+bindsym Mod4+a focus prev
+
+
+## Focus to Next Window
+## Win + s
+bindsym Mod4+s focus next
+
+
+## Focus to Up Window
+## Win + k
+bindsym Mod4+k focus up
+
+
+## Focus to Down Window
+## Win + j
+bindsym Mod4+j focus down
+
+
+## Focus to Left Window
+## Win + h
+bindsym Mod4+h focus left
+
+
+## Focus to Right Window
+## Win + l
+bindsym Mod4+l focus right
+
+
+##
+### Tail: Keybind / Window / Focus
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / Focus / Arrow
+##
+
+## https://i3wm.org/docs/userguide.html#_focusing_moving_containers
+
+
+
+## Focus to Previous Window
+## Win + [
+bindsym Mod4+bracketleft focus prev
+
+## Focus to Next Window
+## Win + ]
+bindsym Mod4+bracketright focus next
+
+
+## Must
+## Focus to Up Window
+## Win + Up
+bindsym Mod4+Up focus up
+
+
+## Focus to Down Window
+## Win + Down
+bindsym Mod4+Down focus down
+
+
+## Focus to Left Window
+## Win + Left
+bindsym Mod4+Left focus left
+
+
+## Focus to Right Window
+## Win + Right
+bindsym Mod4+Right focus right
+
+
+##
+### Tail: Keybind / Window / Focus / Arrow
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / FullScreen
+##
+
+## Window FullScreen
+## Win + f
+bindsym Mod4+f fullscreen toggle
+
+##
+### Tail: Keybind / Window / FullScreen
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / Move / kjhl
+##
+
+##
+## * https://i3wm.org/docs/userguide.html#_moving_containers
+##
+
+
+## Window Move
+## Win + Shift + k
+bindsym Mod4+Shift+k move up 20 px
+
+
+## Window Move
+## Win + Shift + j
+bindsym Mod4+Shift+j move down 20 px
+
+
+## Window Move
+## Win + Shift + h
+bindsym Mod4+Shift+h move left 20 px
+
+
+## Window Move
+## Win + Shift + l
+bindsym Mod4+Shift+l move right 20 px
+
+
+
+##
+### Tail: Keybind / Window / Move / kjhl
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / Move / Arrow
+##
+
+
+## Window Move
+## Win + Shift + Up
+bindsym Mod4+Shift+Up move up 20 px
+
+
+## Window Move
+## Win + Shift + Down
+bindsym Mod4+Shift+Down move down 20 px
+
+
+## Window Move
+## Win + Shift + Left
+bindsym Mod4+Shift+Left move left 20 px
+
+
+## Window Move
+## Win + Shift + Right
+bindsym Mod4+Shift+Right move right 20 px
+
+
+
+##
+### Tail: Keybind / Window / Move / Arrow
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / Move / Center
+##
+
+
+## Window Move
+## Win + Shift + m
+bindsym Mod4+Shift+m move absolute position center
+
+
+##
+### Tail: Keybind / Window / Move / Center
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / Resize / kjhl
+##
+
+## https://i3wm.org/docs/userguide.html#resizingconfig
+
+## Window Resize
+## Win + Ctrl + k
+bindsym Mod4+Ctrl+k resize shrink height 20 px
+
+
+## Window Resize
+## Win + Ctrl + j
+bindsym Mod4+Ctrl+j resize grow height 20 px
+
+
+## Window Resize
+## Win + Ctrl + h
+bindsym Mod4+Ctrl+h resize shrink width 20 px
+
+
+## Window Resize
+## Win + Ctrl + l
+bindsym Mod4+Ctrl+l resize grow width 20 px
+
+
+
+##
+### Tail: Keybind / Window / Resize / kjhl
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / Resize / Arrow
+##
+
+
+## Window Resize
+## Win + Ctrl + Up
+bindsym Mod4+Ctrl+Up resize shrink height 20 px
+
+
+## Window Resize
+## Win + Ctrl + Down
+bindsym Mod4+Ctrl+Down resize grow height 20 px
+
+
+## Window Resize
+## Win + Ctrl + Left
+bindsym Mod4+Ctrl+Left resize shrink width 20 px
+
+
+## Window Resize
+## Win + Ctrl + Right
+bindsym Mod4+Ctrl+Right resize grow width 20 px
+
+
+
+##
+### Tail: Keybind / Window / Resize / Arrow
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / BeginMove
+##
+
+##
+## * https://i3wm.org/docs/userguide.html#resizingconfig
+## * https://github.com/swaywm/sway/blob/master/config.in#L177
+##
+
+mode "move" {
+	# up will move up direction
+	# down will move down direction
+	# left will move left direction
+	# right will move right direction
+	bindsym k move up 20px
+	bindsym j move down 20px
+	bindsym h move left 20px
+	bindsym l move right 20px
+
+	# Ditto, with arrow keys
+	bindsym Up move up 20px
+	bindsym Down move down 20px
+	bindsym Left move left 20px
+	bindsym Right move right 20px
+
+	# Ditto, with grave,Tab,a,s
+	bindsym grave move up 20px
+	bindsym Tab move down 20px
+	bindsym a move left 20px
+	bindsym s move right 20px
+
+	# Return to default mode
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym Mod4+e mode "default"
+}
+
+bindsym Mod4+e mode "move"
+
+
+##
+### Tail: Keybind / Window / BeginMove
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / BeginResize
+##
+
+##
+## * https://i3wm.org/docs/userguide.html#resizingconfig
+## * https://github.com/swaywm/sway/blob/master/config.in#L177
+##
+
+mode "resize" {
+	# up will shrink the containers height
+	# down will grow the containers height
+	# left will shrink the containers width
+	# right will grow the containers width
+	bindsym k resize shrink height 20px
+	bindsym j resize grow height 20px
+	bindsym h resize shrink width 20px
+	bindsym l resize grow width 20px
+
+	# Ditto, with arrow keys
+	bindsym Up resize shrink height 20px
+	bindsym Down resize grow height 20px
+	bindsym Left resize shrink width 20px
+	bindsym Right resize grow width 20px
+
+	# Ditto, with grave,Tab,a,s
+	bindsym grave resize shrink height 20px
+	bindsym Tab resize grow height 20px
+	bindsym a resize shrink width 20px
+	bindsym s resize grow width 20px
+
+	# Return to default mode
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym Mod4+r mode "default"
+}
+
+bindsym Mod4+r mode "resize"
+
+
+##
+### Tail: Keybind / Window / BeginResize
+################################################################################
+
+
+################################################################################
+### Head: Attribute / Workspace / Define / ByScript
+##
+
+
+##
+## * https://i3wm.org/docs/userguide.html#workspace_auto_back_and_forth
+##
+
+#workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth no
+
+
+
+
+##
+## Define names for default workspaces for which we configure key bindings later on.
+## We use variables to avoid repeating the names in multiple places.
+##
+
+
+set $the_workspace_1 1:File
+set $the_workspace_2 2:Edit
+set $the_workspace_3 3:Web
+set $the_workspace_4 4:Term
+set $the_workspace_5 5:Misc
+set $the_workspace_6 6:Image
+set $the_workspace_7 7:Video
+set $the_workspace_8 8:Audio
+set $the_workspace_9 9:Chat
+set $the_workspace_10 10:Game
+
+
+#workspace $the_workspace_1
+#workspace $the_workspace_2
+#workspace $the_workspace_3
+#workspace $the_workspace_4
+#workspace $the_workspace_5
+#workspace $the_workspace_6
+#workspace $the_workspace_7
+#workspace $the_workspace_8
+#workspace $the_workspace_9
+#workspace $the_workspace_10
+
+
+
+##
+### Tail: Attribute / Workspace / Define / ByScript
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Window / MoveToWorkspace
+##
+
+## Move Focused Window to Workspace 1 (Term)
+## Win + 1
+bindsym Mod4+1 exec swayworkspace move 1
+
+
+## Move Focused Window to Workspace 2 (Edit)
+## Win + 2
+bindsym Mod4+2 exec swayworkspace move 2
+
+
+## Move Focused Window to Workspace 3 (Web)
+## Win + 3
+bindsym Mod4+3 exec swayworkspace move 3
+
+
+## Move Focused Window to Workspace 4 (File)
+## Win + 4
+bindsym Mod4+4 exec swayworkspace move 4
+
+
+## Move Focused Window to Workspace 5 (Misc)
+## Win + 5
+bindsym Mod4+5 exec swayworkspace move 5
+
+
+## Move Focused Window to Workspace 6
+## Win + 6
+#bindsym Mod4+6 exec swayworkspace move 6
+
+
+## Move Focused Window to Workspace 7
+## Win + 7
+#bindsym Mod4+7 exec swayworkspace move 7
+
+
+## Move Focused Window to Workspace 8
+## Win + 8
+#bindsym Mod4+8 exec swayworkspace move 8
+
+
+## Move Focused Window to Workspace 9
+## Win + 9
+#bindsym Mod4+9 exec swayworkspace move 9
+
+
+## Move Focused Window to Workspace 10
+## Win + 0
+#bindsym Mod4+0 exec swayworkspace move 10
+
+
+## Move Focused Window To Previous Workspace
+## Win + Alt + h
+#bindsym Mod4+Mod1+h move container to workspace number $the_workspace_1
+
+
+## Move Focused Window o Next Workspace
+## Win + Alt + l
+#bindsym Mod4+Mod1+l move container to workspace number $the_workspace_1
+
+##
+### Tail: Keybind / Window / MoveToWorkspace
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Workspace / QuickSwitch / Prior
+##
+
+##
+## https://i3wm.org/docs/userguide.html#_changing_named_workspaces_moving_to_workspaces
+## https://i3wm.org/docs/userguide.html#workspace_auto_back_and_forth
+##
+
+## Switch to Prior Workspace
+## Alt + z
+bindsym Mod1+z workspace back_and_forth
+
+##
+### Tail: Keybind / Workspace / QuickSwitch / Prior
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Workspace / QuickSwitch / Cycle
+##
+
+# Switch to Previous Workspace
+## Alt + a
+bindsym Mod1+a exec swayworkspace navigate previous
+
+
+## Switch to Next Workspace
+## Alt + s
+bindsym Mod1+s exec swayworkspace navigate next
+
+
+## Switch to Previous Workspace
+## Alt + h
+bindsym Mod1+h exec swayworkspace navigate previous
+
+
+## Switch to Next Workspace
+## Alt + l
+bindsym Mod1+l exec swayworkspace navigate next
+
+
+## Switch to Previous Workspace
+## Alt + Left
+bindsym Mod1+Left exec swayworkspace navigate previous
+
+
+## Switch to Next Workspace
+## Alt + Right
+bindsym Mod1+Right exec swayworkspace navigate next
+
+
+##
+### Tail: Keybind / Workspace / QuickSwitch / Cycle
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Workspace / SwitchTo / Specific / Note
+##
+
+##
+## * https://github.com/swaywm/sway/issues/4928#issuecomment-586116020
+## * https://github.com/aviau/dotfiles/blob/master/.config/sway/config
+## * https://github.com/aviau/dotfiles/blob/master/bin/swayworkspace
+##
+
+##
+### Tail: Keybind / Workspace / SwitchTo / Specific / Note
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Workspace / SwitchTo / Specific
+##
+
+
+##
+##  | Workspace | Title |
+##  | --- | --- |
+##  | 1 | File |
+##  | 2 | Edit |
+##  | 3 | Web |
+##  | 4 | Term |
+##  | 5 | Misc |
+##
+
+## Switch to Workspace 1 (Term)
+## Alt + 1
+bindsym Mod1+1 exec swayworkspace navigate 1
+
+## Switch to Workspace 2 (Edit)
+## Alt + 2
+bindsym Mod1+2 exec swayworkspace navigate 2
+
+
+## Switch to Workspace 3 (Web)
+## Alt + 3
+bindsym Mod1+3 exec swayworkspace navigate 3
+
+
+## Switch to Workspace 4 (File)
+## Alt + 4
+bindsym Mod1+4 exec swayworkspace navigate 4
+
+
+## Switch to Workspace 5 (Misc)
+## Alt + 5
+bindsym Mod1+5 exec swayworkspace navigate 5
+
+
+## Switch to Workspace 6
+## Alt + 6
+#bindsym Mod1+6 exec swayworkspace navigate 6
+
+
+## Switch to Workspace 7
+## Alt + 7
+#bindsym Mod1+7 exec swayworkspace navigate 7
+
+
+## Switch to Workspace 8
+## Alt + 8
+#bindsym Mod1+8 exec swayworkspace navigate 8
+
+
+## Switch to Workspace 9
+## Alt + 9
+#bindsym Mod1+9 exec swayworkspace navigate 9
+
+
+## Switch to Workspace 10
+## Alt + 0
+#bindsym Mod1+0 exec swayworkspace navigate 10
+
+
+##
+### Tail: Keybind / Workspace / SwitchTo / Specific
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Workspace / Startup
+##
+
+##
+## ~/bin/swayworkspace
+##
+exec_always swayworkspace startup
+
+##
+### Tail: Keybind / Workspace / Startup
+################################################################################
+
+
+################################################################################
+### Head: Keybind / Scratchpad
+##
+
+## Scratchpad Show or Hide
+## Win + b
+bindsym Mod4+b scratchpad show
+
+## Window(Container) Move to Scratchpad
+## Win + Shift + b
+bindsym Mod4+Shift+b move scratchpad
+
+##
+### Tail: Keybind / Scratchpad
+################################################################################
+
+
+################################################################################
+### Head: Panel / Main / Top / Base
+##
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+	id default
+	swaybar_command /usr/share/sway/scripts/waybar.sh
+	position top
+	strip_workspace_numbers yes
+}
+
+
+##
+### Tail: Panel / Main / Top / Base
+################################################################################
+
+
+################################################################################
+### Head: Rule / WindowFloating / Dialog
+##
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+
+##
+### Tail: Rule / WindowFloating / Dialog
+################################################################################
+
+
+################################################################################
+### Head: Rule / WindowFloating / Base
+##
+
+for_window [app_id="mate-volume-control"] floating enable
+
+##
+### Tail: Rule / WindowFloating / Base
+################################################################################
+
+
+################################################################################
+### Head: Autostart / Wallpaper / azotebg
+##
+
+exec ~/.azotebg
+
+
+##
+## $ cat ~/.azotebg
+##
+## ``` sh
+## #!/usr/bin/env bash
+## pkill swaybg
+## swaybg -o '*' -i "$HOME/Pictures/Wallpaper/default.jpg" -m "fill" &
+## ```
+##
+
+
+##
+### Tail: Autostart / Wallpaper / azotebg
+################################################################################
+
+
+################################################################################
+### Head: Autostart / Script / autostart
+##
+
+exec ~/.config/sway/autostart
+
+##
+### Tail: Autostart / Script / autostart
+################################################################################

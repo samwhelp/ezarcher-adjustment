@@ -1,0 +1,23 @@
+
+##
+## sway
+##
+
+
+sway
+swaybg
+swayidle
+swaylock
+
+
+waybar
+wayland-protocols
+wl-clipboard
+wlroots
+wofi
+xdg-desktop-portal-wlr
+
+
+xorg-xhost
+xorg-xwayland
+
