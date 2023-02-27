@@ -14,8 +14,8 @@ labwc_config_install () {
 	echo "##"
 	echo
 
-	#labwc_config_install_main
-	labwc_config_install_main_each
+	labwc_config_install_main
+	#labwc_config_install_main_each
 
 
 	echo
@@ -62,7 +62,7 @@ labwc_config_install_main_each () {
 
 	echo
 	echo "##"
-	echo "## Install: labwc_config_install_main"
+	echo "## Install: labwc_config_install_main_each"
 	echo "##"
 	echo
 
