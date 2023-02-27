@@ -54,6 +54,9 @@
 		<action name="Reconfigure" />
 	</item>
 	<item label="Exit">
+		<action name="Execute" command="wlogout" />
+	</item>
+	<item label="Logout">
 		<action name="Exit" />
 	</item>
 	<item label="Poweroff">
