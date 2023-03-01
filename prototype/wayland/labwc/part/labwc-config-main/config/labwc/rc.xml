@@ -150,7 +150,7 @@
 			<action name="Execute" command="rofi -show run" />
 		</keybind>
 		<keybind key="A-S-f">
-			<action name="Execute" command="pcmanfm" />
+			<action name="Execute" command="pcmanfm-qt" />
 		</keybind>
 		<keybind key="A-S-g">
 			<action name="Execute" command="thunar" />
@@ -165,13 +165,13 @@
 			<action name="Execute" command="mate-volume-control" />
 		</keybind>
 		<keybind key="A-Return">
-			<action name="Execute" command="sakura" />
+			<action name="Execute" command="sakura -m" />
 		</keybind>
 		<keybind key="A-S-a">
-			<action name="Execute" command="sakura" />
+			<action name="Execute" command="sakura -m" />
 		</keybind>
 		<keybind key="A-C-a">
-			<action name="Execute" command="xfce4-terminal" />
+			<action name="Execute" command="xfce4-terminal --maximize" />
 		</keybind>
 		<keybind key="A-S-t">
 			<action name="Execute" command="lxterminal" />
@@ -215,17 +215,11 @@
 		<keybind key="W-f">
 			<action name="ToggleFullscreen" />
 		</keybind>
-		<keybind key="A-Left">
-			<action name="MoveToEdge" direction="left" />
+		<keybind key="W-Up">
+			<action name="SnapToEdge" direction="up" />
 		</keybind>
-		<keybind key="A-Right">
-			<action name="MoveToEdge" direction="right" />
-		</keybind>
-		<keybind key="A-Up">
-			<action name="MoveToEdge" direction="up" />
-		</keybind>
-		<keybind key="A-Down">
-			<action name="MoveToEdge" direction="down" />
+		<keybind key="W-Down">
+			<action name="SnapToEdge" direction="down" />
 		</keybind>
 		<keybind key="W-Left">
 			<action name="SnapToEdge" direction="left" />
@@ -233,11 +227,17 @@
 		<keybind key="W-Right">
 			<action name="SnapToEdge" direction="right" />
 		</keybind>
-		<keybind key="W-Up">
-			<action name="SnapToEdge" direction="up" />
+		<keybind key="A-Up">
+			<action name="MoveToEdge" direction="up" />
 		</keybind>
-		<keybind key="W-Down">
-			<action name="SnapToEdge" direction="down" />
+		<keybind key="A-Down">
+			<action name="MoveToEdge" direction="down" />
+		</keybind>
+		<keybind key="A-Left">
+			<action name="MoveToEdge" direction="left" />
+		</keybind>
+		<keybind key="A-Right">
+			<action name="MoveToEdge" direction="right" />
 		</keybind>
 		<keybind key="XF86_AudioLowerVolume">
 			<action name="Execute" command="amixer sset Master 5%-" />
