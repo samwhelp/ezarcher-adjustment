@@ -55,10 +55,13 @@ mod_run_demo () {
 
 mod_clone_repo () {
 
+
+	util_error_echo "cd /opt/iso-build"
 	cd /opt/iso-build
 	
 	util_error_echo "git clone https://github.com/samwhelp/ezarcher-adjustment.git"
 	git clone "https://github.com/samwhelp/ezarcher-adjustment.git"
+
 
 }
 
@@ -97,6 +100,21 @@ mod_update_repo_db () {
 }
 
 
+mod_build_iso () {
+
+	cd "/opt/ezarcher-adjustment/iso-build-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/adjust/Templates/Xfce-20221030/"
+
+	make build
+
+	mkdir -p /tmp/iso-build/
+
+	cp ./out/*.iso /tmp/iso-build/
+
+	cd "${OLDPWD}"
+
+}
+
+
 mod_run_build () {
 	pwd
 
@@ -109,6 +127,8 @@ mod_run_build () {
 	mod_build_package
 
 	mod_update_repo_db
+
+	mod_build_iso
 
 }
 
