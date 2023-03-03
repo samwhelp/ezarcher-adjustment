@@ -1,0 +1,47 @@
+
+##
+## # hyprland
+##
+
+
+##
+## ## From AUR
+##
+
+
+##
+## ## hyprland
+##
+## * https://aur.archlinux.org/packages/hyprland
+## * https://github.com/hyprland/hyprland
+##
+
+hyprland
+
+
+##
+## ## azote
+##
+## * https://aur.archlinux.org/packages/azote
+## * https://github.com/nwg-piotr/azote
+##
+
+#azote
+
+
+##
+## ## Panel
+##
+## * https://hyprland.github.io/integration.html#panels
+##
+
+
+##
+## ## Panel / wf-panel
+##
+## * https://aur.archlinux.org/packages/wf-shell
+## * https://github.com/WayfireWM/wf-shell
+##
+
+wf-shell
+
