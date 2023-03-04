@@ -1,0 +1,65 @@
+
+##
+## # Worm
+##
+
+
+##
+## ## worm
+##
+## * https://aur.archlinux.org/packages/worm-git
+## * https://github.com/codic12/worm
+##
+
+worm-git
+
+
+##
+## ## sxhkd
+##
+## * https://archlinux.org/packages/community/x86_64/sxhkd/
+## * https://github.com/baskerville/sxhkd
+##
+
+sxhkd
+
+
+##
+## ## feh
+##
+## * https://archlinux.org/packages/extra/x86_64/feh/
+## * https://feh.finalrewind.org/
+##
+
+feh
+
+
+##
+## ## tint2
+##
+## * https://archlinux.org/packages/community/x86_64/tint2/
+## * https://gitlab.com/o9000/tint2
+##
+
+tint2
+
+
+##
+## ## scrot
+##
+## * https://archlinux.org/packages/community/x86_64/scrot/
+## * https://github.com/resurrecting-open-source-projects/scrot
+##
+
+scrot
+
+
+
+##
+## ## picom
+##
+## * https://archlinux.org/packages/community/x86_64/picom/
+## * https://github.com/yshui/picom
+##
+
+picom

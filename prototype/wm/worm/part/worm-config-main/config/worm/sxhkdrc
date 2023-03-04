@@ -1,0 +1,208 @@
+
+##
+## ## wormwm
+##
+## ## docs
+##
+## * https://github.com/codic12/worm/blob/main/docs/wormc.md
+##
+## ## sxhkdrc example
+##
+## * https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/sxhkd-config
+##
+
+## Terminal
+alt + Return
+	sakura
+
+## Rofi Show Window
+alt + shift + w
+	rofi -show window
+
+## Rofi Show Drun
+alt + shift + d 
+	rofi -show drun
+		
+## Rofi Show Run
+alt + shift + r
+	rofi -show run
+
+## Restart sxhkd
+alt + shift + c
+	pkill -SIGUSR1 sxhkd
+
+## Restart worm
+alt + ctrl + c 
+	worm
+
+## Quit worm
+alt + shift + x 
+	pkill worm
+
+## Close app
+super + q
+	wormc close-active-client
+
+## Maximize app
+super + w 
+	wormc maximize-active-client
+
+## Minimize app
+super + x 
+	wormc minimize-active-client
+
+## Tags
+#super + {_, shift + } {1-9}
+#	wormc {switch,move-active}-tag {1-9}
+
+## Switch Tag
+alt + {1-9}
+	wormc switch-tag {1-9}
+
+## Move Client to Tag
+super + {1-9}
+	wormc move-active-tag {1-9}
+
+## Set master windows
+super + c 
+	wormc master-active
+
+## Float a window
+super + v 
+	wormc float-active
+
+## Lyout Floating
+alt + grave
+	wormc layout floating
+
+## Lyout Tiling
+alt + Tab
+	wormc layout tiling
+
+## Terminal_1
+alt + shift + a
+	sakura
+
+## Terminal_2
+alt + ctrl + a
+	xfce4-terminal
+
+## Terminal_3
+alt + shift + t
+	lxterminal
+
+## Terminal_4
+alt + ctrl + t
+	mate-terminal
+
+## Terminal_Dropdown
+#alt + shift + y
+#	xfce4-terminal --drop-down
+
+## File_Manager
+alt + shift + f
+	pcmanfm-qt
+
+## File_Manager_1
+alt + shift + g
+	thunar
+
+## Text_Editor
+alt + shift + e
+	mousepad
+
+## Web_Browser
+alt + shift + b
+	firefox --new-tab about:blank
+
+## Volume_Control
+alt + shift + v
+	mate-volume-control
+
+## Volume_Toggle_Mute
+alt + m
+	amixer -q -D pulse sset Master toggle
+
+## Volume_Decrease
+alt + shift + comma
+	amixer -q -D pulse sset Master 5%- unmute
+
+## Volume_Increase
+alt + shift + period
+	amixer -q -D pulse sset Master 5%+ unmute
+
+## Volume_Decrease_Slowly
+alt + ctrl + comma
+	amixer -q -D pulse sset Master 1%- unmute
+
+## Volume_Increase_Slowly
+alt + ctrl + period
+	amixer -q -D pulse sset Master 1%+ unmute
+
+##
+## ## XF86Audio Key ##
+##
+
+## Key_Volume_Toggle_Mute
+XF86AudioMute
+	amixer -q -D pulse sset Master toggle
+
+## Key_Volume_Decrease
+XF86AudioLowerVolume
+	amixer -q -D pulse sset Master 5%- unmute
+
+## Key_Volume_Increase
+XF86AudioRaiseVolume
+	amixer -q -D pulse sset Master 5%+ unmute
+
+
+##
+## Monitor Brightness Control
+##
+##
+## * https://man.archlinux.org/man/community/brightnessctl/brightnessctl.1.en
+## * https://archlinux.org/packages/community/x86_64/brightnessctl/
+## * https://github.com/Hummer12007/brightnessctl
+##
+
+
+## Key_Brightness_Decrease
+XF86MonBrightnessDown
+	brightnessctl set 5%-
+
+## Key_Brightness_Increase
+XF86MonBrightnessUp
+	brightnessctl set +5%
+
+## Brightness_Decrease
+alt + shift + bracketleft
+	brightnessctl set 5%-
+
+## Brightness_Increase
+alt + shift + bracketright
+	brightnessctl set +5%
+
+## Brightness_Decrease_Slowly
+alt + ctrl + bracketleft
+	brightnessctl set 1%-
+
+## Brightness_Increase_Slowly
+alt + ctrl + bracketright
+	brightnessctl set +1%
+
+
+## Screenshot
+Print
+	scrot
+
+## Screenshot Select
+alt + Print
+	scrot -s
+
+## Wallpaper_Select_Shuf
+alt + w
+	feh --bg-fill --randomize ~/Pictures/Wallpaper
+
+## Wallpaper_Select_Default
+alt + ctrl + w
+	feh --bg-fill ~/Pictures/Wallpaper/default.jpg
