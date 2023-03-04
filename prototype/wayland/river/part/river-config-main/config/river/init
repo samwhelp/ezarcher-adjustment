@@ -13,11 +13,20 @@
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super+Shift Return spawn foot
 
+riverctl map normal Alt Return spawn sakura
+
+riverctl map normal Alt+Shift a spawn sakura
+
+riverctl map normal Alt+Shift d spawn 'wofi --show drun'
+
+riverctl map normal Alt+Shift r spawn 'wofi --show run'
+
 # Super+Q to close the focused view
 riverctl map normal Super Q close
 
 # Super+Shift+E to exit river
 riverctl map normal Super+Shift E exit
+riverctl map normal Alt+Shift x exit
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super J focus-view next
@@ -161,3 +170,9 @@ riverctl csd-filter-add app-id "gedit"
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivertile
 rivertile -view-padding 6 -outer-padding 6 &
+
+
+wf-background &
+
+wf-panel &
+
