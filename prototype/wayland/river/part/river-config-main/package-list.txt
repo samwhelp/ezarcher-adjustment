@@ -1,0 +1,34 @@
+
+##
+## # River
+##
+
+
+##
+## ## river
+##
+## * https://archlinux.org/packages/community/x86_64/river/
+## * https://github.com/riverwm/river
+##
+
+river
+
+
+##
+## ## Panel / wf-panel / wf-background
+##
+## * https://aur.archlinux.org/packages/wf-shell
+## * https://github.com/WayfireWM/wf-shell
+##
+
+wf-shell
+
+
+##
+## ## azote
+##
+## * https://aur.archlinux.org/packages/azote
+## * https://github.com/nwg-piotr/azote
+##
+
+azote
