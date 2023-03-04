@@ -56,10 +56,16 @@ def key_bindings(layout: Layout) -> list[tuple[str, Callable[[], Any]]]:
         ("L-q", lambda: layout.close_focused_view()),
 
 
-        ("L-u", lambda: layout.basic_scale(-1)),
-        ("L-n", lambda: layout.basic_scale(1)),
-        ("L-t", lambda: layout.move_in_stack(1)),
-        ("L-b", lambda: layout.move_in_stack(-1)),
+        #("L-u", lambda: layout.basic_scale(-1)),
+        #("L-n", lambda: layout.basic_scale(1)),
+        #("L-t", lambda: layout.move_in_stack(1)),
+        #("L-b", lambda: layout.move_in_stack(-1)),
+
+        ("L-t", lambda: layout.basic_scale(-1)),
+        ("L-b", lambda: layout.basic_scale(1)),
+        ("L-u", lambda: layout.move_in_stack(1)),
+        ("L-n", lambda: layout.move_in_stack(-1)),
+
 
         ("L-k", lambda: layout.move(0, -1)),
         ("L-j", lambda: layout.move(0, 1)),
