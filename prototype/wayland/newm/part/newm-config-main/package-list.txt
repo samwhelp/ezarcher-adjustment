@@ -9,6 +9,7 @@
 ##
 ## * https://aur.archlinux.org/packages/newm-git
 ## * https://github.com/jbuchermn/newm
+## * https://github.com/jbuchermn/pywm
 ##
 
 newm-git
