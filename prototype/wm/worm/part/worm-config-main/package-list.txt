@@ -62,4 +62,5 @@ scrot
 ## * https://github.com/yshui/picom
 ##
 
-picom
+#picom
+picom-ibhagwan-git
