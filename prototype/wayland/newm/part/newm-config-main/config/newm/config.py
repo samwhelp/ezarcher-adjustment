@@ -17,7 +17,8 @@ from pywm import (
 logger = logging.getLogger(__name__)
 
 background = {
-    'path': os.path.dirname(os.path.realpath(__file__)) + '/resources/wallpaper.jpg',
+    #'path': os.path.dirname(os.path.realpath(__file__)) + '/resources/wallpaper.jpg',
+    'path': '/usr/share/backgrounds/default.jpg',
     'anim': True
 }
 
