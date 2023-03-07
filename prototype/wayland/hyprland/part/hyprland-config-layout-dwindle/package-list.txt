@@ -20,6 +20,13 @@ hyprland
 
 
 ##
+## ## exit
+##
+
+wlogout
+
+
+##
 ## ## azote
 ##
 ## * https://aur.archlinux.org/packages/azote

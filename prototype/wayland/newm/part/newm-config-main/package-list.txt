@@ -15,4 +15,12 @@
 newm-git
 
 
+##
+## ## exit
+##
+
+wlogout
+
+
+
 

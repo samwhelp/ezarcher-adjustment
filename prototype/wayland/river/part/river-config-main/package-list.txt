@@ -15,6 +15,13 @@ river
 
 
 ##
+## ## exit
+##
+
+wlogout
+
+
+##
 ## ## Panel / wf-panel / wf-background
 ##
 ## * https://aur.archlinux.org/packages/wf-shell

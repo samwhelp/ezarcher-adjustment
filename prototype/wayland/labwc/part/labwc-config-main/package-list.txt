@@ -20,6 +20,19 @@ labwc
 
 
 ##
+## ## exit
+##
+
+wlogout
+
+
+wayland-logout
+
+## [wayland-logout] depends [lsof]
+lsof
+
+
+##
 ## ## azote
 ##
 ## * https://aur.archlinux.org/packages/azote
