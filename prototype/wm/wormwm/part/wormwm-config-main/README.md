@@ -1,5 +1,12 @@
 
-# labwc
+
+# wormwm
+
+
+## Link
+
+* https://aur.archlinux.org/packages/worm-git
+* https://github.com/codic12/worm
 
 
 ## Howto

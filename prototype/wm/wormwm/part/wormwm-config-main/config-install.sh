@@ -4,36 +4,36 @@ set -e
 
 
 ################################################################################
-### Head: worm_config_install
+### Head: wormwm_config_install
 ##
-worm_config_install () {
+wormwm_config_install () {
 
 	echo
 	echo "##"
-	echo "## Config Start: worm_config_install"
+	echo "## Config Start: wormwm_config_install"
 	echo "##"
 	echo
 
-	worm_config_install_main
-	#worm_config_install_main_each
+	wormwm_config_install_main
+	#wormwm_config_install_main_each
 
 
 	echo
 }
 
 ##
-### Tail: worm_config_install
+### Tail: wormwm_config_install
 ################################################################################
 
 
 ################################################################################
-### Head: worm_config_install_main
+### Head: wormwm_config_install_main
 ##
-worm_config_install_main () {
+wormwm_config_install_main () {
 
 	echo
 	echo "##"
-	echo "## Install: worm_config_install_main"
+	echo "## Install: wormwm_config_install_main"
 	echo "##"
 	echo
 
@@ -58,11 +58,11 @@ worm_config_install_main () {
 
 }
 
-worm_config_install_main_each () {
+wormwm_config_install_main_each () {
 
 	echo
 	echo "##"
-	echo "## Install: worm_config_install_main_each"
+	echo "## Install: wormwm_config_install_main_each"
 	echo "##"
 	echo
 
@@ -93,7 +93,7 @@ worm_config_install_main_each () {
 
 }
 ##
-### Tail: worm_config_install_main
+### Tail: wormwm_config_install_main
 ################################################################################
 
 
@@ -102,7 +102,7 @@ worm_config_install_main_each () {
 ##
 main_confing_install () {
 
-	worm_config_install
+	wormwm_config_install
 
 	return 0
 

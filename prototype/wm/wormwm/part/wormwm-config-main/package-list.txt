@@ -60,6 +60,8 @@ scrot
 ##
 ## * https://archlinux.org/packages/community/x86_64/picom/
 ## * https://github.com/yshui/picom
+## * https://aur.archlinux.org/packages/picom-ibhagwan-git
+## * https://github.com/ibhagwan/picom
 ##
 
 #picom
