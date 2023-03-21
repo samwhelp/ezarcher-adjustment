@@ -1,8 +1,8 @@
 
 
 [org.gnome.shell.keybindings]
-toggle-application-view=['<Super>Tab', '<Alt>j', '<Alt>Down']
-toggle-overview=['<Super>grave', '<Alt>k', '<Alt>Up']
+toggle-application-view=['<Super>grave', '<Alt>k', '<Alt>Up']
+toggle-overview=['<Super>Tab', '<Alt>j', '<Alt>Down']
 
 
 [org.gnome.desktop.wm.keybindings]
