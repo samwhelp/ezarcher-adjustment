@@ -515,17 +515,20 @@ gnome_shell_keybind_adjustment_config_fix () {
 	echo "gsettings set org.gnome.mutter overlay-key ''"
 	gsettings set org.gnome.mutter overlay-key ''
 
+	##
 	## Fix `<Alt><Shift>a` not work
+	##
 
 	echo 'gsettings set org.gnome.desktop.input-sources xkb-options "'"['']"'"'
 	gsettings set org.gnome.desktop.input-sources xkb-options "['']"
 
+	#echo 'gsettings set org.freedesktop.ibus.general.hotkey next-engine "'"['']"'"'
+	#gsettings set org.freedesktop.ibus.general.hotkey next-engine "['']"
 
-	echo 'gsettings set org.freedesktop.ibus.general.hotkey next-engine "'"['']"'"'
-	gsettings set org.freedesktop.ibus.general.hotkey next-engine "['']"
+	#echo 'gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu "'"['']"'"'
+	#gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu "['']"
 
-	echo 'gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu "'"['']"'"'
-	gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu "['']"
+
 
 
 
@@ -535,9 +538,14 @@ gnome_shell_keybind_adjustment_config_fix () {
 	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F4']"'"'
 	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F4']"
 
-	# clear '<Super>t'
-	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['']"'"'
-	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
+
+
+	##
+	## clear '<Super>t'
+	##
+
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
 
 
 
