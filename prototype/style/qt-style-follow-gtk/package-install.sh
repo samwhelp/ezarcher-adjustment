@@ -6,6 +6,7 @@ set -e
 ################################################################################
 ### Head: util_package
 ##
+
 util_package_find_list () {
 	local file_path="$1"
 	cat $file_path  | while IFS='' read -r line; do
@@ -33,14 +34,16 @@ main_package_find_list () {
 main_package_find_list_raw () {
 	cat "package-list.txt"
 }
+
 ##
 ### Tail: util_package
 ################################################################################
 
 
 ################################################################################
-### Head: main
+### Head: package_install
 ##
+
 main_package_install () {
 
 	##
@@ -65,7 +68,26 @@ main_package_install () {
 
 }
 
-main_package_install
 ##
-### Tail: main
+### Tail: package_install
+################################################################################
+
+
+################################################################################
+### Head: Main
+##
+
+__main__ () {
+
+	main_package_install
+
+}
+
+##
+## Start
+##
+__main__
+
+##
+### Tail: Main
 ################################################################################
