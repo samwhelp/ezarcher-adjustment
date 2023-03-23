@@ -1,0 +1,11 @@
+
+
+##
+## ## kvantum
+##
+
+kvantum
+
+qt5-svg
+qt6-svg
+

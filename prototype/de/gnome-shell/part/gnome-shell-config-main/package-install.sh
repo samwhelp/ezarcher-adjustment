@@ -50,7 +50,7 @@ main_package_install () {
 	# sudo apt-get install $(cat package-list.txt)
 	# sudo apt-get install $(main_package_find_list_raw)
 	# sudo apt-get install $(main_package_find_list)
-	
+
 
 	##
 	## ## Arch or Manjaro
@@ -62,7 +62,7 @@ main_package_install () {
 	# pamac install $(main_package_find_list)
 	# pamac build $(main_package_find_list)
 	yay -Sy --needed $(main_package_find_list)
-	
+
 }
 
 main_package_install

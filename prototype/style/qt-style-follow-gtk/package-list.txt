@@ -1,5 +1,12 @@
-qt5-styleplugins
 
+
+##
+## ## qt5-styleplugins
+##
+
+qt5-styleplugins
+qt5-svg
 
 gtk-engines
 gtk-engine-murrine
+
