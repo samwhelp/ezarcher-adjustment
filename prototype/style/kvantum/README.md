@@ -7,7 +7,7 @@
 * [~/.config/Kvantum/kvantum.kvconfig](config/Kvantum/kvantum.kvconfig)
 
 
-## Package
+## Arch Package
 
 * [kvantum](https://archlinux.org/packages/community/x86_64/kvantum/)
 * [qt5-svg](https://archlinux.org/packages/extra/x86_64/qt5-svg/)
