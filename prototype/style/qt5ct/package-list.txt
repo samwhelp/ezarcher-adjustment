@@ -1,0 +1,12 @@
+
+
+##
+## ## qt5ct
+##
+
+qt5ct
+
+
+qt5-styleplugins
+qt5-svg
+
