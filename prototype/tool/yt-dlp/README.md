@@ -8,6 +8,31 @@
 * ~/.config/yt-dlp/config
 
 
+## Installation
+
+* [Using the release binary](https://github.com/yt-dlp/yt-dlp/wiki/Installation#using-the-release-binary)
+
+
+``` sh
+curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/.local/bin/yt-dlp
+
+chmod 755 ~/.local/bin/yt-dlp
+```
+
+``` sh
+mkdir -p ~/.local/bin/
+
+wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O ~/.local/bin/yt-dlp
+
+chmod 755 ~/.local/bin/yt-dlp
+```
+
+> Update
+
+``` sh
+yt-dlp -U
+```
+
 ## Project
 
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp)
