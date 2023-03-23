@@ -17,7 +17,7 @@ kvantum_config_install () {
 
 
 	echo
-	echo "install -Dm644 ./config/Kvantum/kvantum.kvconfig"
+	echo "install -Dm644 ./config/Kvantum/kvantum.kvconfig ${HOME}/.config/Kvantum/kvantum.kvconfig"
 	install -Dm644 "./config/Kvantum/kvantum.kvconfig" "${HOME}/.config/Kvantum/kvantum.kvconfig"
 
 	echo
