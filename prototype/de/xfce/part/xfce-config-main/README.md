@@ -7,7 +7,7 @@
 * [~/.config/xfce4](config/xfce4)
 
 
-## Package Groups
+## Arch Package Groups
 
 * [xfce4](https://archlinux.org/groups/x86_64/xfce4/)
 
