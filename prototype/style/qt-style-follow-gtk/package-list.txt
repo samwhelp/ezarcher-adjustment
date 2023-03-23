@@ -1,1 +1,5 @@
 qt5-styleplugins
+
+
+gtk-engines
+gtk-engine-murrine
