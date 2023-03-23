@@ -3,6 +3,8 @@
 ## gnome-shell
 ##
 
+gnome
+
 gnome-shell
 gnome-shell-extensions
 extension-manager
