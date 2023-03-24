@@ -1,0 +1,12 @@
+
+
+##
+## ## /etc/locale.gen
+##
+
+
+##
+## ## Arch Package
+##
+
+#glibc
