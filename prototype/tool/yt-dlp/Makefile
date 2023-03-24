@@ -14,6 +14,8 @@ help:
 	@echo
 	@echo '	$$ make package-install'
 	@echo
+	@echo '	$$ make asset-install'
+	@echo
 	@echo '	$$ make config-install'
 	@echo
 
@@ -34,3 +36,8 @@ config-install:
 package-install:
 	@./package-install.sh
 .PHONY: package-install
+
+
+asset-install:
+	@./asset-install.sh
+.PHONY: asset-install
