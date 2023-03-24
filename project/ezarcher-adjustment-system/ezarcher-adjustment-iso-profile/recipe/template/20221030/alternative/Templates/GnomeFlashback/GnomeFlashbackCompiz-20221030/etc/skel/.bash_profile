@@ -30,7 +30,9 @@
 ## Aad [~/bin] and [~/.local/bin] to PATH
 ##
 
-PATH="${HOME}/.local/bin:${HOME}/bin:${PATH}"
+#PATH="${HOME}/.local/bin:${HOME}/bin:${PATH}"
+
+[[ -f ~/.path ]] && . ~/.path
 
 ##
 ### Tail: PATH

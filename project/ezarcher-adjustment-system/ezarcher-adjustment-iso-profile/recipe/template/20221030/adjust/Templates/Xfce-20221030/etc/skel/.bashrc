@@ -23,6 +23,25 @@
 
 
 ################################################################################
+### Head: ignoreeof
+##
+
+##
+## * Search: [bash ctrl d](https://www.google.com/search?q=bash+ctrl+d)
+## * https://www.gnu.org/software/bash/manual/bash.html#index-end_002dof_002dfile-_0028usually-C_002dd_0029
+## * https://www.gnu.org/software/bash/manual/bash.html#index-IGNOREEOF
+##
+
+## disabe `ctrl + d` to exit
+set -o ignoreeof
+
+
+##
+### Tail: ignoreeof
+################################################################################
+
+
+################################################################################
 ### Head: alias
 ##
 
