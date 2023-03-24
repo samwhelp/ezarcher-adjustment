@@ -1,10 +1,23 @@
 
 # bash
 
+
+## Config File Path
+
+* [~/.bash_profile](config/bash/.bash_profile)
+* [~/.bashrc](config/bash/.bashrc)
+
+
 ## Arch Package
 
 * [bash](https://archlinux.org/packages/core/x86_64/bash/)
 * [bash-completion](https://archlinux.org/packages/extra/any/bash-completion/)
+
+
+## Arch Wiki
+
+* [Bash](https://wiki.archlinux.org/title/Bash)
+* [Command-line shell](https://wiki.archlinux.org/title/Command-line_shell)
 
 
 ## Howto
