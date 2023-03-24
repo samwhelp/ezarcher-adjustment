@@ -1,0 +1,18 @@
+
+
+#if [ -f "${HOME}/.bash_profile" ]; then
+#	source "${HOME}/.bash_profile"
+#fi
+
+
+if [ -f "${HOME}/.path" ]; then
+	source "${HOME}/.path"
+else
+	if [ -f "${HOME}/.bash_profile" ]; then
+		source "${HOME}/.bash_profile"
+	else
+		if [ -f "${HOME}/.profile" ]; then
+			source "${HOME}/.profile"
+		fi
+	fi
+fi

@@ -1,0 +1,14 @@
+
+
+##
+## # xprofile
+##
+
+
+##
+## ## Arch Package
+##
+
+#filesystem
+#bash
+
