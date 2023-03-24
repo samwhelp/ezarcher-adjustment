@@ -34,7 +34,9 @@ bash_config_install () {
 	echo "install -Dm644 ./config/bash/.bashrc ${HOME}/.bashrc"
 	install -Dm644 "./config/bash/.bashrc" "${HOME}/.bashrc"
 
-
+	echo
+	echo "install -Dm644 ./config/bash/.path ${HOME}/.path"
+	install -Dm644 "./config/bash/.path" "${HOME}/.path"
 
 	echo
 
