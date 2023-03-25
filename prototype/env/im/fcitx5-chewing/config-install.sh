@@ -78,8 +78,8 @@ fcitx5_config_install_im_config_by_pam_environment () {
 fcitx5_config_install_im_config_by_profile_d () {
 
 	echo
-	echo "sudo install -Dm644 ./config/profile.d/fcitx5.sh /etc/profile.d/fcitx5.sh"
-	sudo install -Dm644 ./config/profile.d/fcitx5.sh /etc/profile.d/fcitx5.sh
+	echo "sudo install -Dm644 ./config/profile.d/input-method.sh /etc/profile.d/input-method.sh"
+	sudo install -Dm644 ./config/profile.d/input-method.sh /etc/profile.d/input-method.sh
 
 
 	echo
