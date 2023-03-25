@@ -1,5 +1,5 @@
-materia-theme-git
-materia-theme-solid-git
+#materia-theme-git
+#materia-theme-solid-git
 materia-theme-dracula-git
 
 # orchis-theme
