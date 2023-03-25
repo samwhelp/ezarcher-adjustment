@@ -20,3 +20,5 @@ gnome-shell-extensions
 extension-manager
 gnome-tweaks
 gnome-control-center
+
+mate-media
