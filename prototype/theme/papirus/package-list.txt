@@ -1,0 +1,5 @@
+papirus-icon-theme
+
+#papirus-icon-theme-git
+
+papirus-nord
