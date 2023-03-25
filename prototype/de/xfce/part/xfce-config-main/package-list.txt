@@ -6,7 +6,7 @@
 
 
 ##
-## ## Package Group
+## ## Arch Package Group
 ##
 
 xfce4
@@ -14,7 +14,12 @@ xfce4-goodies
 
 
 ##
-## ## Package
+## ## Arch Package
 ##
 
 mate-media
+
+
+##
+## ## AUR Package
+##
