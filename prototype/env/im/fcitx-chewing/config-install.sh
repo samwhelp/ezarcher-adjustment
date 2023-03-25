@@ -58,7 +58,8 @@ fcitx_config_install () {
 
 fcitx_config_install_im_config () {
 	#fcitx_config_install_im_config_by_command
-	fcitx_config_install_im_config_by_pam_environment
+	#fcitx_config_install_im_config_by_pam_environment
+	fcitx_config_install_im_config_by_profile_d
 }
 
 fcitx_config_install_im_config_by_command () {
@@ -76,10 +77,22 @@ fcitx_config_install_im_config_by_command () {
 fcitx_config_install_im_config_by_pam_environment () {
 
 	echo
-	echo "install -m 644 ./config/fcitx/.pam_environment $HOME/.pam_environment"
-	install -m 644 ./config/fcitx/.pam_environment $HOME/.pam_environment
+	echo "install -m 644 ./config/pam/.pam_environment $HOME/.pam_environment"
+	install -m 644 ./config/pam/.pam_environment $HOME/.pam_environment
 
 }
+
+fcitx_config_install_im_config_by_profile_d () {
+
+	echo
+	echo "sudo install -Dm644 ./config/profile.d/input-method.sh /etc/profile.d/input-method.sh"
+	sudo install -Dm644 ./config/profile.d/input-method.sh /etc/profile.d/input-method.sh
+
+
+	echo
+
+}
+
 ##
 ### Tail: fcitx
 ################################################################################
