@@ -1,10 +1,12 @@
 
-##
-## gnome-shell
-##
 
 ##
-## ## Package Group
+## # gnome-shell
+##
+
+
+##
+## ## Arch Package Group
 ##
 
 gnome
@@ -12,13 +14,20 @@ gnome
 
 
 ##
-## ## Package
+## ## Arch Package
 ##
 
 gnome-shell
 gnome-shell-extensions
-extension-manager
+
 gnome-tweaks
 gnome-control-center
 
 mate-media
+
+
+##
+## ## AUR Package
+##
+
+extension-manager
