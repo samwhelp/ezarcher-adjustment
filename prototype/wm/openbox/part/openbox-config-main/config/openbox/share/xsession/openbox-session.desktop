@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/local/bin/openbox-session.sh
+TryExec=/usr/local/bin/openbox-session.sh
+Name=Be Openbox
+Comment=Openbox Xsession
+
+Name[zh_TW]=Be Openbox
+Comment[zh_TW]=Openbox Xsession
