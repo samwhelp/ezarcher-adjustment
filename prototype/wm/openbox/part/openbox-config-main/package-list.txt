@@ -21,6 +21,8 @@ tint2
 rofi
 jgmenu
 
+picom
+
 pcmanfm
 pcmanfm-qt
 thunar
@@ -51,11 +53,11 @@ xfconf
 
 xfce4-notifyd
 
-#lxappearance
-#lxappearance-obconf
+lxappearance
+lxappearance-obconf
 
-lxappearance-gtk3
-lxappearance-obconf-gtk3
+#lxappearance-gtk3
+#lxappearance-obconf-gtk3
 
 
 
