@@ -3,7 +3,17 @@
 ## gnome-shell
 ##
 
+##
+## ## Package Group
+##
+
 gnome
+#gnome-extra
+
+
+##
+## ## Package
+##
 
 gnome-shell
 gnome-shell-extensions

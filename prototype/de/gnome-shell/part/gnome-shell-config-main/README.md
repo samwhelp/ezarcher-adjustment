@@ -2,6 +2,15 @@
 # gnome-shell
 
 
+## Arch Package Groups
+
+* [gnome](https://archlinux.org/groups/x86_64/gnome/)
+* [gnome-extra](https://archlinux.org/groups/x86_64/gnome-extra/)
+
+
+## Arch Wiki
+
+* [GNOME](https://wiki.archlinux.org/title/GNOME)
 
 
 ## Howto

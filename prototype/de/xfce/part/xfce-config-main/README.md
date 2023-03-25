@@ -10,6 +10,7 @@
 ## Arch Package Groups
 
 * [xfce4](https://archlinux.org/groups/x86_64/xfce4/)
+* [xfce4-goodies](https://archlinux.org/groups/x86_64/xfce4-goodies/)
 
 
 ## Arch Wiki
