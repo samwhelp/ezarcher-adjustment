@@ -22,6 +22,8 @@ help:
 	@echo
 	@echo '	$$ make asset-install'
 	@echo
+	@echo '	$$ make asset-cursor-theme'
+	@echo
 	@echo '	$$ make asset-icon-theme'
 	@echo
 	@echo '	$$ make asset-gtk-theme'
@@ -56,6 +58,11 @@ config-xfce:
 asset-install:
 	@./asset-install.sh
 .PHONY: asset-install
+
+
+asset-cursor-theme:
+	@./asset-cursor-theme.sh
+.PHONY: asset-cursor-theme
 
 
 asset-icon-theme:
