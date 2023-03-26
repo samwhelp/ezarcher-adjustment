@@ -126,6 +126,17 @@ mod_config_gnome_shell_wm_theme () {
 	util_error_echo "gsettings set org.gnome.desktop.wm.preferences theme 'Gruvbox'"
 	gsettings set org.gnome.desktop.wm.preferences theme 'Gruvbox'
 
+
+
+	##
+	## Enable: GNOME Shell Extension / [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+	##
+
+	util_error_echo
+	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Gruvbox'"
+	gsettings set org.gnome.shell.extensions.user-theme name 'Gruvbox'
+
+
 	return 0
 
 }
