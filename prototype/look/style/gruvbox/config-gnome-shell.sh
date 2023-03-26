@@ -132,10 +132,17 @@ mod_config_gnome_shell_wm_theme () {
 	## Enable: GNOME Shell Extension / [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 	##
 
-	util_error_echo
-	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Gruvbox'"
-	gsettings set org.gnome.shell.extensions.user-theme name 'Gruvbox'
+	#util_error_echo
+	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Gruvbox'"
+	#gsettings set org.gnome.shell.extensions.user-theme name 'Gruvbox'
 
+	util_error_echo
+	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Default'"
+	gsettings set org.gnome.shell.extensions.user-theme name 'Default'
+	
+	#util_error_echo
+	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-Dark'"
+	#gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-Dark'	
 
 	return 0
 
