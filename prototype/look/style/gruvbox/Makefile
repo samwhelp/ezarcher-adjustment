@@ -75,7 +75,7 @@ asset-gtk-theme:
 .PHONY: asset-gtk-theme
 
 
-asset-gtk-theme:
+asset-kde-theme:
 	@./asset-kde-theme.sh
 .PHONY: asset-kde-theme
 
