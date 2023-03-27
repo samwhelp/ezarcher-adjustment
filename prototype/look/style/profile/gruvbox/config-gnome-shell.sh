@@ -129,13 +129,13 @@ mod_config_gnome_shell_wm_theme () {
 	## Enable: GNOME Shell Extension / [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 	##
 
-	#util_error_echo
-	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name '${THE_WM_THEME_NAME}'"
-	#gsettings set org.gnome.shell.extensions.user-theme name "'${THE_WM_THEME_NAME}'"
-
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Default'"
-	gsettings set org.gnome.shell.extensions.user-theme name 'Default'
+	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name '${THE_GHOME_SHELL_THEME_NAME}'"
+	gsettings set org.gnome.shell.extensions.user-theme name "'${THE_GHOME_SHELL_THEME_NAME}'"
+
+	#util_error_echo
+	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Default'"
+	#gsettings set org.gnome.shell.extensions.user-theme name 'Default'
 	
 	#util_error_echo
 	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-Dark'"

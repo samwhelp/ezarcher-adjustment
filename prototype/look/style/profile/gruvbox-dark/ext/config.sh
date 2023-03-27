@@ -1,3 +1,4 @@
+THE_GHOME_SHELL_THEME_NAME="Default"
 THE_WM_THEME_NAME="Gruvbox-Dark"
 THE_GTK_THEME_NAME="Gruvbox-Dark"
 THE_ICON_THEME_NAME="Gruvbox-Dark"

@@ -1,4 +1,4 @@
-THE_GHOME_SHELL_THEME_NAME="Greybird-dark"
+THE_GHOME_SHELL_THEME_NAME="Default"
 THE_WM_THEME_NAME="Greybird-dark"
 THE_GTK_THEME_NAME="Greybird-dark"
 THE_ICON_THEME_NAME="elementary-xfce-dark"
