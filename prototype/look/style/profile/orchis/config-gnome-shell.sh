@@ -101,12 +101,17 @@ mod_config_gnome_shell_wallpaper () {
 
 mod_config_gnome_shell_color_scheme () {
 
+	#util_error_echo
+	#util_error_echo "gsettings set org.gnome.desktop.interface color-scheme 'default'"
 	#gsettings set org.gnome.desktop.interface color-scheme 'default'
-	#gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
-	gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+	util_error_echo "gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'"
+	gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
+
+	#util_error_echo
+	#util_error_echo "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+	#gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 	return 0
 
@@ -125,8 +130,8 @@ mod_config_gnome_shell_wm_theme () {
 	##
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name '${THE_WM_THEME_NAME}'"
-	gsettings set org.gnome.shell.extensions.user-theme name "'${THE_WM_THEME_NAME}'"
+	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name '${THE_GHOME_SHELL_THEME_NAME}'"
+	gsettings set org.gnome.shell.extensions.user-theme name "'${THE_GHOME_SHELL_THEME_NAME}'"
 
 	#util_error_echo
 	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Default'"
