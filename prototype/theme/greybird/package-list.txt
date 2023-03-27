@@ -1,3 +1,6 @@
 xfce-theme-greybird
 xfce-theme-bluebird
-openbox-theme-bluebird-openboxed
+#openbox-theme-bluebird-openboxed
+
+
+elementary-xfce-icons
