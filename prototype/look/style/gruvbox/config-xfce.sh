@@ -62,28 +62,28 @@ util_error_echo () {
 
 
 ################################################################################
-### Head: mate
+### Head: xfce
 ##
 
-config_mate () {
+config_xfce () {
 
 	util_error_echo
 	util_error_echo "##"
-	util_error_echo "## Config: mate"
+	util_error_echo "## Config: xfce"
 	util_error_echo "##"
 	util_error_echo
 
-	#mod_config_mate_wallpaper
+	#mod_config_xfce_wallpaper
 
-	#mod_config_mate_color_scheme
+	#mod_config_xfce_color_scheme
 
-	mod_config_mate_wm_theme
+	mod_config_xfce_wm_theme
 
-	mod_config_mate_gtk_theme
+	mod_config_xfce_gtk_theme
 
-	mod_config_mate_icon_theme
+	mod_config_xfce_icon_theme
 
-	mod_config_mate_cursor_theme
+	mod_config_xfce_cursor_theme
 
 
 
@@ -93,74 +93,63 @@ config_mate () {
 
 }
 
-mod_config_mate_wallpaper () {
-
+mod_config_xfce_wallpaper () {
 
 	##
-	## * https://github.com/samwhelp/note-about-wallpaper/blob/gh-pages/_demo/project/opset-wallpaper/opset-wallpaper-mate/opset-wallpaper-mate#L21-L33
+	## * https://github.com/samwhelp/note-about-fzf/blob/gh-pages/_demo/project/wallpaper-select/wallpaper-select-xfce/wallpaper-select-xfce#L555-L585
+	## * https://github.com/samwhelp/note-about-wallpaper/blob/gh-pages/_demo/project/opset-wallpaper/opset-wallpaper-xfce/opset-wallpaper-xfce#L20-L47
 	##
 
-	util_error_echo
-	util_error_echo "gsettings set org.mate.background picture-filename '/usr/share/backgrounds/default.jpg'"
-	gsettings set org.mate.background picture-filename '/usr/share/backgrounds/default.jpg'
+	return 0
 
-	util_error_echo
-	util_error_echo "gsettings set org.mate.background picture-options 'zoom'"
-	gsettings set org.mate.background picture-options 'zoom'
+}
 
-	#util_error_echo
-	#util_error_echo "gsettings set org.mate.background picture-options 'stretched'"
-	#gsettings set org.mate.background picture-options 'stretched'
+mod_config_xfce_color_scheme () {
 
 	return 0
 
 }
 
-mod_config_mate_color_scheme () {
+mod_config_xfce_wm_theme () {
+
+	util_error_echo
+	util_error_echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Gruvbox'"
+	xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Gruvbox'
 
 	return 0
 
 }
 
-mod_config_mate_wm_theme () {
+mod_config_xfce_gtk_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.mate.Marco.general theme 'Gruvbox'"
-	gsettings set org.mate.Marco.general theme 'Gruvbox'
+	util_error_echo "xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s 'Gruvbox'"
+	xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s 'Gruvbox'
 
 	return 0
 
 }
 
-mod_config_mate_gtk_theme () {
+mod_config_xfce_icon_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.mate.interface gtk-theme 'Gruvbox'"
-	gsettings set org.mate.interface gtk-theme 'Gruvbox'
+	util_error_echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Gruvbox-Dark'"
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Gruvbox-Dark'
 
 	return 0
 
 }
 
-mod_config_mate_icon_theme () {
+mod_config_xfce_cursor_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.mate.interface icon-theme 'Gruvbox-Dark'"
-	gsettings set org.mate.interface icon-theme 'Gruvbox-Dark'
-
-	return 0
-
-}
-
-mod_config_mate_cursor_theme () {
+	util_error_echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s 'Breeze'"
+	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s 'Breeze'
+	#xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s 'xcursor-breeze'
 
 	util_error_echo
-	util_error_echo "gsettings set org.mate.peripherals-mouse cursor-theme 'Breeze'"
-	gsettings set org.mate.peripherals-mouse cursor-theme 'Breeze'
-
-	util_error_echo
-	util_error_echo "gsettings set org.mate.peripherals-mouse cursor-size 24"
-	gsettings set org.mate.peripherals-mouse cursor-size 24
+	util_error_echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s '24'"
+	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s '24'
 
 	return 0
 
@@ -168,7 +157,7 @@ mod_config_mate_cursor_theme () {
 
 
 ##
-### Tail: mate
+### Tail: xfce
 ################################################################################
 
 
@@ -178,7 +167,7 @@ mod_config_mate_cursor_theme () {
 
 __main__ () {
 
-	config_mate
+	config_xfce
 
 	return 0
 

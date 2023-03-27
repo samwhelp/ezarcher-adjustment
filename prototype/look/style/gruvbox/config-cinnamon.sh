@@ -112,13 +112,6 @@ mod_config_cinnamon_wallpaper () {
 
 mod_config_cinnamon_color_scheme () {
 
-	#gsettings set org.gnome.desktop.interface color-scheme 'default'
-	#gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
-
-	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
-	gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-
 	return 0
 
 }

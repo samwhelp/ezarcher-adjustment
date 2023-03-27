@@ -95,6 +95,13 @@ config_gnome_shell () {
 
 mod_config_gnome_shell_wallpaper () {
 
+
+	##
+	## * https://github.com/samwhelp/note-about-fzf/blob/gh-pages/_demo/project/wallpaper-select/wallpaper-select-gnome/wallpaper-select-gnome#L552-L560
+	## * https://github.com/samwhelp/note-about-wallpaper/blob/gh-pages/_demo/project/opset-wallpaper/opset-wallpaper-gnome/opset-wallpaper-gnome#L20-L29
+	## * https://github.com/samwhelp/note-about-wallpaper/blob/gh-pages/_demo/project/opset-wallpaper/opset-wallpaper-gnome/opset-screensaver-background-gnome#L20-L29
+	##
+
 	util_error_echo
 	util_error_echo "gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/default.jpg'"
 	gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/default.jpg'
@@ -102,6 +109,10 @@ mod_config_gnome_shell_wallpaper () {
 	util_error_echo
 	util_error_echo "gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/default.jpg'"
 	gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/default.jpg'
+
+	util_error_echo
+	util_error_echo "gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/default-login.jpg'"
+	gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/default-login.jpg'
 
 	return 0
 
