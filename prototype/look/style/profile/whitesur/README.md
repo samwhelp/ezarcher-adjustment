@@ -1,6 +1,6 @@
 
 
-# Style / WhiteSur-Dark
+# Style / WhiteSur
 
 
 
