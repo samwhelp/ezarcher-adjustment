@@ -34,30 +34,11 @@ set -e
 ##
 
 THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
-#THE_MAIN_EXT_DIR_PATH="${THE_BASE_DIR_PATH}/../ext"
-#source "${THE_MAIN_EXT_DIR_PATH}/init.sh"
-
-
-#THE_PLAN_DIR_PATH="$THE_BASE_DIR_PATH"
-#THE_CONFIG_FILE_PATH="${THE_PLAN_DIR_PATH}/demo.conf"
-#source "$THE_CONFIG_FILE_PATH"
-#. "$THE_CONFIG_FILE_PATH"
+THE_MAIN_EXT_DIR_PATH="${THE_BASE_DIR_PATH}/ext"
+source "${THE_MAIN_EXT_DIR_PATH}/init.sh"
 
 ##
 ### Tail: Init
-################################################################################
-
-
-################################################################################
-### Head: Util / Debug
-##
-
-util_error_echo () {
-	echo "$@" 1>&2
-}
-
-##
-### Head: Util / Debug
 ################################################################################
 
 
@@ -134,8 +115,8 @@ mod_config_gnome_shell_color_scheme () {
 mod_config_gnome_shell_wm_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.wm.preferences theme 'Orchis-Dark'"
-	gsettings set org.gnome.desktop.wm.preferences theme 'Orchis-Dark'
+	util_error_echo "gsettings set org.gnome.desktop.wm.preferences theme '${THE_WM_THEME_NAME}'"
+	gsettings set org.gnome.desktop.wm.preferences theme "'${THE_WM_THEME_NAME}'"
 
 
 
@@ -143,17 +124,14 @@ mod_config_gnome_shell_wm_theme () {
 	## Enable: GNOME Shell Extension / [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 	##
 
-	#util_error_echo
-	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-Dark'"
-	#gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-Dark'
-
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Default'"
-	gsettings set org.gnome.shell.extensions.user-theme name 'Default'
-	
+	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name '${THE_WM_THEME_NAME}'"
+	gsettings set org.gnome.shell.extensions.user-theme name "'${THE_WM_THEME_NAME}'"
+
 	#util_error_echo
-	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-Dark'"
-	#gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-Dark'	
+	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Default'"
+	#gsettings set org.gnome.shell.extensions.user-theme name 'Default'
+	
 
 	return 0
 
@@ -162,8 +140,8 @@ mod_config_gnome_shell_wm_theme () {
 mod_config_gnome_shell_gtk_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface gtk-theme 'Orchis-Dark'"
-	gsettings set org.gnome.desktop.interface gtk-theme 'Orchis-Dark'
+	util_error_echo "gsettings set org.gnome.desktop.interface gtk-theme '${THE_GTK_THEME_NAME}'"
+	gsettings set org.gnome.desktop.interface gtk-theme "'${THE_GTK_THEME_NAME}'"
 
 	return 0
 
@@ -172,8 +150,8 @@ mod_config_gnome_shell_gtk_theme () {
 mod_config_gnome_shell_icon_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'"
-	gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+	util_error_echo "gsettings set org.gnome.desktop.interface icon-theme '${THE_ICON_THEME_NAME}'"
+	gsettings set org.gnome.desktop.interface icon-theme "'${THE_ICON_THEME_NAME}'"
 
 	return 0
 
@@ -182,12 +160,12 @@ mod_config_gnome_shell_icon_theme () {
 mod_config_gnome_shell_cursor_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface cursor-theme 'Qogir'"
-	gsettings set org.gnome.desktop.interface cursor-theme 'Qogir'
+	util_error_echo "gsettings set org.gnome.desktop.interface cursor-theme '${THE_CURSOR_THEME_NAME}'"
+	gsettings set org.gnome.desktop.interface cursor-theme "'${THE_CURSOR_THEME_NAME}'"
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface cursor-size 24"
-	gsettings set org.gnome.desktop.interface cursor-size 24
+	util_error_echo "gsettings set org.gnome.desktop.interface cursor-size ${THE_CURSOR_SIZE}"
+	gsettings set org.gnome.desktop.interface cursor-size "${THE_CURSOR_SIZE}"
 
 	return 0
 
