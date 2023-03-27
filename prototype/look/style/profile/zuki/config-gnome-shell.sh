@@ -115,8 +115,8 @@ mod_config_gnome_shell_color_scheme () {
 mod_config_gnome_shell_wm_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.wm.preferences theme '${THE_GHOME_SHELL_THEME_NAME}'"
-	gsettings set org.gnome.desktop.wm.preferences theme "'${THE_GHOME_SHELL_THEME_NAME}'"
+	util_error_echo "gsettings set org.gnome.desktop.wm.preferences theme '${THE_WM_THEME_NAME}'"
+	gsettings set org.gnome.desktop.wm.preferences theme "'${THE_WM_THEME_NAME}'"
 
 
 
@@ -125,8 +125,8 @@ mod_config_gnome_shell_wm_theme () {
 	##
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name '${THE_WM_THEME_NAME}'"
-	gsettings set org.gnome.shell.extensions.user-theme name "'${THE_WM_THEME_NAME}'"
+	util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name '${THE_GHOME_SHELL_THEME_NAME}'"
+	gsettings set org.gnome.shell.extensions.user-theme name "'${THE_GHOME_SHELL_THEME_NAME}'"
 
 	#util_error_echo
 	#util_error_echo "gsettings set org.gnome.shell.extensions.user-theme name 'Default'"
