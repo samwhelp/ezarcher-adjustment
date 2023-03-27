@@ -1,0 +1,3 @@
+xfce-theme-greybird
+xfce-theme-bluebird
+openbox-theme-bluebird-openboxed
