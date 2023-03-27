@@ -34,30 +34,11 @@ set -e
 ##
 
 THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
-#THE_MAIN_EXT_DIR_PATH="${THE_BASE_DIR_PATH}/../ext"
-#source "${THE_MAIN_EXT_DIR_PATH}/init.sh"
-
-
-#THE_PLAN_DIR_PATH="$THE_BASE_DIR_PATH"
-#THE_CONFIG_FILE_PATH="${THE_PLAN_DIR_PATH}/demo.conf"
-#source "$THE_CONFIG_FILE_PATH"
-#. "$THE_CONFIG_FILE_PATH"
+THE_MAIN_EXT_DIR_PATH="${THE_BASE_DIR_PATH}/ext"
+source "${THE_MAIN_EXT_DIR_PATH}/init.sh"
 
 ##
 ### Tail: Init
-################################################################################
-
-
-################################################################################
-### Head: Util / Debug
-##
-
-util_error_echo () {
-	echo "$@" 1>&2
-}
-
-##
-### Head: Util / Debug
 ################################################################################
 
 
@@ -113,8 +94,8 @@ mod_config_xfce_color_scheme () {
 mod_config_xfce_wm_theme () {
 
 	util_error_echo
-	util_error_echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Gruvbox'"
-	xfconf-query -c 'xfwm4' -p '/general/theme' -s 'Gruvbox'
+	util_error_echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s '${THE_GTK_THEME_NAME}'"
+	xfconf-query -c 'xfwm4' -p '/general/theme' -s "'${THE_GTK_THEME_NAME}'"
 
 	return 0
 
@@ -123,8 +104,8 @@ mod_config_xfce_wm_theme () {
 mod_config_xfce_gtk_theme () {
 
 	util_error_echo
-	util_error_echo "xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s 'Gruvbox'"
-	xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s 'Gruvbox'
+	util_error_echo "xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s '${THE_GTK_THEME_NAME}'"
+	xfconf-query -c 'xsettings' -p '/Net/ThemeName' -s "'${THE_GTK_THEME_NAME}'"
 
 	return 0
 
@@ -133,8 +114,8 @@ mod_config_xfce_gtk_theme () {
 mod_config_xfce_icon_theme () {
 
 	util_error_echo
-	util_error_echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Gruvbox-Dark'"
-	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s 'Gruvbox-Dark'
+	util_error_echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s '${THE_ICON_THEME_NAME}'"
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s "'${THE_GTK_THEME_NAME}'"
 
 	return 0
 
@@ -143,13 +124,13 @@ mod_config_xfce_icon_theme () {
 mod_config_xfce_cursor_theme () {
 
 	util_error_echo
-	util_error_echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s 'Breeze'"
-	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s 'Breeze'
+	util_error_echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s '${THE_CURSOR_THEME_NAME}'"
+	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s "'${THE_CURSOR_THEME_NAME}'"
 	#xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeName' -s 'xcursor-breeze'
 
 	util_error_echo
-	util_error_echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s '24'"
-	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s '24'
+	util_error_echo "xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s ${THE_CURSOR_SIZE}"
+	xfconf-query -c 'xsettings' -p '/Gtk/CursorThemeSize' -s "${THE_CURSOR_SIZE}"
 
 	return 0
 

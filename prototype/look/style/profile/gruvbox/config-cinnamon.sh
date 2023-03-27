@@ -34,30 +34,11 @@ set -e
 ##
 
 THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
-#THE_MAIN_EXT_DIR_PATH="${THE_BASE_DIR_PATH}/../ext"
-#source "${THE_MAIN_EXT_DIR_PATH}/init.sh"
-
-
-#THE_PLAN_DIR_PATH="$THE_BASE_DIR_PATH"
-#THE_CONFIG_FILE_PATH="${THE_PLAN_DIR_PATH}/demo.conf"
-#source "$THE_CONFIG_FILE_PATH"
-#. "$THE_CONFIG_FILE_PATH"
+THE_MAIN_EXT_DIR_PATH="${THE_BASE_DIR_PATH}/ext"
+source "${THE_MAIN_EXT_DIR_PATH}/init.sh"
 
 ##
 ### Tail: Init
-################################################################################
-
-
-################################################################################
-### Head: Util / Debug
-##
-
-util_error_echo () {
-	echo "$@" 1>&2
-}
-
-##
-### Head: Util / Debug
 ################################################################################
 
 
@@ -119,13 +100,13 @@ mod_config_cinnamon_color_scheme () {
 mod_config_cinnamon_wm_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.cinnamon.theme name 'Gruvbox'"
-	gsettings set org.cinnamon.theme name 'Gruvbox'
+	util_error_echo "gsettings set org.cinnamon.theme name '${THE_GTK_THEME_NAME}'"
+	gsettings set org.cinnamon.theme name "'${THE_GTK_THEME_NAME}'"
 
 
 	util_error_echo
-	util_error_echo "gsettings set org.cinnamon.desktop.wm.preferences theme 'Gruvbox'"
-	gsettings set org.cinnamon.desktop.wm.preferences theme 'Gruvbox'
+	util_error_echo "gsettings set org.cinnamon.desktop.wm.preferences theme '${THE_GTK_THEME_NAME}'"
+	gsettings set org.cinnamon.desktop.wm.preferences theme "'${THE_GTK_THEME_NAME}'"
 
 	return 0
 
@@ -134,8 +115,8 @@ mod_config_cinnamon_wm_theme () {
 mod_config_cinnamon_gtk_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.cinnamon.desktop.interface gtk-theme 'Gruvbox'"
-	gsettings set org.cinnamon.desktop.interface gtk-theme 'Gruvbox'
+	util_error_echo "gsettings set org.cinnamon.desktop.interface gtk-theme '${THE_GTK_THEME_NAME}'"
+	gsettings set org.cinnamon.desktop.interface gtk-theme "'${THE_GTK_THEME_NAME}'"
 
 	return 0
 
@@ -144,8 +125,8 @@ mod_config_cinnamon_gtk_theme () {
 mod_config_cinnamon_icon_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.cinnamon.desktop.interface icon-theme 'Gruvbox-Dark'"
-	gsettings set org.cinnamon.desktop.interface icon-theme 'Gruvbox-Dark'
+	util_error_echo "gsettings set org.cinnamon.desktop.interface icon-theme '${THE_ICON_THEME_NAME}'"
+	gsettings set org.cinnamon.desktop.interface icon-theme "'${THE_ICON_THEME_NAME}'"
 
 	return 0
 
@@ -154,12 +135,12 @@ mod_config_cinnamon_icon_theme () {
 mod_config_cinnamon_cursor_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface cursor-theme 'Breeze'"
-	gsettings set org.gnome.desktop.interface cursor-theme 'Breeze'
+	util_error_echo "gsettings set org.gnome.desktop.interface cursor-theme '${THE_CURSOR_THEME_NAME}'"
+	gsettings set org.gnome.desktop.interface cursor-theme "'${THE_CURSOR_THEME_NAME}'"
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface cursor-size 24"
-	gsettings set org.cinnamon.desktop.interface cursor-size 24
+	util_error_echo "gsettings set org.gnome.desktop.interface cursor-size ${THE_CURSOR_SIZE}"
+	gsettings set org.cinnamon.desktop.interface cursor-size "${THE_CURSOR_SIZE}"
 
 	return 0
 
