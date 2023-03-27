@@ -4,3 +4,4 @@ xfce-theme-bluebird
 
 
 elementary-xfce-icons
+elementary-icon-theme
