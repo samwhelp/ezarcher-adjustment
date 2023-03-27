@@ -106,8 +106,8 @@ mod_config_mate_color_scheme () {
 mod_config_mate_wm_theme () {
 
 	util_error_echo
-	util_error_echo "gsettings set org.mate.Marco.general theme '${THE_GTK_THEME_NAME}'"
-	gsettings set org.mate.Marco.general theme "'${THE_GTK_THEME_NAME}'"
+	util_error_echo "gsettings set org.mate.Marco.general theme '${THE_WM_THEME_NAME}'"
+	gsettings set org.mate.Marco.general theme "'${THE_WM_THEME_NAME}'"
 
 	return 0
 

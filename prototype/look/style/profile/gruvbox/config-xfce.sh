@@ -94,8 +94,8 @@ mod_config_xfce_color_scheme () {
 mod_config_xfce_wm_theme () {
 
 	util_error_echo
-	util_error_echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s '${THE_GTK_THEME_NAME}'"
-	xfconf-query -c 'xfwm4' -p '/general/theme' -s "'${THE_GTK_THEME_NAME}'"
+	util_error_echo "xfconf-query -c 'xfwm4' -p '/general/theme' -s '${THE_WM_THEME_NAME}'"
+	xfconf-query -c 'xfwm4' -p '/general/theme' -s "'${THE_WM_THEME_NAME}'"
 
 	return 0
 
