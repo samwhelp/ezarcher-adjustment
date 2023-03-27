@@ -1,6 +1,6 @@
 
 
-# Style / Zuki
+# Style / Arc
 
 
 
@@ -8,6 +8,6 @@
 
 | Subject | Theme |
 | --- | --- |
-| gtk-theme | [Zukitwo](https://github.com/lassekongo83/zuki-themes) |
-| icon-theme | [Tela](https://github.com/vinceliuice/Tela-icon-theme) |
+| gtk-theme | [Arc](https://github.com/jnsh/arc-theme) |
+| icon-theme | [Arc]https://github.com/horst3180/arc-icon-theme) |
 | cursor-theme | [Qogir](https://github.com/vinceliuice/Qogir-icon-theme/tree/master/src/cursors) |
