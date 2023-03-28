@@ -1,7 +1,6 @@
 
 
-# Style / Zuki
-
+# Style / Skeuos-Grey-Dark
 
 
 ## Theme
