@@ -115,7 +115,7 @@ mod_config_xfce_icon_theme () {
 
 	util_error_echo
 	util_error_echo "xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s \"${THE_ICON_THEME_NAME}\""
-	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s "${THE_GTK_THEME_NAME}"
+	xfconf-query -c 'xsettings' -p '/Net/IconThemeName' -s "${THE_ICON_THEME_NAME}"
 
 	return 0
 
