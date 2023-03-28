@@ -1,6 +1,6 @@
 
 
-# Style / Colloid-Teal-Dark-Nord
+# Style / Colloid-Purple-Dark-Dracula
 
 
 ## Theme
