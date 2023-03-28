@@ -101,9 +101,9 @@ mod_config_gnome_shell_wallpaper () {
 
 mod_config_gnome_shell_color_scheme () {
 
-	#util_error_echo
-	#util_error_echo "gsettings set org.gnome.desktop.interface color-scheme 'default'"
-	#gsettings set org.gnome.desktop.interface color-scheme 'default'
+	util_error_echo
+	util_error_echo "gsettings set org.gnome.desktop.interface color-scheme 'default'"
+	gsettings set org.gnome.desktop.interface color-scheme 'default'
 
 	#util_error_echo
 	#util_error_echo "gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'"
