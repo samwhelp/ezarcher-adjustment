@@ -1,6 +1,6 @@
 
 
-# Style / Colloid-Purple-Dark
+# Style / Colloid-Purple
 
 
 ## Theme
