@@ -1,0 +1,6 @@
+THE_GHOME_SHELL_THEME_NAME="WhiteSur-Light-yellow"
+THE_WM_THEME_NAME="WhiteSur-Light-yellow"
+THE_GTK_THEME_NAME="WhiteSur-Light-yellow"
+THE_ICON_THEME_NAME="Colloid-yellow"
+THE_CURSOR_THEME_NAME="Qogir"
+THE_CURSOR_SIZE="24"
