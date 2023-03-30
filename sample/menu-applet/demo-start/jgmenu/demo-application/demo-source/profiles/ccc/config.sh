@@ -1,1 +1,0 @@
-THE_THEME_NAME="theme_ccc"
