@@ -27,8 +27,8 @@ xprofile_config_install () {
 
 
 	echo
-	echo "sudo install -Dm644 ./config/xprofile/.xprofile ${HOME}/.xprofile"
-	sudo install -Dm644 "./config/xprofile/.xprofile" "${HOME}/.xprofile"
+	echo "install -Dm644 ./config/xprofile/.xprofile ${HOME}/.xprofile"
+	install -Dm644 "./config/xprofile/.xprofile" "${HOME}/.xprofile"
 
 
 
