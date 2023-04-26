@@ -1,1 +1,12 @@
+
+
+##
+## # Thunar
+##
+
+
+##
+## ## Arch Package
+##
+
 thunar
