@@ -16,22 +16,42 @@ viewnior_config_install () {
 	echo
 
 
+	viewnior_config_install_by_dir
+
+	#viewnior_config_install_by_each_file
+
+
+	echo
+
+}
+
+viewnior_config_install_by_dir () {
+
+
 	echo
 	echo "mkdir -p ${HOME}/.config/viewnior"
 	mkdir -p "${HOME}/.config/viewnior"
 
 
-	#echo
-	#echo "cp -rf ./config/viewnior/. ${HOME}/.config/viewnior"
-	#cp -rf "./config/viewnior/." "${HOME}/.config/viewnior"
+	echo
+	echo "cp -rf ./config/viewnior/. ${HOME}/.config/viewnior"
+	cp -rf "./config/viewnior/." "${HOME}/.config/viewnior"
 
+
+}
+
+viewnior_config_install_by_each_file () {
+
+
+	echo
+	echo "mkdir -p ${HOME}/.config/viewnior"
+	mkdir -p "${HOME}/.config/viewnior"
 
 	echo
 	echo "install -Dm644 ./config/viewnior/viewnior.conf ${HOME}/.config/viewnior/viewnior.conf"
 	install -Dm644 "./config/viewnior/viewnior.conf" "${HOME}/.config/viewnior/viewnior.conf"
 
 
-	echo
 
 }
 

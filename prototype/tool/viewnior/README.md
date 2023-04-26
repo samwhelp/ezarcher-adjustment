@@ -1,5 +1,5 @@
 
-# viewnior
+# Viewnior
 
 
 ## Config File Path
@@ -10,6 +10,11 @@
 ## Arch Package
 
 * [viewnior](https://archlinux.org/packages/community/x86_64/viewnior/)
+
+
+## Arch Manpage
+
+* man [viewnior](https://man.archlinux.org/man/community/viewnior/viewnior.1.en)
 
 
 ## Howto
