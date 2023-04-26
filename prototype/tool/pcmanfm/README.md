@@ -1,15 +1,28 @@
 
-# pcmanfm
-
-## Package
-
-* [https://packages.ubuntu.com/jammy/pcmanfm](https://packages.ubuntu.com/jammy/pcmanfm)
+# Pcmanfm
 
 
 ## Config File Path
 
-* [~/.config/pcmanfm/pcmanfm.conf](config/pcmanfm/pcmanfm.conf)
+* [~/.config/pcmanfm/default/pcmanfm.conf](config/pcmanfm/default/pcmanfm.conf)
 * [~/.config/libfm/libfm.conf](config/libfm/libfm.conf)
+
+
+## Arch Package
+
+* [pcmanfm](https://archlinux.org/packages/community/x86_64/pcmanfm/)
+
+
+## Arch Manpage
+
+* man [pcmanfm](https://man.archlinux.org/man/pcmanfm.1.en)
+
+
+## Arch Wiki
+
+* [PCManFM](https://wiki.archlinux.org/title/PCManFM)
+* [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality)
+
 
 ## Howto
 

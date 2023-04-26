@@ -1,22 +1,32 @@
 
+
 ##
-## File Manager
+## # Pcmanfm
+##
+
+
+##
+## ## Arch Package
+##
+
+
+##
+## ### File Manager
 ##
 
 pcmanfm
 
 
 ##
-## Terminal
+## ### Terminal
 ##
 
 #sakura
 lxterminal
 
 
-
 ##
-## Archiver
+## ### Archiver
 ##
 
 engrampa
