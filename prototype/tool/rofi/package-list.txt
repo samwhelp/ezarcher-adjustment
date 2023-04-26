@@ -1,0 +1,12 @@
+
+
+##
+## # Rofi
+##
+
+
+##
+## ## Arch Package
+##
+
+rofi
