@@ -248,7 +248,7 @@ wireplumber
 # pulseaudio-bluetooth
 # pulseaudio-equalizer
 # pulseaudio-jack
-simplescreenrecorder
+#simplescreenrecorder
 sox
 transcode
 smplayer
@@ -332,7 +332,7 @@ asunder
 blueman
 catfish
 dconf-editor
-epdfview
+#epdfview
 galculator
 geany
 gnome-firmware

@@ -248,7 +248,7 @@ wireplumber
 # pulseaudio-bluetooth
 # pulseaudio-equalizer
 # pulseaudio-jack
-simplescreenrecorder
+#simplescreenrecorder
 sox
 transcode
 smplayer
@@ -335,7 +335,7 @@ brasero
 cinnamon
 cinnamon-translations
 dconf-editor
-epdfview
+#epdfview
 file-roller
 geany
 gnome-firmware

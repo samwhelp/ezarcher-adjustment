@@ -248,7 +248,7 @@ wireplumber
 # pulseaudio-bluetooth
 # pulseaudio-equalizer
 # pulseaudio-jack
-simplescreenrecorder
+#simplescreenrecorder
 sox
 transcode
 smplayer
