@@ -1,15 +1,15 @@
 
-# sublime-text-4
-
-
-## Link
-
-* AUR / [sublime-text-4](https://aur.archlinux.org/packages/sublime-text-4)
+# sublime-text
 
 
 ## Config File Path
 
 * [~/.config/sublime-text/Packages/User/Preferences.sublime-settings](config/sublime-text/Packages/User/Preferences.sublime-settings)
+
+
+## AUR Package
+
+* [sublime-text-4](https://aur.archlinux.org/packages/sublime-text-4)
 
 
 ## Howto
