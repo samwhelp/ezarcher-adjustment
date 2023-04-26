@@ -22,6 +22,11 @@
 * GNOME / [Configuration](https://wiki.archlinux.org/title/GNOME#Configuration)
 
 
+## Packaging
+
+* [ezarcher-adjustment-modeling-dconf-default-user-db-initialization](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/dconf/ezarcher-adjustment-modeling-dconf-default-user-db-initialization)
+
+
 ## Howto
 
 
