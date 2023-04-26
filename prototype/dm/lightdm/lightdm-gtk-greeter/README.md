@@ -1,5 +1,27 @@
 
-# profile
+# lightdm-gtk-greeter
+
+
+## Config File Path
+
+* [/etc/lightdm/lightdm-gtk-greeter.conf](config/lightdm/lightdm-gtk-greeter/main/lightdm-gtk-greeter.conf)
+
+
+## Arch Package
+
+* [lightdm](https://archlinux.org/packages/extra/x86_64/lightdm/)
+* [lightdm-gtk-greeter](https://archlinux.org/packages/extra/x86_64/lightdm-gtk-greeter/)
+* [lightdm-gtk-greeter-settings](https://archlinux.org/packages/community/any/lightdm-gtk-greeter-settings/)
+
+
+## Arch Manpage
+
+* man [lightdm](https://man.archlinux.org/man/lightdm.1)
+
+
+## Arch Wiki
+
+* [LightDM](https://wiki.archlinux.org/title/LightDM)
 
 
 ## Reference
@@ -8,14 +30,18 @@
 * Manjaro Wiki / Install Display Managers / [LightDM](https://wiki.manjaro.org/index.php/Install_Display_Managers#LightDM)
 
 
-## Config File Path
-
-* [/etc/lightdm/lightdm-gtk-greeter.conf](config/lightdm/lightdm-gtk-greeter/main/lightdm-gtk-greeter.conf)
-
-
 ## GUI Tool
 
 * lightdm-gtk-greeter-settings-pkexec (LightDM GTK+ Greeter settings) (/usr/share/applications/lightdm-gtk-greeter-settings.desktop)
+
+
+## greeter-session
+
+* [/etc/lightdm/lightdm.conf](config/lightdm/lightdm/lightdm.conf)
+
+``` sh
+greeter-session=lightdm-gtk-greeter
+```
 
 
 ## Howto
@@ -58,49 +84,3 @@ or
 ``` sh
 $ make config-install
 ```
-
-## Explore
-
-run
-
-``` sh
-pamac search lightdm
-```
-
-show
-
-```
-deepin-session-shell                                      5.5.24-2    community
-    Deepin desktop-environment - session-shell module
-liblightdm-qt5                                            1:1.30.0-4  extra
-    LightDM Qt client library
-lightdm-webkit-theme-litarvan                             3.1.0-1     community
-    Modern and full-featured LightDM theme
-lightdm-webkit2-greeter-manjaro-dark                      1.3.2-1     community
-    A webkit2 greeter for LightDM build for Manjaro Dark
-    version
-lightdm-webkit2-greeter-manjaro                           1.3.2-1     community
-    A webkit2 greeter for LightDM build for Manjaro
-lightdm-webkit2-greeter                                   2.2.5-4     community
-    LightDM greeter that uses WebKit2 for theming via
-    HTML/JavaScript.
-lightdm-slick-greeter                                     1.5.6-1     community
-    A slick-looking LightDM greeter
-lightdm-settings                                          1.5.7-1     community
-    A configuration tool for the LightDM display manager
-lightdm-pantheon-greeter                                  6.0.1-2     community
-    Pantheon greeter for LightDM
-lightdm-gtk-greeter-settings                  [Installed] 1.2.2-7     community
-    Settings editor for the LightDM GTK+ Greeter
-lightdm-gtk-greeter                           [Installed] 1:2.0.8-2   extra
-    GTK+ greeter for LightDM
-lightdm                                       [Installed] 1:1.30.0-4  extra
-    A lightweight display manager
-```
-
-
-## See Also
-
-* Xubuntu / lightdm-gtk-greeter / data / [lightdm-gtk-greeter.conf](https://github.com/Xubuntu/lightdm-gtk-greeter/blob/master/data/lightdm-gtk-greeter.conf)
-* Manjaro / [Xfce](https://gitlab.manjaro.org/profiles-and-settings/iso-profiles/-/blob/master/manjaro/xfce/desktop-overlay/etc/lightdm/lightdm-gtk-greeter.conf)
-* Ubuntu Mate / [99_ubuntu-mate.conf](https://github.com/ubuntu-mate/ubuntu-mate-artwork/blob/master/etc/lightdm/lightdm-gtk-greeter.conf.d/99_ubuntu-mate.conf)
