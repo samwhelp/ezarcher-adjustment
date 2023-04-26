@@ -1,5 +1,5 @@
 
-# mpv
+# Mpv
 
 
 ## Config File Path
@@ -10,6 +10,11 @@
 ## Arch Package
 
 * [mpv](https://archlinux.org/packages/community/x86_64/mpv/)
+
+
+## Arch Manpage
+
+* man [mpv](https://man.archlinux.org/man/community/mpv/mpv.1.en)
 
 
 ## Arch Wiki

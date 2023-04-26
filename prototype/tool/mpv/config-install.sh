@@ -16,22 +16,42 @@ mpv_config_install () {
 	echo
 
 
+	mpv_config_install_by_dir
+
+	mpv_config_install_by_each_file
+
+
+	echo
+
+}
+
+mpv_config_install_by_dir () {
+
+
 	echo
 	echo "mkdir -p ${HOME}/.config/mpv"
 	mkdir -p "${HOME}/.config/mpv"
 
 
-	#echo
-	#echo "cp -rf ./config/mpv/. ${HOME}/.config/mpv"
-	#cp -rf "./config/mpv/." "${HOME}/.config/mpv"
+	echo
+	echo "cp -rf ./config/mpv/. ${HOME}/.config/mpv"
+	cp -rf "./config/mpv/." "${HOME}/.config/mpv"
 
+
+}
+
+mpv_config_install_by_each_file () {
+
+
+	echo
+	echo "mkdir -p ${HOME}/.config/mpv"
+	mkdir -p "${HOME}/.config/mpv"
 
 	echo
 	echo "install -Dm644 ./config/mpv/mpv.conf ${HOME}/.config/mpv/mpv.conf"
 	install -Dm644 "./config/mpv/mpv.conf" "${HOME}/.config/mpv/mpv.conf"
 
 
-	echo
 
 }
 
