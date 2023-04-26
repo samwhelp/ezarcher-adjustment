@@ -1,14 +1,15 @@
 
-# sakura
-
-## Link
-
-* [https://packages.ubuntu.com/jammy/sakura](https://packages.ubuntu.com/jammy/sakura)
+# Sakura
 
 
 ## Config File Path
 
 * [~/.config/sakura/sakura.conf](config/sakura/sakura.conf)
+
+
+## AUR Package
+
+* [sakura](https://aur.archlinux.org/packages/sakura)
 
 
 ## Howto

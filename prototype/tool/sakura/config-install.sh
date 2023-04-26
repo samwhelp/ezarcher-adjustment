@@ -6,50 +6,89 @@ set -e
 ################################################################################
 ### Head: sakura
 ##
+
 sakura_config_install () {
 
+	echo
+	echo "##"
 	echo "## Config: sakura"
+	echo "##"
 	echo
 
-	echo "mkdir -p $HOME/.config/sakura"
-	mkdir -p "$HOME/.config/sakura"
 
+	sakura_config_install_by_dir
 
-	echo "install -Dm644 ./config/sakura/sakura.conf $HOME/.config/sakura/sakura.conf"
-	install -Dm644 "./config/sakura/sakura.conf" "$HOME/.config/sakura/sakura.conf"
+	#sakura_config_install_by_each_file
 
-	#sakura_put_my_desktop_entry
 
 	echo
+
 }
 
-sakura_put_my_desktop_entry () {
+sakura_config_install_by_dir () {
+
 
 	echo
-	echo "mkdir -p $HOME/.local/share/applications"
-	mkdir -p "$HOME/.local/share/applications"
+	echo "mkdir -p ${HOME}/.config/sakura"
+	mkdir -p "${HOME}/.config/sakura"
 
-	echo "install -Dm644 /usr/share/applications/sakura.desktop $HOME/.local/share/applications/sakura.desktop"
-	install -Dm644 "/usr/share/applications/sakura.desktop" "$HOME/.local/share/applications/sakura.desktop"
 
-	echo "sed -i 's/^Exec=sakura/Exec=sakura -m/g' $HOME/.local/share/applications/sakura.desktop"
-	sed -i 's/^Exec=sakura/Exec=sakura -m/g' "$HOME/.local/share/applications/sakura.desktop"
 	echo
+	echo "cp -rf ./config/sakura/. ${HOME}/.config/sakura"
+	cp -rf "./config/sakura/." "${HOME}/.config/sakura"
+
+
 }
+
+sakura_config_install_by_each_file () {
+
+
+	echo
+	echo "mkdir -p ${HOME}/.config/sakura"
+	mkdir -p "${HOME}/.config/sakura"
+
+	echo
+	echo "install -Dm644 ./config/sakura/sakura.conf ${HOME}/.config/sakura/sakura.conf"
+	install -Dm644 "./config/sakura/sakura.conf" "${HOME}/.config/sakura/sakura.conf"
+
+
+}
+
 ##
 ### Tail: sakura
 ################################################################################
 
 
 ################################################################################
-### Head: main
+### Head: config_install
 ##
+
 main_config_install () {
+
 	sakura_config_install
+
 }
-## start
-main_config_install
 
 ##
-### Tail: main
+### Tail: config_install
+################################################################################
+
+
+################################################################################
+### Head: Main
+##
+
+__main__ () {
+
+	main_config_install
+
+}
+
+##
+## Start
+##
+__main__
+
+##
+### Tail: Main
 ################################################################################
