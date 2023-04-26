@@ -1,5 +1,5 @@
 
-# Thunar
+# Xfce
 
 
 ## Config File Path

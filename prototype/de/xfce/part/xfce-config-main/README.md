@@ -1,5 +1,5 @@
 
-# xfce
+# Xfce
 
 
 ## Config File Path
