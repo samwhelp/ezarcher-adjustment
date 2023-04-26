@@ -18,7 +18,7 @@ mpv_config_install () {
 
 	mpv_config_install_by_dir
 
-	mpv_config_install_by_each_file
+	#mpv_config_install_by_each_file
 
 
 	echo
