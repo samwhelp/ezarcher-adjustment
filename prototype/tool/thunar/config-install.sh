@@ -15,6 +15,7 @@ thunar_config_install () {
 	echo "##"
 	echo
 
+	sys_xfconfd_stop
 
 	thunar_config_install_by_dir
 
@@ -88,6 +89,25 @@ thunar_config_install_by_each_file () {
 
 ##
 ### Tail: thunar
+################################################################################
+
+
+################################################################################
+### Head: xfconfd
+##
+
+sys_xfconfd_stop () {
+
+	if killall -9 xfconfd; then
+		return 0
+	fi
+
+	return 0
+
+}
+
+##
+### Tail: xfconfd
 ################################################################################
 
 
