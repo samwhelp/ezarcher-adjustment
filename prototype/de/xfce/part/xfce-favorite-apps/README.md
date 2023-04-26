@@ -1,5 +1,5 @@
 
-# xfce
+# Thunar
 
 
 ## Config File Path
@@ -7,7 +7,7 @@
 * [~/.config/xfce4/helpers.rc](config/xfce4/helpers.rc)
 
 
-## Package Groups
+## Arch Package Groups
 
 * [xfce4](https://archlinux.org/groups/x86_64/xfce4/)
 
