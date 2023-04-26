@@ -44,24 +44,24 @@ xdg_config_install_by_each_file () {
 
 
 	echo
-	echo "mkdir -p ${HOME}/.config/xdg"
-	mkdir -p "${HOME}/.config/xdg"
+	echo "mkdir -p ${HOME}/.config/Templates"
+	mkdir -p "${HOME}/.config/Templates"
 
 	echo
-	echo "install -Dm644 ./config/xdg/rc.xml ${HOME}/.config/xdg/rc.xml"
-	install -Dm644 "./config/xdg/rc.xml" "${HOME}/.config/xdg/rc.xml"
+	echo "install -Dm644 ./config/xdg-user-dir-templates/Templates/empty.txt ${HOME}/Templates/empty.txt"
+	install -Dm644 "./config/xdg-user-dir-templates/Templates/empty.txt" "${HOME}/Templates/empty.txt"
 
 	echo
-	echo "install -Dm644 ./config/xdg/menu.xml ${HOME}/.config/xdg/menu.xml"
-	install -Dm644 "./config/xdg/menu.xml" "${HOME}/.config/xdg/menu.xml"
+	echo "install -Dm755 ./config/xdg-user-dir-templates/Templates/bash.sh ${HOME}/Templates/bash.sh"
+	install -Dm755 "./config/xdg-user-dir-templates/Templates/bash.sh" "${HOME}/Templates/bash.sh"
 
 	echo
-	echo "install -Dm644 ./config/xdg/environment ${HOME}/.config/xdg/environment"
-	install -Dm644 "./config/xdg/environment" "${HOME}/.config/xdg/environment"
+	echo "install -Dm755 ./config/xdg-user-dir-templates/Templates/dl.sh ${HOME}/Templates/dl.sh"
+	install -Dm755 "./config/xdg-user-dir-templates/Templates/dl.sh" "${HOME}/Templates/dl.sh"
 
 	echo
-	echo "install -Dm755 ./config/xdg/autostart ${HOME}/.config/xdg/autostart"
-	install -Dm755 "./config/xdg/autostart" "${HOME}/.config/xdg/autostart"
+	echo "install -Dm755 ./config/xdg-user-dir-templates/Templates/pygithub.py ${HOME}/Templates/pygithub.py"
+	install -Dm755 "./config/xdg-user-dir-templates/Templates/pygithub.py" "${HOME}/Templates/pygithub.py"
 
 
 }
