@@ -1,21 +1,25 @@
 
 # pcmanfm-qt
 
-## Link
-
-### Package
-
-* [https://packages.ubuntu.com/jammy/pcmanfm-qt](https://packages.ubuntu.com/jammy/pcmanfm-qt)
-
 
 ## Config File Path
 
 * [~/.config/pcmanfm-qt/default/settings.conf](config/pcmanfm-qt/default/settings.conf)
 
 
-## Config Extra
+## Arch Package
 
-* qt5ct
+* [pcmanfm-qt](https://archlinux.org/packages/community/x86_64/pcmanfm-qt/)
+
+
+## Arch Manpage
+
+* man [pcmanfm-qt](https://man.archlinux.org/man/community/pcmanfm-qt/pcmanfm-qt.1.en)
+
+
+## Arch Wiki
+
+* [PCManFM](https://wiki.archlinux.org/title/PCManFM)
 
 
 ## Howto

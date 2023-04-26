@@ -1,1 +1,32 @@
+
+
+##
+## # Pcmanfm-qt
+##
+
+
+##
+## ## Arch Package
+##
+
+
+##
+## ### File Manager
+##
+
 pcmanfm-qt
+
+
+##
+## ### Terminal
+##
+
+#sakura
+lxterminal
+
+
+##
+## ### Archiver
+##
+
+engrampa
