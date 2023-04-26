@@ -1,0 +1,11 @@
+
+
+##
+## # xdg-user-dir-templates
+##
+
+
+##
+## ## Arch Package
+##
+
