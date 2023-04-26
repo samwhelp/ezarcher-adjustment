@@ -6,6 +6,7 @@
 
 qt5-styleplugins
 qt5-svg
+qt6-svg
 
 gtk-engines
 gtk-engine-murrine
