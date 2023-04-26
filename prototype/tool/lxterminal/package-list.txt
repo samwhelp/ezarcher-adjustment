@@ -1,6 +1,12 @@
+
+
 ##
-## Terminal
+## # lxterminal
+##
+
+
+##
+## ## Arch Package
 ##
 
 lxterminal
-
