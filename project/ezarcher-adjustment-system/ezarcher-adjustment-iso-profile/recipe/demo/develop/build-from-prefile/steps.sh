@@ -395,14 +395,14 @@ mod_iso_profile_overlay () {
 
 
 	##
-	## base
+	## ## base
 	##
 
 	mod_overlay_by_dir
 
 
 	##
-	## password
+	## ## password
 	##
 
 	mod_overlay_passwd
@@ -412,14 +412,20 @@ mod_iso_profile_overlay () {
 
 
 	##
-	## package
+	## ## profiledef
+	##
+
+	mod_overlay_profiledef
+
+	##
+	## ## package
 	##
 	mod_overlay_pacman_conf
 	mod_overlay_packages_x86_64
 
 
 	##
-	## locale
+	## ## locale
 	##
 	#mod_overlay_locale
 
@@ -595,6 +601,28 @@ mod_overlay_locale () {
 
 ##
 ### Tail: Model / Overlay / locale
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / profiledef.sh
+##
+
+mod_overlay_profiledef () {
+
+
+	util_error_echo
+	util_error_echo "install -Dm755 ${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/profiledef.sh ${THE_PLAN_PROFILE_DIR_PATH}/profiledef.sh"
+	install -Dm755 "${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/profiledef.sh" "${THE_PLAN_PROFILE_DIR_PATH}/profiledef.sh"
+
+
+	return 0
+
+
+}
+
+##
+### Tail: Model / Overlay / profiledef.sh
 ################################################################################
 
 
