@@ -427,7 +427,9 @@ mod_iso_profile_overlay () {
 	##
 	## ## locale
 	##
-	#mod_overlay_locale
+
+	mod_overlay_locale
+	mod_overlay_localtime
 
 }
 
@@ -596,6 +598,17 @@ mod_overlay_locale () {
 	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook"
 	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook"
 
+
+}
+
+mod_overlay_localtime () {
+
+	local local_time_file_path="/usr/share/zoneinfo/Asia/Taipei"
+
+
+	util_error_echo
+	util_error_echo "ln -sf ${local_time_file_path} ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/localtime"
+	ln -sf "${local_time_file_path}" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/localtime"
 
 }
 
