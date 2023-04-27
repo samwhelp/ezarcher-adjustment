@@ -18,6 +18,25 @@ THE_CMD_FILE_NAME="$(basename "$0")"
 ### Head: Path
 ##
 
+THE_BASE_ARCHISO_PROFILE_DIR_PATH="/usr/share/archiso/configs/releng"
+
+THE_PLAN_DIR_PATH="${THE_BASE_DIR_PATH}"
+
+THE_PLAN_ASSET_DIR_NAME="tmp"
+THE_PLAN_ASSET_DIR_PATH="${THE_PLAN_DIR_PATH}/${THE_PLAN_ASSET_DIR_NAME}"
+
+THE_PLAN_TMP_DIR_NAME="tmp"
+THE_PLAN_TMP_DIR_PATH="${THE_PLAN_DIR_PATH}/${THE_PLAN_TMP_DIR_NAME}"
+
+THE_PLAN_PROFILE_DIR_NAME="profile"
+THE_PLAN_PROFILE_DIR_PATH="${THE_PLAN_TMP_DIR_PATH}/${THE_PLAN_PROFILE_DIR_NAME}"
+
+THE_PLAN_WORK_DIR_NAME="work"
+THE_PLAN_WORK_DIR_PATH="${THE_PLAN_TMP_DIR_PATH}/${THE_PLAN_WORK_DIR_NAME}"
+
+THE_PLAN_OUT_DIR_NAME="out"
+THE_PLAN_OUT_DIR_PATH="${THE_PLAN_TMP_DIR_PATH}/${THE_PLAN_OUT_DIR_NAME}"
+
 ##
 ### Tail: Path
 ################################################################################
@@ -43,10 +62,12 @@ util_error_echo () {
 exit_on_signal_interrupted () {
 
 	util_error_echo
-	util_error_echo "## Script interrupted."
+	util_error_echo "##"
+	util_error_echo "## **Script Interrupted**"
+	util_error_echo "##"
 	util_error_echo
 
-	mod_iso_clean_on_exit
+	sys_clean_on_exit
 
 	exit 0
 
@@ -55,16 +76,18 @@ exit_on_signal_interrupted () {
 exit_on_signal_terminated () {
 
 	util_error_echo
-	util_error_echo "## Script terminated."
+	util_error_echo "##"
+	util_error_echo "## **Script Terminated**"
+	util_error_echo "##"
 	util_error_echo
 
-	mod_iso_clean_on_exit
+	sys_clean_on_exit
 
 	exit 0
 
 }
 
-mod_signal_bind () {
+sys_signal_bind () {
 
 	trap exit_on_signal_interrupted SIGINT
 	trap exit_on_signal_terminated SIGTERM
@@ -80,7 +103,7 @@ mod_signal_bind () {
 ### Head: User
 ##
 
-mod_root_user_required () {
+sys_root_user_required () {
 
 	if [[ "${EUID}" = 0 ]]; then
 		return 0
@@ -97,6 +120,56 @@ mod_root_user_required () {
 ################################################################################
 
 
+################################################################################
+### Head: Clean
+##
+
+sys_clean_on_prepare () {
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## Cleaning Data On Prepare"
+	util_error_echo "##"
+	util_error_echo
+
+
+	util_error_echo
+	util_error_echo "rm -rf ${THE_PLAN_TMP_DIR_PATH}"
+	rm -rf "${THE_PLAN_TMP_DIR_PATH}"
+
+
+	util_error_echo
+
+}
+
+sys_clean_on_exit () {
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## Cleaning Data On Exit"
+	util_error_echo "##"
+	util_error_echo
+
+
+
+}
+
+sys_clean_on_finish () {
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## Cleaning Data On Finish"
+	util_error_echo "##"
+	util_error_echo
+
+
+}
+
+##
+### Tail: Clean
+################################################################################
+
+
 
 
 ################################################################################
@@ -105,47 +178,20 @@ mod_root_user_required () {
 
 mod_iso_profile_prepare () {
 
-	mkdir -p ./tmp
+	mkdir -p "${THE_PLAN_PROFILE_DIR_PATH}"
 
-	cp -r /usr/share/archiso/configs/releng ./tmp/profile
-	
+	cp -r "${THE_BASE_ARCHISO_PROFILE_DIR_PATH}/." "${THE_PLAN_PROFILE_DIR_PATH}"
+
 	mod_iso_profile_overlay
 
 
-
 }
 
-mod_iso_clean_on_prepare () {
-	util_error_echo
-	util_error_echo "## Cleaning Data On Prepare"
-	util_error_echo
 
-	rm -rf "./tmp"
-
-}
-
-mod_iso_clean_on_exit () {
-	util_error_echo
-	util_error_echo "## Cleaning Data On Exit"
-	util_error_echo
-
-	#rm -rf "./tmp/work"
-	rm -rf "./tmp/out"
-
-}
-
-mod_iso_clean_on_finish () {
-	util_error_echo
-	util_error_echo "## Cleaning Data On Finish"
-	util_error_echo
-
-	#rm -rf "./tmp/work"
-	#rm -rf "./tmp/out"
-}
 
 mod_iso_make_prepare () {
 
-	mod_iso_clean_on_prepare
+	sys_clean_on_prepare
 	mod_iso_profile_prepare
 
 }
@@ -154,8 +200,12 @@ mod_iso_make_prepare () {
 mod_iso_make () {
 
 	util_error_echo
+	util_error_echo "##"
 	util_error_echo "## Building New ISO"
+	util_error_echo "##"
 	util_error_echo
+
+	sleep 5
 
 	return 0
 
@@ -169,7 +219,7 @@ mod_iso_make_finish () {
 
 	mod_iso_make_copy_to_store
 
-	mod_iso_clean_on_finish
+	sys_clean_on_finish
 
 }
 
@@ -237,8 +287,8 @@ mod_iso_profile_overlay_locale () {
 
 __main__ () {
 
-	mod_root_user_required
-	mod_signal_bind
+	sys_root_user_required
+	sys_signal_bind
 	mod_iso_build
 
 }
