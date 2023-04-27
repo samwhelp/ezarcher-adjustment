@@ -286,8 +286,8 @@ mod_iso_make_start () {
 	util_error_echo "##"
 	util_error_echo
 
-	#sleep 5
-	#return 0
+	sleep 5
+	return 0
 
 	util_error_echo "mkarchiso -w ${THE_PLAN_WORK_DIR_PATH} -o ${THE_PLAN_OUT_DIR_PATH} -v ${THE_PLAN_PROFILE_DIR_PATH}"
 	mkarchiso -w "${THE_PLAN_WORK_DIR_PATH}" -o "${THE_PLAN_OUT_DIR_PATH}" -v "${THE_PLAN_PROFILE_DIR_PATH}"
@@ -393,17 +393,35 @@ mod_iso_profile_overlay () {
 	util_error_echo "##"
 	util_error_echo
 
-	mod_overlay_hostname
+
+	##
+	## base
+	##
+
+	mod_overlay_by_dir
+
+
+	##
+	## password
+	##
 
 	mod_overlay_passwd
 	mod_overlay_group
 	mod_overlay_shadow
 	mod_overlay_gshadow
 
-	mod_overlay_locale
+
+	##
+	## package
+	##
 	mod_overlay_pacman_conf
 	mod_overlay_packages_x86_64
 
+
+	##
+	## locale
+	##
+	#mod_overlay_locale
 
 }
 
@@ -416,19 +434,19 @@ mod_iso_profile_overlay () {
 
 
 ################################################################################
-### Head: Model / Overlay / hostname
+### Head: Model / Overlay / by_dir
 ##
 
-mod_overlay_hostname () {
+mod_overlay_by_dir () {
 
 	util_error_echo
-	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/hostname ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/hostname"
-	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/hostname" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/hostname"
+	util_error_echo "cp -rf ${THE_PLAN_OVERLAY_DIR_PATH}/. ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}"
+	cp -rf "${THE_PLAN_OVERLAY_DIR_PATH}/." "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}"
 
 }
 
 ##
-### Tail: Model / Overlay / hostname
+### Tail: Model / Overlay / by_dir
 ################################################################################
 
 
@@ -556,6 +574,8 @@ EOF
 
 mod_overlay_locale () {
 
+	return 0
+
 	util_error_echo
 	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
 	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
@@ -584,14 +604,19 @@ mod_overlay_locale () {
 
 mod_overlay_pacman_conf () {
 
-	util_error_echo
-	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.conf"
-	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.conf" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.conf"
-
 
 	util_error_echo
 	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/pacman.conf ${THE_PLAN_PROFILE_DIR_PATH}/pacman.conf"
 	install -Dm644 "${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/pacman.conf" "${THE_PLAN_PROFILE_DIR_PATH}/pacman.conf"
+
+
+	return 0
+
+
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.conf"
+	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.conf" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.conf"
+
 
 }
 
