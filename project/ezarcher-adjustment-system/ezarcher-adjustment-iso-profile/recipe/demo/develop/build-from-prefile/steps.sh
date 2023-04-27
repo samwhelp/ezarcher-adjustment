@@ -367,13 +367,23 @@ mod_iso_profile_overlay () {
 	util_error_echo "##"
 	util_error_echo
 
-	mod_iso_profile_overlay_pacman_conf
-	mod_iso_profile_overlay_packages_x86_64
-	mod_iso_profile_overlay_locale
+	mod_overlay_pacman_conf
+	mod_overlay_packages_x86_64
+	mod_overlay_locale
 
 }
 
-mod_iso_profile_overlay_pacman_conf () {
+
+##
+### Tail: Model / Build ISO / Overlay Profile
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / pacman.conf
+##
+
+mod_overlay_pacman_conf () {
 
 	util_error_echo
 	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.conf"
@@ -386,7 +396,16 @@ mod_iso_profile_overlay_pacman_conf () {
 
 }
 
-mod_iso_profile_overlay_packages_x86_64 () {
+##
+### Tail: Model / Overlay / pacman.conf
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / packages.x86_64
+##
+
+mod_overlay_packages_x86_64 () {
 
 	util_error_echo
 	util_error_echo "cat ${THE_PLAN_PACKAGE_DIR_PATH}/common.txt >> ${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
@@ -394,16 +413,25 @@ mod_iso_profile_overlay_packages_x86_64 () {
 
 }
 
-mod_iso_profile_overlay_locale () {
+##
+### Tail: Model / Overlay / packages.x86_64
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / locale
+##
+
+mod_overlay_locale () {
 
 	util_error_echo
 	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
 	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
 	
 
-	util_error_echo
-	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
-	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
+	#util_error_echo
+	#util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
+	#install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
 	
 
 	util_error_echo
@@ -414,7 +442,7 @@ mod_iso_profile_overlay_locale () {
 }
 
 ##
-### Tail: Model / Build ISO / Overlay Profile
+### Tail: Model / Overlay / locale
 ################################################################################
 
 
