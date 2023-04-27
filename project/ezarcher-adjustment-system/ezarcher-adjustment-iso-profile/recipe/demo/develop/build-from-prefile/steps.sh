@@ -197,10 +197,52 @@ sys_clean_on_finish () {
 
 
 ################################################################################
+### Head: Requirements
+##
+
+sys_package_required () {
+
+	return 0
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## Check Package Required"
+	util_error_echo "##"
+	util_error_echo
+
+
+	util_error_echo
+	util_error_echo "pacman -S --noconfirm archlinux-keyring"
+	util_error_echo
+	pacman -S --noconfirm archlinux-keyring
+
+
+	util_error_echo
+
+
+	util_error_echo
+	util_error_echo "pacman -S --needed --noconfirm archiso mkinitcpio-archiso"
+	util_error_echo
+	pacman -S --needed --noconfirm archiso mkinitcpio-archiso
+
+
+	util_error_echo
+
+}
+
+##
+### Tail: Requirements
+################################################################################
+
+
+
+################################################################################
 ### Head: Model / Build ISO
 ##
 
 mod_iso_make_prepare () {
+
+	sys_package_required
 
 	sys_clean_on_prepare
 
