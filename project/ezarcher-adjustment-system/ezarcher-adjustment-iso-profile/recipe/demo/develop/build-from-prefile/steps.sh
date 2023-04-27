@@ -22,20 +22,38 @@ THE_BASE_ARCHISO_PROFILE_DIR_PATH="/usr/share/archiso/configs/releng"
 
 THE_PLAN_DIR_PATH="${THE_BASE_DIR_PATH}"
 
-THE_PLAN_ASSET_DIR_NAME="tmp"
-THE_PLAN_ASSET_DIR_PATH="${THE_PLAN_DIR_PATH}/${THE_PLAN_ASSET_DIR_NAME}"
+
+
 
 THE_PLAN_TMP_DIR_NAME="tmp"
 THE_PLAN_TMP_DIR_PATH="${THE_PLAN_DIR_PATH}/${THE_PLAN_TMP_DIR_NAME}"
-
-THE_PLAN_PROFILE_DIR_NAME="profile"
-THE_PLAN_PROFILE_DIR_PATH="${THE_PLAN_TMP_DIR_PATH}/${THE_PLAN_PROFILE_DIR_NAME}"
 
 THE_PLAN_WORK_DIR_NAME="work"
 THE_PLAN_WORK_DIR_PATH="${THE_PLAN_TMP_DIR_PATH}/${THE_PLAN_WORK_DIR_NAME}"
 
 THE_PLAN_OUT_DIR_NAME="out"
 THE_PLAN_OUT_DIR_PATH="${THE_PLAN_TMP_DIR_PATH}/${THE_PLAN_OUT_DIR_NAME}"
+
+
+
+
+THE_PLAN_PROFILE_DIR_NAME="profile"
+THE_PLAN_PROFILE_DIR_PATH="${THE_PLAN_TMP_DIR_PATH}/${THE_PLAN_PROFILE_DIR_NAME}"
+
+THE_PLAN_PROFILE_ROOTFS_DIR_NAME="airootfs"
+THE_PLAN_PROFILE_ROOTFS_DIR_PATH="${THE_PLAN_PROFILE_DIR_PATH}/${THE_PLAN_PROFILE_ROOTFS_DIR_NAME}"
+
+
+
+
+THE_PLAN_ASSET_DIR_NAME="asset"
+THE_PLAN_ASSET_DIR_PATH="${THE_PLAN_DIR_PATH}/${THE_PLAN_ASSET_DIR_NAME}"
+
+THE_PLAN_OVERLAY_DIR_NAME="overlay"
+THE_PLAN_OVERLAY_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_OVERLAY_DIR_NAME}"
+
+THE_PLAN_OVERLAY_BUILD_DIR_NAME="overlay-build"
+THE_PLAN_OVERLAY_BUILD_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_OVERLAY_BUILD_DIR_NAME}"
 
 ##
 ### Tail: Path
@@ -170,34 +188,20 @@ sys_clean_on_finish () {
 ################################################################################
 
 
-
-
 ################################################################################
 ### Head: Model / Build ISO
 ##
 
-mod_iso_profile_prepare () {
-
-	mkdir -p "${THE_PLAN_PROFILE_DIR_PATH}"
-
-	cp -r "${THE_BASE_ARCHISO_PROFILE_DIR_PATH}/." "${THE_PLAN_PROFILE_DIR_PATH}"
-
-	mod_iso_profile_overlay
-
-
-}
-
-
-
 mod_iso_make_prepare () {
 
 	sys_clean_on_prepare
+
 	mod_iso_profile_prepare
 
 }
 
 
-mod_iso_make () {
+mod_iso_make_start () {
 
 	util_error_echo
 	util_error_echo "##"
@@ -237,7 +241,7 @@ mod_iso_make_copy_to_store () {
 mod_iso_build () {
 
 	mod_iso_make_prepare
-	mod_iso_make
+	mod_iso_make_start
 	mod_iso_make_finish
 
 }
@@ -247,33 +251,113 @@ mod_iso_build () {
 ################################################################################
 
 
+
+
+################################################################################
+### Head: Model / Build ISO / Base Profile
+##
+
+mod_iso_profile_prepare () {
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## Prepare ISO Profile"
+	util_error_echo "##"
+	util_error_echo
+
+	mod_iso_profile_base
+	mod_iso_profile_overlay
+
+
+}
+
+mod_iso_profile_base () {
+
+	util_error_echo
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## Prepare ISO Profile / Base"
+	util_error_echo "##"
+	util_error_echo
+
+
+	util_error_echo
+	util_error_echo "mkdir -p ${THE_PLAN_PROFILE_DIR_PATH}"
+	mkdir -p "${THE_PLAN_PROFILE_DIR_PATH}"
+
+
+	util_error_echo
+	util_error_echo "cp -rf ${THE_BASE_ARCHISO_PROFILE_DIR_PATH}/. ${THE_PLAN_PROFILE_DIR_PATH}"
+	cp -rf "${THE_BASE_ARCHISO_PROFILE_DIR_PATH}/." "${THE_PLAN_PROFILE_DIR_PATH}"
+
+
+
+	util_error_echo
+}
+
+##
+### Tail: Model / Build ISO / Base Profile
+################################################################################
+
+
+
 ################################################################################
 ### Head: Model / Build ISO / Overlay Profile
 ##
 
 mod_iso_profile_overlay () {
+
+	util_error_echo
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## Prepare ISO Profile / Overlay"
+	util_error_echo "##"
+	util_error_echo
+
 	mod_iso_profile_overlay_pacman_conf
 	mod_iso_profile_overlay_packages_x86_64
 	mod_iso_profile_overlay_locale
+
 }
 
 mod_iso_profile_overlay_pacman_conf () {
-	cp -f ./asset/overlay/etc/pacman.conf ./tmp/profile/airootfs/etc/pacman.conf
 
-	cp -f ./asset/overlay-build/pacman.conf ./tmp/profile/pacman.conf
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.conf"
+	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.conf" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.conf"
+
+
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/pacman.conf ${THE_PLAN_PROFILE_DIR_PATH}/pacman.conf"
+	install -Dm644 "${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/pacman.conf" "${THE_PLAN_PROFILE_DIR_PATH}/pacman.conf"
+
 }
 
 mod_iso_profile_overlay_packages_x86_64 () {
-	cat ./asset/overlay-build/packages.x86_64.part >> ./tmp/profile/packages.x86_64
+
+	util_error_echo
+	util_error_echo "cat ${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/packages.x86_64.part >> ${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+	cat "${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/packages.x86_64.part" >> "${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+
 }
 
 mod_iso_profile_overlay_locale () {
 
-	cp -f ./asset/overlay/etc/locale.conf ./tmp/profile/airootfs/etc/locale.conf
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
+	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
 	
-	#cp -f ./asset/overlay/etc/locale.gen ./tmp/profile/airootfs/etc/locale.gen
+
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
+	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
 	
-	cp -f ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./tmp/profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook
+
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook"
+	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook"
+
+
 }
 
 ##
