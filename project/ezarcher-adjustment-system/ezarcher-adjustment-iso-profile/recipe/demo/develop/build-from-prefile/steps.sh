@@ -59,8 +59,35 @@ THE_PLAN_PACKAGE_DIR_NAME="package"
 THE_PLAN_PACKAGE_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_PACKAGE_DIR_NAME}"
 
 
+THE_PLAN_CONFIG_DIR_NAME="config"
+THE_PLAN_CONFIG_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_CONFIG_DIR_NAME}"
+
+THE_PLAN_CONFIG_MAIN_DIR_NAME="main"
+THE_PLAN_CONFIG_MAIN_DIR_PATH="${THE_PLAN_CONFIG_DIR_PATH}/${THE_PLAN_CONFIG_MAIN_DIR_NAME}"
+
 ##
 ### Tail: Path
+################################################################################
+
+
+################################################################################
+### Head: Config
+##
+
+sys_config_live_user_name () {
+	cat "$THE_PLAN_CONFIG_MAIN_DIR_PATH/live-user-name.conf"
+}
+
+sys_config_live_user_password () {
+	cat "$THE_PLAN_CONFIG_MAIN_DIR_PATH/live-user-password.conf"
+}
+
+sys_config_root_user_password () {
+	cat "$THE_PLAN_CONFIG_MAIN_DIR_PATH/root-user-password.conf"
+}
+
+##
+### Tail: Config
 ################################################################################
 
 
@@ -353,7 +380,6 @@ mod_iso_profile_base () {
 ################################################################################
 
 
-
 ################################################################################
 ### Head: Model / Build ISO / Overlay Profile
 ##
@@ -367,15 +393,188 @@ mod_iso_profile_overlay () {
 	util_error_echo "##"
 	util_error_echo
 
+	mod_overlay_hostname
+
+	mod_overlay_passwd
+	mod_overlay_group
+	mod_overlay_shadow
+	mod_overlay_gshadow
+
+	mod_overlay_locale
 	mod_overlay_pacman_conf
 	mod_overlay_packages_x86_64
-	mod_overlay_locale
+
 
 }
 
 
 ##
 ### Tail: Model / Build ISO / Overlay Profile
+################################################################################
+
+
+
+
+################################################################################
+### Head: Model / Overlay / hostname
+##
+
+mod_overlay_hostname () {
+
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/hostname ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/hostname"
+	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/hostname" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/hostname"
+
+}
+
+##
+### Tail: Model / Overlay / hostname
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / passwd
+##
+
+mod_overlay_passwd () {
+
+	local live_user_name="$(sys_config_live_user_name)"
+
+	util_error_echo
+	util_error_echo "## overlay ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/passwd"
+	util_error_echo
+
+cat > "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/passwd" << EOF
+root:x:0:0:root:/root:/usr/bin/bash
+${live_user_name}:x:1000:1000::/home/${live_user_name}:/bin/bash
+EOF
+
+
+	return 0
+
+}
+
+mod_overlay_group () {
+
+	local live_user_name="$(sys_config_live_user_name)"
+
+	util_error_echo
+	util_error_echo "## overlay ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/group"
+	util_error_echo
+
+cat > "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/group" << EOF
+root:x:0:root
+sys:x:3:bin,${live_user_name}
+network:x:90:${live_user_name}
+power:x:98:${live_user_name}
+adm:x:999:${live_user_name}
+wheel:x:998:${live_user_name}
+uucp:x:987:${live_user_name}
+optical:x:990:${live_user_name}
+scanner:x:991:${live_user_name}
+rfkill:x:983:${live_user_name}
+video:x:986:${live_user_name}
+storage:x:988:${live_user_name}
+audio:x:995:${live_user_name}
+users:x:985:${live_user_name}
+nopasswdlogin:x:966:${live_user_name}
+autologin:x:967:${live_user_name}
+sambashare:x:959:${live_user_name}
+${live_user_name}:x:1000:
+EOF
+
+	return 0
+
+}
+
+mod_overlay_shadow () {
+
+	local live_user_name="$(sys_config_live_user_name)"
+	local live_user_password="$(sys_config_live_user_password)"
+	local root_user_password="$(sys_config_root_user_password)"
+	local live_user_password_hash="$(openssl passwd -6 "${live_user_password}")"
+	local root_user_password_hash="$(openssl passwd -6 "${root_user_password}")"
+
+
+	util_error_echo
+	util_error_echo "## overlay ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/shadow"
+	util_error_echo
+
+cat > "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/shadow" << EOF
+root:${root_user_password_hash}:14871::::::
+${live_user_name}:${live_user_password_hash}:14871::::::
+EOF
+
+
+	return 0
+
+}
+
+mod_overlay_gshadow () {
+
+	local live_user_name="$(sys_config_live_user_name)"
+
+	util_error_echo
+	util_error_echo "## overlay ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/gshadow"
+	util_error_echo
+
+cat > "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/gshadow" << EOF
+root:::root
+sys:!!::${live_user_name}
+network:!!::${live_user_name}
+power:!!::${live_user_name}
+adm:!!::${live_user_name}
+wheel:!!::${live_user_name}
+uucp:!!::${live_user_name}
+optical:!!::${live_user_name}
+scanner:!!::${live_user_name}
+rfkill:!!::${live_user_name}
+video:!!::${live_user_name}
+storage:!!::${live_user_name}
+audio:!!::${live_user_name}
+users:!!::${live_user_name}
+nopasswdlogin:!::${live_user_name}
+autologin:!::${live_user_name}
+sambashare:!::${live_user_name}
+${live_user_name}:!::
+EOF
+
+
+	return 0
+
+}
+
+##
+### Tail: Model / Overlay / passwd
+################################################################################
+
+
+
+################################################################################
+### Head: Model / Overlay / locale
+##
+
+mod_overlay_locale () {
+
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
+	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
+
+
+	#util_error_echo
+	#util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
+	#install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
+
+
+	util_error_echo
+	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook"
+	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook"
+
+
+}
+
+##
+### Tail: Model / Overlay / locale
 ################################################################################
 
 
@@ -418,32 +617,6 @@ mod_overlay_packages_x86_64 () {
 ################################################################################
 
 
-################################################################################
-### Head: Model / Overlay / locale
-##
-
-mod_overlay_locale () {
-
-	util_error_echo
-	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
-	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.conf" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.conf"
-	
-
-	#util_error_echo
-	#util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
-	#install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/locale.gen" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/locale.gen"
-	
-
-	util_error_echo
-	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook"
-	install -Dm644 "${THE_PLAN_OVERLAY_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks/40-locale-gen.hook"
-
-
-}
-
-##
-### Tail: Model / Overlay / locale
-################################################################################
 
 
 ################################################################################
