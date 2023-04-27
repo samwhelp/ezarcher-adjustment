@@ -55,6 +55,10 @@ THE_PLAN_OVERLAY_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_OVERLAY_DIR_NAM
 THE_PLAN_OVERLAY_BUILD_DIR_NAME="overlay-build"
 THE_PLAN_OVERLAY_BUILD_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_OVERLAY_BUILD_DIR_NAME}"
 
+THE_PLAN_PACKAGE_DIR_NAME="package"
+THE_PLAN_PACKAGE_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_PACKAGE_DIR_NAME}"
+
+
 ##
 ### Tail: Path
 ################################################################################
@@ -209,12 +213,15 @@ mod_iso_make_start () {
 	util_error_echo "##"
 	util_error_echo
 
-	sleep 5
+	#sleep 5
+	#return 0
 
-	return 0
+	util_error_echo "mkarchiso -w ${THE_PLAN_WORK_DIR_PATH} -o ${THE_PLAN_OUT_DIR_PATH} -v ${THE_PLAN_PROFILE_DIR_PATH}"
+	mkarchiso -w "${THE_PLAN_WORK_DIR_PATH}" -o "${THE_PLAN_OUT_DIR_PATH}" -v "${THE_PLAN_PROFILE_DIR_PATH}"
 
-	#sudo mkarchiso -v profile
-	sudo mkarchiso -w tmp/work -o tmp/out -v tmp/profile
+
+	util_error_echo
+	util_error_echo
 
 
 }
@@ -336,8 +343,8 @@ mod_iso_profile_overlay_pacman_conf () {
 mod_iso_profile_overlay_packages_x86_64 () {
 
 	util_error_echo
-	util_error_echo "cat ${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/packages.x86_64.part >> ${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
-	cat "${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/packages.x86_64.part" >> "${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+	util_error_echo "cat ${THE_PLAN_PACKAGE_DIR_PATH}/common.txt >> ${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+	cat "${THE_PLAN_PACKAGE_DIR_PATH}/common.txt" >> "${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
 
 }
 
