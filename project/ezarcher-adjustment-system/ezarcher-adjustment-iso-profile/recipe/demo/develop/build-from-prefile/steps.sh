@@ -91,6 +91,8 @@ exit_on_signal_interrupted () {
 
 	sys_clean_on_exit
 
+	sleep 2
+
 	exit 0
 
 }
@@ -104,6 +106,8 @@ exit_on_signal_terminated () {
 	util_error_echo
 
 	sys_clean_on_exit
+
+	sleep 2
 
 	exit 0
 
@@ -213,8 +217,8 @@ mod_iso_make_start () {
 	util_error_echo "##"
 	util_error_echo
 
-	#sleep 5
-	#return 0
+	sleep 5
+	return 0
 
 	util_error_echo "mkarchiso -w ${THE_PLAN_WORK_DIR_PATH} -o ${THE_PLAN_OUT_DIR_PATH} -v ${THE_PLAN_PROFILE_DIR_PATH}"
 	mkarchiso -w "${THE_PLAN_WORK_DIR_PATH}" -o "${THE_PLAN_OUT_DIR_PATH}" -v "${THE_PLAN_PROFILE_DIR_PATH}"
