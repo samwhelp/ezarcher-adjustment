@@ -77,6 +77,29 @@ mod_signal_bind () {
 
 
 ################################################################################
+### Head: User
+##
+
+mod_root_user_required () {
+
+	if [[ "${EUID}" = 0 ]]; then
+		return 0
+	else
+		util_error_echo "Please Run As Root"
+		#sleep 2
+		exit 0
+	fi
+
+}
+
+##
+### Tail: User
+################################################################################
+
+
+
+
+################################################################################
 ### Head: Model / Build ISO
 ##
 
@@ -214,6 +237,7 @@ mod_iso_profile_overlay_locale () {
 
 __main__ () {
 
+	mod_root_user_required
 	mod_signal_bind
 	mod_iso_build
 
