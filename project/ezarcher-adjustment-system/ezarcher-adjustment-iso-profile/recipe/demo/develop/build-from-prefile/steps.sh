@@ -52,11 +52,15 @@ THE_PLAN_ASSET_DIR_PATH="${THE_PLAN_DIR_PATH}/${THE_PLAN_ASSET_DIR_NAME}"
 THE_PLAN_OVERLAY_DIR_NAME="overlay"
 THE_PLAN_OVERLAY_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_OVERLAY_DIR_NAME}"
 
-THE_PLAN_OVERLAY_BUILD_DIR_NAME="overlay-build"
-THE_PLAN_OVERLAY_BUILD_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_OVERLAY_BUILD_DIR_NAME}"
+THE_PLAN_BUILD_DIR_NAME="build"
+THE_PLAN_BUILD_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_BUILD_DIR_NAME}"
 
 THE_PLAN_PACKAGE_DIR_NAME="package"
 THE_PLAN_PACKAGE_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_PACKAGE_DIR_NAME}"
+
+THE_PLAN_BOOT_DIR_NAME="boot"
+THE_PLAN_BOOT_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_BOOT_DIR_NAME}"
+
 
 
 THE_PLAN_CONFIG_DIR_NAME="config"
@@ -625,8 +629,8 @@ mod_overlay_profiledef () {
 
 
 	util_error_echo
-	util_error_echo "install -Dm755 ${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/profiledef.sh ${THE_PLAN_PROFILE_DIR_PATH}/profiledef.sh"
-	install -Dm755 "${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/profiledef.sh" "${THE_PLAN_PROFILE_DIR_PATH}/profiledef.sh"
+	util_error_echo "install -Dm755 ${THE_PLAN_BUILD_DIR_PATH}/profiledef.sh ${THE_PLAN_PROFILE_DIR_PATH}/profiledef.sh"
+	install -Dm755 "${THE_PLAN_BUILD_DIR_PATH}/profiledef.sh" "${THE_PLAN_PROFILE_DIR_PATH}/profiledef.sh"
 
 
 	return 0
@@ -647,8 +651,8 @@ mod_overlay_pacman_conf () {
 
 
 	util_error_echo
-	util_error_echo "install -Dm644 ${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/pacman.conf ${THE_PLAN_PROFILE_DIR_PATH}/pacman.conf"
-	install -Dm644 "${THE_PLAN_OVERLAY_BUILD_DIR_PATH}/pacman.conf" "${THE_PLAN_PROFILE_DIR_PATH}/pacman.conf"
+	util_error_echo "install -Dm644 ${THE_PLAN_BUILD_DIR_PATH}/pacman.conf ${THE_PLAN_PROFILE_DIR_PATH}/pacman.conf"
+	install -Dm644 "${THE_PLAN_BUILD_DIR_PATH}/pacman.conf" "${THE_PLAN_PROFILE_DIR_PATH}/pacman.conf"
 
 
 	return 0
