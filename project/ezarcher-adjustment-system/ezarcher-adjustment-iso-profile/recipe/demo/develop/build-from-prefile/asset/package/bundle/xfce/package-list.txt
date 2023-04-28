@@ -121,9 +121,9 @@ ttf-opensans
 freetype2
 
 noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-noto-fonts-extra
+#noto-fonts-cjk
+#noto-fonts-emoji
+#noto-fonts-extra
 
 ##
 ### Tail: Ezarcher Adjustment / Font
