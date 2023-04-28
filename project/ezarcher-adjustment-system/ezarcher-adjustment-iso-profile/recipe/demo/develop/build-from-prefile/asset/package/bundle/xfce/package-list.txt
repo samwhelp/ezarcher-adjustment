@@ -121,7 +121,7 @@ ttf-opensans
 freetype2
 
 noto-fonts
-#noto-fonts-cjk
+noto-fonts-cjk
 #noto-fonts-emoji
 #noto-fonts-extra
 
@@ -136,6 +136,9 @@ noto-fonts
 
 adapta-gtk-theme
 arc-gtk-theme
+
+## for gtk2 themes
+gtk-engine-murrine
 
 ##
 ### Tail: Ezarcher Adjustment / Theme / gtk-theme
