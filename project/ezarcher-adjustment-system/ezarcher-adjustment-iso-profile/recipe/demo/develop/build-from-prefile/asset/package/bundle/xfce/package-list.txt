@@ -59,8 +59,30 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
+
+##
+## https://wiki.archlinux.org/title/ConsoleKit
+##
+
 ##
 ### Tail: Ezarcher Adjustment / Display Manager / lightdm
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Polkit
+##
+
+polkit
+polkit-gnome
+
+
+##
+## https://wiki.archlinux.org/title/Polkit
+##
+
+##
+### Tail: Ezarcher Adjustment / Polkit
 ################################################################################
 
 
@@ -70,7 +92,7 @@ lightdm-gtk-greeter-settings
 
 xfce4
 xfce4-goodies
-polkit-gnome
+
 
 xarchiver
 xfburn
