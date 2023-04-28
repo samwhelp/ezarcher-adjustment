@@ -406,6 +406,13 @@ mod_iso_profile_overlay () {
 	mod_overlay_by_dir
 
 
+	##
+	## ## bootloader
+	##
+
+	mod_overlay_bootloader
+
+
 
 	##
 	## ## password
@@ -470,8 +477,19 @@ mod_overlay_by_dir () {
 
 mod_overlay_pre_remove () {
 
-	mod_overlay_remove_pacman_hook
 	mod_overlay_remove_motd
+	mod_overlay_remove_pacman_hook
+
+	mod_overlay_remove_bootloader_efiboot
+	mod_overlay_remove_bootloader_grub
+	mod_overlay_remove_bootloader_syslinux
+}
+
+mod_overlay_remove_motd () {
+
+	util_error_echo
+	util_error_echo "rm -f ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/motd"
+	rm -f "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/motd"
 
 }
 
@@ -484,16 +502,77 @@ mod_overlay_remove_pacman_hook () {
 
 }
 
-mod_overlay_remove_motd () {
+mod_overlay_remove_bootloader_efiboot () {
 
 	util_error_echo
-	util_error_echo "rm -f ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/motd"
-	rm -f "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/motd"
+	util_error_echo "rm -rf ${THE_PLAN_PROFILE_DIR_PATH}/efiboot"
+	rm -rf "${THE_PLAN_PROFILE_DIR_PATH}/efiboot"
 
 }
 
+mod_overlay_remove_bootloader_grub () {
+
+	util_error_echo
+	util_error_echo "rm -rf ${THE_PLAN_PROFILE_DIR_PATH}/grub"
+	rm -rf "${THE_PLAN_PROFILE_DIR_PATH}/grub"
+
+}
+
+mod_overlay_remove_bootloader_syslinux () {
+
+	util_error_echo
+	util_error_echo "rm -rf ${THE_PLAN_PROFILE_DIR_PATH}/syslinux"
+	rm -rf "${THE_PLAN_PROFILE_DIR_PATH}/syslinux"
+
+}
+
+
+
 ##
 ### Tail: Model / Overlay / pre_remove
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / bootloader
+##
+
+mod_overlay_bootloader () {
+
+	mod_overlay_bootloader_efiboot
+	mod_overlay_bootloader_grub
+	mod_overlay_bootloader_syslinux
+
+}
+
+mod_overlay_bootloader_efiboot () {
+
+	util_error_echo
+	util_error_echo "cp -rf ${THE_PLAN_BOOT_DIR_PATH}/efiboot/. ${THE_PLAN_PROFILE_DIR_PATH}/efiboot"
+	cp -rf "${THE_PLAN_BOOT_DIR_PATH}/efiboot/." "${THE_PLAN_PROFILE_DIR_PATH}/efiboot"
+
+}
+
+mod_overlay_bootloader_grub () {
+
+	util_error_echo
+	util_error_echo "cp -rf ${THE_PLAN_BOOT_DIR_PATH}/grub/. ${THE_PLAN_PROFILE_DIR_PATH}/grub"
+	cp -rf "${THE_PLAN_BOOT_DIR_PATH}/grub/." "${THE_PLAN_PROFILE_DIR_PATH}/grub"
+
+}
+
+mod_overlay_bootloader_syslinux () {
+
+	util_error_echo
+	util_error_echo "cp -rf ${THE_PLAN_BOOT_DIR_PATH}/syslinux/. ${THE_PLAN_PROFILE_DIR_PATH}/syslinux"
+	cp -rf "${THE_PLAN_BOOT_DIR_PATH}/syslinux/." "${THE_PLAN_PROFILE_DIR_PATH}/syslinux"
+
+}
+
+
+
+##
+### Tail: Model / Overlay / bootloader
 ################################################################################
 
 
