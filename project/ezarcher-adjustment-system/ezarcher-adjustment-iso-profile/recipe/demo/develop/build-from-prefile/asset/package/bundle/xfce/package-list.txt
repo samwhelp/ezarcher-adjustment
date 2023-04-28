@@ -70,11 +70,40 @@ lightdm-gtk-greeter-settings
 
 xfce4
 xfce4-goodies
+polkit-gnome
+
 xarchiver
 xfburn
 
 ##
 ### Tail: Ezarcher Adjustment / Eesktop Environment / xfce
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Font
+##
+
+ttf-dejavu
+ttf-liberation
+ttf-bitstream-vera
+ttf-ubuntu-font-family
+cantarell-fonts
+ttf-croscore
+ttf-carlito
+ttf-caladea
+
+opendesktop-fonts
+ttf-opensans
+freetype2
+
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+
+##
+### Tail: Ezarcher Adjustment / Font
 ################################################################################
 
 
@@ -101,24 +130,3 @@ papirus-icon-theme
 ### Tail: Ezarcher Adjustment / Theme / icon-theme
 ################################################################################
 
-
-################################################################################
-### Head: Ezarcher Adjustment / Font
-##
-
-ttf-dejavu
-ttf-liberation
-ttf-bitstream-vera
-ttf-ubuntu-font-family
-cantarell-fonts
-ttf-croscore
-ttf-carlito
-ttf-caladea
-noto-fonts
-opendesktop-fonts
-ttf-opensans
-freetype2
-
-##
-### Tail: Ezarcher Adjustment / Font
-################################################################################
