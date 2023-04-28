@@ -53,6 +53,8 @@ xterm
 ### Head: Ezarcher Adjustment / Display Manager / lightdm
 ##
 
+accountsservice
+
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
