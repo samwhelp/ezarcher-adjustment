@@ -52,14 +52,17 @@ THE_PLAN_ASSET_DIR_PATH="${THE_PLAN_DIR_PATH}/${THE_PLAN_ASSET_DIR_NAME}"
 THE_PLAN_OVERLAY_DIR_NAME="overlay"
 THE_PLAN_OVERLAY_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_OVERLAY_DIR_NAME}"
 
+THE_PLAN_BOOT_DIR_NAME="boot"
+THE_PLAN_BOOT_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_BOOT_DIR_NAME}"
+
 THE_PLAN_BUILD_DIR_NAME="build"
 THE_PLAN_BUILD_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_BUILD_DIR_NAME}"
 
 THE_PLAN_PACKAGE_DIR_NAME="package"
 THE_PLAN_PACKAGE_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_PACKAGE_DIR_NAME}"
 
-THE_PLAN_BOOT_DIR_NAME="boot"
-THE_PLAN_BOOT_DIR_PATH="${THE_PLAN_ASSET_DIR_PATH}/${THE_PLAN_BOOT_DIR_NAME}"
+THE_PLAN_PACKAGE_BUNDLE_DIR_NAME="bundle"
+THE_PLAN_PACKAGE_BUNDLE_DIR_PATH="${THE_PLAN_PACKAGE_DIR_PATH}/${THE_PLAN_PACKAGE_BUNDLE_DIR_NAME}"
 
 
 
@@ -790,15 +793,31 @@ mod_overlay_pacman_conf () {
 
 mod_overlay_packages_x86_64 () {
 
+	#mod_overlay_packages_bundle_base
+
+	mod_overlay_packages_bundle_xfce
+
+}
+
+
+mod_overlay_packages_bundle_base () {
+
 	util_error_echo
-	util_error_echo "cat ${THE_PLAN_PACKAGE_DIR_PATH}/common.txt >> ${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
-	cat "${THE_PLAN_PACKAGE_DIR_PATH}/base.txt" >> "${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+	util_error_echo "cat ${THE_PLAN_PACKAGE_BUNDLE_DIR_PATH}/base/package-list.txt >> ${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+	cat "${THE_PLAN_PACKAGE_BUNDLE_DIR_PATH}/base/package-list.txt" >> "${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
 
 	return 0
 
+}
+
+
+mod_overlay_packages_bundle_xfce () {
+
 	util_error_echo
-	util_error_echo "cat ${THE_PLAN_PACKAGE_DIR_PATH}/common.txt >> ${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
-	cat "${THE_PLAN_PACKAGE_DIR_PATH}/common.txt" >> "${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+	util_error_echo "cat ${THE_PLAN_PACKAGE_BUNDLE_DIR_PATH}/xfce/package-list.txt >> ${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+	cat "${THE_PLAN_PACKAGE_BUNDLE_DIR_PATH}/xfce/package-list.txt" >> "${THE_PLAN_PROFILE_DIR_PATH}/packages.x86_64"
+
+	return 0
 
 }
 
