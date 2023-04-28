@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux"
-iso_label="ARCH_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Arch Linux <https://archlinux.org>"
-iso_application="Arch Linux Live/Rescue CD"
-iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
+iso_name="ezarcher-xfce"
+iso_label="EZARCHER-XFCE_$(date +%y%m%d)"
+iso_publisher="Ezarcher-Adjustment <https://github.com/samwhelp/ezarcher-adjustment>"
+iso_application="Ezarcher Linux Live DVD"
+iso_version="$(date +%y%m%d)"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito'
