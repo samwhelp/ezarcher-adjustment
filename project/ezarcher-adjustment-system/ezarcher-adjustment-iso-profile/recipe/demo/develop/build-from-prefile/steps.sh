@@ -554,7 +554,7 @@ mod_overlay_remove_bootloader_syslinux () {
 
 
 ################################################################################
-### Head: Model / Overlay / bootloader
+### Head: Model / Overlay / boot loader
 ##
 
 mod_overlay_bootloader () {
@@ -592,7 +592,7 @@ mod_overlay_bootloader_syslinux () {
 
 
 ##
-### Tail: Model / Overlay / bootloader
+### Tail: Model / Overlay / boot loader
 ################################################################################
 
 
@@ -900,6 +900,8 @@ mod_overlay_systemd_service_enable () {
 
 	mod_overlay_service_display_manager_enable
 
+	mod_overlay_service_network_manager_enable
+
 	return 0
 
 }
@@ -936,6 +938,33 @@ mod_overlay_service_display_manager_lightdm_enable () {
 ### Tail: Model / Overlay / display manager
 ################################################################################
 
+
+################################################################################
+### Head: Model / Overlay / network manager
+##
+
+mod_overlay_service_network_manager_enable () {
+
+	mod_overlay_service_network_manager_main_enable
+
+}
+
+mod_overlay_service_network_manager_main_enable () {
+
+	local service_network_manager_file_path="/usr/lib/systemd/system/NetworkManager.service"
+
+	util_error_echo
+	util_error_echo "ln -sf ${service_network_manager_file_path} ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/systemd/system/multi-user.target.wants/NetworkManager.service"
+	ln -sf "${service_network_manager_file_path}" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/systemd/system/multi-user.target.wants/NetworkManager.service"
+
+	## sudo ln -sf /usr/lib/systemd/system/NetworkManager.service /etc/systemd/system/multi-user.target.wants/NetworkManager.service
+
+
+}
+
+##
+### Tail: Model / Overlay / network manager
+################################################################################
 
 
 

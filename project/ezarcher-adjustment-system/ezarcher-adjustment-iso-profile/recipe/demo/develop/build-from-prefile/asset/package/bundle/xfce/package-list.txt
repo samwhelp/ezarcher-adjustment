@@ -153,3 +153,20 @@ papirus-icon-theme
 ### Tail: Ezarcher Adjustment / Theme / icon-theme
 ################################################################################
 
+
+################################################################################
+### Head: Ezarcher Adjustment / Networking
+##
+
+
+##
+## https://wiki.archlinux.org/title/NetworkManager
+##
+
+networkmanager
+nm-connection-editor
+network-manager-applet
+
+##
+### Tail: Ezarcher Adjustment / Networking
+################################################################################
