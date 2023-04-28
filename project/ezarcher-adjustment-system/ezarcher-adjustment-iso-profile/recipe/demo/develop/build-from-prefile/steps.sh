@@ -921,9 +921,14 @@ mod_overlay_service_display_manager_enable () {
 
 mod_overlay_service_display_manager_lightdm_enable () {
 
+	local service_display_manager_file_path="/usr/lib/systemd/system/lightdm.service"
+
 	util_error_echo
 	util_error_echo "ln -sf /usr/lib/systemd/system/sddm.service ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/systemd/system/display-manager.service"
-	ln -sf /usr/lib/systemd/system/sddm.service "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/systemd/system/display-manager.service"
+	ln -sf "${service_display_manager_file_path}" "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/systemd/system/display-manager.service"
+
+	## sudo ln -sf /usr/lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service
+
 
 }
 
