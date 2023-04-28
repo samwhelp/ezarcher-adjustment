@@ -1,0 +1,122 @@
+
+
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Note
+##
+
+##
+## * https://samwhelp.github.io/ezarcher-adjustment/
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging
+## * https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository
+##
+
+##
+### Tail: Ezarcher Adjustment / Note
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Base
+##
+
+ezarcher-adjustment-mirrorlist
+ezarcher-adjustment-hello
+
+##
+### Tail: Ezarcher Adjustment / Base
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Xorg
+##
+
+mesa
+xorg
+xorg-server
+xorg-apps
+xorg-drivers
+xorg-xkill
+xorg-xinit
+xterm
+
+##
+### Tail: Ezarcher Adjustment / Xorg
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Display Manager / lightdm
+##
+
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+
+##
+### Tail: Ezarcher Adjustment / Display Manager / lightdm
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Eesktop Environment / xfce
+##
+
+xfce4
+xfce4-goodies
+xarchiver
+xfburn
+
+##
+### Tail: Ezarcher Adjustment / Eesktop Environment / xfce
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Theme / gtk-theme
+##
+
+adapta-gtk-theme
+arc-gtk-theme
+
+##
+### Tail: Ezarcher Adjustment / Theme / gtk-theme
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Theme / icon-theme
+##
+
+arc-icon-theme
+papirus-icon-theme
+
+##
+### Tail: Ezarcher Adjustment / Theme / icon-theme
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Font
+##
+
+ttf-dejavu
+ttf-liberation
+ttf-bitstream-vera
+ttf-ubuntu-font-family
+cantarell-fonts
+ttf-croscore
+ttf-carlito
+ttf-caladea
+noto-fonts
+opendesktop-fonts
+ttf-opensans
+freetype2
+
+##
+### Tail: Ezarcher Adjustment / Font
+################################################################################
