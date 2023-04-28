@@ -286,8 +286,8 @@ mod_iso_make_start () {
 	util_error_echo "##"
 	util_error_echo
 
-	sleep 5
-	return 0
+	#sleep 5
+	#return 0
 
 	util_error_echo "mkarchiso -w ${THE_PLAN_WORK_DIR_PATH} -o ${THE_PLAN_OUT_DIR_PATH} -v ${THE_PLAN_PROFILE_DIR_PATH}"
 	mkarchiso -w "${THE_PLAN_WORK_DIR_PATH}" -o "${THE_PLAN_OUT_DIR_PATH}" -v "${THE_PLAN_PROFILE_DIR_PATH}"
