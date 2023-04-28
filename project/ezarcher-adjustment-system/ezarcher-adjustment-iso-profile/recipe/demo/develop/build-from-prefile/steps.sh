@@ -293,8 +293,8 @@ mod_iso_make_start () {
 	util_error_echo "##"
 	util_error_echo
 
-	sleep 5
-	return 0
+	#sleep 5
+	#return 0
 
 	util_error_echo "mkarchiso -w ${THE_PLAN_WORK_DIR_PATH} -o ${THE_PLAN_OUT_DIR_PATH} -v ${THE_PLAN_PROFILE_DIR_PATH}"
 	mkarchiso -w "${THE_PLAN_WORK_DIR_PATH}" -o "${THE_PLAN_OUT_DIR_PATH}" -v "${THE_PLAN_PROFILE_DIR_PATH}"
@@ -447,7 +447,7 @@ mod_iso_profile_overlay () {
 	## ## systemd
 	##
 
-	#mod_overlay_systemd
+	mod_overlay_systemd
 
 
 }
@@ -873,6 +873,62 @@ mod_overlay_packages_bundle_xfce () {
 
 ##
 ### Tail: Model / Overlay / packages.x86_64
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / systemd
+##
+
+mod_overlay_systemd () {
+
+	mod_overlay_systemd_service_disable
+
+	mod_overlay_systemd_service_enable
+
+
+}
+
+mod_overlay_systemd_service_disable () {
+
+
+	return 0
+
+}
+
+mod_overlay_systemd_service_enable () {
+
+	mod_overlay_service_display_manager_enable
+
+	return 0
+
+}
+
+##
+### Tail: Model / Overlay / systemd
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / display manager
+##
+
+mod_overlay_service_display_manager_enable () {
+
+	mod_overlay_service_display_manager_lightdm_enable
+
+}
+
+mod_overlay_service_display_manager_lightdm_enable () {
+
+	util_error_echo
+	util_error_echo "ln -sf /usr/lib/systemd/system/sddm.service ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/systemd/system/display-manager.service"
+	ln -sf /usr/lib/systemd/system/sddm.service "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/systemd/system/display-manager.service"
+
+}
+
+##
+### Tail: Model / Overlay / display manager
 ################################################################################
 
 
