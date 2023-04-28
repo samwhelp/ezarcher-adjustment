@@ -402,7 +402,9 @@ mod_iso_profile_overlay () {
 	## ## base
 	##
 
+	mod_overlay_pre_remove
 	mod_overlay_by_dir
+
 
 
 	##
@@ -459,6 +461,30 @@ mod_overlay_by_dir () {
 
 ##
 ### Tail: Model / Overlay / by_dir
+################################################################################
+
+
+################################################################################
+### Head: Model / Overlay / pre_remove
+##
+
+mod_overlay_pre_remove () {
+
+	mod_overlay_pre_remove_pacman_hook
+
+}
+
+mod_overlay_pre_remove_pacman_hook () {
+
+	util_error_echo
+	util_error_echo "rm -rf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks"
+	rm -r "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks"
+
+
+}
+
+##
+### Tail: Model / Overlay / pre_remove
 ################################################################################
 
 
