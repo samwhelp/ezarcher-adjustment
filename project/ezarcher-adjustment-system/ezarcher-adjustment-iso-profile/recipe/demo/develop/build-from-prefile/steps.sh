@@ -470,16 +470,25 @@ mod_overlay_by_dir () {
 
 mod_overlay_pre_remove () {
 
-	mod_overlay_pre_remove_pacman_hook
+	mod_overlay_remove_pacman_hook
+	mod_overlay_remove_motd
 
 }
 
-mod_overlay_pre_remove_pacman_hook () {
+mod_overlay_remove_pacman_hook () {
 
 	util_error_echo
 	util_error_echo "rm -rf ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks"
-	rm -r "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks"
+	rm -rf "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/pacman.d/hooks"
 
+
+}
+
+mod_overlay_remove_motd () {
+
+	util_error_echo
+	util_error_echo "rm -f ${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/motd"
+	rm -f "${THE_PLAN_PROFILE_ROOTFS_DIR_PATH}/etc/motd"
 
 }
 
