@@ -61,6 +61,7 @@ lightdm-gtk-greeter-settings
 
 
 ##
+## https://wiki.archlinux.org/title/LightDM
 ## https://wiki.archlinux.org/title/ConsoleKit
 ##
 
