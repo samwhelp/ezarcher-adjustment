@@ -430,10 +430,10 @@ mod_iso_profile_overlay () {
 
 
 	##
-	## ## password
+	## ## permission
 	##
 
-	mod_overlay_account
+	mod_overlay_permission
 
 
 	##
@@ -597,10 +597,10 @@ mod_overlay_bootloader_syslinux () {
 
 
 ################################################################################
-### Head: Model / Overlay / account
+### Head: Model / Overlay / permission
 ##
 
-mod_overlay_account () {
+mod_overlay_permission () {
 
 	mod_overlay_passwd
 	mod_overlay_group
@@ -718,7 +718,7 @@ EOF
 }
 
 ##
-### Tail: Model / Overlay / account
+### Tail: Model / Overlay / permission
 ################################################################################
 
 

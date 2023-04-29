@@ -406,7 +406,7 @@ mod_iso_profile_overlay () {
 
 
 	##
-	## ## password
+	## ## permission
 	##
 
 	mod_overlay_passwd
