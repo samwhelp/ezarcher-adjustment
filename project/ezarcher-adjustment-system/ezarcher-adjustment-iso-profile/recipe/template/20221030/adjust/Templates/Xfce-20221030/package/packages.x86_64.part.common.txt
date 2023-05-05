@@ -236,6 +236,8 @@ ezarcher-adjustment-modeling-xed
 ##
 
 firefox
+firefox-i18n-zh-tw
+
 #falkon
 
 ##
@@ -390,4 +392,35 @@ ezarcher-adjustment-modeling-fzf
 
 ##
 ### Tail: Ezarcher Adjustment / Helper
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Gimp
+##
+
+gimp
+gimp-help-en
+gimp-help-zh_cn
+
+##
+### Tail: Ezarcher Adjustment / Gimp
+################################################################################
+
+
+################################################################################
+### Head: Ezarcher Adjustment / Office
+##
+
+
+libreoffice-fresh
+libreoffice-fresh-zh-tw
+
+
+#libreoffice-still
+#libreoffice-still-zh-tw
+
+
+##
+### Tail: Ezarcher Adjustment / Office
 ################################################################################
