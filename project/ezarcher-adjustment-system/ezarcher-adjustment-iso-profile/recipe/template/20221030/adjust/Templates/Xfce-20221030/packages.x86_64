@@ -26,7 +26,8 @@ edk2-shell
 efibootmgr
 espeakup
 ethtool
-exfatprogs
+#exfatprogs
+exfat-utils
 f2fs-tools
 fatresize
 fsarchiver
