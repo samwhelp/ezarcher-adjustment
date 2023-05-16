@@ -6,6 +6,8 @@
 
 ezarcher-adjustment-modeling-xfce
 
+ezarcher-adjustment-util-wallpaper-select-xfce
+
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / Xfce
 ################################################################################
