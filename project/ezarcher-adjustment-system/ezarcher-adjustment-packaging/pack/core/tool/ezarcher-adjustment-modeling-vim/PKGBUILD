@@ -1,0 +1,65 @@
+
+##
+## * https://wiki.archlinux.org/title/Creating_packages
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/makepkg
+## * https://wiki.archlinux.org/title/PKGBUILD
+## * https://wiki.archlinux.org/title/Arch_package_guidelines
+##
+
+pkgname=ezarcher-adjustment-modeling-vim
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Modeling / Vim"
+url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-modeling-vim"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	vim_asset_download_vimrc
+
+	return 0
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	##
+	## Main Config
+	##
+
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+
+}
+
+
+vim_asset_download_vimrc () {
+
+	##
+	## https://github.com/samwhelp/note-about-vim/tree/gh-pages/_demo/prototype/ivim
+	##
+
+
+	mkdir -p "${srcdir}/overlay/etc/skel/.vim"
+
+
+	curl -fLo "${srcdir}/overlay/etc/skel/.vim/vimrc" --create-dirs \
+		https://raw.githubusercontent.com/samwhelp/note-about-vim/gh-pages/_demo/prototype/ivim/vimrc
+
+
+	chmod 644 "${srcdir}/overlay/etc/skel/.vim/vimrc"
+
+	return 0
+}
