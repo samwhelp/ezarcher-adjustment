@@ -12,8 +12,8 @@
 pkgname=ezarcher-adjustment-util-wallpaper-select-feh
 pkgver=0.1
 pkgrel=1
-pkgdesc="Ezarcher Adjustment / Util / Wallpaper / wallpaper-select-feh"
-url="https://github.com/samwhelp/ezarcher-adjustment-packaging/tree/main/pack/core/wm/openbox/ezarcher-adjustment-util-wallpaper-select-feh"
+pkgdesc="Ezarcher Adjustment / Modeling / Util / wallpaper-select-feh"
+url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/tool/ezarcher-adjustment-util-wallpaper-select-feh"
 arch=('any')
 license=('MIT')
 makedepends=()
@@ -24,47 +24,43 @@ options=(!strip !emptydirs)
 
 
 prepare () {
+
+	util_asset_download_wallpaper_select_feh
+
+	return 0
+
 	cp -af ../asset/. "${srcdir}"
+
 }
 
 
 package () {
 
 	##
-	## Path
-	##
-
-	#local sys_etc_dir_path="${pkgdir}/etc"
-	#local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
-	#local sys_skel_dir_path="${sys_etc_dir_path}/skel"
-
-
-	##
-	## Prepare Dir
-	##
-
-	#mkdir -p "$sys_etc_dir_path"
-	#mkdir -p "$sys_share_dir_path"
-
-	#install -dm755 "${pkgdir}/etc/skel"
-
-
-	##
-	## /etc/skel/.config
-	##
-	#install -dm755 "${pkgdir}/etc/skel/.config"
-
-
-	##
 	## Main Config
 	##
 
-	##
-	## /etc/skel/.config/openbox
-	##
-
-	#cp -af "${srcdir}/overlay/etc/." "${pkgdir}"
 	cp -af "${srcdir}/overlay/." "${pkgdir}"
 
+}
 
+
+util_asset_download_wallpaper_select_feh () {
+
+	##
+	## * https://github.com/samwhelp/note-about-fzf/tree/gh-pages/_demo/project/wallpaper-select/wallpaper-select-feh
+	## * https://github.com/samwhelp/note-about-fzf/blob/gh-pages/_demo/project/wallpaper-select/wallpaper-select-feh/wallpaper-select-feh
+	##
+
+
+	mkdir -p "${srcdir}/overlay/usr/bin"
+
+
+	curl -fLo "${srcdir}/overlay/usr/bin/wallpaper-select-feh" --create-dirs \
+		https://raw.githubusercontent.com/samwhelp/note-about-fzf/gh-pages/_demo/project/wallpaper-select/wallpaper-select-feh/wallpaper-select-feh
+
+
+	chmod 755 "${srcdir}/overlay/usr/bin/wallpaper-select-feh"
+
+	return 0
 }
