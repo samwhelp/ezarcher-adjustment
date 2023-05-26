@@ -1,0 +1,15 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / SDDM
+##
+
+ezarcher-adjustment-modeling-sddm-theme-current
+ezarcher-adjustment-appearance-sddm-theme-sugar-candy
+ezarcher-adjustment-appearance-sddm-theme-sugar-dark
+ezarcher-adjustment-appearance-sddm-theme-sugar-light
+ezarcher-adjustment-appearance-sddm-theme-chili
+
+##
+### Tail: Ezarcher Adjustment / SDDM
+################################################################################
