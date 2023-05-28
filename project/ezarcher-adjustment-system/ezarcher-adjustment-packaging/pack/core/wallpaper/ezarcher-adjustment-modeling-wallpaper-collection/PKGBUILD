@@ -70,6 +70,13 @@ mod_wallpaper_asset_install_wallpaper_default () {
 		fi
 	fi
 
+	if ! [ -a "default-grub.jpg" ]; then
+		if [ -f "iron_man.jpg" ]; then
+			echo "cp -f iron_man.jpg default-grub.jpg"
+			cp -f "iron_man.jpg" "default-grub.jpg"
+		fi
+	fi
+
 }
 
 
