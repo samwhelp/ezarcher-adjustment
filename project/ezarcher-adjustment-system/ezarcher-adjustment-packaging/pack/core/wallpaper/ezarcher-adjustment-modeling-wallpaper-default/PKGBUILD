@@ -55,7 +55,10 @@ mod_wallpaper_link_default_ezarcher_adjustment () {
 
 	ln -sf ezarcher-adjustment/default-login.jpg default-login.jpg
 
+	ln -sf ezarcher-adjustment/default-grub.jpg default-grub.jpg
+
 	cd "${OLDPWD}"
+
 }
 
 
@@ -69,5 +72,8 @@ mod_wallpaper_link_default_xfce () {
 
 	ln -sf xfce/Butterfly.jpg default-login.jpg
 
+	ln -sf xfce/Butterfly.jpg default-grub.jpg
+
 	cd "${OLDPWD}"
+
 }
