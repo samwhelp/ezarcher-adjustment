@@ -1,0 +1,67 @@
+
+##
+## * https://wiki.archlinux.org/title/Creating_packages
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/makepkg
+## * https://wiki.archlinux.org/title/PKGBUILD
+## * https://wiki.archlinux.org/title/Arch_package_guidelines
+##
+
+pkgname=ezarcher-adjustment-grub-theme-default
+pkgver=0.1
+pkgrel=1
+pkgdesc="Ezarcher Adjustment / Modeling / Grub / grub-theme-default"
+url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/grub/theme/ezarcher-adjustment-grub-theme-default"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	util_asset_download_grub_theme
+
+	return 0
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	##
+	## Main Config
+	##
+
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+
+}
+
+
+util_asset_download_grub_theme () {
+
+	##
+	## * https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-darkmatter-remix
+	##
+
+	mkdir -p "${srcdir}/tmp"
+
+	curl -fLo "${srcdir}/tmp/grub-theme-darkmatter-remix.tar.gz" --create-dirs \
+		"https://github.com/samwhelp/grub-theme-remix/archive/refs/heads/grub-theme-darkmatter-remix.tar.gz"
+
+	tar xf "${srcdir}/tmp/grub-theme-darkmatter-remix.tar.gz" -C "${srcdir}/tmp"
+
+
+	mkdir -p "${srcdir}/overlay/usr/share/grub/themes"
+
+	mv "${srcdir}/tmp/grub-theme-remix-grub-theme-darkmatter-remix" "${srcdir}/overlay/usr/share/grub/themes/grub-theme-default"
+
+	return 0
+}
