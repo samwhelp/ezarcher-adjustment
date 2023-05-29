@@ -1,5 +1,5 @@
 
-# ezarcher-adjustment-grub-theme-default
+# ezarcher-adjustment-appearance-grub-theme-default
 
 
 ## Link
@@ -23,7 +23,7 @@
 run
 
 ``` sh
-pacman -Ql ezarcher-adjustment-grub-theme-default -q
+pacman -Ql ezarcher-adjustment-appearance-grub-theme-default -q
 ```
 
 show

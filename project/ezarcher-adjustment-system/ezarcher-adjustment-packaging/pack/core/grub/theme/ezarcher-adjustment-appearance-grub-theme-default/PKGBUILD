@@ -9,11 +9,11 @@
 ## * https://wiki.archlinux.org/title/Arch_package_guidelines
 ##
 
-pkgname=ezarcher-adjustment-grub-theme-default
+pkgname=ezarcher-adjustment-appearance-grub-theme-default
 pkgver=0.1
 pkgrel=1
 pkgdesc="Ezarcher Adjustment / Modeling / Grub / grub-theme-default"
-url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/grub/theme/ezarcher-adjustment-grub-theme-default"
+url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/grub/theme/ezarcher-adjustment-appearance-grub-theme-default"
 arch=('any')
 license=('MIT')
 makedepends=()

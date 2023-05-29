@@ -1,5 +1,5 @@
 
-# ezarcher-adjustment-grub-theme-monterey-remix
+# ezarcher-adjustment-appearance-grub-theme-monterey-remix
 
 
 ## Link
@@ -23,7 +23,7 @@
 run
 
 ``` sh
-pacman -Ql ezarcher-adjustment-grub-theme-monterey-remix -q
+pacman -Ql ezarcher-adjustment-appearance-grub-theme-monterey-remix -q
 ```
 
 show

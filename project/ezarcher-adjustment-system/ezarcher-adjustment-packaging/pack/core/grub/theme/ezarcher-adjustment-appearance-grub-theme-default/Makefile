@@ -53,7 +53,7 @@ reinstall:
 
 
 uninstall:
-	sudo pacman -R ezarcher-adjustment-grub-theme-default
+	sudo pacman -R ezarcher-adjustment-appearance-grub-theme-default
 .PHONY: uninstall
 
 clean:
@@ -65,9 +65,9 @@ clean:
 
 
 list:
-	pacman -Ql ezarcher-adjustment-grub-theme-default -q
+	pacman -Ql ezarcher-adjustment-appearance-grub-theme-default -q
 .PHONY: list
 
 info:
-	pacman -Qi ezarcher-adjustment-grub-theme-default
+	pacman -Qi ezarcher-adjustment-appearance-grub-theme-default
 .PHONY: info

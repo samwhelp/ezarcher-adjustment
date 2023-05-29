@@ -1,5 +1,5 @@
 
-# ezarcher-adjustment-grub-theme-darkmatter-remix
+# ezarcher-adjustment-appearance-grub-theme-darkmatter-remix
 
 
 ## Link
@@ -23,7 +23,7 @@
 run
 
 ``` sh
-pacman -Ql ezarcher-adjustment-grub-theme-darkmatter-remix -q
+pacman -Ql ezarcher-adjustment-appearance-grub-theme-darkmatter-remix -q
 ```
 
 show

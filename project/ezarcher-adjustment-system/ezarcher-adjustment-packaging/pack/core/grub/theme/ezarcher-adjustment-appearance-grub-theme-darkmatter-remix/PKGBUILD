@@ -9,11 +9,11 @@
 ## * https://wiki.archlinux.org/title/Arch_package_guidelines
 ##
 
-pkgname=ezarcher-adjustment-grub-theme-monterey-remix
+pkgname=ezarcher-adjustment-appearance-grub-theme-darkmatter-remix
 pkgver=0.1
 pkgrel=1
-pkgdesc="Ezarcher Adjustment / Modeling / Grub / grub-theme-monterey-remix"
-url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/grub/theme/ezarcher-adjustment-grub-theme-monterey-remix"
+pkgdesc="Ezarcher Adjustment / Modeling / Grub / grub-theme-darkmatter-remix"
+url="https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging/pack/core/grub/theme/ezarcher-adjustment-appearance-grub-theme-darkmatter-remix"
 arch=('any')
 license=('MIT')
 makedepends=()
@@ -48,20 +48,20 @@ package () {
 util_asset_download_grub_theme () {
 
 	##
-	## * https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-monterey-remix
+	## * https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-darkmatter-remix
 	##
 
 	mkdir -p "${srcdir}/tmp"
 
-	curl -fLo "${srcdir}/tmp/grub-theme-monterey-remix.tar.gz" --create-dirs \
-		"https://github.com/samwhelp/grub-theme-remix/archive/refs/heads/grub-theme-monterey-remix.tar.gz"
+	curl -fLo "${srcdir}/tmp/grub-theme-darkmatter-remix.tar.gz" --create-dirs \
+		"https://github.com/samwhelp/grub-theme-remix/archive/refs/heads/grub-theme-darkmatter-remix.tar.gz"
 
-	tar xf "${srcdir}/tmp/grub-theme-monterey-remix.tar.gz" -C "${srcdir}/tmp"
+	tar xf "${srcdir}/tmp/grub-theme-darkmatter-remix.tar.gz" -C "${srcdir}/tmp"
 
 
 	mkdir -p "${srcdir}/overlay/usr/share/grub/themes"
 
-	mv "${srcdir}/tmp/grub-theme-remix-grub-theme-monterey-remix" "${srcdir}/overlay/usr/share/grub/themes/grub-theme-monterey-remix"
+	mv "${srcdir}/tmp/grub-theme-remix-grub-theme-darkmatter-remix" "${srcdir}/overlay/usr/share/grub/themes/grub-theme-darkmatter-remix"
 
 	return 0
 }
