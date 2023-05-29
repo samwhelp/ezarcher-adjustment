@@ -61,7 +61,7 @@ util_asset_download_grub_theme () {
 
 	mkdir -p "${srcdir}/overlay/usr/share/grub/themes"
 
-	mv "${srcdir}/tmp/grub-theme-remix-grub-theme-darkmatter-remix" "${srcdir}/overlay/usr/share/grub/themes/grub-theme-default"
+	mv "${srcdir}/tmp/grub-theme-remix-grub-theme-darkmatter-remix" "${srcdir}/overlay/usr/share/grub/themes/default"
 
 	return 0
 }
