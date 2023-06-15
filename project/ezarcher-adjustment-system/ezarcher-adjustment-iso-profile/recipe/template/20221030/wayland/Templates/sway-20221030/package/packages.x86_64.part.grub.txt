@@ -1,0 +1,13 @@
+
+
+################################################################################
+### Head: Ezarcher Adjustment / GRUB
+##
+
+ezarcher-adjustment-appearance-grub-theme-default
+ezarcher-adjustment-appearance-grub-theme-darkmatter-remix
+ezarcher-adjustment-appearance-grub-theme-monterey-remix
+
+##
+### Tail: Ezarcher Adjustment / GRUB
+################################################################################
