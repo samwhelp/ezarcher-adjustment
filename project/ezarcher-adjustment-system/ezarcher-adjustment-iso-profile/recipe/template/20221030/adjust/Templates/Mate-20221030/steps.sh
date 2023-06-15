@@ -139,6 +139,7 @@ cp profiledef.sh ./ezreleng/
 cp packages.x86_64 ./ezreleng/
 cat package/packages.x86_64.part.common.txt >> ./ezreleng/packages.x86_64
 cat package/packages.x86_64.part.common-shell.txt >> ./ezreleng/packages.x86_64
+cat package/packages.x86_64.part.grub.txt >> ./ezreleng/packages.x86_64
 cat package/packages.x86_64.part.sddm.txt >> ./ezreleng/packages.x86_64
 cat package/packages.x86_64.part.mate.txt >> ./ezreleng/packages.x86_64
 cp -r grub ./ezreleng/
