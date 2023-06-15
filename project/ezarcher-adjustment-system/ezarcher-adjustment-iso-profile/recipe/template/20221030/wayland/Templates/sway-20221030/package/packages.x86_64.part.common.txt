@@ -428,9 +428,9 @@ ezarcher-adjustment-modeling-fzf
 ### Head: Ezarcher Adjustment / Gimp
 ##
 
-gimp
-gimp-help-en
-gimp-help-zh_cn
+#gimp
+#gimp-help-en
+#gimp-help-zh_cn
 
 ##
 ### Tail: Ezarcher Adjustment / Gimp
@@ -442,8 +442,8 @@ gimp-help-zh_cn
 ##
 
 
-libreoffice-fresh
-libreoffice-fresh-zh-tw
+#libreoffice-fresh
+#libreoffice-fresh-zh-tw
 
 
 ##libreoffice-still
