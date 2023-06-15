@@ -249,6 +249,8 @@ ezarcher-adjustment-modeling-xed
 ##
 
 firefox
+firefox-i18n-zh-tw
+
 #falkon
 
 ##
