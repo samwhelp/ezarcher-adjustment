@@ -45,19 +45,6 @@ ezarcher-adjustment-modeling-profile-user-home-bin-path
 
 
 ################################################################################
-### Head: Ezarcher Adjustment / Profile
-##
-
-ezarcher-adjustment-modeling-profile-user-home-bin-path
-
-##
-### Tail: Ezarcher Adjustment / Profile
-################################################################################
-
-
-
-
-################################################################################
 ### Head: Ezarcher Adjustment / AUR
 ##
 
