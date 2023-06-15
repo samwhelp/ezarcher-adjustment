@@ -210,7 +210,11 @@ ezarcher-adjustment-modeling-thunar
 ezarcher-adjustment-modeling-vi
 
 vim
+ezarcher-adjustment-modeling-vim
+
 neovim
+ezarcher-adjustment-modeling-nvim
+
 micro
 nano
 
