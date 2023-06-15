@@ -349,7 +349,7 @@ gnome-packagekit
 gnome-power-manager
 gnome-remote-desktop
 gnome-screenshot
-gnome-software-packagekit-plugin
+#gnome-software-packagekit-plugin
 gnome-tweaks
 gsound
 guake
