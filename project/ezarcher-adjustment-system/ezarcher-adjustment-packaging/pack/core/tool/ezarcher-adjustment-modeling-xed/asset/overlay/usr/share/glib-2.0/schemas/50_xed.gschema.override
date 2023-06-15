@@ -1,7 +1,6 @@
 
 
 [org.x.editor.preferences.editor]
-prefer-dark-theme=true
 scheme='oblivion'
 use-default-font=false
 editor-font='Monospace 14'
