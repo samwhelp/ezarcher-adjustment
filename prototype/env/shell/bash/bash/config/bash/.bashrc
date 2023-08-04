@@ -32,7 +32,7 @@
 ## * https://www.gnu.org/software/bash/manual/bash.html#index-IGNOREEOF
 ##
 
-## disabe `ctrl + d` to exit
+## disable `ctrl + d` to exit
 set -o ignoreeof
 
 
