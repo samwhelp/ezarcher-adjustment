@@ -66,7 +66,11 @@ alias ls='ls --color=auto'
 ##
 
 
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
+
+#PS1='\u@\H [\t] (\w) \n $ '
+
+PS1='\n\u@\H [\t] (\w) \n $ '
 
 
 ##
