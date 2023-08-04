@@ -20,7 +20,15 @@
 ## * https://github.com/Bash-it/bash-it/blob/master/lib/colors.bash
 ##
 
+
+##
+## Load ~/.color
+##
+
 [ -f ~/.color ] && . ~/.color
+
+
+
 
 THE_PROMPT_END_CLEAN="${THE_COLOR_GREEN}→${THE_COLOR_RESET_COLOR}"
 THE_PROMPT_END_DIRTY="${THE_COLOR_RED}→${THE_COLOR_RESET_COLOR}"
@@ -73,6 +81,7 @@ _prompt_set_
 ##
 ## Unload Function
 ##
+
 unset -f _prompt_set_
 
 
