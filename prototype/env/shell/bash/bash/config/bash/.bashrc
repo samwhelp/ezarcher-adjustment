@@ -14,7 +14,7 @@
 ##
 ## If not running interactively, don't do anything
 ##
-[ $- != *i* ] && return
+[[ $- != *i* ]] && return
 
 
 ##
@@ -45,7 +45,15 @@ set -o ignoreeof
 ### Head: alias
 ##
 
+
 alias ls='ls --color=auto'
+
+
+##
+## Load ~/.alias
+##
+
+[ -f ~/.alias ] && . ~/.alias
 
 
 ##
@@ -57,7 +65,16 @@ alias ls='ls --color=auto'
 ### Head: prompt
 ##
 
+
 PS1='[\u@\h \W]\$ '
+
+
+##
+## Load ~/.prompt
+##
+
+[ -f ~/.prompt ] && . ~/.prompt
+
 
 ##
 ### Tail: prompt

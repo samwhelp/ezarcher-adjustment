@@ -39,6 +39,18 @@ bash_config_install () {
 	install -Dm644 "./config/bash/.path" "${HOME}/.path"
 
 	echo
+	echo "install -Dm644 ./config/bash/.alias ${HOME}/.alias"
+	install -Dm644 "./config/bash/.alias" "${HOME}/.alias"
+
+	echo
+	echo "install -Dm644 ./config/bash/.prompt ${HOME}/.prompt"
+	install -Dm644 "./config/bash/.prompt" "${HOME}/.prompt"
+
+	echo
+	echo "install -Dm644 ./config/bash/.color ${HOME}/.color"
+	install -Dm644 "./config/bash/.color" "${HOME}/.color"
+
+	echo
 
 }
 
