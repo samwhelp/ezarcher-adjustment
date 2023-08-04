@@ -15,7 +15,7 @@
 ## Load ~/.bashrc
 ##
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+[ -f ~/.bashrc ] && . ~/.bashrc
 
 ##
 ### Tail: bashrc
@@ -32,7 +32,7 @@
 
 #PATH="${HOME}/.local/bin:${HOME}/bin:${PATH}"
 
-[[ -f ~/.path ]] && . ~/.path
+[ -f ~/.path ] && . ~/.path
 
 ##
 ### Tail: Path

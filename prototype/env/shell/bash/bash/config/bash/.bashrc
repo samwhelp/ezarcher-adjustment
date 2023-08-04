@@ -14,7 +14,7 @@
 ##
 ## If not running interactively, don't do anything
 ##
-[[ $- != *i* ]] && return
+[ $- != *i* ] && return
 
 
 ##
@@ -76,7 +76,7 @@ PS1='[\u@\h \W]\$ '
 ## Load ~/.bash_it_profile
 ##
 
-[[ -f ~/.bash_it_profile ]] && . ~/.bash_it_profile
+[ -f ~/.bash_it_profile ] && . ~/.bash_it_profile
 
 
 ##
@@ -96,7 +96,7 @@ PS1='[\u@\h \W]\$ '
 ## Load ~/.fzf-load.bash
 ##
 
-[[ -f ~/.fzf-load.bash ]] && . ~/.fzf-load.bash
+[ -f ~/.fzf-load.bash ] && . ~/.fzf-load.bash
 
 
 ##
