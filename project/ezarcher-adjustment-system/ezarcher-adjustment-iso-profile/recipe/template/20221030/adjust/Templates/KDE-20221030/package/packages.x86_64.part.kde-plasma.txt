@@ -8,25 +8,40 @@
 ##
 ## Keybind
 ##
+
 ezarcher-adjustment-modeling-kde-plasma-keybind-main
 
 
 ##
 ## Layout
 ##
+
 ezarcher-adjustment-modeling-kde-plasma-desktop-layout-panel-floating-center
 
 
 ## Theme
+
 ezarcher-adjustment-modeling-kde-plasma-theme-breeze-dark
 
 
 ##
 ## Tool
 ##
-yakuake
+
+
 kvantum
 spectacle
+
+yakuake
+konsole
+
+kwrite
+kate
+
+kdevelop
+kdevelop-php
+kdevelop-python
+kdevelop-pg-qt
 
 ##
 ### Tail: Ezarcher Adjustment / Desktop Environment / KDE Plasma
