@@ -21,10 +21,10 @@
 alias ls='ls --color=auto'
 
 
-if [ -x "$(command -v 'exa')" ]; then
-	alias ls='exa --color=always --group-directories-first --icons'		## replace ls with exa
-	alias lt='ls -aT'	# tree listing
-fi
+#if [ -x "$(command -v 'exa')" ]; then
+#	alias ls='exa --color=always --group-directories-first --icons'		## replace ls with exa
+#	alias lt='ls -aT'	# tree listing
+#fi
 
 
 alias la='ls -a'	# all files and dirs
