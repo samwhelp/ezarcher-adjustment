@@ -17,8 +17,8 @@
 | Ezarcher Link |
 | -------------- |
 | YouTube / [Eznix](https://www.youtube.com/c/eznix/videos) |
-| OSDN / [Ezarcher](https://osdn.net/projects/ezarch/releases/) |
-| SOURCEFORGE / [Ezarcher](https://sourceforge.net/projects/ezarch/files/) |
+| SourceForge / [Ezarcher](https://sourceforge.net/projects/ezarch/files/) |
+| archive.org / [eznix](https://archive.org/search?query=creator%3A%22eznix%22) |
 
 
 
