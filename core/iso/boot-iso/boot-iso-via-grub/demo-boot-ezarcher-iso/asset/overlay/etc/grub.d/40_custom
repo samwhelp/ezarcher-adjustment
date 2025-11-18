@@ -1,0 +1,36 @@
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+
+
+
+
+menuentry "Ezarcher ISO / Latest" --class archlinux {
+
+	set iso_file="/opt/iso/ezarcher/latest/ezarch-xfce-251101-x86_64.iso"
+
+	#set iso_file="/opt/iso/ezarcher/latest/ezarch-kde-251101-x86_64.iso"
+	#set iso_file="/opt/iso/ezarcher/latest/ezarch-gnome-251101-x86_64.iso"
+	#set iso_file="/opt/iso/ezarcher/latest/ezarch-mate-251101-x86_64.iso"
+	#set iso_file="/opt/iso/ezarcher/latest/ezarch-cinn-251101-x86_64.iso"
+	#set iso_file="/opt/iso/ezarcher/latest/ezarch-lxqt-251101-x86_64.iso"
+
+	search --set=iso_partition --no-floppy --file ${iso_file}
+	probe --set=iso_partition_uuid --fs-uuid ${iso_partition}
+	#set img_dev="/dev/disk/by-uuid/${iso_partition_uuid}"
+	set img_dev="UUID=${iso_partition_uuid}"
+
+
+	loopback loop (${iso_partition})${iso_file}
+
+
+	set boot_option=""
+	#set boot_option="quiet splash"
+
+
+	linux (loop)/arch/boot/x86_64/vmlinuz-linux-lts img_dev=${img_dev} img_loop=${iso_file} archisobasedir=arch ${boot_option}
+	initrd (loop)/arch/boot/x86_64/initramfs-linux-lts.img
+
+}
