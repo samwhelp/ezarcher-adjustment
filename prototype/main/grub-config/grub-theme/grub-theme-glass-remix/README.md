@@ -9,6 +9,15 @@
 
 
 
+## Command
+
+``` sh
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+
+
+
 ## Grub Theme Source
 
 | Grub Theme Source |
