@@ -2,19 +2,53 @@
 
 # Home
 
+| Link | GitHub |
+| ---- | ------ |
+| [Ezarcher Adjustment](https://samwhelp.github.io/ezarcher-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-adjustment) |
+| [Ezarcher Note](https://samwhelp.github.io/note-about-ezarcher/) | [GitHub](https://github.com/samwhelp/note-about-ezarcher) |
 
-## Ezarcher Adjustment
 
-| Link |
-| --- |
+
+
+| Ezarcher Link |
+| -------------- |
 | YouTube / [Eznix](https://www.youtube.com/c/eznix/videos) |
 | OSDN / [Ezarcher](https://osdn.net/projects/ezarch/releases/) |
 | SOURCEFORGE / [Ezarcher](https://sourceforge.net/projects/ezarch/files/) |
 
 
+
+
+## Subject
+
+* [Script](#script)
+* [Ezarcher Respin](#ezarcher-respin)
+* [Link](#link)
+
+
+
+
+## Script
+
+| Script |
+| ------ |
+| [Ezarcher Config](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/main) |
+| [Tool Config](https://github.com/samwhelp/ezarcher-adjustment/tree/main/prototype/main/tool-config/part) |
+
+
+
+
+## Ezarcher Respin
+
 | Link | GitHub |
-| --- | --- |
-| [Ezarcher Adjustment](https://samwhelp.github.io/ezarcher-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-adjustment) |
+| ---- | ------ |
+| [Ezarcher Xfce Adjustment](https://samwhelp.github.io/ezarcher-xfce-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-xfce-adjustment) |
+| [Ezarcher Kde Plasma Adjustment](https://samwhelp.github.io/ezarcher-kde-plasma-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-kde-plasma-adjustment) |
+| [Ezarcher Gnome Shell Adjustment](https://samwhelp.github.io/ezarcher-gnome-shell-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-gnome-shell-adjustment) |
+| [Ezarcher Cinnamon Adjustment](https://samwhelp.github.io/ezarcher-cinnamon-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-cinnamon-adjustment) |
+| [Ezarcher Mate Adjustment](https://samwhelp.github.io/ezarcher-mate-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-mate-adjustment) |
+| [Ezarcher Lxqt Adjustment](https://samwhelp.github.io/ezarcher-lxqt-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-lxqt-adjustment) |
+| [Ezarcher Lxde Adjustment](https://samwhelp.github.io/ezarcher-lxde-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-lxde-adjustment) |
 
 
 
@@ -34,55 +68,17 @@
 
 
 
-## Quick Start
+## Link
 
-| Quick Start |
-| --- |
-| [Build ISO](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso.html) |
-
-
-
-
-## Desktop Environment
-
-| Desktop Environment |
-| --- |
-| [Xfce](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/xfce/) |
-| [Gnome Shell](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/gnome-shell/) |
-| [Gnome Flashback](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/gnome-flashback/) |
-| [Cinnamon](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/cinnamon/) |
-| [Mate](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/mate/) |
-| [Kde Plasma](https://samwhelp.github.io/ezarcher-adjustment/read/master/desktop_environment/kde-plasma/) |
+| Link | GitHub |
+| ---- | ------ |
+| [Debian Adjustment](https://samwhelp.github.io/debian-adjustment/) | [GitHub](https://github.com/samwhelp/debian-adjustment) |
+| [Ubuntu Adjustment](https://samwhelp.github.io/ubutu-adjustment/) | [GitHub](https://github.com/samwhelp/ubutu-adjustment) |
+| [Fedora Adjustment](https://samwhelp.github.io/fedora-adjustment/) | [GitHub](https://github.com/samwhelp/fedora-adjustment) |
 
 
 
 
-## Window Manager
+## Samwhelp
 
-| Window Manager |
-| --- |
-| [Openbox](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/openbox/) |
-| [Compiz](https://samwhelp.github.io/ezarcher-adjustment/read/master/window_manager/compiz/) |
-
-
-
-
-## ISO Build System
-
-| ISO Build System | Usage |
-| --- | --- |
-| [ezarcher-adjustment-packaging](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-packaging) | [Usage](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/build-package.html) |
-| [ezarcher-adjustment-repository](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-repository) | [Usage](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/update-package-repository-db.html) |
-| [ezarcher-adjustment-iso-profile](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile) | [Usage](https://samwhelp.github.io/ezarcher-adjustment/read/start/build-iso/build-iso.html) |
-
-
-
-
-## ISO Build Template
-
-| ISO Build Template |
-| --- |
-| [orginal](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/orginal/Templates) |
-| [adjust](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/adjust/Templates) |
-| [derive](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/derive/Templates) |
-| [alternative](https://github.com/samwhelp/ezarcher-adjustment/tree/main/project/ezarcher-adjustment-system/ezarcher-adjustment-iso-profile/recipe/template/20221030/alternative/Templates) |
+* [GitHub](https://github.com/samwhelp)
