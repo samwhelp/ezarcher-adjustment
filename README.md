@@ -14,6 +14,7 @@
 | -------------- |
 | YouTube / [Eznix](https://www.youtube.com/c/eznix/videos) |
 | SourceForge / [Ezarcher](https://sourceforge.net/projects/ezarch/files/) |
+| SourceForge / User / [ezos](https://sourceforge.net/u/ezos/profile/) |
 | archive.org / [eznix](https://archive.org/search?query=creator%3A%22eznix%22) |
 
 
