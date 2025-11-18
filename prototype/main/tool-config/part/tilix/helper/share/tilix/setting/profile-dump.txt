@@ -1,0 +1,65 @@
+
+##
+## profile=2b7c4080-0ddd-46c5-8f23-563fd3ba789d
+##
+
+##
+## path=com.gexperts.Tilix.Profile:/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/
+##
+
+com.gexperts.Tilix.Profile allow-bold true
+com.gexperts.Tilix.Profile automatic-switch @as []
+com.gexperts.Tilix.Profile background-color '#303030'
+com.gexperts.Tilix.Profile background-transparency-percent 15
+com.gexperts.Tilix.Profile backspace-binding 'ascii-delete'
+com.gexperts.Tilix.Profile badge-color '#AC7EA8'
+com.gexperts.Tilix.Profile badge-color-set true
+com.gexperts.Tilix.Profile badge-font 'Monospace 12'
+com.gexperts.Tilix.Profile badge-position 'northeast'
+com.gexperts.Tilix.Profile badge-text ''
+com.gexperts.Tilix.Profile badge-use-system-font true
+com.gexperts.Tilix.Profile bold-color '#ffffff'
+com.gexperts.Tilix.Profile bold-color-set false
+com.gexperts.Tilix.Profile bold-is-bright true
+com.gexperts.Tilix.Profile cell-height-scale 1.0
+com.gexperts.Tilix.Profile cell-width-scale 1.0
+com.gexperts.Tilix.Profile cjk-utf8-ambiguous-width 'narrow'
+com.gexperts.Tilix.Profile cursor-background-color '#000000'
+com.gexperts.Tilix.Profile cursor-blink-mode 'system'
+com.gexperts.Tilix.Profile cursor-colors-set false
+com.gexperts.Tilix.Profile cursor-foreground-color '#ffffff'
+com.gexperts.Tilix.Profile cursor-shape 'block'
+com.gexperts.Tilix.Profile custom-command ''
+com.gexperts.Tilix.Profile custom-hyperlinks @as []
+com.gexperts.Tilix.Profile default-size-columns 80
+com.gexperts.Tilix.Profile default-size-rows 24
+com.gexperts.Tilix.Profile delete-binding 'delete-sequence'
+com.gexperts.Tilix.Profile dim-transparency-percent 7
+com.gexperts.Tilix.Profile draw-margin 80
+com.gexperts.Tilix.Profile encoding 'UTF-8'
+com.gexperts.Tilix.Profile exit-action 'close'
+com.gexperts.Tilix.Profile font 'Monospace 14'
+com.gexperts.Tilix.Profile foreground-color '#EFEFEF'
+com.gexperts.Tilix.Profile highlight-background-color '#000000'
+com.gexperts.Tilix.Profile highlight-colors-set false
+com.gexperts.Tilix.Profile highlight-foreground-color '#ffffff'
+com.gexperts.Tilix.Profile login-shell false
+com.gexperts.Tilix.Profile notify-silence-enabled false
+com.gexperts.Tilix.Profile notify-silence-threshold 0
+com.gexperts.Tilix.Profile palette ['#000000', '#CC0000', '#4D9A05', '#C3A000', '#3464A3', '#754F7B', '#05979A', '#D3D6CF', '#545652', '#EF2828', '#89E234', '#FBE84F', '#729ECF', '#AC7EA8', '#34E2E2', '#EDEDEB']
+com.gexperts.Tilix.Profile rewrap-on-resize true
+com.gexperts.Tilix.Profile scroll-on-keystroke true
+com.gexperts.Tilix.Profile scroll-on-output false
+com.gexperts.Tilix.Profile scrollback-lines 8192
+com.gexperts.Tilix.Profile scrollback-unlimited false
+com.gexperts.Tilix.Profile select-by-word-chars '-,./?%&#:_'
+com.gexperts.Tilix.Profile shortcut 'disabled'
+com.gexperts.Tilix.Profile show-scrollbar false
+com.gexperts.Tilix.Profile terminal-bell 'sound'
+com.gexperts.Tilix.Profile terminal-title '${id}: ${title}'
+com.gexperts.Tilix.Profile text-blink-mode 'always'
+com.gexperts.Tilix.Profile triggers @as []
+com.gexperts.Tilix.Profile use-custom-command false
+com.gexperts.Tilix.Profile use-system-font true
+com.gexperts.Tilix.Profile use-theme-colors true
+com.gexperts.Tilix.Profile visible-name 'Default'

@@ -1,0 +1,10 @@
+
+
+[org.nemo.preferences]
+show-hidden-files=true
+ignore-view-metadata=true
+default-folder-viewer='list-view'
+
+
+[org.nemo.desktop]
+font='Sans 12'

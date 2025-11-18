@@ -1,0 +1,60 @@
+
+
+##
+## # Tool
+##
+
+
+
+
+##
+## ## Package / Tool
+##
+
+
+
+
+##
+## ## Package / Tool / Launcher
+##
+
+## krunner
+#plasma-workspace
+
+
+
+
+##
+## ## Package / Tool / Terminal
+##
+
+konsole
+yakuake
+
+
+
+
+##
+## ## Package / Tool / File Manager
+##
+
+dolphin
+
+
+
+
+##
+## ## Package / Tool / Text Editor
+##
+
+kwrite
+kate
+
+
+
+
+##
+## ## Package / Tool / Image Viewer
+##
+
+gwenview

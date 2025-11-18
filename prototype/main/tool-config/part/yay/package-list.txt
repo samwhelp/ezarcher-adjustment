@@ -1,0 +1,15 @@
+
+
+##
+## # yay
+##
+
+
+
+
+##
+## ## Package / yay / required
+##
+
+#git
+#base-devel

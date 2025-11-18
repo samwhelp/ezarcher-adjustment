@@ -1,0 +1,19 @@
+com.canonical.Unity.Lenses hidden-scopes @as []
+com.ubuntu.update-notifier hide-reboot-notification false
+org.freedesktop.ibus.panel auto-hide-timeout 10000
+org.gnome.FileRoller.FileSelector show-hidden false
+org.gnome.desktop.privacy hide-identity false
+org.gnome.nautilus.preferences show-hidden-files true
+org.gnome.rhythmbox.plugins.alternative_toolbar start-hidden false
+org.gnome.shell.extensions.dash-to-dock autohide true
+org.gnome.shell.extensions.dash-to-dock autohide-in-fullscreen false
+org.gnome.shell.extensions.dash-to-dock hide-delay 0.20000000000000001
+org.gnome.shell.extensions.dash-to-dock hide-tooltip false
+org.gnome.shell.extensions.dash-to-dock intellihide true
+org.gnome.shell.extensions.dash-to-dock intellihide-mode 'ALL_WINDOWS'
+org.gnome.shell.extensions.dash-to-dock manualhide false
+org.gnome.shotwell.preferences.ui hide-photos-already-imported false
+org.gtk.Settings.FileChooser show-hidden false
+org.gtk.gtk4.Settings.FileChooser show-hidden true
+org.yorba.shotwell.preferences.ui hide-photos-already-imported false
+org.yorba.shotwell.sharing.org-yorba-shotwell-publishing-rajce hide-album false

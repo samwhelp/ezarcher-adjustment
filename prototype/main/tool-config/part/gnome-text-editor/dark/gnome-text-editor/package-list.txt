@@ -1,0 +1,14 @@
+
+
+##
+## # Gnome-Text-Editor
+##
+
+
+
+
+##
+## ## Package / Gnome-Text-Editor
+##
+
+gnome-text-editor

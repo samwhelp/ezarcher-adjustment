@@ -1,0 +1,106 @@
+
+
+# Xdg
+
+* [Config File Path](#config-file-path)
+* [Arch Package](#arch-package)
+* [Usage](#usage)
+
+
+
+
+## Config File Path
+
+| Config File Path |
+| ---------------- |
+| [~/.config/mimeapps.list](./asset/overlay/etc/skel/.config/mimeapps.list) |
+
+
+
+
+## Arch Package
+
+| Arch Package |
+| ------------ |
+| [xdg-utils](https://archlinux.org/packages/extra/any/xdg-utils/) |
+| [xdg-user-dirs](https://archlinux.org/packages/extra/x86_64/xdg-user-dirs/) |
+
+
+
+
+## Usage
+
+
+### install
+
+run
+
+``` sh
+./install.sh
+```
+
+or run
+
+``` sh
+make install
+```
+
+
+### package-install
+
+run
+
+``` sh
+./package-install.sh
+```
+
+or run
+
+``` sh
+make package-install
+```
+
+
+### asset-install
+
+run
+
+``` sh
+./asset-install.sh
+```
+
+or run
+
+``` sh
+make asset-install
+```
+
+
+### prototype-install
+
+run
+
+``` sh
+./prototype-install.sh
+```
+
+or run
+
+``` sh
+make prototype-install
+```
+
+
+### config-install
+
+run
+
+``` sh
+./config-install.sh
+```
+
+or run
+
+``` sh
+make config-install
+```

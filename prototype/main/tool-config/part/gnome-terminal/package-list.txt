@@ -1,0 +1,23 @@
+
+
+##
+## # Gnome-Terminal
+##
+
+
+
+
+##
+## ## Package / Gnome-Terminal
+##
+
+gnome-terminal
+
+
+
+
+##
+## ## Package / dconf
+##
+
+dconf

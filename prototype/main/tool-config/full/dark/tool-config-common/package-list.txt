@@ -1,0 +1,153 @@
+
+
+##
+## # Tool
+##
+
+
+##
+## ## Arch Wiki
+##
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/packages/core/any/base-devel/
+##
+
+
+
+
+##
+## ## Package / Base
+##
+
+xdg-user-dirs
+xdg-utils
+
+
+
+
+##
+## ## Package / Shell
+##
+
+bash
+bash-completion
+
+fzf
+
+
+
+
+##
+## ## Package / Develop
+##
+
+base-devel
+
+php
+
+
+
+
+##
+## ## Package / Util
+##
+
+tree
+less
+
+curl
+wget
+git
+
+lynx
+w3m
+
+
+
+
+##
+## ## Package / Tool
+##
+
+
+
+
+##
+## ## Package / Tool / Launcher
+##
+
+rofi
+
+
+
+
+##
+## ## Package / Tool / Terminal
+##
+
+xfce4-terminal
+qterminal
+#sakura
+
+
+
+
+##
+## ## Package / Tool / File Manager
+##
+
+thunar
+
+
+
+
+##
+## ## Package / Tool / Text Editor
+##
+
+mousepad
+vim
+neovim
+micro
+
+featherpad
+feathernotes
+
+geany
+
+
+
+##
+## ## Package / Tool / Image Viewer
+##
+
+viewnior
+
+
+
+
+##
+## ## Package / Tool / Media Player
+##
+
+vlc
+mpv
+smplayer
+
+
+
+
+##
+## ## Package / Tool / Audio Player
+##
+
+audacious
+
+
+
+
+##
+## ## Package / Tool / Wallpaper
+##
+
+variety

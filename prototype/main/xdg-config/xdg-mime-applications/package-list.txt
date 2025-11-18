@@ -1,0 +1,15 @@
+
+
+##
+## # xdg
+##
+
+
+
+
+##
+## ## Package / xdg
+##
+
+xdg-utils
+xdg-user-dirs

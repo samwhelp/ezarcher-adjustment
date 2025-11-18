@@ -1,0 +1,10 @@
+
+
+[org.mate.caja.preferences]
+show-hidden-files=true
+default-folder-viewer='list-view'
+
+
+[org.mate.caja.list-view]
+default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'date_created', 'extension', 'group', 'where', 'mime_type', 'octal_permissions', 'owner', 'permissions', 'size_on_disk']
+default-visible-columns=['name', 'size', 'type', 'date_modified']
