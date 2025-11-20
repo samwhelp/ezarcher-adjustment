@@ -71,6 +71,7 @@
 | [ezarcher-live-build-config-template-cinnamon](https://github.com/samwhelp/ezarcher-live-build-config-template-cinnamon) | [ezarcher-live-build-respin-cinnamon](https://github.com/samwhelp/ezarcher-live-build-respin-cinnamon) |
 | [ezarcher-live-build-config-template-lxqt](https://github.com/samwhelp/ezarcher-live-build-config-template-lxqt) | [ezarcher-live-build-respin-lxqt](https://github.com/samwhelp/ezarcher-live-build-respin-lxqt) |
 | [ezarcher-live-build-config-template-lxde](https://github.com/samwhelp/ezarcher-live-build-config-template-lxde) | [ezarcher-live-build-respin-lxde](https://github.com/samwhelp/ezarcher-live-build-respin-lxde) |
+| [ezarcher-live-build-config-template-cosmic](https://github.com/samwhelp/ezarcher-live-build-config-template-cosmic) | [ezarcher-live-build-respin-cosmic](https://github.com/samwhelp/ezarcher-live-build-respin-cosmic) |
 
 
 
