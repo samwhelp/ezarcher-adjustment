@@ -28,6 +28,7 @@
 
 * [Script](#script)
 * [Ezarcher Respin](#ezarcher-respin)
+* [Ezarcher / Live Build Config](#ezarcher--live build-config)
 * [Link](#link)
 
 
@@ -54,6 +55,7 @@
 | [Ezarcher Mate Adjustment](https://samwhelp.github.io/ezarcher-mate-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-mate-adjustment) |
 | [Ezarcher Lxqt Adjustment](https://samwhelp.github.io/ezarcher-lxqt-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-lxqt-adjustment) |
 | [Ezarcher Lxde Adjustment](https://samwhelp.github.io/ezarcher-lxde-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-lxde-adjustment) |
+| [Ezarcher Cosmic Adjustment](https://samwhelp.github.io/ezarcher-cosmic-adjustment/) | [GitHub](https://github.com/samwhelp/ezarcher-cosmic-adjustment) |
 
 
 
@@ -77,6 +79,7 @@
 
 | Link | GitHub |
 | ---- | ------ |
+| [Archlinux Adjustment](https://samwhelp.github.io/archlinux-adjustment/) | [GitHub](https://github.com/samwhelp/archlinux-adjustment) |
 | [Debian Adjustment](https://samwhelp.github.io/debian-adjustment/) | [GitHub](https://github.com/samwhelp/debian-adjustment) |
 | [Ubuntu Adjustment](https://samwhelp.github.io/ubutu-adjustment/) | [GitHub](https://github.com/samwhelp/ubutu-adjustment) |
 | [Fedora Adjustment](https://samwhelp.github.io/fedora-adjustment/) | [GitHub](https://github.com/samwhelp/fedora-adjustment) |
