@@ -28,7 +28,7 @@
 
 * [Script](#script)
 * [Ezarcher Respin](#ezarcher-respin)
-* [Ezarcher / Live Build Config](#ezarcher--live build-config)
+* [Ezarcher Live Build Config](#ezarcher-live-build-config)
 * [Link](#link)
 
 
@@ -60,7 +60,7 @@
 
 
 
-## Ezarcher / Live Build Config
+## Ezarcher Live Build Config
 
 | Template | Respin |
 | -------- | ------ |
@@ -72,6 +72,13 @@
 | [ezarcher-live-build-config-template-lxqt](https://github.com/samwhelp/ezarcher-live-build-config-template-lxqt) | [ezarcher-live-build-respin-lxqt](https://github.com/samwhelp/ezarcher-live-build-respin-lxqt) |
 | [ezarcher-live-build-config-template-lxde](https://github.com/samwhelp/ezarcher-live-build-config-template-lxde) | [ezarcher-live-build-respin-lxde](https://github.com/samwhelp/ezarcher-live-build-respin-lxde) |
 | [ezarcher-live-build-config-template-cosmic](https://github.com/samwhelp/ezarcher-live-build-config-template-cosmic) | [ezarcher-live-build-respin-cosmic](https://github.com/samwhelp/ezarcher-live-build-respin-cosmic) |
+| [ezarcher-live-build-config-template-hyprland](https://github.com/samwhelp/ezarcher-live-build-config-template-hyprland) | [ezarcher-live-build-respin-hyprland](https://github.com/samwhelp/ezarcher-live-build-respin-hyprland) |
+| [ezarcher-live-build-config-template-river](https://github.com/samwhelp/ezarcher-live-build-config-template-river) | [ezarcher-live-build-respin-river](https://github.com/samwhelp/ezarcher-live-build-respin-river) |
+| [ezarcher-live-build-config-template-labwc](https://github.com/samwhelp/ezarcher-live-build-config-template-labwc) | [ezarcher-live-build-respin-labwc](https://github.com/samwhelp/ezarcher-live-build-respin-labwc) |
+| [ezarcher-live-build-config-template-openbox](https://github.com/samwhelp/ezarcher-live-build-config-template-openbox) | [ezarcher-live-build-respin-openbox](https://github.com/samwhelp/ezarcher-live-build-respin-openbox) |
+| [ezarcher-live-build-config-template-fluxbox](https://github.com/samwhelp/ezarcher-live-build-config-template-fluxbox) | [ezarcher-live-build-respin-fluxbox](https://github.com/samwhelp/ezarcher-live-build-respin-fluxbox) |
+| [ezarcher-live-build-config-template-bspwm](https://github.com/samwhelp/ezarcher-live-build-config-template-bspwm) | [ezarcher-live-build-respin-bspwm](https://github.com/samwhelp/ezarcher-live-build-respin-bspwm) |
+| [ezarcher-live-build-config-template-i3wm](https://github.com/samwhelp/ezarcher-live-build-config-template-i3wm) | [ezarcher-live-build-respin-i3wm](https://github.com/samwhelp/ezarcher-live-build-respin-i3wm) |
 
 
 
