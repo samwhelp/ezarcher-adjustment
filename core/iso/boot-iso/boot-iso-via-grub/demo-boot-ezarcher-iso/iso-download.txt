@@ -1,7 +1,7 @@
-https://sourceforge.net/projects/ezarch/files/ISO_251101/md5sums.txt
-https://sourceforge.net/projects/ezarch/files/ISO_251101/ezarch-xfce-251101-x86_64.iso
-https://sourceforge.net/projects/ezarch/files/ISO_251101/ezarch-kde-251101-x86_64.iso
-https://sourceforge.net/projects/ezarch/files/ISO_251101/ezarch-cinn-251101-x86_64.iso
-https://sourceforge.net/projects/ezarch/files/ISO_251101/ezarch-mate-251101-x86_64.iso
-https://sourceforge.net/projects/ezarch/files/ISO_251101/ezarch-gnome-251101-x86_64.iso
-https://sourceforge.net/projects/ezarch/files/ISO_251101/ezarch-lxqt-251101-x86_64.iso
+https://sourceforge.net/projects/ezarch/files/ISO_251128/md5sums.txt
+https://sourceforge.net/projects/ezarch/files/ISO_251128/ezarch-xfce-251128-x86_64.iso
+https://sourceforge.net/projects/ezarch/files/ISO_251128/ezarch-kde-251128-x86_64.iso
+https://sourceforge.net/projects/ezarch/files/ISO_251128/ezarch-gnome-251128-x86_64.iso
+https://sourceforge.net/projects/ezarch/files/ISO_251128/ezarch-cinn-251128-x86_64.iso
+https://sourceforge.net/projects/ezarch/files/ISO_251128/ezarch-mate-251128-x86_64.iso
+https://sourceforge.net/projects/ezarch/files/ISO_251128/ezarch-lxqt-251128-x86_64.iso

@@ -8,4 +8,4 @@ mkdir -p mnt
 
 
 
-sudo mount -o loop ezarch-xfce-251101-x86_64.iso mnt
+sudo mount -o loop ezarch-xfce-251128-x86_64.iso mnt
